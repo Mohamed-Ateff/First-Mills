@@ -50,12 +50,12 @@
   background-color: #ffb548;
 }
 
-.title1::after { width: 11%; }
-.title2::after { width: 25%; }
-.title3::after { width: 10%; }
-.title4::after { width: 20%; }
-.title5::after { width: 36%; }
-.title6::after { width: 27%; }
+.title1::after { width: 12%; }
+.title2::after { width: 28%; }
+.title3::after { width: 12%; }
+.title4::after { width: 22%; }
+.title5::after { width: 40%; }
+.title6::after { width: 31%; }
 
 .mills-product-card {
   flex: 1 1 300px;

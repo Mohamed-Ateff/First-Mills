@@ -13,7 +13,7 @@
   height: 4px;
   background-color: #ffb548;
   top: 50%;
-  right: 30px;
+  right: 0px;
   transform: translateY(-50%);
 }
 .title1::after {
@@ -23,7 +23,7 @@
   height: 4px;
   background-color: #ffb548;
   top: 50%;
-  left: 30px;
+  left: 0px;
   transform: translateY(-50%);
 }
 
@@ -34,7 +34,7 @@
   height: 4px;
   background-color: #ffb548;
   top: 50%;
-  right: 30px;
+  right: 0px;
   transform: translateY(-50%);
 }
 .title2::after {
@@ -44,7 +44,7 @@
   height: 4px;
   background-color: #ffb548;
   top: 50%;
-  left: 30px;
+  left: 0px;
   transform: translateY(-50%);
 }
 .title3::before {
@@ -54,7 +54,7 @@
   height: 4px;
   background-color: #ffb548;
   top: 50%;
-  right: 30px;
+  right: 0px;
   transform: translateY(-50%);
 }
 .title3::after {
@@ -64,14 +64,14 @@
   height: 4px;
   background-color: #ffb548;
   top: 50%;
-  left: 30px;
+  left: 0px;
   transform: translateY(-50%);
 }
 .card-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card {
@@ -112,12 +112,11 @@
 }
 
 .phase2-row2 {
-  justify-content: center;
   margin: 40px 0 0;
 }
 
 .phase2-row2 .card {
-  width: calc(42% - 20px);
+  width: calc(50% - 20px);
 }
 
 .phase3 {
@@ -125,7 +124,7 @@
 }
 
 .phase3 .card {
-  width: calc(42% - 20px);
+  width: calc(50% - 20px);
 }
 
 @media (max-width: 992px) {
@@ -144,6 +143,18 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 992px) {
+  .title1::before,
+  .title1::after,
+  .title2::before,
+  .title2::after,
+  .title3::before,
+  .title3::after {
+    display: none;
+  }
+}
+
 
 @media (max-width: 600px) {
   .card {
