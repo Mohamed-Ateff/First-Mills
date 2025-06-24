@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Side Menu</title>
@@ -13,333 +12,365 @@
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/s3p1.css" />
     <script src="Javascript/Navbar.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <a href="index.html"><img class="logo" src="Images/logo.png" alt="" /></a>
-        </header>
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="Images/logo.png" alt=""
+        /></a>
+      </header>
     </div>
 
     <div class="container">
-        <div class="hero">
-            <div class="side-menu">
-                <div class="circle">
-                    <div class="border-for-circle">EN</div>
-                </div>
-                <div class="line-one"></div>
+      <div class="hero">
+        <div class="side-menu">
+          <div class="circle">
+            <div class="border-for-circle">EN</div>
+          </div>
+          <div class="line-one"></div>
 
-                <a href="">
-                    <div class="hexagon hexagon1 active">
-                        <img src="Images/one.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/two.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/three.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/four.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/five.png" alt="" />
-                    </div>
-                </a>
-
-                <div class="line-two"></div>
+          <a href="">
+            <div class="hexagon hexagon1 active">
+              <img src="Images/one.png" alt="" />
             </div>
-
-            <div class="burger" onclick="toggleMenu()">☰</div>
-
-            <div class="mobile-menu" id="mobileMenu">
-                <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
-                    نظرة عامة
-                </div>
-                <div class="mobile-submenu" id="mobile-overview">
-                    <a href="#" class="page">كلمة الإدارة</a>
-                    <a href="#" class="page">التقرير الاستراتيجي</a>
-                    <a href="#" class="page">المراجعة التشغيلية</a>
-                    <a href="#" class="page">الحوكمة و الاستدامة</a>
-                    <a href="#" class="page">القوائم المالية</a>
-                    <a href="#" class="page">مركز التحميل</a>
-                </div>
-
-                <div class="section" onclick="toggleSubmenu(this, 'mobile-highlights')">
-                    أبرز النتائج المالية والتشغيلية
-                </div>
-                <div class="mobile-submenu" id="mobile-highlights">
-                    <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
-                    <a href="#" class="page">مسيرة نمو الشركة</a>
-                    <a href="#" class="page">مزايا الاستثمار</a>
-                    <a href="#" class="page">القيم الأساسية</a>
-                    <a href="#" class="page">الوجود الجغرافي</a>
-                    <a href="#" class="page">الشركات التابعة</a>
-                    <a href="#" class="page">منتجات الشركة</a>
-                    <a href="#" class="page">العلامات التجارية</a>
-                    <a href="#" class="page">أبرز إنجازات عام 2024</a>
-                    <a href="#" class="page">الجوائز والشهادات</a>
-                    <a href="#" class="page">شعار العام</a>
-                </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/two.png" alt="" />
             </div>
-
-            <div class="hero-images">
-                <img class="image-hero" src="Images/img1.png" alt="" />
-                <img class="hero-img-title" src="Images/Hero.png" alt="" />
-                <div class="title-section">
-                    <div class="white-title">
-                        <p>الرئيسية</p>
-                        <img class="arrow" src="Images/arrow.png" alt="" />
-                        <p>نظرة عامة</p>
-                    </div>
-                    <div class="green-title">
-                        <h1>العلامات التجارية</h1>
-                    </div>
-                </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/three.png" alt="" />
             </div>
-
-            <div class="image-Union"></div>
-            <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
-
-            <div class="menu-container">
-                <div class="main-menu">
-                    <div class="section active" data-submenu="Tab1">نظرة عامة</div>
-                    <div class="section" data-submenu="Tab2">كلمة الادارة</div>
-                    <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
-                    <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
-                    <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
-                    <div class="section" data-submenu="Tab6">القوائم المالية</div>
-                    <div class="section" data-submenu="Tab7">مركز التحميل</div>
-                </div>
-
-                <div class="menu-divider"></div>
-
-                <div class="submenu active" id="Tab1">
-                    <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
-                    <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
-                    <a href="#" class="page">مسيرة نمو الشركة</a>
-                    <a href="#" class="page">مزايا الاستثمار</a>
-                    <a href="#" class="page">القيم الأساسية</a>
-                    <a href="#" class="page">الوجود الجغرافي</a>
-                    <a href="#" class="page">الشركات التابعة</a>
-                    <a href="#" class="page">منتجات الشركة</a>
-                    <a href="#" class="page">العلامات التجارية</a>
-                    <a href="#" class="page">أبرز إنجازات عام 2024</a>
-                    <a href="#" class="page">الجوائز والشهادات</a>
-                    <a href="#" class="page">شعار العام</a>
-                </div>
-
-                <div class="submenu" id="Tab2">
-                    <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
-                    <a href="#" class="page">رسالة الرئيس التنفيذي</a>
-                    <a href="#" class="page">كلمة رئيس القطاع المالي</a>
-                </div>
-
-                <div class="submenu" id="Tab3">
-                    <a href="#" class="page">نموذج العمل التجاري</a>
-                    <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
-                    <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
-                    <a href="#" class="page">مشاركة الجهات المعنية</a>
-                    <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
-                    <a href="#" class="page">التحديات والفرص</a>
-                    <a href="#" class="page">إدارة المخاطر</a>
-                </div>
-
-                <div class="submenu" id="Tab4">
-                    <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
-                    <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
-                    <a href="#" class="page">القدرات التشغيلية في أرقام </a>
-                    <a href="#" class="page">معلومات عن صناع الشركة </a>
-                    <a href="#" class="page">العمالء وشركاء النجاح</a>
-                    <a href="#" class="page">ضمان الجودة ورقابتها</a>
-                    <a href="#" class="page">البيئة والصحة والسلامة</a>
-                    <a href="#" class="page">البنية التحتية</a>
-                    <a href="#" class="page">مشروع العلاج الحراري</a>
-                    <a href="#" class="page">التسويق والتواصل المؤسسي</a>
-                    <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
-                </div>
-
-                <div class="submenu" id="Tab5">
-                    <a href="#" class="page">حوكمة الشركة</a>
-                    <a href="#" class="page">القوانين ودرجة الالتزام</a>
-                    <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
-                    <a href="#" class="page">الهيكل التنظيمي للشركة</a>
-                    <a href="#" class="page">مجلس الإدارة</a>
-                    <a href="#" class="page">لجان مجلس الإدارة</a>
-                    <a href="#" class="page">الجمعيات العامة للمساهمين</a>
-                    <a href="#" class="page">الإدارة التنفيذية</a>
-                    <a href="#" class="page">مكافآت مجلس الإدارة</a>
-                    <a href="#" class="page">الأطراف ذوي العلاقة</a>
-                    <a href="#" class="page">المدفوعات النظامية</a>
-                    <a href="#" class="page">أسهم الخزينة</a>
-                    <a href="#" class="page">اللوائح</a>
-                    <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
-                    <a href="#" class="page">المراجعة والرقابة الداخلية</a>
-                    <a href="#" class="page">إفصاحات مجلس الإدارة</a>
-                    <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
-                </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/four.png" alt="" />
             </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/five.png" alt="" />
+            </div>
+          </a>
+
+          <div class="line-two"></div>
         </div>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+            نظرة عامة
+          </div>
+          <div class="mobile-submenu" id="mobile-overview">
+            <a href="#" class="page">كلمة الإدارة</a>
+            <a href="#" class="page">التقرير الاستراتيجي</a>
+            <a href="#" class="page">المراجعة التشغيلية</a>
+            <a href="#" class="page">الحوكمة و الاستدامة</a>
+            <a href="#" class="page">القوائم المالية</a>
+            <a href="#" class="page">مركز التحميل</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-highlights')"
+          >
+            أبرز النتائج المالية والتشغيلية
+          </div>
+          <div class="mobile-submenu" id="mobile-highlights">
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <img class="image-hero" src="Images/img1.png" alt="" />
+          <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+          <div class="title-section">
+            <div class="white-title">
+              <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+              <p>الرئيسية</p>
+              <img class="arrow" src="Images/arrow-footer.png" alt="" />
+              <p>التقرير الاستراتيجي</p>
+            </div>
+            <div class="green-title">
+              <h1>نموذج العمل التجاري</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-Union"></div>
+        <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+        <div class="menu-container">
+          <div class="main-menu">
+            <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+            <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+            <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+            <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+            <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+            <div class="section" data-submenu="Tab6">القوائم المالية</div>
+            <div class="section" data-submenu="Tab7">مركز التحميل</div>
+          </div>
+
+          <div class="menu-divider"></div>
+
+          <div class="submenu active" id="Tab1">
+            <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+
+          <div class="submenu" id="Tab2">
+            <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="#" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="#" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="submenu" id="Tab3">
+            <a href="#" class="page">نموذج العمل التجاري</a>
+            <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="#" class="page">مشاركة الجهات المعنية</a>
+            <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="#" class="page">التحديات والفرص</a>
+            <a href="#" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div class="submenu" id="Tab4">
+            <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
+            <a href="#" class="page">القدرات التشغيلية في أرقام </a>
+            <a href="#" class="page">معلومات عن صناع الشركة </a>
+            <a href="#" class="page">العمالء وشركاء النجاح</a>
+            <a href="#" class="page">ضمان الجودة ورقابتها</a>
+            <a href="#" class="page">البيئة والصحة والسلامة</a>
+            <a href="#" class="page">البنية التحتية</a>
+            <a href="#" class="page">مشروع العلاج الحراري</a>
+            <a href="#" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div class="submenu" id="Tab5">
+            <a href="#" class="page">حوكمة الشركة</a>
+            <a href="#" class="page">القوانين ودرجة الالتزام</a>
+            <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="#" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="#" class="page">مجلس الإدارة</a>
+            <a href="#" class="page">لجان مجلس الإدارة</a>
+            <a href="#" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="#" class="page">الإدارة التنفيذية</a>
+            <a href="#" class="page">مكافآت مجلس الإدارة</a>
+            <a href="#" class="page">الأطراف ذوي العلاقة</a>
+            <a href="#" class="page">المدفوعات النظامية</a>
+            <a href="#" class="page">أسهم الخزينة</a>
+            <a href="#" class="page">اللوائح</a>
+            <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="#" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="#" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="start">
-        <h1 class="title-first">جوانب تميز الشركة ونقاط القوة</h1>
+      <h1 class="title-first">جوانب تميز الشركة ونقاط القوة</h1>
 
-        <!-- section Lists -->
-<div class="List">
-  <div class="List-header">
-            <div class="list-item">
-                <img src="./Images/S3p1-icon1.png" alt="" />
+      <!-- section Lists -->
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon1.png" alt="" />
 
-                <h1>المكانة الريادية في السوق المحلية</h1>
-            </div>
-            <div class="orange-number">
-                <p>0<span class="counter">1</span></p>
-            </div>
+            <h1>المكانة الريادية في السوق المحلية</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">1</span></p>
+          </div>
         </div>
         <div class="list-big">
-        <div class="list-text">
-            <span class="title-with-arrow">بلوغ الحصة السوقية للشركة نحو 30 %(1) في السوق المحلية للدقيق.
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >بلوغ الحصة السوقية للشركة نحو 30 %(1) في السوق المحلية للدقيق.
             </span>
             <div class="intersect"></div>
-        </div>
-   
-        <div class="list-text">
-            <span class="title-with-arrow">تحقيق هوامش ربحية مميزة ونمو مستدام يتجاوز معدلات السوق والمستهدفات.
-            </span>
-            <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">الحفاظ على القيادة الحالية في قطاع العلف والتوسع في إنتاج النخالة بما يتماشى مع النمو في كميات طحن الدقيق.
-            </span>
-            <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">90 % من مبيعات منتجات الشركة تتم نقداً وتحصل في الحال.
+          </div>
 
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >تحقيق هوامش ربحية مميزة ونمو مستدام يتجاوز معدلات السوق
+              والمستهدفات.
             </span>
             <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">امتلاك أول مطحنة من نوعها لانتاج السميد بطاقة انتاجية قادرة على تلبية طلب السوق المحلي مع إمكانية التصدير لأسواق المنطقة.
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الحفاظ على القيادة الحالية في قطاع العلف والتوسع في إنتاج النخالة
+              بما يتماشى مع النمو في كميات طحن الدقيق.
             </span>
             <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >90 % من مبيعات منتجات الشركة تتم نقداً وتحصل في الحال.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >امتلاك أول مطحنة من نوعها لانتاج السميد بطاقة انتاجية قادرة على
+              تلبية طلب السوق المحلي مع إمكانية التصدير لأسواق المنطقة.
+            </span>
+            <div class="intersect"></div>
+          </div>
         </div>
-        </div>
-</div>
-<div class="List">
-  <div class="List-header">
-            <div class="list-item">
-                <img src="./Images/S3p1-icon2.png" alt="" />
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon2.png" alt="" />
 
-                <h1>قاعدة متينة من المرافق اللوجستية والإنتاجية</h1>
-            </div>
-            <div class="orange-number">
-                <p>0<span class="counter">2</span></p>
-            </div>
+            <h1>قاعدة متينة من المرافق اللوجستية والإنتاجية</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">2</span></p>
+          </div>
         </div>
         <div class="list-big">
-        <div class="list-text">
-            <span class="title-with-arrow">        قاعدة أصول ثابتة، تبلغ قيمتها الدفترية أكثر من نصف مليار ريال سعودي، مدعومة بأفضل التقنيات الحديثة لإنتاج الدقيق والأعلاف.
-
+          <div class="list-text">
+            <span class="title-with-arrow">
+              قاعدة أصول ثابتة، تبلغ قيمتها الدفترية أكثر من نصف مليار ريال
+              سعودي، مدعومة بأفضل التقنيات الحديثة لإنتاج الدقيق والأعلاف.
             </span>
             <div class="intersect"></div>
-        </div>
-   
-        <div class="list-text">
-            <span class="title-with-arrow">متابعة مستمرة حول زيادة الطاقة الإنتاجية وتوسعة المنشآت، والعمل على تجديدها بشكل مستمر؛ لتحقيق أفضل عوائد ممكنة، وتلبية متطلبات السوق المتزايدة.
+          </div>
 
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >متابعة مستمرة حول زيادة الطاقة الإنتاجية وتوسعة المنشآت، والعمل
+              على تجديدها بشكل مستمر؛ لتحقيق أفضل عوائد ممكنة، وتلبية متطلبات
+              السوق المتزايدة.
             </span>
             <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">الاعتماد على أنظمة وتقنيات متطورة في جميع عمليات الإنتاج لضمان أفضل جودة ممكنة.
-
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الاعتماد على أنظمة وتقنيات متطورة في جميع عمليات الإنتاج لضمان
+              أفضل جودة ممكنة.
             </span>
             <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">العمل نحو بناء شراكات استراتيجية ذات قيمة نوعية مع القطاعين العام والخاص.
-
-
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >العمل نحو بناء شراكات استراتيجية ذات قيمة نوعية مع القطاعين العام
+              والخاص.
             </span>
             <div class="intersect"></div>
+          </div>
         </div>
-       
-        </div>
-</div>
-<div class="List">
-  <div class="List-header">
-            <div class="list-item">
-                <img src="./Images/S3p1-icon1.png" alt="" />
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon1.png" alt="" />
 
-                <h1>المكانة الريادية في السوق المحلية</h1>
-            </div>
-            <div class="orange-number">
-                <p>0<span class="counter">1</span></p>
-            </div>
+            <h1>المكانة الريادية في السوق المحلية</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">1</span></p>
+          </div>
         </div>
         <div class="list-big">
-        <div class="list-text">
-            <span class="title-with-arrow">بلوغ الحصة السوقية للشركة نحو 30 %(1) في السوق المحلية للدقيق.
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >بلوغ الحصة السوقية للشركة نحو 30 %(1) في السوق المحلية للدقيق.
             </span>
             <div class="intersect"></div>
-        </div>
-   
-        <div class="list-text">
-            <span class="title-with-arrow">تحقيق هوامش ربحية مميزة ونمو مستدام يتجاوز معدلات السوق والمستهدفات.
-            </span>
-            <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">الحفاظ على القيادة الحالية في قطاع العلف والتوسع في إنتاج النخالة بما يتماشى مع النمو في كميات طحن الدقيق.
-            </span>
-            <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">90 % من مبيعات منتجات الشركة تتم نقداً وتحصل في الحال.
+          </div>
 
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >تحقيق هوامش ربحية مميزة ونمو مستدام يتجاوز معدلات السوق
+              والمستهدفات.
             </span>
             <div class="intersect"></div>
-        </div>
-        <div class="list-text">
-            <span class="title-with-arrow">امتلاك أول مطحنة من نوعها لانتاج السميد بطاقة انتاجية قادرة على تلبية طلب السوق المحلي مع إمكانية التصدير لأسواق المنطقة.
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الحفاظ على القيادة الحالية في قطاع العلف والتوسع في إنتاج النخالة
+              بما يتماشى مع النمو في كميات طحن الدقيق.
             </span>
             <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >90 % من مبيعات منتجات الشركة تتم نقداً وتحصل في الحال.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >امتلاك أول مطحنة من نوعها لانتاج السميد بطاقة انتاجية قادرة على
+              تلبية طلب السوق المحلي مع إمكانية التصدير لأسواق المنطقة.
+            </span>
+            <div class="intersect"></div>
+          </div>
         </div>
-        </div>
-</div>
-      
+      </div>
 
-        <!-- section Lists ends-->
+      <!-- section Lists ends-->
     </div>
 
     <footer>
-        <div class="container">
-            <div class="side-of-footer">
-                <a href="" class="next">
-                    <img src="Images/arrow-footer.png" alt="" /> التـــالـي
-                </a>
-                <h2>عنوان الشاشة التالية</h2>
-            </div>
-            <div class="side-of-footer">
-                <a href="" style="background: #30444e; color: white" class="contact-us btn-footer">
-                    <img src="Images/email.png" alt="" />
-                    تواصلوا معنا</a>
-                <a href="" style="background: #ffb548; color: #30444e" class="download-center btn-footer">
-                    <img src="Images/download.png" alt="" />
-                    مركز التحميل</a>
-            </div>
+      <div class="container">
+        <div class="side-of-footer">
+          <a href="" class="next">
+            <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+          </a>
+          <h2>عنوان الشاشة التالية</h2>
         </div>
+        <div class="side-of-footer">
+          <a
+            href=""
+            style="background: #30444e; color: white"
+            class="contact-us btn-footer"
+          >
+            <img src="Images/email.png" alt="" />
+            تواصلوا معنا</a
+          >
+          <a
+            href=""
+            style="background: #ffb548; color: #30444e"
+            class="download-center btn-footer"
+          >
+            <img src="Images/download.png" alt="" />
+            مركز التحميل</a
+          >
+        </div>
+      </div>
     </footer>
 
     <!-- jQuery -->
@@ -353,6 +384,5 @@
     <script src="Javascript/counter.js"></script>
     <!-- CounterUp (CDN version) -->
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
-</body>
-
+  </body>
 </html>
