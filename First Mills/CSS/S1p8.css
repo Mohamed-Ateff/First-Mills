@@ -1,0 +1,103 @@
+.mills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.mills-intro {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.mills-intro p {
+    color: #31544B;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.mills-section {
+  margin-bottom: 40px;
+  background-color: #f8f8f8;
+  border: 1px solid #ded6d6;
+  border-radius: 8px;
+  display: flex;
+  text-align: right;
+  gap: 40px;
+}
+
+.mills-section-title {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+  /*border-bottom: 4px solid #FFB548;*/
+}
+
+.title1::after,
+.title2::after,
+.title3::after,
+.title4::after,
+.title5::after,
+.title6::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #ffb548;
+}
+
+.title1::after { width: 11%; }
+.title2::after { width: 25%; }
+.title3::after { width: 10%; }
+.title4::after { width: 20%; }
+.title5::after { width: 36%; }
+.title6::after { width: 27%; }
+
+.mills-product-card {
+  flex: 1 1 300px;
+  border-radius: 8px;
+  padding: 0px 20px;
+}
+
+.mills-product-desc {
+  font-size: 20px;
+  color: #4E6A63;
+  line-height: 3rem;
+  margin-bottom: 15px;
+}
+
+.mills-product-image {
+  width: 30%;
+  object-fit: contain;
+  border-radius: 12px;
+  margin: 30px;
+}
+
+@media (max-width: 991px) {
+  .mills-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mills-product-image {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .mills-product-card {
+    padding: 10px;
+  }
+
+  .mills-intro p,
+  .mills-product-desc {
+    font-size: 16px;
+  }
+
+  .mills-section-title {
+    font-size: 20px;
+  }
+}

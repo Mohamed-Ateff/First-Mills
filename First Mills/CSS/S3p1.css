@@ -1,0 +1,150 @@
+.title-first {
+  position: relative;
+  font-size: 26px;
+  color: #31544B;
+  font-weight: bold;
+  padding-bottom: 15px; /* space below text */
+}
+.title-first::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 15%; /* start from center */
+  transform: translateX(50%);
+  width: 340px;
+  height: 4px;
+  background-color: #FFB548;
+  border-radius: 2px;
+}
+.List{
+    padding-top: 50px;
+}
+.List-header{
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  flex-grow: 1;
+  background-color: #31544B;
+
+}
+.list-item{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  padding:20px;
+}
+.list-item img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+.list-item h1{
+    padding: 20px;
+}
+.orange-number{
+    color: #FFB548;
+     font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 20px;
+}
+.list-big{
+    padding-top: 20px;
+
+}
+.list-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #6b95bd;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+.title-with-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #3A4944;
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 30px;
+}
+.intersect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* top: 0%; */
+  right: 0%;
+  
+  background: url(../Images/Intersect.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+    .title-first {
+ 
+  padding-bottom: 5px; 
+}
+    .title-first::before {
+  right: 30%; 
+  
+}
+.List-header{
+  height: 100px;
+}
+.list-item{
+  font-size: 12px;
+  padding: 20px;
+}
+.list-item img {
+  width: 50px;
+  height: 50px;
+}
+.list-item h1{
+    padding-right: 10px;
+}
+.orange-number{
+     font-size: 40px;
+}
+}
+
+@media (max-width: 480px){
+.title-first {
+    font-size: 16px;
+  /* padding-bottom: 5px;  */
+}
+   
+.List-header{
+  height: 80px;
+}
+.list-item{
+  font-size: 7px;
+}
+.list-item img {
+  width: 30px;
+  height: 30px;
+}
+.title-with-arrow{
+  font-size: 12px;
+}
+.intersect {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  /* top: 0%; */
+  right: 0%;
+  transform: translate(-0%,-100%);
+  background: url(../Images/Intersect.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.orange-number{
+     font-size: 20px;
+}
+
+}
