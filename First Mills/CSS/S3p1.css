@@ -1,11 +1,16 @@
-.title-first {
+.title-first,.title-second {
   position: relative;
   font-size: 26px;
   color: #31544B;
   font-weight: bold;
   padding-bottom: 15px; /* space below text */
 }
-.title-first::before {
+.title-second{
+    text-align: center;
+}
+
+.title-first::before,
+.title-second::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -15,6 +20,10 @@
   height: 4px;
   background-color: #FFB548;
   border-radius: 2px;
+}
+
+.title-second::before {
+  right: 50%; /* adjust for second title */
 }
 .List{
     padding-top: 50px;
@@ -86,6 +95,89 @@ display: flex;
   background-size: 100% 100%;
 }
 
+/* six cards */
+
+.six-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.one-card {
+  width: 32%;
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  border-top: 12px solid #FFB548;
+}
+
+
+
+.logo-div span {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 93.7px;
+}
+.logo-div {
+  width: 100px;
+  height: 57.735px;
+  background: #31544B;
+   top: -50px;
+  right: 0px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+}
+.logo-div::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #31544B;
+}
+.logo-div::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #31544B;
+}
+
+.one-card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #31544B;
+  margin-top: 10px;
+  vertical-align: center;
+  line-height: 40px;
+}
+.one-card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 30px;
+  vertical-align: center;
+  line-height: 25px;
+ text-align: justify !important;
+}
+/* six cards ends */
+
 @media (max-width: 768px) {
     .title-first {
  
@@ -112,6 +204,9 @@ display: flex;
 .orange-number{
      font-size: 40px;
 }
+.one-card {
+    width: 48%;
+  }
 }
 
 @media (max-width: 480px){
@@ -146,5 +241,8 @@ display: flex;
 .orange-number{
      font-size: 20px;
 }
-
+.one-card {
+    width: 100%;
+    margin: 30px 0;
+  }
 }
