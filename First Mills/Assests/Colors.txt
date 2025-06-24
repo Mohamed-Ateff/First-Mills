@@ -1,0 +1,30 @@
+Green-1:  #163029 
+Green-2:  #3A4944 
+Green-3:  #5E6863 
+Green-4:  #898F8C 
+
+Yellow-1:  #FCB44A 
+Yellow-2:  #FED08F  
+Yellow-3:  #FFE5C3  
+Yellow-3:  #F1D4AB
+
+
+Gray-1: #A1A5A2
+Gray-2: #BBBEBC
+Gray-3: #D8D8D7
+
+Body BG: #F7F7F7
+
+================
+Font Sizes : 
+================
+100pt Bold
+50pt Bold
+40pt Bold / light
+30pt Bold / regular 
+25pt Bold / regular
+20pt Bold  /  regular
+16pt Bold  /  regular
+
+
+

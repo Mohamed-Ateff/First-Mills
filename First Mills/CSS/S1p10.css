@@ -1,0 +1,62 @@
+.twelve-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap;
+  align-items: stretch;
+}
+.twelve-card {
+  width: 32.3%;
+  margin-bottom: 20px;
+  padding: 55px 20px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.twelve-card h3 {
+  color: #455954;
+  text-align: center;
+  font-size: 37px;
+  font-weight: 800;
+}
+.date {
+  width: 90px;
+  height: 90px;
+  border: 4px solid #f2f2f2;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+.date h3 {
+  margin: 15px 0px 0px 0px !important;
+  line-height: 0px !important;
+  color: #fcb44a;
+  font-size: 45px;
+  background-color: cadetblue;
+}
+.date p {
+  margin-bottom: -10px;
+  line-height: normal !important;
+  color: #163029;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.twelve-card-text {
+  color: #163029;
+  font-size: 16px;
+  margin: 20px auto auto auto;
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .twelve-card {
+    width: 100%;
+  }
+}
+
+
+

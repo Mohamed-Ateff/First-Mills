@@ -1,0 +1,73 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-top: 10px solid;
+  padding: 20px 30px;
+  transition: 0.3s ease;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333333;
+  font-weight: 600;
+}
+
+.card:nth-child(1) {
+  border-color: #73837f;
+} /* الزهادة */
+.card:nth-child(2) {
+  border-color: #fcb44a;
+} /* الشفافية */
+.card:nth-child(3) {
+  border-color: #858e8b;
+} /* الشغف */
+.card:nth-child(4) {
+  border-color: #73837f;
+} /* الصحة والسلامة */
+.card:nth-child(5) {
+  border-color: #fcb44a;
+} /* العمل الجماعي */
+.card:nth-child(6) {
+  border-color: #858e8b;
+} /* المسؤولية */
+
+/* Text */
+
+.card:nth-child(1) h3 {
+  color: #73837f;
+} /* الزهادة */
+.card:nth-child(2) h3 {
+  color: #fcb44a;
+} /* الشفافية */
+.card:nth-child(3) h3 {
+  color: #858e8b;
+} /* الشغف */
+.card:nth-child(4) h3 {
+  color: #73837f;
+} /* الصحة والسلامة */
+.card:nth-child(5) h3 {
+  color: #fcb44a;
+} /* العمل الجماعي */
+.card:nth-child(6) h3 {
+  color: #858e8b;
+} /* المسؤولية */
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

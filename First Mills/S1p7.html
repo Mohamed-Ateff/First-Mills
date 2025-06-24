@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Menu</title>
+    <link rel="stylesheet" href="CSS/Navbar.css" />
+    <link rel="stylesheet" href="CSS/SideMenu.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/Hero.css" />
+    <link rel="stylesheet" href="CSS/s1p7.css" />
+    <script src="Javascript/Navbar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="Images/logo.png" alt=""
+        /></a>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="hero">
+        <div class="side-menu">
+          <div class="circle"><div class="border-for-circle">EN</div></div>
+          <div class="line-one"></div>
+
+          <a href=""
+            ><div class="hexagon hexagon1 active">
+              <img src="Images/one.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/two.png" alt="" />
+            </div>
+          </a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/three.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/four.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/five.png" alt="" /></div
+          ></a>
+
+          <div class="line-two"></div>
+        </div>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+            نظرة عامة
+          </div>
+          <div class="mobile-submenu" id="mobile-overview">
+            <a href="#" class="page">كلمة الإدارة</a>
+            <a href="#" class="page">التقرير الاستراتيجي</a>
+            <a href="#" class="page">المراجعة التشغيلية</a>
+            <a href="#" class="page">الحوكمة و الاستدامة</a>
+            <a href="#" class="page">القوائم المالية</a>
+            <a href="#" class="page">مركز التحميل</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-highlights')"
+          >
+            أبرز النتائج المالية والتشغيلية
+          </div>
+          <div class="mobile-submenu" id="mobile-highlights">
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <img class="image-hero" src="Images/img1.png" alt="" />
+          <img class="hero-img-title" src="Images/Hero.png" alt="" />
+          <div class="title-section">
+            <div class="white-title">
+              <p>الرئيسية</p>
+              <img class="arrow" src="Images/arrow.png" alt="" />
+              <p>نظرة عامة</p>
+            </div>
+            <div class="green-title">
+              <h1>الشركات التابعة</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-Union"></div>
+        <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+        <div class="menu-container">
+          <div class="main-menu">
+            <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+            <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+            <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+            <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+            <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+            <div class="section" data-submenu="Tab6">القوائم المالية</div>
+            <div class="section" data-submenu="Tab7">مركز التحميل</div>
+          </div>
+
+          <div class="menu-divider"></div>
+
+          <div class="submenu active" id="Tab1">
+            <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+
+          <div class="submenu" id="Tab2">
+            <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="#" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="#" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="submenu" id="Tab3">
+            <a href="#" class="page">نموذج العمل التجاري</a>
+            <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="#" class="page">مشاركة الجهات المعنية</a>
+            <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="#" class="page">التحديات والفرص</a>
+            <a href="#" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div class="submenu" id="Tab4">
+            <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
+            <a href="#" class="page">القدرات التشغيلية في أرقام </a>
+            <a href="#" class="page">معلومات عن صناع الشركة </a>
+            <a href="#" class="page">العمالء وشركاء النجاح</a>
+            <a href="#" class="page">ضمان الجودة ورقابتها</a>
+            <a href="#" class="page">البيئة والصحة والسلامة</a>
+            <a href="#" class="page">البنية التحتية</a>
+            <a href="#" class="page">مشروع العلاج الحراري</a>
+            <a href="#" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div class="submenu" id="Tab5">
+            <a href="#" class="page">حوكمة الشركة</a>
+            <a href="#" class="page">القوانين ودرجة الالتزام</a>
+            <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="#" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="#" class="page">مجلس الإدارة</a>
+            <a href="#" class="page">لجان مجلس الإدارة</a>
+            <a href="#" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="#" class="page">الإدارة التنفيذية</a>
+            <a href="#" class="page">مكافآت مجلس الإدارة</a>
+            <a href="#" class="page">الأطراف ذوي العلاقة</a>
+            <a href="#" class="page">المدفوعات النظامية</a>
+            <a href="#" class="page">أسهم الخزينة</a>
+            <a href="#" class="page">اللوائح</a>
+            <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="#" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="#" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start">
+      <div class="flex-sections">
+        <div class="text-box">
+          <div
+            class="border-with-title-under-it"
+            style="margin-top: 50px; margin-bottom: 30px"
+          >
+            <h2>«شركة إمدادات الغذاء الأولى المحدودة»</h2>
+            <div class="border-bottom"></div>
+          </div>
+
+          <p>
+            أعلنت شركة المعادن الأولى في 17 مارس 2024 م السيبر، شركة تابعة
+            مملوكة بالكامل لها باسم "شركة إمدادات الغذاء الأولى المحدودة". ورقم
+            سري تجاري (403649803) وذلك بصرف دعم توسع نمو أعمالها المستقلين
+            وتحقيق أهدافها الاستراتيجية.
+            <br />
+            ببلغ رأس مال الشركة الجديدة 100 ألف ريال، يمكنه 100 % لشركة المعادن
+            الأولى، ومقرها الرئيسي في مدينة جدة بالسعودية.
+            <br />
+
+            تعمل الشركة التابعة في مجال التجارة والاستثمار في كل من ضوء منتجات
+            المخابز، ضوء منتجات طوادي الحيوية، ضوء النشاء ومنتجات النشاء، ضوء
+            المعكرونة وشرائط المعكرونة والكستسي والمنتجات الشهرية الممتلكة،
+            التجارين والنقل البريل للبطاقة، تجارة المواد الخام الزراعية
+            والحيوانات الحية بالإحفاء، إضافة إلى بي ع الكمية والمشروبات
+            بالإحفاء، وأدواع البي ع الأخرى بالتجزئة في المتاجر غير المنخصصة،
+            ويبع الكمية بالتجزئة في المتاجر المنخصصة، وإضافة التعليف والتعبئة.
+            <br />
+
+            تنوع المعادن الأولى أن يكون للشركة التابعة أو إيجابي في تناقضا وسير
+            أعمالها، وأن يظهر الآثر الطالب لهذه الشركة خلال عام 2025 بعد حدد
+            التشغيل التجاري لها.
+          </p>
+        </div>
+        <div class="logo-box">
+          <img src="Images/F-F-S.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="side-of-footer">
+          <a href="" class="next">
+            <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+          </a>
+          <h2>عنوان الشاشة التالية</h2>
+        </div>
+        <div class="side-of-footer">
+          <a
+            href=""
+            style="background: #30444e; color: white"
+            class="contact-us btn-footer"
+          >
+            <img src="Images/email.png" alt="" />
+            تواصلوا معنا</a
+          >
+          <a
+            href=""
+            style="background: #ffb548; color: #30444e"
+            class="download-center btn-footer"
+          >
+            <img src="Images/download.png" alt="" />
+            مركز التحميل</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="Javascript/jquery.counterup.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/counter.js"></script>
+    <!-- CounterUp (CDN version) -->
+    <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+  </body>
+</html>

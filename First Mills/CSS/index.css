@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(../Images/homee.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.logo {
+  height: 75px;
+  margin-left: 15px;
+}
+.anchor {
+  text-decoration: none;
+  color: #ffb548;
+  background-color: #31544b;
+  padding: 12px 50px;
+  border-radius: 8px;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.video-player {
+  width: 100%;
+  height: 100%;
+  background: url("your-image-url-here") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: 50%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.play-button img {
+  height: 100px;
+}
+.video-player video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media (max-width: 600px) {
+  .header {
+    top: 10px;
+    right: 10px;
+  }
+  .logo {
+    height: 40px;
+  }
+  .anchor {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}

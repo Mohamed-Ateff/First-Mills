@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../Assests/Font.ttf") format("woff"),
+    /* Modern browsers */ url("../Assests/Font.ttf") format("truetype"); /* Fallback for older browsers */
+}
+@font-face {
+  font-family: "MyFont-english2";
+  src: url("../Assests/GothamBook.ttf") format("woff"),
+    /* Modern browsers */ url("../Assests/GothamBook.ttf") format("truetype"); /* Fallback for older browsers */
+}
+body {
+  font-family: "MyFont";
+  word-spacing: -1px !important;
+  background-color: #f6f5f4;
+}
+* {
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: "MyFont";
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.start {
+  margin-top: 120px !important;
+  width: 72%;
+  margin: auto;
+  position: relative;
+}
+
+.border-with-title-under-it {
+  width: fit-content;
+  color: #31544b;
+  font-size: 19px;
+}
+.border-bottom{
+  margin-top: -27px !important;
+  border-bottom: 4px solid #ffb548;
+
+}
+.Paragraph p{
+  text-align: justify;
+  font-size: 19px;
+  line-height: 37px;
+}

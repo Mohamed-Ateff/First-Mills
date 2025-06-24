@@ -1,0 +1,73 @@
+.side-menu {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  z-index: 99;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 3px solid #b2c0c7;
+}
+.border-for-circle {
+  margin: 4px;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #21333b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.line-one {
+  width: 4px;
+  height: 100px;
+  background-color: #abb7bd;
+  border-radius: 2px;
+}
+.line-two {
+  width: 4px;
+  height: 45px;
+  background-color: #abb7bd;
+  border-radius: 2px;
+}
+
+.hexagon {
+  width: 36px;
+  height: 40px;
+  position: relative;
+  margin: 0px 0px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hexagon1 {
+  background-image: url(../Images/Polygon.png);
+}
+.hexagon2 {
+  background-image: url(../Images/Polygon-two.png);
+}
+
+.hexagon img {
+  height: 40%;
+}
+
+.hexagon.active .icon {
+  color: white;
+}
