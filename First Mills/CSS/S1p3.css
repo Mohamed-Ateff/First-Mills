@@ -1,0 +1,169 @@
+.growth-path-title {
+  text-align: center;
+  color: #31544b;
+  font-size: 26px;
+  margin: 60px 0 40px;
+  position: relative;
+}
+
+.title1::before {
+  content: "";
+  position: absolute;
+  width: 371px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+.title1::after {
+  content: "";
+  position: absolute;
+  width: 371px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.title2::before {
+  content: "";
+  position: absolute;
+  width: 272px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+.title2::after {
+  content: "";
+  position: absolute;
+  width: 272px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.title3::before {
+  content: "";
+  position: absolute;
+  width: 192px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+.title3::after {
+  content: "";
+  position: absolute;
+  width: 192px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #efeeed;
+  border-left: 4px solid #31544b;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0 0 5px;
+  font-size: 25px;
+  color: #31544b;
+}
+
+.card p {
+  margin: 0px 20px;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.phase1 .card {
+  width: calc(33.333% - 40px);
+}
+
+.phase2-row1 .card {
+  width: calc(33.333% - 40px);
+}
+
+.phase2-row2 {
+  justify-content: center;
+  margin: 40px 0 0;
+}
+
+.phase2-row2 .card {
+  width: calc(42% - 20px);
+}
+
+.phase3 {
+  margin: 40px 0 0;
+}
+
+.phase3 .card {
+  width: calc(42% - 20px);
+}
+
+@media (max-width: 992px) {
+  .phase1 .card,
+  .phase2-row1 .card {
+    width: calc(50% - 20px);
+  }
+
+  .phase2-row2 .card,
+  .phase3 .card {
+    width: 100%;
+  }
+
+  .card p {
+    margin: 0px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100% !important;
+  }
+
+  .growth-path-title {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .growth-path-title::before {
+    display: none;
+  }
+}
