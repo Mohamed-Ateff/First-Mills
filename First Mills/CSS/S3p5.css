@@ -1,97 +1,3 @@
-.title-first,
-.title-second {
-  position: relative;
-  font-size: 26px;
-  color: #31544b;
-  font-weight: bold;
-  padding-bottom: 15px; /* space below text */
-}
-.title-second {
-  text-align: center;
-}
-
-.title-first::before,
-.title-second::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 15%; /* start from center */
-  transform: translateX(50%);
-  width: 340px;
-  height: 4px;
-  background-color: #ffb548;
-  border-radius: 2px;
-}
-
-.title-second::before {
-  right: 50%; /* adjust for second title */
-}
-.List {
-  padding-top: 50px;
-}
-.List-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 110px;
-  flex-grow: 1;
-  background-color: #31544b;
-}
-.list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: right;
-  padding: 20px;
-}
-.list-item img {
-  height: 55px;
-  margin-right: 10px;
-}
-.list-item h1 {
-  font-size: 28px;
-  padding: 20px;
-}
-.orange-number {
-  color: #ffb548;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding-left: 20px;
-}
-.list-big {
-  padding-top: 30px;
-}
-.list-text {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: #6b95bd;
-  font-size: 18px;
-  font-weight: 700;
-  padding-bottom: 15px;
-}
-.title-with-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: #3a4944;
-  font-size: 16px;
-  font-weight: 700;
-  padding-right: 30px;
-}
-.intersect {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 0%;
-  background: url(../Images/Intersect.png) no-repeat center;
-  background-size: 100% 100%;
-}
-
 /* six cards */
 
 .six-cards {
@@ -106,10 +12,13 @@
   width: 32%;
   margin-bottom: 60px;
   background-color: white;
-  padding: 30px;
+  padding: 65px 50px;
   position: relative;
   text-align: center;
   border-top: 12px solid #ffb548;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-div span {
@@ -157,21 +66,12 @@
 }
 
 .one-card h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 400;
   color: #31544b;
   margin-top: 10px;
   vertical-align: center;
   line-height: 40px;
-}
-.one-card p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-  margin-top: 30px;
-  vertical-align: center;
-  line-height: 25px;
-  text-align: justify !important;
 }
 /* six cards ends */
 
