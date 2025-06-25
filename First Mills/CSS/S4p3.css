@@ -1,0 +1,102 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cards-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.cards-row.center {
+  justify-content: center;
+}
+
+.card-total-storage-capacity,
+.card-factories-in-regions,
+.card-added-production-capacity,
+.card-wheat-milling-capacity,
+.card-daily-feed-production {
+  background-color: #ffffff;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-daily-feed-production {
+  width: 50%;
+}
+
+.card-content {
+  gap: 1.5rem;
+  margin-right: 8%;
+}
+
+.card-icon {
+  width: 25%;
+  height: auto;
+}
+
+.card-text h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #163029;
+  font-weight: lighter;
+}
+
+.card-text h2 {
+  margin: 0.3rem 0;
+  font-size: 2rem;
+  color: #fcb44a;
+  font-weight: bold;
+}
+
+.card-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #5e6863;
+  font-weight: lighter;
+}
+
+@media (max-width: 1024px) {
+  .card-total-storage-capacity,
+  .card-factories-in-regions,
+  .card-added-production-capacity,
+  .card-wheat-milling-capacity,
+  .card-daily-feed-production {
+    width: 100%;
+  }
+
+  .card-icon {
+    width: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /*.card-total-storage-capacity,
+  .card-factories-in-regions,
+  .card-added-production-capacity,
+  .card-wheat-milling-capacity,
+  .card-daily-feed-production {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }*/
+
+  .card-icon {
+    width: 40%;
+  }
+
+  .card-content {
+    align-items: center;
+  }
+}
