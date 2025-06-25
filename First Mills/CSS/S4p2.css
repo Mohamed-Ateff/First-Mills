@@ -1,0 +1,124 @@
+.flour {
+  display: flex;
+  text-align: right;
+  gap: 40px;
+}
+.mills-section {
+  margin-bottom: 40px;
+  background-color: #f8f8f8;
+  border: 1px solid #ded6d6;
+  border-radius: 8px;
+  display: flex;
+  text-align: right;
+  gap: 40px;
+}
+
+.section-title {
+  color: #163029;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+.flour-products,
+.commercial-brand,
+.other-flour-products,
+.animal-feed,
+.flour-chart,
+.feed-chart {
+  margin-bottom: 40px;
+}
+
+.flour-products img,
+.commercial-brand img,
+.other-flour-products img,
+.animal-feed img {
+  /*max-width: 100%;*/
+  object-fit: contain;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.text-block {
+  font-size: 23px;
+  color: #31544b;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+th {
+  background-color: #73837f;
+  color: white;
+}
+
+.total-row {
+  background-color: #ffc46c;
+}
+
+/*commercial-brand*/
+.commercial-brand-desc {
+  display: flex;
+  text-align: space-between;
+  gap: 50px;
+}
+.background-img{
+    background-color: #D0D6D4;
+    padding: 80px 40px 0px 40px;
+}
+.background-img img{
+    align-items: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-box, #box-title {
+  background-color: #D0D6D4;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#box-title {
+    background-color: #4E6A63;
+
+}
+.grid-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.box-title {
+  background-color: #4e6c67;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  grid-column: 2 / 3; 
+  grid-row: 2 / 3;
+  height: 100%;
+}
