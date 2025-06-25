@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشاركة الجهات المعنية</title>
+    <link rel="stylesheet" href="CSS/Navbar.css" />
+    <link rel="stylesheet" href="CSS/SideMenu.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/Hero.css" />
+    <link rel="stylesheet" href="CSS/s3p7.css" />
+    <script src="Javascript/Navbar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="Images/logo.png" alt=""
+        /></a>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="hero">
+        <div class="side-menu">
+          <div class="circle"><div class="border-for-circle">EN</div></div>
+          <div class="line-one"></div>
+
+          <a href=""
+            ><div class="hexagon hexagon1 active">
+              <img src="Images/one.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/two.png" alt="" />
+            </div>
+          </a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/three.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/four.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/five.png" alt="" /></div
+          ></a>
+
+          <div class="line-two"></div>
+        </div>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+            نظرة عامة
+          </div>
+          <div class="mobile-submenu" id="mobile-overview">
+            <a href="#" class="page">كلمة الإدارة</a>
+            <a href="#" class="page">التقرير الاستراتيجي</a>
+            <a href="#" class="page">المراجعة التشغيلية</a>
+            <a href="#" class="page">الحوكمة و الاستدامة</a>
+            <a href="#" class="page">القوائم المالية</a>
+            <a href="#" class="page">مركز التحميل</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-highlights')"
+          >
+            أبرز النتائج المالية والتشغيلية
+          </div>
+          <div class="mobile-submenu" id="mobile-highlights">
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <img class="image-hero" src="Images/img1.png" alt="" />
+          <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+          <div class="title-section">
+            <div class="white-title">
+              <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+              <p>الرئيسية</p>
+              <img class="arrow" src="Images/arrow-footer.png" alt="" />
+              <p>التقرير الاستراتيجي</p>
+            </div>
+            <div class="green-title">
+              <h1>استراتيجيتنا ومؤشرات الأداء</h1>
+            </div>
+          </div>
+        </div>
+        <div class="image-Union"></div>
+        <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+        <div class="menu-container">
+          <div class="main-menu">
+            <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+            <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+            <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+            <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+            <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+            <div class="section" data-submenu="Tab6">القوائم المالية</div>
+            <div class="section" data-submenu="Tab7">مركز التحميل</div>
+          </div>
+
+          <div class="menu-divider"></div>
+
+          <div class="submenu active" id="Tab1">
+            <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+
+          <div class="submenu" id="Tab2">
+            <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="#" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="#" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="submenu" id="Tab3">
+            <a href="#" class="page">نموذج العمل التجاري</a>
+            <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="#" class="page">مشاركة الجهات المعنية</a>
+            <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="#" class="page">التحديات والفرص</a>
+            <a href="#" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div class="submenu" id="Tab4">
+            <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
+            <a href="#" class="page">القدرات التشغيلية في أرقام </a>
+            <a href="#" class="page">معلومات عن صناع الشركة </a>
+            <a href="#" class="page">العمالء وشركاء النجاح</a>
+            <a href="#" class="page">ضمان الجودة ورقابتها</a>
+            <a href="#" class="page">البيئة والصحة والسلامة</a>
+            <a href="#" class="page">البنية التحتية</a>
+            <a href="#" class="page">مشروع العلاج الحراري</a>
+            <a href="#" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div class="submenu" id="Tab5">
+            <a href="#" class="page">حوكمة الشركة</a>
+            <a href="#" class="page">القوانين ودرجة الالتزام</a>
+            <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="#" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="#" class="page">مجلس الإدارة</a>
+            <a href="#" class="page">لجان مجلس الإدارة</a>
+            <a href="#" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="#" class="page">الإدارة التنفيذية</a>
+            <a href="#" class="page">مكافآت مجلس الإدارة</a>
+            <a href="#" class="page">الأطراف ذوي العلاقة</a>
+            <a href="#" class="page">المدفوعات النظامية</a>
+            <a href="#" class="page">أسهم الخزينة</a>
+            <a href="#" class="page">اللوائح</a>
+            <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="#" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="#" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start">
+      <div class="border-with-title-under-it" style="margin-top: 130px">
+        <div>
+          <h2>المساهمون والمستثمرون</h2>
+          <div class="border-bottom"></div>
+        </div>
+      </div>
+
+      <div class="arrow-div" style="margin-top: 32px">
+        <div class="circle-blue">
+          <p class="counter number-orange">1</p>
+        </div>
+        <div class="arrow-text">
+          يتوافق إطار عمل إدارة المخاطر الخاص بشركة المطاحن الأولى مع المعايير
+          العالمية الرائدة وأفضل الممارسات في القطاع.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-blue">
+          <p class="counter number-orange">2</p>
+        </div>
+        <div class="arrow-text">
+          تدير الشركة المخاطر تحت إشراف مجلس الإدارة، مع متابعة من الرئيس
+          التنفيذي وفريق من مختلف المستويات.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-blue">
+          <p class="counter number-orange">3</p>
+        </div>
+        <div class="arrow-text">
+          تتخذ الشركة التدابير اللازمة للاستجابة للمخاطر وتراقبها عن كثب من أجل
+          تجنب التعرض لتلك المخاطر أو تقليلها.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-blue">
+          <p class="counter number-orange">4</p>
+        </div>
+        <div class="arrow-text">
+          تُرتب المخاطر حسب التأثير لتسهيل اتخاذ القرارات وإدارة الموارد بشكل
+          أمثل.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-blue">
+          <p class="counter number-orange">5</p>
+        </div>
+        <div class="arrow-text">
+          تعمل الإدارة الاستراتيجية مع فريق المخاطر لضمان توافق التقييمات والخطط
+          مع الإطار العام للعمل.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-blue">
+          <p class="counter number-orange">6</p>
+        </div>
+        <div class="arrow-text">
+          يتم مراجعة المخاطر بانتظام عبر اجتماعات أسبوعية وشهرية وربعية، مع
+          إعداد تقارير دورية.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-blue">
+          <p class="counter number-orange">7</p>
+        </div>
+        <div class="arrow-text">
+          تعرض على الإدارة التنفيذية ومجلس الإدارة لضمان الشفافية.
+        </div>
+      </div>
+
+      <div class="border-with-title-under-it-center" style="margin-top: 130px">
+        <div>
+          <h2>المخاطر الرئيسية</h2>
+          <div class="border-bottom"></div>
+        </div>
+      </div>
+      <div class="four-cards-only">
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">1</span>
+            <span>0</span>
+          </div>
+          <h3>المخاطر التشغيلية</h3>
+          <div class="text-padding">
+            <p>- ارتفاع التكاليف وزيادة المصاريف التشغيلية</p>
+            <p>- الحوادث المتعلقة بالسلامة المهنية</p>
+            <p>- الأعطال الفنية والتقنية</p>
+            <p>- سوء حفظ وإدارة المخزون</p>
+            <p>- عيوب الإنتاج</p>
+            <p>- اضطراب سلاسل الإمداد وتغير أسعار المواد الخام</p>
+          </div>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">2</span>
+            <span>0</span>
+          </div>
+          <h3>المخاطر المالية والاقتصادية</h3>
+          <div class="text-padding">
+            <p>- أسعار الفائدة</p>
+            <p>- تذبذب أسعار الصرف</p>
+            <p>- مخاطر الائتمان</p>
+            <p>- عجز السيولة والتوسع في الاقتراض</p>
+          </div>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">3</span>
+            <span>0</span>
+          </div>
+          <h3>المخاطرالتنظيمية</h3>
+          <div class="text-padding">
+            <p>- الدعم الحكومي</p>
+            <p>- الالتزام التنظيمي</p>
+            <p>- نطاق الترخيص</p>
+            <p>- الضرائب والرسوم</p>
+            <p>- اللوائح والأنظمة</p>
+            <p>- متطلبات التوطين والعمالة الأجنبية</p>
+          </div>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">4</span>
+            <span>0</span>
+          </div>
+          <h3>المخاطر السوقية</h3>
+          <div class="text-padding">
+            <p>- البيئة التنافسية</p>
+            <p>- التركز الجغرافي للإيرادات</p>
+            <p>- تغير أنماط الاستهلاك</p>
+            <p>- ظروف السوق الخارجة عن السيطرة</p>
+            <p>- الكوارث الطبيعية وتغيرات المناخ</p>
+            <p>- تفشي الفيروسات والأمراض المُعدية</p>
+            <p>- الأمن السيبراني</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="side-of-footer">
+          <a href="" class="next">
+            <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+          </a>
+          <h2>عنوان الشاشة التالية</h2>
+        </div>
+        <div class="side-of-footer">
+          <a
+            href=""
+            style="background: #30444e; color: white"
+            class="contact-us btn-footer"
+          >
+            <img src="Images/email.png" alt="" />
+            تواصلوا معنا</a
+          >
+          <a
+            href=""
+            style="background: #ffb548; color: #30444e"
+            class="download-center btn-footer"
+          >
+            <img src="Images/download.png" alt="" />
+            مركز التحميل</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="Javascript/jquery.counterup.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/counter.js"></script>
+    <!-- CounterUp (CDN version) -->
+    <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+  </body>
+</html>
