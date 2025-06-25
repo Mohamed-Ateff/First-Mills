@@ -9,7 +9,7 @@
 .activities-title2::before {
   content: "";
   position: absolute;
-  width: 371px;
+  width: 295px;
   height: 4px;
   background-color: #ffb548;
   top: 50%;
@@ -19,7 +19,7 @@
 .activities-title2::after {
   content: "";
   position: absolute;
-  width: 371px;
+  width: 295px;
   height: 4px;
   background-color: #ffb548;
   top: 50%;
