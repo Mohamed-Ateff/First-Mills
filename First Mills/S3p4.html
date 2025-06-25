@@ -1,1 +1,538 @@
- 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشاركة الجهات المعنية</title>
+    <link rel="stylesheet" href="CSS/Navbar.css" />
+    <link rel="stylesheet" href="CSS/SideMenu.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/Hero.css" />
+    <link rel="stylesheet" href="CSS/s3p4.css" />
+    <script src="Javascript/Navbar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="Images/logo.png" alt=""
+        /></a>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="hero">
+        <div class="side-menu">
+          <div class="circle"><div class="border-for-circle">EN</div></div>
+          <div class="line-one"></div>
+
+          <a href=""
+            ><div class="hexagon hexagon1 active">
+              <img src="Images/one.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/two.png" alt="" />
+            </div>
+          </a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/three.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/four.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/five.png" alt="" /></div
+          ></a>
+
+          <div class="line-two"></div>
+        </div>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+            نظرة عامة
+          </div>
+          <div class="mobile-submenu" id="mobile-overview">
+            <a href="#" class="page">كلمة الإدارة</a>
+            <a href="#" class="page">التقرير الاستراتيجي</a>
+            <a href="#" class="page">المراجعة التشغيلية</a>
+            <a href="#" class="page">الحوكمة و الاستدامة</a>
+            <a href="#" class="page">القوائم المالية</a>
+            <a href="#" class="page">مركز التحميل</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-highlights')"
+          >
+            أبرز النتائج المالية والتشغيلية
+          </div>
+          <div class="mobile-submenu" id="mobile-highlights">
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <img class="image-hero" src="Images/img1.png" alt="" />
+          <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+          <div class="title-section">
+            <div class="white-title">
+              <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+              <p>الرئيسية</p>
+              <img class="arrow" src="Images/arrow-footer.png" alt="" />
+              <p>التقرير الاستراتيجي</p>
+            </div>
+            <div class="green-title">
+              <h1>استراتيجيتنا ومؤشرات الأداء</h1>
+            </div>
+          </div>
+        </div>
+        <div class="image-Union"></div>
+        <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+        <div class="menu-container">
+          <div class="main-menu">
+            <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+            <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+            <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+            <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+            <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+            <div class="section" data-submenu="Tab6">القوائم المالية</div>
+            <div class="section" data-submenu="Tab7">مركز التحميل</div>
+          </div>
+
+          <div class="menu-divider"></div>
+
+          <div class="submenu active" id="Tab1">
+            <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+
+          <div class="submenu" id="Tab2">
+            <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="#" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="#" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="submenu" id="Tab3">
+            <a href="#" class="page">نموذج العمل التجاري</a>
+            <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="#" class="page">مشاركة الجهات المعنية</a>
+            <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="#" class="page">التحديات والفرص</a>
+            <a href="#" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div class="submenu" id="Tab4">
+            <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
+            <a href="#" class="page">القدرات التشغيلية في أرقام </a>
+            <a href="#" class="page">معلومات عن صناع الشركة </a>
+            <a href="#" class="page">العمالء وشركاء النجاح</a>
+            <a href="#" class="page">ضمان الجودة ورقابتها</a>
+            <a href="#" class="page">البيئة والصحة والسلامة</a>
+            <a href="#" class="page">البنية التحتية</a>
+            <a href="#" class="page">مشروع العلاج الحراري</a>
+            <a href="#" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div class="submenu" id="Tab5">
+            <a href="#" class="page">حوكمة الشركة</a>
+            <a href="#" class="page">القوانين ودرجة الالتزام</a>
+            <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="#" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="#" class="page">مجلس الإدارة</a>
+            <a href="#" class="page">لجان مجلس الإدارة</a>
+            <a href="#" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="#" class="page">الإدارة التنفيذية</a>
+            <a href="#" class="page">مكافآت مجلس الإدارة</a>
+            <a href="#" class="page">الأطراف ذوي العلاقة</a>
+            <a href="#" class="page">المدفوعات النظامية</a>
+            <a href="#" class="page">أسهم الخزينة</a>
+            <a href="#" class="page">اللوائح</a>
+            <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="#" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="#" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start">
+      <div class="border-with-title-under-it" style="margin-top: 130px">
+        <div>
+          <h2>المساهمون والمستثمرون</h2>
+          <div class="border-bottom"></div>
+        </div>
+      </div>
+      <div class="list-big">
+        <div class="list-text">
+          <span class="title-with-arrow">
+            الالتزام بتطبيق المبادئ التي تحمي حقوق المساهمين، وتحقق مبدأ العدالة
+            من خلال توفير المعلومات المناسبة في الوقت المناسب، وتنفيذ كل
+            السياسات والإجراءات المتعلقة بالإفصاح عن البيانات المالية، وتقارير
+            الأداء، وأي تطورات جوهرية وفقاً للمتطلبات القانونية واللوائح
+            التنظيمية المعمول بها والتعليمات الواردة من الجهات المختصة؛ ما أثمر
+            عن فوز التقرير السنوي للشركة عن عام 2023م بجوائز جمعية علاقات
+            المستثمرين في الشرق الأوسط (ميرا).
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            عقد اجتماعين للجمعية العامة للمساهمين، في إطار الالتزام بقواعد
+            الشفافية والحوكمة والتواصل الفعال من المساهمين.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            توزيع مبلغ 1.55 ريال سعودي للسهم الواحد كأرباح نقدية عن النصف الأول
+            لعام 2024م لكل سهم، إضافة لموافقة مجلس الإدارة على توزيع أرباح نقدية
+            عن النصف الثاني من عام 2024م بقيمة 1.29 ريال سعودي للسهم الواحد.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            تنظيم عدد (4) لقاءات هاتفية مع المحللين الماليين والمستثمرين لمناقشة
+            نتائج الأعمال خلال فترات عام 2024 م.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            العمل على تعزيز العلاقة بين مجلس الإدارة والمساهمين؛ للوقوف على أي
+            تطورات أو تغيرات من شأنها التأثير في توجهات المساهمين.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            تفعيل دور علاقات المستثمرين في الشركة لتعزيز التواصل المستمر مع
+            المساهمين والمستثمرين والجهات التنظيمية من خلال قنوات التواصل
+            المختلفة.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            مشاركة في مؤتمرات للمستثمرين ورعاية مؤتمر السوق المالية.
+          </span>
+          <div class="intersect"></div>
+        </div>
+      </div>
+      <div class="border-with-title-under-it">
+        <div>
+          <h2>العملاء والموردون</h2>
+          <div class="border-bottom"></div>
+        </div>
+              
+      </div>
+
+      <div class="arrow-div">
+        <div class="circle-orange">
+          <img src="./Images/arrow-blue.png" alt="" />
+        </div>
+        <div class="arrow-text">
+          الاستحواذ على حصة 30 % من السوق المحلية، والعمل على زيادتها تدريجياً
+          في السنوات المُقبلة.
+        </div>
+      </div>
+      <div class="arrow-div-grey">
+        <div class="circle-orange">
+          <img src="./Images/arrow-blue.png" alt="" />
+        </div>
+        <div class="arrow-text">
+          استهداف مناطق مختلفة في المملكة، والسعي للوصول لشريحة كبيرة من العملاء
+          من مختلف الفئات.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-orange">
+          <img src="./Images/arrow-blue.png" alt="" />
+        </div>
+        <div class="arrow-text">
+          إقامة شراكات استراتيجية مع كبار العملاء في كل قناة من قنوات البيع.
+        </div>
+      </div>
+      <div class="arrow-div-grey">
+        <div class="circle-orange">
+          <img src="./Images/arrow-blue.png" alt="" />
+        </div>
+        <div class="arrow-text">
+          تقوية العلاقات والشراكات مع الموردين والبائعين لكي تصبح المطاحن الأولى
+          الشريك المفضل لهم.
+        </div>
+      </div>
+      <div class="arrow-div">
+        <div class="circle-orange">
+          <img src="./Images/arrow-blue.png" alt="" />
+        </div>
+        <div class="arrow-text">
+          الالتزام بالأنظمة والعلاقات التعاقدية مع جميع الأطراف دون الإخلال
+          بحقوقها القانونية.
+        </div>
+      </div>
+
+      <div class="border-with-title-under-it">
+        <div>
+          <h2>الموظفون</h2>
+          <div class="border-bottom"></div>
+        </div>
+      </div>
+      <div class="list-big">
+        <div class="list-text">
+          <span class="title-with-arrow">
+            استقطاب الخريجين والفنيين المؤهلين والعمالة الماهرة من ذوي الكفاءة
+            وتقديم4,690 ساعة تدريب لهم.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            توفير بيئة عمل جاذبة واحترافية من خلال منع التمييز والتحرش والعنف،
+            حيث أظهرت استطلاعات رضا الموظفين نتائج عالية بحسب تصنيف (افضل مكان
+            للعمل ) وبنسبة 93 % مقارنة بمتوسط القطاع عند 88%. وبلغت نسبة
+            المشاركة في الاستبيان 92% والذي تم توفيره بأكثر من أربع لغات مختلفة.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            تدريب جميع العاملين على سياسات القواعد السلوكية للشركة، بمتوسط 2
+            ساعة تدريبية لكل موظف.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            توظيف كوادر من الموظفات في مختلف المجالات في إطار التزام الشركة
+            بمستهدفات تمكين المرأة.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            اعتماد برنامج أسهم حوافز الموظفين، والذي يعزز من الحفاظ على مواهب
+            الشركة واستقطاب أفضل الكفاءات.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            توفير برنامج دعم الموظفين والذي يتضمن استشارات نفسية وأسرية وتربوية.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            الفحص الطبي الدوري في مقار العمل بالتعاون مع جهات صحية مُعتمدة.
+          </span>
+          <div class="intersect"></div>
+        </div>
+        <div class="list-text">
+          <span class="title-with-arrow">
+            العمل على تجديد وتطوير سكن العاملين في جميع مصانع الشركة.
+          </span>
+          <div class="intersect"></div>
+        </div>
+      </div>
+      <div class="border-with-title-under-it">
+        <div>
+          <h2>المجتمع</h2>
+          <div class="border-bottom"></div>
+        </div>
+      </div>
+
+      <!-- six-cards -->
+      <div>
+        <div class="grid-container">
+          <div class="grid-item wide">
+            <div class="number counter">1</div>
+            <p>
+              الالتزام بتنفيذ برامج المسؤولية المجتمعية بهدف خلق مجتمع مستدام.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="number counter">2</div>
+            <p>
+              الالتزام بالمسؤولية تجاه البيئة من خلال ترشيد الطاقة واستهلاك
+              المياه، والمعالجة البيئية، وإعادة تدوير الآثار البيئية للأعمال
+              لدعم جهود الاستدامة.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="number counter">3</div>
+            <p>
+              الحرص على الاستثمار في المجتمع وزيادة مساهمته في نمو الاقتصاد
+              الوطني.
+            </p>
+          </div>
+          <div class="grid-item wide">
+            <div class="number counter">4</div>
+            <p>
+              الحفاظ على الممارسات الأخلاقية في توريد المواد، والتسويق المسؤول
+              للمنتجات.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="number counter">5</div>
+            <p>
+              تنظيم عدد من الفعاليات المتعلقة بصحة وسلامة الموظفين، كـيوم الصحة
+              العالمي واليوم الطبي وغيرها.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="number counter">6</div>
+            <p>
+              تكثيف جهود الشركة في الجانب المجتمعي بحصولها على جائزة المسؤولية
+              الاجتماعية للشركات - الفئة البرونزية.
+            </p>
+          </div>
+        </div>
+        <!-- six-cards ends-->
+        <div class="border-with-title-under-it">
+          <div>
+            <h2>الجهات التنظيمية والحكومية</h2>
+            <div class="border-bottom"></div>
+          </div>
+        </div>
+        <div class="arrow-div" style="margin-top: 30px">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+            المطاحن الأولى شريك موثوق للحكومة والجهات التنظيمية وعلى رأسها
+            الهيئة العامة للأمن الغذائي والهيئة العامة للغذاء والدواء.
+          </div>
+        </div>
+        <div class="arrow-div-grey">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+            الالتزام بقواعد المنافسة العادلة، وجميع القوانين واللوائح الصادرة عن
+            الهيئة العامة للمنافسة بالمملكة.
+          </div>
+        </div>
+        <div class="arrow-div">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+             الالتزام بجميع اللوائح الحكومية السارية، وتقديم تقارير مفصلة إلى
+            الجهات المُختصة، وفقاً لمتطلبات هذه الجهات.
+          </div>
+        </div>
+        <div class="arrow-div-grey">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+            تطبيق الأنظمة اللازمة لتنفيذ نظام الفواتير الإلكترونية بالتعاون مع
+            هيئة الزكاة والضريبة والجمارك.
+          </div>
+        </div>
+        <div class="arrow-div">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+            التعاون المستمر مع وزارة الموارد البشرية والتنمية الاجتماعية بما
+            يدعم تحقيق أهداف الشركة.
+          </div>
+        </div>
+        <div class="arrow-div-grey">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+            المشاركة في عديد من الفعاليات والمؤتمرات بالتعاون مع عدة جهات محلية
+            وعالمية.
+          </div>
+        </div>
+        <div class="arrow-div">
+          <div class="circle-orange">
+            <img src="./Images/arrow-blue.png" alt="" />
+          </div>
+          <div class="arrow-text">
+            التعاون مع كل من هيئة فنون الطهي والمنشآت والمركز الوطني للمسؤولية
+            الاجتماعية ضمن برنامج المخبز السعودي.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="side-of-footer">
+          <a href="" class="next">
+            <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+          </a>
+          <h2>عنوان الشاشة التالية</h2>
+        </div>
+        <div class="side-of-footer">
+          <a
+            href=""
+            style="background: #30444e; color: white"
+            class="contact-us btn-footer"
+          >
+            <img src="Images/email.png" alt="" />
+            تواصلوا معنا</a
+          >
+          <a
+            href=""
+            style="background: #ffb548; color: #30444e"
+            class="download-center btn-footer"
+          >
+            <img src="Images/download.png" alt="" />
+            مركز التحميل</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="Javascript/jquery.counterup.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/counter.js"></script>
+    <!-- CounterUp (CDN version) -->
+    <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+.title-with-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #4e6a63;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 30px;
+}
+.intersect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0%;
+  background: url(../Images/Intersect.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.list-big {
+  padding-top: 24px;
+}
+.list-text {
+   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 15px;
+}
+.circle-orange{
+    width: 40px;
+    height: 40px;
+    background-color: #F9A826;
+    border-radius: 50%;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.arrow-div,.arrow-div-grey{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+    align-items: center;
+  color: #4e6a63;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px;
+  background-color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.arrow-div-grey {
+  background-color: #DFDDDD;
+}
+
+.arrow-text {
+   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 40px;
+}
+
+/* grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: #F6F5F4;
+   padding-top: 20px; 
+  direction: rtl;
+  font-family: Bahij TheSansArabic;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 10px;
+  text-align: right;
+}
+
+.grid-item.wide {
+  grid-column: span 2;
+  padding-left: 230px;
+}
+
+.grid-item .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #31544B;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.grid-item .number::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 10px;
+  background-color: #FCB44A;
+  margin: 1px 0 0 0;
+}
+
+.grid-item p {
+  color: #31544B;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+
+
+
+/* grid ends*/
+
+@media screen and (max-width: 768px) {
+  .title-with-arrow {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+  
+  .list-text {
+    padding-bottom: 10px;
+  }
+ .intersect {
+    width: 15px;
+    height: 15px;
+  } 
+  .arrow-div, .arrow-div-grey {
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  .circle-orange {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+  .circle-orange img{
+    width: 15px;
+    height: 15px;
+  }
+  
+  .arrow-text {
+    padding-right: 20px;
+  }
+  .grid-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-item.wide {
+  grid-column: span 1;
+  padding-left: 230px;
+}
+    .grid-item.wide {
+  padding-left: 0px;
+}
+}
+@media screen  and (max-width: 480px) {
+  .circle-orange {
+    width: 25px;
+    height: 25px;
+    margin-right: 2px;
+    padding: 7px;
+  }
+  .circle-orange img{
+    width: 10px;
+    height: 10px;
+  }
+    .intersect {
+    width: 10px;
+    height: 10px;
+  } 
+}
