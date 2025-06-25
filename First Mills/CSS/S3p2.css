@@ -20,14 +20,7 @@
   position: relative;
 }
 
-.four-cards h3 {
-  font-size: 60px;
-  color: #c6822a;
-  font-weight: 700;
-  margin-bottom: 10px;
-  line-height: 40px;
-  padding-bottom: 40px;
-}
+
 
 .four-cards p {
   font-size: 30px;
@@ -139,13 +132,102 @@
   padding-bottom: 20px;
 }
 
-.card-4 img{
-  width: 66.73px;
-  height: 66.73px;
-  margin-bottom: 20px;
-}
 
  /* 4 cards with circle ends*/
+
+.four-cards-section {
+background-color: #fff;
+padding: 5px;
+}
+.Blue-span{
+  color: #31544B;
+  font-weight: 700;
+}
+.four-cards-title-center,.four-cards-title {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #31544b;
+  font-size: 19px;
+}
+.four-cards-title {
+  justify-content: flex-start;
+  padding-right: 20px;
+}
+.four-cards-body ul{
+color: #000000;
+font-size: 16px;
+line-height: 37px;
+}
+.four-cards-body li::marker {
+  color: #FFB548;
+ 
+
+}
+
+/* four  cards only */
+.four-cards-only {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.one-card {
+  width: 24%;
+  margin-bottom: 60px;
+  background-color: #EFEFEF;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  border-top: 8.57px solid #ffb548;
+}
+
+.logo-div span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 43.7px;
+}
+.logo-div {
+  height: 40px; 
+  aspect-ratio: cos(4deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  background: #31544b;
+  color: white;
+  right: 18px;
+  top: -70px;
+  transform: translateY(20px);
+  scale: 2;
+   font-weight: bold;
+  color: white;
+  position: absolute;
+}
+
+.one-card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #31544b;
+  margin-top: 10px;
+  vertical-align: center;
+  line-height: 40px;
+}
+.one-card p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 30px;
+  vertical-align: center;
+  line-height: 25px;
+  text-align: center;
+}
+
+
+/* four  cards only ends*/
+
 @media (max-width: 1024px){
  
   

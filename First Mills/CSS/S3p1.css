@@ -119,7 +119,6 @@
 }
 .logo-div {
   width: 90px;
-  background-color: red;
   height: 45px;
   background: #31544b;
   top: -50px;
@@ -202,6 +201,9 @@
   .one-card {
     width: 48%;
   }
+  .logo-div::before {
+  top: -28px;
+}
 }
 
 @media (max-width: 480px) {
