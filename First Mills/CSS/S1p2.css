@@ -14,11 +14,12 @@
     margin-top: 100px;
   color: #31544b;
   font-size: 25px;
-    font-weight: 350;
-    /*opacity: 0.8;*/
+font-weight: 100 !important;
+}
+.overview_p > p{
+    font-weight: 100 !important;
 
 }
-
 
 
 .operational_performance {
@@ -45,7 +46,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 15px;
+  padding: 15px 15px 0px 15px;
   border-radius: 8px;
   text-align: center;
 }
@@ -53,7 +54,6 @@
 .card .icon {
   width: 60px;
   height: 60px;
-  margin-bottom: 15px;
 }
 
 .card .icon img {
@@ -70,7 +70,7 @@
 }
 
 .card p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: lighter;
   color: #31544B;
 }
@@ -86,7 +86,7 @@
   flex: 1 1 48%;
   background-color: #194d44;
   color: white;
-  padding: 25px 14px;
+  padding: 10px;
     border-radius: 10px;
     display: flex;
     text-align: right;
@@ -101,19 +101,21 @@
   background-color: #31544B;
 }
 .vision h3, .mission h3 {
-  font-size: 22px;
+  font-size: 30px;
+  margin: 20px auto;
 }
 
 .vision img, .mission img {
 
-  margin-top: 15px;
+  margin-top: 50px;
   margin-right: 15px;
 }
 
 .vision p, .mission p {
   font-size: 16px;
   font-weight: lighter;
-  margin-top: 20px;
+  text-align: justify; 
+  word-spacing: 6px;
   color: #FFFFFF;
 }
 

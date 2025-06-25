@@ -1,0 +1,199 @@
+.activities-title2 {
+  text-align: center;
+  color: #31544b;
+  font-size: 26px;
+  margin: 60px 0 40px;
+  position: relative;
+}
+
+.activities-title2::before {
+  content: "";
+  position: absolute;
+  width: 371px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.activities-title2::after {
+  content: "";
+  position: absolute;
+  width: 371px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+.activities_p {
+  background: linear-gradient(90deg, #4e6a63 0%, #88a79f 100%);
+  color: #ffffff;
+  width: 70%;
+  padding: 30px;
+  font-size: 25px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-21%);
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.activities_card {
+  background-color: #ffffff;
+  width: calc(50% - 10px);
+  padding: 35px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  text-align: right;
+  align-items: flex-start;
+  gap: 30px;
+}
+.vision,
+.mission {
+  flex: 1 1 48%;
+  background-color: #194d44;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.activities_card h3 {
+  color: #31544b;
+  font-size: 30px;
+}
+.activities_card p {
+  color: #444444;
+  font-size: 18px;
+}
+
+.activities_card img {
+  margin: 10px;
+}
+
+ /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .activities_p {
+      width: 80%;
+      transform: translateX(-12.5%);
+    }
+    
+    .activities-title2::before,
+    .activities-title2::after {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .activities_p {
+      width: 90%;
+      transform: translateX(-5.5%);
+      font-size: 22px;
+      padding: 25px;
+    }
+    
+    .activities-title2::before,
+    .activities-title2::after {
+      width: 250px;
+    }
+    
+    .activities_card {
+      padding: 25px 15px;
+      gap: 20px;
+    }
+    
+    .activities_card h3 {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .activities_p {
+      width: 95%;
+      transform: none;
+      margin: 0 auto;
+      font-size: 20px;
+      padding: 20px;
+    }
+    
+    .activities-title2::before,
+    .activities-title2::after {
+      width: 150px;
+    }
+    
+    .activities_card {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+    
+    .activities_card h3 {
+      font-size: 24px;
+    }
+    
+    .activities_card p {
+      font-size: 16px;
+    }
+    
+    .desktop-only {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .activities_p {
+      font-size: 18px;
+      padding: 15px;
+    }
+    
+    .activities-title2 {
+      font-size: 22px;
+      margin: 40px 0 30px;
+    }
+    
+    .activities-title2::before,
+    .activities-title2::after {
+      width: 100px;
+    }
+    
+    .activities_card {
+      padding: 20px 10px;
+    }
+    
+    .activities_card h3 {
+      font-size: 20px;
+    }
+    
+    .activities_card p {
+      font-size: 15px;
+    }
+    
+    .activities_card img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .activities-title2::before,
+    .activities-title2::after {
+      display: none;
+    }
+    
+    .activities_p {
+      font-size: 16px;
+    }
+    
+    .activities_card h3 {
+      font-size: 18px;
+    }
+  }
