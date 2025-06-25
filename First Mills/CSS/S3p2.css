@@ -292,7 +292,14 @@ line-height: 37px;
 .four-cards div:nth-child(5) {
   padding: 30px 110px 20px 30px;
 }
-    
+    .one-card {
+  width: 33%;
+  
+}
+.four-cards-only {
+  justify-content: space-around;
+  gap: 3px;
+}
  }
 
  @media (max-width: 480px){
@@ -357,6 +364,10 @@ line-height: 37px;
   line-height: 15px;
   font-weight: 700;
 }
+      .one-card {
+  width: 100%;
   
+}
+
 
 }
