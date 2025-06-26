@@ -1,0 +1,141 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 30px;
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 0;
+  font-size: 16pt;
+}
+.table7 {
+  thead {
+    th {
+      background-color: #73837f;
+      color: #fff;
+      border: 0;
+      padding: 30px;
+      letter-spacing: 1px;
+    }
+  }
+
+  td {
+    border-bottom: 5px solid #f7f7f7;
+    background-color: white;
+    color: #3a4944;
+  }
+
+  td span:nth-child(2) {
+    display: block;
+    color: #837A7A;
+    font-weight: 400;
+    font-size: 14pt;
+    padding-top: 5px;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  tr {
+    td:nth-child(1) {
+      text-align: right;
+      color: #4e6a63;
+      background-color: #D0D6D4 !important;
+      border: 0;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 40px 20px;
+      width: 23%;
+    }
+  }
+
+  tr {
+    td:nth-child(6)
+     {
+      background-color: rgba(205, 204, 194, 0.3) !important;
+      color: #3A4944;
+      border-bottom: 0;
+    }
+  }
+  tr:last-child td {
+    border-bottom: 0 !important;
+  }
+
+  tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+body[dir="rtl"] .table7 {
+  th:nth-child(1),
+  td:nth-child(1) {
+    text-align: right;
+  }
+}
+
+body[dir="ltr"] .table7 {
+  th:nth-child(1),
+  td:nth-child(1) {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  ul li {
+    margin: 1px 0 !important;
+  }
+
+  table {
+    font-size: 2vw !important;
+  }
+
+  .table7 {
+    thead th {
+      padding: 10px;
+    }
+
+    tr td:nth-child(1),
+    tr th:nth-child(1),
+    th {
+      font-size: 2vw !important;
+      padding: 10px 7px;
+    }
+    td span:nth-child(2) {
+      font-size: 1.7vw !important;
+      padding-top: 2px;
+    }
+    tr {
+      th,
+      td {
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .table7 {
+    td {
+      padding: 10px 2px !important;
+    }
+
+    tr td:nth-child(1),
+    tr th:nth-child(1),
+    th {
+      font-size: 2vw !important;
+      padding: 5px;
+    }
+    tr td:nth-child(1),
+    tr th:nth-child(1) {
+      padding: 10px !important;
+    }
+  }
+}
