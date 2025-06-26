@@ -23,7 +23,17 @@
   border-radius: 10px;
 }
 
+.main-menu a{
+  color: white;
+}
+
 .main-menu .section {
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
+}
+.main-menu a {
   margin-bottom: 15px;
   cursor: pointer;
   transition: color 0.3s;
@@ -33,6 +43,13 @@
 .main-menu .section.active {
   color: #ffb72b;
   font-weight: bold;
+}
+
+.main-menu a.active {
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: relative;
 }
 
 .main-menu .section.active::before {

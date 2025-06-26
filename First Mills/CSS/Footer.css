@@ -37,21 +37,57 @@ footer .container .side-of-footer .next img {
 }
 
 footer .container .side-of-footer h2 {
-    color: #31544b;
-    font-size: 18px;
+  color: #31544b;
+  font-size: 18px;
 }
 
 footer .container .side-of-footer .btn-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 25px;
-    padding: 15px 25px;
-    border-radius: 15px;
-    font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  font-size: 15px;
 }
-footer .container .side-of-footer .btn-footer img{
-    width: 25px;
-    margin-left: 15px;
+footer .container .side-of-footer .btn-footer img {
+  width: 25px;
+  margin-left: 15px;
 }
 
+@media (max-width: 768px) {
+  footer {
+    background-color: white;
+    height: fit-content;
+    margin-top: 60px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .side-of-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .container > .side-of-footer {
+    flex-direction: column-reverse;
+  }
+  footer .container .side-of-footer .next {
+    width: 100%;
+    margin-left: 0px;
+  }
+  footer .container .side-of-footer h2 {
+    font-size: 16px;
+  }
+  footer .container .side-of-footer .btn-footer {
+    margin-top: 15px;
+    margin-right: 0px;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
