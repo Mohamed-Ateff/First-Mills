@@ -1,0 +1,95 @@
+/* six cards */
+
+.six-cards {
+  display: flex;
+  justify-content:flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.one-card {
+  width: 24%;
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 65px 50px;
+  position: relative;
+  text-align: center;
+  border-top: 12px solid #ffb548;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-div span {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 93.7px;
+}
+.logo-div {
+  width: 90px;
+  background-color: red;
+  height: 45px;
+  background: #31544b;
+  top: -50px;
+  transform: translateY(20px);
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+}
+.logo-div::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 28.8675px solid #31544b;
+}
+.logo-div::after {
+  content: "";
+  position: absolute;
+  bottom: -28.2px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-top: 28.8675px solid #31544b;
+}
+
+.one-card h1 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #31544b;
+  margin-top: 10px;
+  vertical-align: center;
+  line-height: 40px;
+}
+/* six cards ends */
+
+
+
+
+@media (max-width: 1025px){
+.one-card {
+    width: 28%;
+  }
+}
+@media (max-width: 768px){
+.one-card {
+    width: 48%;
+  }
+}
+@media (max-width: 480px){
+.one-card {
+    width: 100%;
+  }
+}
