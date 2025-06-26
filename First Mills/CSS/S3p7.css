@@ -26,8 +26,8 @@
   padding-bottom: 15px;
 }
 .circle-blue{
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     background-color: #31544B;
     border-radius: 50%;
     margin-right: 10px;
@@ -38,7 +38,7 @@
 .number-orange{
 color: #FCB44A;
 font-weight: 700;
-font-size: 18px;
+font-size: 24px;
 }
 .arrow-div{
   width: 100%;
@@ -46,7 +46,7 @@ font-size: 18px;
   justify-content: flex-start;
   align-items: center;
   color: #4e6a63;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 500;
   padding: 14px;
   background-color: #FFFFFF;
@@ -57,7 +57,8 @@ font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-right: 40px;
+  margin-right: 40px;
+  width: 90%;
 }
 .four-cards-only {
   display: flex;
@@ -70,7 +71,7 @@ font-size: 18px;
 .one-card {
   width: 24%;
   margin-bottom: 60px;
-  background-color: #EFEFEF;
+  background-color: #FFFFFF;
   /* padding: 30px; */
   position: relative;
   text-align: center;
@@ -87,7 +88,8 @@ font-size: 18px;
 
 .one-card h3{
   position: absolute; 
-  padding-right: 80px;
+  padding-right: 75px;
+  padding-left: 5px;
   top: -28px;
   z-index: 1;
   background-color: #FFB548;
@@ -96,7 +98,7 @@ font-size: 18px;
   align-items: center;
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   color: #31544b;
   vertical-align: center;
@@ -104,7 +106,7 @@ font-size: 18px;
 }
 
 .logo-div span {
-  font-weight: 400;
+  
   font-size: 20px;
   line-height: 43.7px;
 }
@@ -114,26 +116,47 @@ font-size: 18px;
   clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
   background: #31544b;
   color: white;
-  right: 18px;
-  top: -70px;
+  right: 14px;
+  top: -60px;
   transform: translateY(20px);
-  scale: 2;
-   font-weight: bold;
+  scale: 1.9;
+   font-weight: 700;
   color: white;
   position: absolute;
   z-index: 2;
 }
 
 .one-card p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   color: #000000;
   vertical-align: center;
   text-align: right;
   padding-left: 50px;
-  /* line-height: 18px; */
+  line-height: 30px;
 }
 
+@media screen and (max-width:1025px) {
+.circle-blue{
+    width: 50px;
+    height: 50px;
+     margin-right: 0px;
+}
+.number-orange{
+font-size: 20px;
+}
+.arrow-div{
+  font-size: 18px;
+}
+.one-card {
+  width: 45%;
+}
+.one-card h3{
+  padding-right: 40px;
+  padding-left: 0px;
+  
+}
+}
 
 @media screen and (max-width: 768px) {
   .title-with-arrow {
@@ -154,9 +177,9 @@ font-size: 18px;
   }
   
   .circle-blue {
-    width: 30px;
-    height: 30px;
-    
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
   }
   .circle-blue p{
    font-size: 13px;
@@ -164,8 +187,10 @@ font-size: 18px;
   }
   
   .arrow-text {
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    width: 100%;
   }
+  
   .grid-container {
   grid-template-columns: repeat(1, 1fr);
 }
@@ -179,18 +204,37 @@ font-size: 18px;
 .one-card {
   width: 45%;
 }
+.one-card h3{
+  padding-right: 80px;
+  padding-left: 0px;
+  font-size: 18px;
+}
 }
 @media screen  and (max-width: 480px) {
   .circle-blue {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-right: 2px;
     padding: 7px;
   }
  .one-card {
   width: 100%;
 }
-   .one-card h3{
-  padding-right: 40px;
+   
+.one-card p {
+  font-size: 12px;
+}
+.one-card h3{
+  padding-right: 10px;
+  height: 64px;
+  font-size: 18px;
+
+}
+.logo-div {
+  right: 9px;
+  scale: 1.5;
+}
+.text-padding{
+    padding-top: 60px;
 }
 }
