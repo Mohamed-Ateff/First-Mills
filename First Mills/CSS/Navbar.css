@@ -151,7 +151,7 @@
   color: #333;
   padding: 15px;
 }
-.mobile-submenu .page{
+.mobile-submenu .page {
   min-width: 100%;
   display: block;
   color: #333;
@@ -175,8 +175,9 @@
     width: fit-content;
     display: block;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: -65px;
+    left: 50px;
+    z-index: 989;
   }
 }
 @media (min-width: 568px) {
