@@ -82,35 +82,19 @@
 
 /* Some P under each other */
 
-.Some-p-under-each-other {
-  margin-top: 120px;
-}
 
-.Some-p-under-each-other p {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  margin: 16px 0 0 0;
-  color: #333333;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: justify !important;
-}
-.Some-p-under-each-other h2 {
+
+
+ h2 {
   color: #000000;
   margin-top: 40px;
   margin-bottom: 10px;
 }
-.Some-p-under-each-other h1 {
+ h1 {
     margin-bottom: 24px;
     font-size: 27px;
   color: #000000;
 }
-.Some-p-under-each-other ul {
- font-size: 24px;
-  font-weight: 400;
-  line-height: 40px;
-}
+
 
 /* Some P under each other Ends */
