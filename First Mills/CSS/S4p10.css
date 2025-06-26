@@ -9,7 +9,6 @@
     font-size: 18px;
 }
 
-
 .table-title h2{
 font-size: 24px;
 color: #31544B;
@@ -19,7 +18,7 @@ text-align: center;
 .table-lines::after {
   content: "";
   position: absolute;
-  top: 34.5%;
+  top: 15.5%;
   width: 337px;
   height: 4px;
  background-color: rgba(252, 180, 74, 0.4);
@@ -32,8 +31,8 @@ text-align: center;
 .table-lines::after {
   left: calc(70% );
 }
-.custom-table-container {
-}
+/* .custom-table-container {
+} */
 
 /* table starts */
 .custom-table {
@@ -49,17 +48,17 @@ text-align: center;
 .custom-table th {
   background-color: #73837F;
   color: white;
-  padding: 30px 40px 30px 40px;
+  padding: 34px 40px 34px 40px;
   text-align: right;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 20px;
 }
 
 .custom-table td {
   background-color: #fff;
-  color: #31544B;
-  padding: 15px 40px;
-  font-size: 1rem;
+  color: #3A4944;
+  padding: 15px 40px 15px 40px;
+  font-size: 18px;
 }
 .custom-table th,
 .custom-table td {
@@ -72,52 +71,160 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 /* table-ends */
 
-@media (max-width: 1024px) {
-  .table-title::before,
-  .table-title::after {
-    width: 250px;
+/* section-with-picture */
+
+.picture-with-text-section{
+    margin-top:100px
+}
+
+.section-with-picture{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+.div-with-buttons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.div-with-buttons button{
+    background-color: #FFB548;
+    border-radius: 3.12px;
+    border: none;
+    color: #4E6A63;
+    padding: 10px 32px 10px 32px; /* Increased horizontal padding */
+    margin-left: 5px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 40px;
+    min-height: 0;
+    line-height: 1;
+    gap: 8px;
+    min-width: 120px; /* Ensures both buttons have the same minimum width */
+    }
+    .div-with-buttons button:nth-child(1),
+    .div-with-buttons button:nth-child(2){
+        min-width: 120px; /* Same width for both buttons */
+        padding: 10px 32px 10px 32px; /* Consistent padding */
+    }
+
+.div-with-buttons button img{
+    width: 26px;
+    height: 30px;
+    margin-top: 0;
+    display: block;
+}
+.div-with-buttons button:hover{
+   background-color: #4E6A63;
+   color: #FFFFFF;
+}
+
+
+.border-bottom {
+  margin-top: -27px !important;
+  border-bottom: 4px solid #ffb548;
+}
+.div-with-title{
+    font-size: 20px;
+}
+.div-with-text{
+    /* width: 60%; */
+    padding: 0px 20px 20px 0px;
+    color:#4E6A63;
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content: flex-start;
+}
+.text-d{
+    width: 100%;
+    font-size: 18px;
+}
+
+.icon-div{
+    width: 340px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE1B6;
+    /* margin-top: 20px; */
+}
+/* section-with-picture ends*/
+
+
+@media (max-width: 1025px) {
+  .table-lines::before,
+  .table-lines::after {
+    width: 150px;
+    top: 14.3%;
   }
 
-  .table-title::before {
-    right: 68%;
+  .table-lines::before {
+    right: 79%;
   }
 
-  .table-title::after {
-    left: 68%;
+  .table-lines::after {
+    left: 79%;
   }
   
 }
 
 
 @media (max-width: 768px) {
-  .table-title::before,
-  .table-title::after {
-    width: 180px;
+  .table-lines::before,
+  .table-lines::after {
+    width: 80px;
+    top: 12%;
   }
 
-  .table-title::before {
-    right: 65%;
+  .table-lines::before {
+    right: 85%;
   }
 
-  .table-title::after {
-    left: 65%;
+  .table-lines::after {
+    left: 85%;
   }
-
+.section-with-picture{
+    flex-wrap: wrap;
+}
 }
 
 
 @media (max-width: 480px) {
-  .table-title::before,
-  .table-title::after {
+  .table-lines::before,
+  .table-lines::after {
     width: 100px;
-    top: 41.5%;
+    top: 16.5%;
   }
 
-  .table-title::before {
+  .table-lines::before {
     right: 64%;
   }
 
-  .table-title::after {
+  .table-lines::after {
     left: 64%;
   }
+  .custom-table th {
+  padding: 34px 20px 34px 20px;
+  font-size: 16px;
+}
+
+.custom-table td {
+  padding: 15px 20px 15px 20px;
+  font-size: 12px;
+}
+
+.table-title h2{
+font-size: 20px;
+
+}
 }
