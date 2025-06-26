@@ -4,6 +4,10 @@ function toggleMenu() {
 }
 
 function toggleSubmenu(sectionElement, id) {
+  const submenu = document.getElementById(id);
+  const isActive = submenu.classList.contains("active");
+
+  // Close all submenus and remove active states
   document
     .querySelectorAll(".mobile-submenu")
     .forEach((el) => el.classList.remove("active"));
@@ -11,9 +15,7 @@ function toggleSubmenu(sectionElement, id) {
     .querySelectorAll(".mobile-menu .section")
     .forEach((s) => s.classList.remove("active"));
 
-  const submenu = document.getElementById(id);
-  const isActive = submenu.classList.contains("active");
-
+  // If the clicked submenu was not active, open it
   if (!isActive) {
     sectionElement.classList.add("active");
     submenu.classList.add("active");
@@ -21,6 +23,7 @@ function toggleSubmenu(sectionElement, id) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Desktop hover menu behavior
   const sections = document.querySelectorAll(".main-menu .section");
   const submenus = document.querySelectorAll(".submenu");
 

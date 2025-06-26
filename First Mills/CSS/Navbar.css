@@ -23,7 +23,7 @@
   border-radius: 10px;
 }
 
-.main-menu a{
+.main-menu a {
   color: white;
 }
 
@@ -151,6 +151,12 @@
   color: #333;
   padding: 15px;
 }
+.mobile-submenu .page{
+  min-width: 100%;
+  display: block;
+  color: #333;
+  padding: 15px;
+}
 
 .mobile-submenu.active {
   display: block;
@@ -160,9 +166,23 @@
   .menu-container {
     display: none;
   }
-
   .burger {
+    background-color: #34594d;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: center;
+    width: fit-content;
     display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+}
+@media (min-width: 568px) {
+  .mobile-submenu .page {
+    background-color: red;
+    flex-direction: column !important;
   }
 }
 
