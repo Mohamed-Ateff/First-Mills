@@ -104,13 +104,18 @@ th {
   text-align: center;
 }
 
-.grid-box {
+.grid-box, .first-grid{
   background-color: #d0d6d4;
-  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.grid-box{
+  padding: 15px;
+}
+.first-grid{
+    padding: 70px 40px 15px 40px;
 }
 .box-title {
   background-color: #4e6a63;
