@@ -1,15 +1,3 @@
-.text-block {
-  font-size: 20px;
-  color: #31544b;
-  line-height: 1.8;
-  margin: 20px auto;
-}
-
-.list{
-    color: #163029;
-    line-height: 0.5;
-    margin: 30px auto 50px auto;
-}
 
 .growth-path-title {
   text-align: center;
@@ -22,7 +10,7 @@
 .title1::before {
   content: "";
   position: absolute;
-  width: 170px;
+  width: 140px;
   height: 4px;
   background-color: #ffb548;
   top: 50%;
@@ -32,7 +20,7 @@
 .title1::after {
   content: "";
   position: absolute;
-  width: 170px;
+  width: 140px;
   height: 4px;
   background-color: #ffb548;
   top: 50%;
@@ -56,12 +44,13 @@ thead {
 }
 th,
 td {
-  padding: 20px 30px;
+  padding: 20px;
   font-size: 14px;
   background-color: #ffffff;
   text-align: center;
 }
-td:first-child {
+td:first-child,
+td:nth-child(2) {
   text-align: start;
 }
 td:last-child {
@@ -71,7 +60,7 @@ td:last-child {
 th {
   background-color: #73837f;
   color: white;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -83,6 +72,7 @@ tr:nth-child(even) td {
 color: #FCB44A;
 font-size: 14px;
 font-weight: 200;
+margin: 10px auto;
 }
 
 .th-table3 > th,
@@ -101,29 +91,32 @@ font-weight: 200;
     text-align: start;
 }
 
+.attendance-row {
+  background-color: #FCB44A;
+  text-align: center;
+  font-weight: bold;
+}
+.attendance-row td {
+  vertical-align: middle;
+    text-align: center;
+
+}
+
+
 @media (max-width: 992px) {
-  .text-block {
-    font-size: 16px;
-    margin: 15px auto;
-    line-height: 1.6;
-    padding: 0 10px;
-  }
-
-  .list {
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0 10px;
-  }
-
   .growth-path-title {
     font-size: 20px;
-    margin: 30px 10px;
+    margin: 40px 15px 30px;
   }
 
   .title1::before,
   .title1::after {
     width: 80px;
-    height: 2px;
+    height: 3px;
+  }
+
+  table {
+    font-size: 13px;
   }
 
   th,
@@ -132,31 +125,26 @@ font-weight: 200;
     font-size: 12px;
   }
 
-  .table-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .th-table3 > th,
-  .td-table3 > td {
-    font-size: 9px;
-    padding: 6px;
+  .th-date {
+    font-size: 12px;
+    margin: 5px auto;
   }
 
   .td img {
     width: 20px;
-    height: auto;
   }
 }
 
 @media (max-width: 576px) {
   .growth-path-title {
     font-size: 18px;
+    margin: 30px 10px;
   }
 
   .title1::before,
   .title1::after {
     width: 60px;
+    height: 2px;
   }
 
   th,
@@ -166,6 +154,10 @@ font-weight: 200;
   }
 
   .th-date {
-    font-size: 12px;
+    font-size: 11px;
+  }
+
+  .td img {
+    width: 16px;
   }
 }
