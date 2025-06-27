@@ -1,0 +1,171 @@
+.text-block {
+  font-size: 20px;
+  color: #31544b;
+  line-height: 1.8;
+  margin: 20px auto;
+}
+
+.list{
+    color: #163029;
+    line-height: 0.5;
+    margin: 30px auto 50px auto;
+}
+
+.growth-path-title {
+  text-align: center;
+  color: #31544b;
+  font-size: 26px;
+  margin: 60px 0 40px;
+  position: relative;
+}
+
+.title1::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.title1::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 4px;
+  background-color: #ffb548;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+
+.table-container {
+  overflow-x: auto;
+  margin: 30px auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+thead {
+  text-align: center;
+}
+th,
+td {
+  padding: 20px 30px;
+  font-size: 14px;
+  background-color: #ffffff;
+  text-align: center;
+}
+td:first-child {
+  text-align: start;
+}
+td:last-child {
+  font-weight: bold;
+}
+
+th {
+  background-color: #73837f;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.th-date{
+color: #FCB44A;
+font-size: 14px;
+font-weight: 200;
+}
+
+.th-table3 > th,
+.td-table3 > td{
+
+    font-size: 10px;
+    padding: 10px 15px;
+}
+
+.td img{
+    width: 30%;
+}
+
+.align-start td:nth-child(2),
+.align-start td:nth-child(3){
+    text-align: start;
+}
+
+@media (max-width: 992px) {
+  .text-block {
+    font-size: 16px;
+    margin: 15px auto;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .list {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .growth-path-title {
+    font-size: 20px;
+    margin: 30px 10px;
+  }
+
+  .title1::before,
+  .title1::after {
+    width: 80px;
+    height: 2px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .th-table3 > th,
+  .td-table3 > td {
+    font-size: 9px;
+    padding: 6px;
+  }
+
+  .td img {
+    width: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .growth-path-title {
+    font-size: 18px;
+  }
+
+  .title1::before,
+  .title1::after {
+    width: 60px;
+  }
+
+  th,
+  td {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+
+  .th-date {
+    font-size: 12px;
+  }
+}
