@@ -1,0 +1,158 @@
+.text-block {
+  font-size: 20px;
+  color: #163029; 
+  line-height: 1.8;
+  margin: 20px auto;
+}
+
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.card-grid:nth-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px 0px 60px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.card-details {
+  padding: 30px 60px;
+}
+
+.person,
+.info-wrapper {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.person {
+  text-align: center;
+  padding-left: 30px;
+}
+
+.person img {
+  max-width: 100%;
+  height: auto;
+}
+
+.name {
+  color: #163029;
+  font-size: 22px;
+  margin: 10px 0 5px;
+}
+
+.position {
+  font-weight: 300;
+  color: #5E6863;
+}
+
+.info-wrapper {
+  position: relative;
+  padding-right: 30px;
+}
+
+.info-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 6px;
+  background-color: #FFC772;
+  border-radius: 2px;
+}
+
+.info {
+  color: #163029;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.info strong {
+  color: #444;
+}
+
+.info span {
+  font-weight: normal;
+}
+
+.info p {
+  margin: 8px 0;
+}
+
+.p-light {
+  font-weight: 300;
+}
+
+.card-details p {
+  color: #163029;
+}
+
+.hr-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+@media (max-width: 992px) {
+  .card-content {
+    flex-direction: column;
+    padding: 30px 20px 0 20px;
+  }
+
+  .person,
+  .info-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .person {
+    margin-bottom: 20px;
+  }
+
+  .info-wrapper::before {
+    display: none; 
+  }
+
+  .card-details {
+    padding: 20px;
+  }
+
+  .text-block,
+  .info,
+  .card-details p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-block,
+  .info,
+  .card-details p {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .card {
+    margin: 30px 10px;
+  }
+}
