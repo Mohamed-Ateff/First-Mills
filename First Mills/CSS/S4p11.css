@@ -1,6 +1,6 @@
-/* six cards */
+/* ten cards */
 
-.six-cards {
+.ten-cards {
   display: flex;
   justify-content:flex-start;
   gap: 12px;
@@ -12,7 +12,7 @@
   width: 24%;
   margin-bottom: 60px;
   background-color: white;
-  padding: 65px 50px;
+  padding: 35px 20px;
   position: relative;
   text-align: center;
   border-top: 12px solid #ffb548;
@@ -21,59 +21,95 @@
   align-items: center;
 }
 
-.logo-div span {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 93.7px;
-}
+
 .logo-div {
-  width: 90px;
-  background-color: red;
-  height: 45px;
+  height: 40px; 
+  aspect-ratio: cos(4deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
   background: #31544b;
-  top: -50px;
+  color: white;
+  right: 18px;
+  top: -70px;
   transform: translateY(20px);
-  right: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
+  scale: 2;
+   font-weight: bold;
   color: white;
   position: absolute;
-}
-.logo-div::before {
-  content: "";
-  position: absolute;
-  top: -28.8675px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-bottom: 28.8675px solid #31544b;
-}
-.logo-div::after {
-  content: "";
-  position: absolute;
-  bottom: -28.2px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-top: 28.8675px solid #31544b;
+ font-weight: 400;
+  font-size: 20px;
+  line-height: 43.7px;
 }
 
 .one-card h1 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   color: #31544b;
   margin-top: 10px;
   vertical-align: center;
   line-height: 40px;
 }
-/* six cards ends */
+/* ten cards ends */
+
+/* six cards */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  background-color: #F6F5F4;
+   padding-top: 20px; 
+  direction: rtl;
+  font-family: Bahij TheSansArabic;
+}
+.grid-white{
+  background-color: #FFFFFF;
+}
+.grid-green{
+  background-color: #4E6A63;
+  color: #FFFFFF;
+}
+
+
+
+.grid-item {
+  padding: 10px;
+  text-align: right;
+  
+}
+.grid-content{
+  display: flex;
+ justify-content: center;
+ align-content: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+.grid-item .number {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FCB44A;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0px 15px 0px 0px;
+}
+.grid-item h3 {
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+
+
+.grid-item p {
+  color: #31544B;
+  font-size: 20px;
+  line-height: 1.8;
+  padding: 0px 30px 50px 30px ;
+}
+
+
+/* six cards ends*/
 
 
 
