@@ -108,9 +108,252 @@
 
 /* six cards ends*/
 
+ /* four-cards-with picture  */
+.four-cards-section{
+  margin-top: 120px;
+}
+.four-cards-body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* background-color: red; */
+  padding-top: 20px; 
+}
+.four-item{
+  
+  /* width: 42%; */
+  /* margin-bottom: 60px; */
+  background-color: white;
+  padding: 22.5px 20px 22.5px 20px;
+  position: relative;
+  color:#30444E;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.four-item p{
+  padding: 0px 10px 0px 100px;
+}
+ /* four-cards-with picture ends */
+
+/* tables */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.staff-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  position: relative;
+}
+.staff-table caption{
+  color:#31544B;
+  font-size: 24px;
+text-align: center;
+}
+.table-caption{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.table-caption h3{
+   color:#31544B;
+  font-size: 24px;
+text-align: center;
+}
+.line-caption{
+  height: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  
+
+  background-color: #31544B;
 
 
+}
+/* .staff-table caption::before,
+.staff-table caption::after {
+  content: "";
+  position: absolute;
+  top: 3.5%;
+  width: 260px;
+  height: 4px;
+  background-color: rgba(252, 180, 74, 0.4);
+  z-index: 5;
+} */
 
+.staff-table caption ::before {
+  right: calc(70%); /* space between line and text */
+}
+
+.staff-table caption ::after {
+  left: calc(70% );
+}
+
+.staff-table thead tr:first-child th {
+  background-color: #73837F;
+  color: #fff;
+  padding: 38px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  z-index:2;
+}
+
+.staff-table thead tr.highlight th {
+  background-color: #FCB44A;
+  color: #31544B;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.staff-table td {
+  background-color: #fff;
+  color: #31544B;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+.staff-table tr :nth-child(4){
+  color: #000000 !important;
+}
+.staff-table tr :nth-child(7){
+  color: #000000 !important;
+}
+
+.staff-table tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.staff-table tbody tr.highlight td {
+  background-color: #FCB44A;
+  font-weight: bold;
+  color: #31544B;
+}
+.staff-table thead tr.highlight {
+  transform: translateY(-4px);
+}
+.staff-table tbody {
+  transform: translateY(-4px);
+}
+/* black vertical line between col 4 and 5 using pseudo */
+.staff-table::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: calc(62.3%);
+  width: 1px;
+  background-color: #000;
+  z-index: 1;
+   height: 440px;
+}
+.staff-table thead {
+  border-collapse: collapse;
+  border-spacing: 0 !important; 
+}
+/* second table */
+
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px; 
+}
+
+.custom-table thead tr {
+  transform: translateY(5px); 
+}
+
+.custom-table th {
+  background-color: #73837F;
+  color: white;
+  padding: 34px 40px 34px 40px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.custom-table td {
+  background-color: #FFC46C;
+  color: #3A4944;
+  padding: 15px 40px 15px 40px;
+  font-size: 18px;
+}
+.custom-table th,
+.custom-table td {
+  width: 33.33%; 
+  
+}
+
+.custom-table tbody tr:nth-child(even) td {
+background-color: rgba(255, 255, 255, 0.5);
+}
+/* second table */
+
+
+/* tables ends*/
+
+/* final cards */
+.final-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.final-card {
+  width: 32%;
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 30px 30px 90px 30px;
+  position: relative;
+  text-align: center;
+  border-top: 12px solid #A2ACAA;
+}
+.final-cards :nth-child(5){
+  border-top: 12px solid #FCB44A;
+}
+
+.final-cards :nth-child(3),
+.final-cards :nth-child(6) {
+  border-top: 12px solid #858E8B;
+}
+
+.final-card h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #A2ACAA;
+  margin-top: 10px;
+  vertical-align: center;
+  text-align: right;
+  line-height: 40px;
+}
+
+.final-card p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 30px;
+  vertical-align: center;
+  line-height: 25px;
+  text-align: right ;
+}
+.highlight-orange{
+  color:#FCB44A !important;
+}
+
+.highlight-grey-2{
+   color:#858E8B !important;
+}
+
+/* final cards ends*/
 @media (max-width: 1025px){
 .one-card {
     width: 28%;
@@ -118,6 +361,23 @@
     .grid-container {
   grid-template-columns: repeat(2, 1fr);
 }
+.four-cards-body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  /* background-color: red; */
+  padding-top: 20px; 
+}
+.four-item p{
+  padding: 0px 10px 0px 20px;
+}
+  .staff-table th,
+  .staff-table td {
+    font-size: 0.9rem;
+    padding: 12px 15px;
+  }
+  .final-cards {
+  gap: 10px;}
 }
 
 @media (max-width: 768px){
@@ -127,10 +387,44 @@
    .grid-container {
   grid-template-columns: repeat(1, 1fr);
 }
+.four-cards-body{
+  grid-template-columns: repeat(1, 1fr);
+}
+.staff-table th,
+  .staff-table td {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+  .final-cards {
+  gap: 5px;}
+  .final-card {
+    width: 49%;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 480px){
 .one-card {
+    width: 100%;
+  }
+  .four-item{
+  flex-direction: column-reverse;
+}
+ .staff-table th,
+  .staff-table td {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+   .custom-table th {
+  padding: 34px 20px 34px 20px;
+  font-size: 16px;
+}
+
+.custom-table td {
+  padding: 15px 20px 15px 20px;
+  font-size: 12px;
+}
+ .final-card {
     width: 100%;
   }
 }

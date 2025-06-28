@@ -213,15 +213,7 @@ justify-content: flex-start;
   .table-lines::after {
     left: 64%;
   }
-  .custom-table th {
-  padding: 34px 20px 34px 20px;
-  font-size: 16px;
-}
-
-.custom-table td {
-  padding: 15px 20px 15px 20px;
-  font-size: 12px;
-}
+  
 
 .table-title h2{
 font-size: 20px;
