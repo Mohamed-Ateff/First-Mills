@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأحكام ودرجة الالتزام</title>
+    <link rel="stylesheet" href="CSS/Navbar.css" />
+    <link rel="stylesheet" href="CSS/SideMenu.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/Footer.css" />
+    <link rel="stylesheet" href="CSS/Hero.css" />
+    <link rel="stylesheet" href="CSS/S5p2.css" />
+    <script src="Javascript/Navbar.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img class="logo" src="Images/logo.png" alt="" /></a>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <div class="side-menu">
+                <div class="circle">
+                    <div class="border-for-circle">EN</div>
+                </div>
+                <div class="line-one"></div>
+
+                <a href="">
+                    <div class="hexagon hexagon1 active">
+                        <img src="Images/one.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/two.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/three.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/four.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/five.png" alt="" />
+                    </div>
+                </a>
+
+                <div class="line-two"></div>
+            </div>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+                    نظرة عامة
+                </div>
+                <div class="mobile-submenu" id="mobile-overview">
+                    <a href="S1p1.html" class="page">أبرز النتائج المالية والتشغيلية</a>
+                    <a href="S1p2.html" class="page">لمحة عن شركة المطاحن الأولى</a>
+                    <a href="S1p3.html" class="page">مسيرة نمو الشركة</a>
+                    <a href="S1p4.html" class="page">مزايا الاستثمار</a>
+                    <a href="S1p5.html" class="page">القيم الأساسية</a>
+                    <a href="S1p6.html" class="page">الوجود الجغرافي</a>
+                    <a href="S1p7.html" class="page">الشركات التابعة</a>
+                    <a href="S1p8.html" class="page">منتجات الشركة</a>
+                    <a href="S1p9.html" class="page">العلامات التجارية</a>
+                    <a href="S1p10.html" class="page">أبرز إنجازات عام 2024</a>
+                    <a href="S1p11.html" class="page">الجوائز والشهادات</a>
+                    <a href="S1p12.html" class="page">شعار العام</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-management')">
+                    كلمة الإدارة
+                </div>
+                <div class="mobile-submenu" id="mobile-management">
+                    <a href="S2p1.html" class="page">كلمة رئيس مجلس الادارة</a>
+                    <a href="S2p2.html" class="page">رسالة الرئيس التنفيذي</a>
+                    <a href="S2p3.html" class="page">كلمة رئيس القطاع المالي</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-strategy')">
+                    التقرير الاستراتيجي
+                </div>
+                <div class="mobile-submenu" id="mobile-strategy">
+                    <a href="S3p1.html" class="page">نموذج العمل التجاري</a>
+                    <a href="S3p2.html" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+                    <a href="S3p3.html" class="page">نظرة عامة على السوق والقطاع</a>
+                    <a href="S3p4.html" class="page">مشاركة الجهات المعنية</a>
+                    <a href="S3p5.html" class="page">الأهداف المستقبلية والتطلعات</a>
+                    <a href="S3p6.html" class="page">التحديات والفرص</a>
+                    <a href="S3p7.html" class="page">إدارة المخاطر</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-operational')">
+                    المراجعة التشغيلية
+                </div>
+                <div class="mobile-submenu" id="mobile-operational">
+                    <a href="S4p1.html" class="page">الأنشطة الرئيسية للشركة</a>
+                    <a href="S4p2.html" class="page">منتجات الشركة وعلاماتها التجارية</a>
+                    <a href="S4p3.html" class="page">القدرات التشغيلية في أرقام</a>
+                    <a href="S4p4.html" class="page">معلومات عن صناع الشركة</a>
+                    <a href="S4p5.html" class="page">العمالء وشركاء النجاح</a>
+                    <a href="S4p6.html" class="page">ضمان الجودة ورقابتها</a>
+                    <a href="S4p7.html" class="page">البيئة والصحة والسلامة</a>
+                    <a href="S4p8.html" class="page">البنية التحتية</a>
+                    <a href="S4p9.html" class="page">مشروع العلاج الحراري</a>
+                    <a href="S4p10.html" class="page">التسويق والتواصل المؤسسي</a>
+                    <a href="S4p11.html" class="page">الموظفون والثقافة المؤسسية</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-governance')">
+                    الحوكمة و الاستدامة
+                </div>
+                <div class="mobile-submenu" id="mobile-governance">
+                    <a href="S5p1.html" class="page">حوكمة الشركة</a>
+                    <a href="S5p2.html" class="page">القوانين ودرجة الالتزام</a>
+                    <a href="S5p3.html" class="page">العقوبات والجزاءات والمخالفات</a>
+                    <a href="S5p4.html" class="page">الهيكل التنظيمي للشركة</a>
+                    <a href="S5p5.html" class="page">مجلس الإدارة</a>
+                    <a href="S5p6.html" class="page">لجان مجلس الإدارة</a>
+                    <a href="S5p7.html" class="page">الجمعيات العامة للمساهمين</a>
+                    <a href="S5p8.html" class="page">الإدارة التنفيذية</a>
+                    <a href="S5p9.html" class="page">مكافآت مجلس الإدارة</a>
+                    <a href="S5p10.html" class="page">الأطراف ذوي العلاقة</a>
+                    <a href="S5p11.html" class="page">المدفوعات النظامية</a>
+                    <a href="S5p12.html" class="page">أسهم الخزينة</a>
+                    <a href="S5p13.html" class="page">اللوائح</a>
+                    <a href="S5p14.html" class="page">المساهمون وأهداف المستثمرين</a>
+                    <a href="S5p15.html" class="page">المراجعة والرقابة الداخلية</a>
+                    <a href="S5p16.html" class="page">إفصاحات مجلس الإدارة</a>
+                    <a href="S5p17.html" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-financials')">
+                    القوائم المالية
+                </div>
+                <div class="mobile-submenu" id="mobile-financials">
+                    <a href="S6p1.html" class="page">ملخص الأداء المالي السنوي</a>
+                    <a href="S6p2.html" class="page">تطور القوائم خلال 5 سنوات</a>
+                    <a href="S6p3.html" class="page">أبرز النسب والمؤشرات المالية</a>
+                    <a href="S6p4.html" class="page">تحليل النتائج المالية السنوية</a>
+                    <a href="S6p5.html" class="page">نظرة على النتائج الفصلية</a>
+                    <a href="S6p6.html" class="page">تقرير المراجع والقوائم المالية</a>
+                </div>
+
+                <div class="section">
+                    <a href="S7p1.html" class="page">مركز التحميل</a>
+                </div>
+            </div>
+
+            <div class="hero-images">
+                <img class="image-hero" src="Images/img1.png" alt="" />
+                <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+                <div class="title-section">
+                    <div class="white-title">
+                        <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+                        <p>الرئيسية</p>
+                        <img class="arrow" src="Images/arrow-footer.png" alt="" />
+                        <p>نظرة عامة</p>
+                    </div>
+                    <div class="green-title">
+                        <h1>الأحكام ودرجة الالتزام</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-Union"></div>
+            <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+            <div class="menu-container">
+                <div class="main-menu">
+                    <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+                    <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+                    <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+                    <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+                    <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+                    <div class="section" data-submenu="Tab6">القوائم المالية</div>
+                    <a href="" class="section" data-submenu="Tab7">مركز التحميل</a>
+                </div>
+
+                <div class="menu-divider"></div>
+
+                <div class="submenu active" id="Tab1">
+                    <a href="S1p1.html" class="page">أبرز النتائج المالية والتشغيلية</a>
+                    <a href="S1p2.html" class="page">لمحة عن شركة المطاحن الأولى</a>
+                    <a href="S1p3.html" class="page">مسيرة نمو الشركة</a>
+                    <a href="S1p4.html" class="page">مزايا الاستثمار</a>
+                    <a href="S1p5.html" class="page">القيم الأساسية</a>
+                    <a href="S1p6.html" class="page">الوجود الجغرافي</a>
+                    <a href="S1p7.html" class="page">الشركات التابعة</a>
+                    <a href="S1p8.html" class="page">منتجات الشركة</a>
+                    <a href="S1p9.html" class="page">العلامات التجارية</a>
+                    <a href="S1p10.html" class="page">أبرز إنجازات عام 2024</a>
+                    <a href="S1p11.html" class="page">الجوائز والشهادات</a>
+                    <a href="S1p12.html" class="page">شعار العام</a>
+                </div>
+
+                <div class="submenu" id="Tab2">
+                    <a href="S2p1.html" class="page">كلمة رئيس مجلس الادارة</a>
+                    <a href="S2p2.html" class="page">رسالة الرئيس التنفيذي</a>
+                    <a href="S2p3.html" class="page">كلمة رئيس القطاع المالي</a>
+                </div>
+
+                <div class="submenu" id="Tab3">
+                    <a href="S3p1.html" class="page">نموذج العمل التجاري</a>
+                    <a href="S3p2.html" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+                    <a href="S3p3.html" class="page">نظرة عامة على السوق والقطاع</a>
+                    <a href="S3p4.html" class="page">مشاركة الجهات المعنية</a>
+                    <a href="S3p5.html" class="page">الأهداف المستقبلية والتطلعات</a>
+                    <a href="S3p6.html" class="page">التحديات والفرص</a>
+                    <a href="S3p7.html" class="page">إدارة المخاطر</a>
+                </div>
+
+                <div class="submenu" id="Tab4">
+                    <a href="S4p1.html" class="page">الأنشطة الرئيسية للشركة</a>
+                    <a href="S4p2.html" class="page">منتجات الشركة وعلاماتها التجارية</a>
+                    <a href="S4p3.html" class="page">القدرات التشغيلية في أرقام </a>
+                    <a href="S4p4.html" class="page">معلومات عن صناع الشركة </a>
+                    <a href="S4p5.html" class="page">العمالء وشركاء النجاح</a>
+                    <a href="S4p6.html" class="page">ضمان الجودة ورقابتها</a>
+                    <a href="S4p7.html" class="page">البيئة والصحة والسلامة</a>
+                    <a href="S4p8.html" class="page">البنية التحتية</a>
+                    <a href="S4p9.html" class="page">مشروع العلاج الحراري</a>
+                    <a href="S4p10.html" class="page">التسويق والتواصل المؤسسي</a>
+                    <a href="S4p11.html" class="page">الموظفون والثقافة المؤسسية</a>
+                </div>
+
+                <div class="submenu" id="Tab5">
+                    <a href="S5p1.html" class="page">حوكمة الشركة</a>
+                    <a href="S5p2.html" class="page">القوانين ودرجة الالتزام</a>
+                    <a href="S5p3.html" class="page">العقوبات والجزاءات والمخالفات</a>
+                    <a href="S5p4.html" class="page">الهيكل التنظيمي للشركة</a>
+                    <a href="S5p5.html" class="page">مجلس الإدارة</a>
+                    <a href="S5p6.html" class="page">لجان مجلس الإدارة</a>
+                    <a href="S5p7.html" class="page">الجمعيات العامة للمساهمين</a>
+                    <a href="S5p8.html" class="page">الإدارة التنفيذية</a>
+                    <a href="S5p9.html" class="page">مكافآت مجلس الإدارة</a>
+                    <a href="S5p10.html" class="page">الأطراف ذوي العلاقة</a>
+                    <a href="S5p11.html" class="page">المدفوعات النظامية</a>
+                    <a href="S5p12.html" class="page">أسهم الخزينة</a>
+                    <a href="S5p13.html" class="page">اللوائح</a>
+                    <a href="S5p14.html" class="page">المساهمون وأهداف المستثمرين</a>
+                    <a href="S5p15.html" class="page">المراجعة والرقابة الداخلية</a>
+                    <a href="S5p16.html" class="page">إفصاحات مجلس الإدارة</a>
+                    <a href="S5p17.html" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+                </div>
+
+                <div class="submenu" id="Tab6">
+                    <a href="S6p1.html" class="page">ملخص الأداء المالي السنوي</a>
+                    <a href="S6p2.html" class="page">تطور القوائم خلال 5 سنوات</a>
+                    <a href="S6p3.html" class="page">أبرز النسب والمؤشرات المالية</a>
+                    <a href="S6p4.html" class="page">تحليل النتائج المالية السنوية</a>
+                    <a href="S6p5.html" class="page">نظرة على النتائج الفصلية</a>
+                    <a href="S6p6.html" class="page">تقرير المراجع والقوائم المالية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="start">
+        <div class="Paragraph">
+            <p>
+                تؤكد الشركة التزامها بتطبيق جميع الأحكام الواردة في لائحة حوكمة الشركات، باستثناء الحالات التالية:
+            </p>
+        </div>
+
+        <div class="table-responsive">
+        <div class="custom-table-container">
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>رقم المادة / الفقرة</th>
+                        <th>العنوان</th>
+                        <th>نص المادة/الفقرة</th>
+                        <th>درجة التطبيق</th>
+                        <th>أسباب
+                            عدم التطبيق</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>37</b></td>
+                        <td><b>التدريب</b></td>
+                        <td>
+                            تعين على الشركة إيلاء الاهتمام الكافي بتدريب وتأهيل أعضاء مجلس الإدارة وأعضاء اللجان
+                            والإدارة التنفيذية، ووضع البرامج اللازمة لذلك، مع مراعاة ما يلي:
+                            <p>1) إعداد برامج لأعضاء مجلس الإدارة وأعضاء اللجان والإدارة التنفيذية المعينين حديثاً
+                                للتعريف بسير عمل الشركة وأنشطتها، وبخاصة ما يلي:
+                            </p>
+                            <p>أ. استراتيجية الشركة وأهدافها.
+                            </p>
+                            <p>ب. الجوانب المالية والتشغيلية لأنشطة الشركة.
+                            </p>
+                            <p>ج. التزامات أعضاء مجلس الإدارة ومهامهم ومسؤولياتهم وحقوقهم.
+                            </p>
+                            <p>د. مهام لجان الشركة واختصاصاتها.
+                            </p>
+                            <p>2) وضع الآليات اللازمة لحصول كل من أعضاء مجلس الإدارة وأعضاء اللجان والإدارة التنفيذية
+                                على برامج ودورات تدريبية بشكل مستمر؛ بغرض تنمية مهاراتهم ومعارفهم في المجالات ذات
+                                العلاقة بأنشطة الشركة.
+                            </p>
+                        </td>
+                        <td> <b>مطبقة جزئياً</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>إذ لا يوجد برنامج ثابت، وإنما يتم تنظيم الدورات التدريبية وحضور المؤتمرات العالمية
+                                المتخصصة حسب الحاجة، بالإضافة إلى تنفيذ زيارات ميدانية لتعزيز المعرفة والخبرة.
+                        </td>
+                        </p>
+                    </tr>
+                    <tr>
+                        <td><b>39</b></td>
+                        <td><b>التقييم
+                            </b></td>
+                        <td> أ ) يضع مجلس الإدارة – بناءً على اقتراح لجنة الترشيحات – الآليات اللازمة لتقييم أداء المجلس
+                            وأعضائه ولجانه والإدارة
+                            التنفيذية سنوياً؛ وذلك من خلال مؤشرات قياس أداء مناسبة ترتبط بمدى تحقيق الأهداف الاستراتيجية
+                            للشركة وجودة إدارة
+                            المخاطر وكفاية أنظمة الرقابة الداخلية وغيرها، على أن تحدَّد جوانب القوة والضعف واقتراح
+                            معالجتها بما يتفق مع مصلحة
+                            الشركة.
+
+                            <p>ب ) يجب أن تكون إجراءات تقييم الأداء مكتوبة وواضحة وأن يفصَح عنها لأعضاء مجلس الإدارة
+                                والأشخاص المعنيين بالتقييم.
+                            </p>
+                            <p>ج ) يجب أن يشتمل تقييم الأداء على المهارات والخبرات التي يمتلكها المجلس، وتحديد نقاط
+                                الضعف والقوة فيه، مع العمل
+                                على معالجة نقاط الضعف بالطرق الممكنة كترشيح كفايات مهنية تستطيع تطوير أداء المجلس، ويجب
+                                أيضاً أن يشتمل تقييم
+                                الأداء على تقييم آليات العمل في المجلس بشكل عام.
+                            </p>
+                            <p>د ) يراعى في التقييم الفردي لأعضاء مجلس الإدارة مدى المشاركة الفعالة للعضو والتزامه بأداء
+                                واجباته ومسؤولياته بما
+                                في ذلك حضور جلسات المجلس ولجانه وتخصيص الوقت اللازم لها.
+                            </p>
+                            <p>هـ ) يتخذ مجلس الإدارة الترتيبات اللازمة للحصول على تقييم جهة خارجية مختصة لأدائه كل ثلاث
+                                سنوات.
+                            </p>
+                            <p>و ) يجري أعضاء مجلس الإدارة غير التنفيذيين تقييماً دورياً لأداء رئيس المجلس بعد أخذ وجهات
+                                نظر الأعضاء التنفيذيين
+                                – من دون أن يحضر رئيس المجلس النقاش المخصص لهذا الغرض – على أن تحدَّد جوانب القوة والضعف
+                                واقتراح معالجتها بما
+                                يتفق مع مصلحة الشركة.
+                            </p>
+                        </td>
+                        <td><b>غير مطبقة</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>تعمل الشركة على تفعيلها خلال الفترة القادمة، حيث لم يقم مجلس الإدارة هذا العام بوضع
+                                مؤشرات قياس أو نظام تقييم فردي.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>67</b></td>
+                        <td><b>تشكيل لجنة إدارة المخاطر
+                            </b></td>
+                        <td>تشكَّل بقرار من مجلس إدارة الشركة لجنة تسمى لجنة إدارة المخاطر، يكون رئيسها وغالبية أعضائها
+                            من أعضاء مجلس الإدارة غير التنفيذيين. ويشترط أن يتوفر في أعضائها مستوى ملائم من المعرفة
+                            بإدارة المخاطر والشؤون المالية.</td>
+                        <td><b>غير مطبقة</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>
+                                حيث أن الشركة لم تخصص لجنة مستقلة لإدارة المخاطر ولكن تم تضمين مهامها مع لجنة المراجعة
+                                كلجنة واحدة.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>68</b></td>
+                        <td><b>اختصاصات لجنة إدارة المخاطر
+
+                            </b></td>
+                        <td>
+                            تختص لجنة إدارة المخاطر بما يلي:
+                            <p> 1. وضع استراتيجية وسياسات شاملة لإدارة المخاطر بما يتناسب مع طبيعة وحجم أنشطة الشركة،
+                                والتحقق من تنفيذها ومراجعتها وتحديثها بناءً على المتغيرات الداخلية والخارجية للشركة.
+                            </p>
+                            <p>
+                                 2. تحديد مستوى مقبول للمخاطر التي قد تتعرض لها الشركة والحفاظ عليه والتحقق من عدم تجاوز
+                                الشركة.
+                            </p>
+                            <p>
+                                 3. التحقق من جدوى استمرار الشركة ومواصلة نشاطها بنجاح، مع تحديد المخاطر التي تهدد
+                                استمرارها خلال الاثني عشر شهراً القادمة.
+                            </p>
+                            <p>
+                                 4. الإشراف على نظام إدارة المخاطر بالشركة وتقييم فعالية نظم وآليات تحديد وقياس ومتابعة
+                                المخاطر التي قد تتعرض لها الشركة؛ وذلك لتحديد أوجه القصور بها.
+                            </p>
+                            <p>
+                                .5. إعادة تقييم قدرة الشركة على تحمل المخاطر وتعرّضها لها بشكل دوري من خلال إجراء
+                                اختبارات التحمل على سبيل المثال.
+                            </p>
+                            <p>
+                                 6. إعداد تقارير مفصلة حول التعرض للمخاطر والخطوات المقترحة لإدارة هذه المخاطر، ورفعها
+                                إلى مجلس الإدارة.
+                            </p>
+                            <p>
+                                 7. تقديم التوصيات للمجلس حول المسائل المتعلقة بإدارة المخاطر.
+                            </p>
+                            <p>
+                                 8. ضمان توفر الموارد والنظم الكافية لإدارة المخاطر.
+                            </p>
+                            <p>
+                                 9. مراجعة الهيكل التنظيمي لإدارة المخاطر ووضع توصيات بشأنه قبل اعتماده من قبل مجلس
+                                الإدارة.
+                            </p>
+                            <p>
+                                 10. التحقق من استقلال موظفي إدارة المخاطر عن الأنشطة التي قد ينشأ عنها تعرض الشركة
+                                للمخاطر.
+                            </p>
+                            <p>
+                                 11. التحقق من استيعاب موظفي إدارة المخاطر للمخاطر المحيطة بالشركة، والعمل على زيادة
+                                الوعي بثقافة المخاطر.
+                            </p>
+                            <p> 12. مراجعة ما تثيره لجنة المراجعة من مسائل قد تؤثر في إدارة المخاطر في الشركة..
+                            </p>
+
+
+                        </td>
+                        <td><b>غير مطبقة</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>
+                                حيث أن الشركة لم تخصص لجنة مستقلة لإدارة المخاطر ولكن تم تضمين مهامها مع لجنة المراجعة
+                                كلجنة واحدة.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>69</b></td>
+                        <td><b>اجتماعات لجنة إدارة المخاطر
+
+                            </b></td>
+                        <td>تجتمع لجنة إدارة المخاطر بصفة دورية كل (ستة أشهر) على الأقل، وكلما دعت الحاجة إلى ذلك.</td>
+                        <td><b>غير مطبقة</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>
+                                حيث أن الشركة لم تخصص لجنة مستقلة لإدارة المخاطر ولكن تم تضمين مهامها مع لجنة المراجعة
+                                كلجنة واحدة.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>82</b></td>
+                        <td><b>تحفيز العاملين
+
+                            </b></td>
+                        <td> تضع الشركة برامج تطوير وتحفيز المشاركة والأداء للعاملين في الشركة، على أن تتضمن -بصفة خاصة-
+                            ما يلي:
+                            <p>1) تشكيل لجان أو عقد ورش عمل متخصصة للاستماع إلى آراء العاملين في الشركة ومناقشتهم في
+                                المسائل والموضوعات محل القرارات المهمة.
+                            </p>
+                            <p>2) برامج منح العاملين أسهماً في الشركة أو نصيباً من الأرباح التي تحققها وبرامج التقاعد،
+                                وتأسيس صندوق مستقل للإنفاق على تلك البرامج.
+                            </p>
+                            <p>3) إنشاء مؤسسات اجتماعية للعاملين في الشركة.
+                            </p>
+                        </td>
+                        <td><b>مطبقة جزئياً</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>
+                                تعمل الشركة على تطوير وتنفيذ برامج إضافية لتعزيز مشاركة الموظفين وتحفيز أدائهم.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>85</b></td>
+                        <td><b>مبادرات العمل الاجتماعي
+
+                            </b></td>
+
+                        <td> يضع مجلس الإدارة البرامج ويحدد الوسائل اللازمة لطرح مبادرات الشركة في مجال العمل الاجتماعي،
+                            ويشمل ذلك ما يلي:
+                            <p> يضع مجلس الإدارة البرامج ويحدد الوسائل اللازمة لطرح مبادرات الشركة في مجال العمل
+                                الاجتماعي، ويشمل ذلك ما يلي:
+                            </p>
+                            <p> 2) الإفصاح عن أهداف المسؤولية الاجتماعية التي تتبناها الشركة للعاملين فيها وتوعيتهم
+                                وتثقيفهم بها.
+                            </p>
+                            <p>3) الإفصاح عن خطط تحقيق المسؤولية الاجتماعية في التقارير الدورية ذات الصلة بأنشطة الشركة.
+                            </p>
+                            <p>4) وضع برامج توعية للمجتمع للتعريف بالمسؤولية الاجتماعية للشركة.
+                            </p>
+                        </td>
+                        <td><b>مطبقة جزئياً</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>
+                                تحرص الشركة على تعزيز المشاركة في الأنشطة الاجتماعية المتنوعة، بما يضمن استدامتها وتحقيق
+                                أهدافها المرجوة.
+
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>92</b></td>
+                        <td><b>
+                                تشكيل
+                                لجنة
+                                حوكمة
+                                الشركات
+
+                            </b></td>
+                        <td>في حال تشكيل مجلس الإدارة لجنة مختصة بحوكمة الشركات، فعليه أن يفوض إليها الاختصاصات المقررة
+                            بموجب المادة الرابعة والتسعين من هذه اللائحة، وعلى هذه اللجنة متابعة أي موضوعات بشأن تطبيقات
+                            الحوكمة، وتزويد مجلس الإدارة، سنوياً على الأقل، بالتقارير والتوصيات التي تتوصل إليها.</td>
+                        <td><b>غير مطبقة</b></td>
+                        <td><b>مادة استرشادية</b>
+                            <p>
+                                يحرص مجلس الإدارة على ضمان الالتزام بقواعد الحوكمة من خلال مراجعتها وتحديثها بشكل دوري،
+                                إلى جانب تطوير قواعد السلوك المهني والسياسات والإجراءات الداخلية الأخرى. كما يتم تزويد
+                                أعضاء مجلس الإدارة بشكل مستمر بأحدث التطورات في مجال الحوكمة، وترى الشركة في الوقت
+                                الحالي عدم الحاجة إلى تشكيل لجنة مستقلة لهذا الغرض.
+                            </p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="side-of-footer">
+                <a href="" class="next">
+                    <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+                </a>
+                <h2>عنوان الشاشة التالية</h2>
+            </div>
+            <div class="side-of-footer">
+                <a href="" style="background: #30444e; color: white" class="contact-us btn-footer">
+                    <img src="Images/email.png" alt="" />
+                    تواصلوا معنا</a>
+                <a href="" style="background: #ffb548; color: #30444e" class="download-center btn-footer">
+                    <img src="Images/download.png" alt="" />
+                    مركز التحميل</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="Javascript/jquery.counterup.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/counter.js"></script>
+    <!-- CounterUp (CDN version) -->
+    <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+</body>
+
+</html>
