@@ -10,8 +10,7 @@
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  margin: 60px auto;
-  max-width: 900px;
+  margin: 30px auto;
 }
 
 .card-grid:nth-of-type(even) {
@@ -40,6 +39,10 @@
 .person {
   text-align: center;
   padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .person img {
@@ -49,11 +52,13 @@
 
 .name {
   color: #163029;
-  font-size: 22px;
-  margin: 10px 0 5px;
+  font-size: 25px;
+  margin: 0px !important;
 }
 
 .position {
+  font-size: 18px;
+  margin: 0px !important;
   font-weight: 300;
   color: #5E6863;
 }
