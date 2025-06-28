@@ -12,7 +12,7 @@
   width: 24%;
   margin-bottom: 60px;
   background-color: white;
-  padding: 35px 20px;
+  padding: 35px 20px 60px 20px;
   position: relative;
   text-align: center;
   border-top: 12px solid #ffb548;
@@ -57,9 +57,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
   background-color: #F6F5F4;
-   padding-top: 20px; 
-  direction: rtl;
-  font-family: Bahij TheSansArabic;
+  padding-top: 20px; 
 }
 .grid-white{
   background-color: #FFFFFF;
@@ -68,7 +66,6 @@
   background-color: #4E6A63;
   color: #FFFFFF;
 }
-
 
 
 .grid-item {
@@ -105,7 +102,7 @@
   color: #31544B;
   font-size: 20px;
   line-height: 1.8;
-  padding: 0px 30px 50px 30px ;
+  padding: 0px 30px 10px 30px ;
 }
 
 
@@ -118,12 +115,20 @@
 .one-card {
     width: 28%;
   }
+    .grid-container {
+  grid-template-columns: repeat(2, 1fr);
 }
+}
+
 @media (max-width: 768px){
 .one-card {
     width: 48%;
   }
+   .grid-container {
+  grid-template-columns: repeat(1, 1fr);
 }
+}
+
 @media (max-width: 480px){
 .one-card {
     width: 100%;
