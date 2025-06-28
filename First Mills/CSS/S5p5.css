@@ -49,8 +49,7 @@ tr:nth-child(even) td {
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
-  margin: 60px auto;
-  max-width: 900px;
+  margin: 30px auto;
 }
 
 .card::before {
@@ -61,8 +60,8 @@ tr:nth-child(even) td {
   right: 0;
   width: 70px;
   background-color: #A2ACAA;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
   z-index: 3;
 }
 
@@ -87,19 +86,20 @@ tr:nth-child(even) td {
 }
 
 .person img {
-  max-width: 100%;
   height: auto;
+  margin-bottom: 15px;
 }
 
 .name {
   color: #EC822C;
-  font-size: 22px;
-  margin: 10px 0 5px;
+  font-size: 30px;
+  margin: 0px;
 }
 
 .position {
+  margin: 0px;
   font-weight: 300;
-  color: #777;
+  color: #a2acaa;
 }
 
 .info-wrapper {
