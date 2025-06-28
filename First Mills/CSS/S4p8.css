@@ -4,28 +4,7 @@
     margin-top: 84px;
 }
 
-.three-divs-title h2{
-font-size: 24px;
-color: #31544B;
-text-align: center;
-}
-.three-divs-title::before,
-.three-divs-title::after {
-  content: "";
-  position: absolute;
-  top: 33%;
-  width: 337px;
-  height: 4px;
- background-color: rgba(252, 180, 74, 0.4);
-}
 
-.three-divs-title::before {
-  right: calc(70%); /* space between line and text */
-}
-
-.three-divs-title::after {
-  left: calc(70% );
-}
  
 
 .cards{
@@ -63,6 +42,32 @@ height: 148px;
     text-align: right;
 }
 
+.three-divs-title {
+  color:#31544B;
+  font-size: 24px;
+text-align: center;
+}
+.three-divs-title{
+  display: flex;
+   align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.three-divs-title h3{
+   color:#31544B;
+  font-size: 24px;
+text-align: center;
+margin: 2px;
+}
+.line-caption{
+  height: 4px; 
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+ background-color: rgba(252, 180, 74, 0.4);
+
+
+}
 
 @media (max-width: 1024px) {
   .three-divs-title::before,
