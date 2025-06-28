@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/s1p1.css" />
     <link rel="stylesheet" href="CSS/bars.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="Javascript/Navbar.js"></script>
   </head>
   <body>
@@ -302,7 +304,7 @@
                     </div>
                     <p class="progress-date">2024</p>
                   </div>
-                  <div class="progress-bar" data-value="100">
+                  <div class="progress-bar" data-value="87.40">
                     <div class="progress" style="background-color: #ffb548">
                       <p class="progress-value">964.26</p>
                     </div>
@@ -344,13 +346,13 @@
               </div>
               <div class="contain-numbers-and-chart">
                 <div class="chart">
-                  <div class="progress-bar" data-value="98.54">
+                  <div class="progress-bar" data-value="99.52">
                     <div class="progress" style="background-color: #ffb548">
                       <p class="progress-value">318.48</p>
                     </div>
                     <p class="progress-date">2024</p>
                   </div>
-                  <div class="progress-bar" data-value="100">
+                  <div class="progress-bar" data-value="89.68">
                     <div class="progress" style="background-color: #ffb548">
                       <p class="progress-value">286.96</p>
                     </div>
@@ -373,6 +375,242 @@
                   <div class="number">
                     <div class="border-number"></div>
                     <p>80</p>
+                  </div>
+                  <div class="number" id="line-and-numbers-last">
+                    <div class="border-number"></div>
+                    <p>0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-container">
+        <div class="right-chart-container second-chart-for-mobile">
+          <div class="outer-title-chart">
+            <h1 data-en="Net Profit of First Mills">
+              الإيرادات حسب نوع المنتج
+            </h1>
+            <p data-en="(All Amounts In SAR Million)">
+              (جميع المبالغ بالمليون ريال)
+            </p>
+          </div>
+        </div>
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <div class="one-charts" style="margin-top: 22px">
+        <div class="container">
+          <div class="All-chart">
+            <div class="right-chart-container second-chart-for-mobile">
+              <div class="outer-title-chart">
+                <h1 data-en="Net Profit of First Mills">
+                  الإيرادات حسب الموقع الجغرافي
+                </h1>
+                <p data-en="(All Amounts In SAR Million)">
+                  (جميع المبالغ بالمليون ريال)
+                </p>
+              </div>
+              <div class="contain-numbers-and-chart">
+                <div class="titles-for-chart">
+                  <div class="title-box">
+                    <div
+                      class="title-color"
+                      style="background-color: #ffb548"
+                    ></div>
+                    <p>مصنع جدة</p>
+                  </div>
+                  <div class="title-box">
+                    <div
+                      class="title-color"
+                      style="background-color: #455954"
+                    ></div>
+                    <p>مصنع القصيم</p>
+                  </div>
+                  <div class="title-box">
+                    <div
+                      class="title-color"
+                      style="background-color: #73837f"
+                    ></div>
+                    <p>مصنع الأحساء</p>
+                  </div>
+                  <div class="title-box">
+                    <div
+                      class="title-color"
+                      style="background-color: #eaebed"
+                    ></div>
+                    <p>مصنع تبوك</p>
+                  </div>
+                </div>
+                <div class="fix-chart">
+                  <div class="chart">
+                    <div class="group">
+                      <div class="progress-bar" data-value="19.64">
+                        <div class="progress" style="background-color: #eaebed">
+                          <p class="progress-value">117.85</p>
+                        </div>
+                      </div>
+                      <div class="progress-bar" data-value="21.5">
+                        <div class="progress" style="background-color: #73837f">
+                          <p class="progress-value">129</p>
+                        </div>
+                      </div>
+                      <div class="progress-bar" data-value="54.93">
+                        <div class="progress" style="background-color: #455954">
+                          <p class="progress-value">329.6</p>
+                        </div>
+                      </div>
+                      <div class="progress-bar" data-value="78.74">
+                        <div class="progress" style="background-color: #ffb548">
+                          <p class="progress-value">472.41</p>
+                        </div>
+                      </div>
+                      <p class="progress-date">2024</p>
+                    </div>
+                    <div class="group">
+                      <div class="progress-bar" data-value="18.21">
+                        <div class="progress" style="background-color: #eaebed">
+                          <p class="progress-value">109.23</p>
+                        </div>
+                      </div>
+                      <div class="progress-bar" data-value="19.96">
+                        <div class="progress" style="background-color: #73837f">
+                          <p class="progress-value">119.75</p>
+                        </div>
+                      </div>
+                      <div class="progress-bar" data-value="50.86">
+                        <div class="progress" style="background-color: #455954">
+                          <p class="progress-value">305.17</p>
+                        </div>
+                      </div>
+                      <div class="progress-bar" data-value="71.69">
+                        <div class="progress" style="background-color: #ffb548">
+                          <p class="progress-value">430.12</p>
+                        </div>
+                      </div>
+                      <p class="progress-date">2023</p>
+                    </div>
+                  </div>
+                  <div class="line-and-numbers">
+                    <div class="number" id="line-and-numbers-first">
+                      <div class="border-number"></div>
+                      <p>600</p>
+                    </div>
+                    <div class="number">
+                      <div class="border-number"></div>
+                      <p>450</p>
+                    </div>
+                    <div class="number">
+                      <div class="border-number"></div>
+                      <p>300</p>
+                    </div>
+                    <div class="number">
+                      <div class="border-number"></div>
+                      <p>150</p>
+                    </div>
+                    <div class="number" id="line-and-numbers-last">
+                      <div class="border-number"></div>
+                      <p>0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-charts" style="margin-top: 25px">
+        <div class="container">
+          <div class="All-chart" style="background-color: #fbfafa !important;">
+            <div class="right-chart-container second-chart-for-mobile">
+              <div class="outer-title-chart">
+                <h1 data-en="Net Profit of First Mills">إجمالي الربح</h1>
+                <p data-en="(All Amounts In SAR Million)">
+                  (جميع المبالغ بالمليون ريال)
+                </p>
+              </div>
+              <div class="contain-numbers-and-chart">
+                <div class="chart">
+                  <div class="progress-bar" data-value="76.18">
+                    <div class="progress" style="background-color: #ffb548">
+                      <p class="progress-value">457.09</p>
+                    </div>
+                    <p class="progress-date">2024</p>
+                  </div>
+                  <div class="progress-bar" data-value="68.86">
+                    <div class="progress" style="background-color: #ffb548">
+                      <p class="progress-value">413.14</p>
+                    </div>
+                    <p class="progress-date">2023</p>
+                  </div>
+                </div>
+                <div class="line-and-numbers">
+                  <div class="number" id="line-and-numbers-first">
+                    <div class="border-number"></div>
+                    <p>600</p>
+                  </div>
+                  <div class="number">
+                    <div class="border-number"></div>
+                    <p>450</p>
+                  </div>
+                  <div class="number">
+                    <div class="border-number"></div>
+                    <p>300</p>
+                  </div>
+                  <div class="number">
+                    <div class="border-number"></div>
+                    <p>150</p>
+                  </div>
+                  <div class="number" id="line-and-numbers-last">
+                    <div class="border-number"></div>
+                    <p>0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="All-chart">
+            <div class="right-chart-container second-chart-for-mobile">
+              <div class="outer-title-chart">
+                <h1 data-en="Net Profit of First Mills">صافي الربح</h1>
+                <p data-en="(All Amounts In SAR Million)">
+                  (جميع المبالغ بالمليون ريال)
+                </p>
+              </div>
+              <div class="contain-numbers-and-chart">
+                <div class="chart">
+                  <div class="progress-bar" data-value="96.50">
+                    <div class="progress" style="background-color: #ffb548">
+                      <p class="progress-value">250.90</p>
+                    </div>
+                    <p class="progress-date">2024</p>
+                  </div>
+                  <div class="progress-bar" data-value="84.62">
+                    <div class="progress" style="background-color: #ffb548">
+                      <p class="progress-value">220.21</p>
+                    </div>
+                    <p class="progress-date">2023</p>
+                  </div>
+                </div>
+                <div class="line-and-numbers">
+                  <div class="number" id="line-and-numbers-first">
+                    <div class="border-number"></div>
+                    <p>260</p>
+                  </div>
+                  <div class="number">
+                    <div class="border-number"></div>
+                    <p>195</p>
+                  </div>
+                  <div class="number">
+                    <div class="border-number"></div>
+                    <p>130</p>
+                  </div>
+                  <div class="number">
+                    <div class="border-number"></div>
+                    <p>65</p>
                   </div>
                   <div class="number" id="line-and-numbers-last">
                     <div class="border-number"></div>
@@ -427,5 +665,144 @@
     <!-- CounterUp (CDN version) -->
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
     <script src="Javascript/bars.js"></script>
+
+    <script>
+      Chart.register(ChartDataLabels);
+
+      let chart;
+
+      const config = {
+        type: "bar",
+        data: {
+          labels: ["الدقـيق", "الأعلاف", "النخالة"],
+          datasets: [
+            {
+              label: "2024",
+              data: [599.12, 311.9, 137.83],
+              backgroundColor: "#f8b545",
+              barThickness: 40,
+              borderSkipped: false,
+            },
+            {
+              label: "2023",
+              data: [552.9, 271.05, 140.31],
+              backgroundColor: "#5f7068",
+              barThickness: 40,
+              borderSkipped: false,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          animation: {
+            duration: 2500, // ✅ Slower animation (1.5s)
+            easing: "easeOutQuart", // ✅ Smooth animation curve
+          },
+          plugins: {
+            legend: {
+              position: "bottom",
+              rtl: true,
+              reverse: true,
+              labels: {
+                boxWidth: 20,
+                font: {
+                  family: "MyFont",
+                  size: 14,
+                },
+              },
+            },
+            tooltip: {
+              enabled: false,
+            },
+            datalabels: {
+              display: true,
+              anchor: "start",
+              align: "center",
+              offset: 0,
+              color: "#ffffff",
+              font: {
+                size: 13,
+                weight: "bold",
+                family: "MyFont",
+              },
+              formatter: (value) => value.toFixed(2),
+            },
+          },
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
+            },
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: {
+                drawOnChartArea: false,
+                drawTicks: false,
+                drawBorder: true,
+                color: "#000",
+                lineWidth: 0,
+              },
+              border: {
+                display: true,
+                width: 1,
+                color: "#000",
+              },
+              ticks: {
+                font: {
+                  family: "MyFont",
+                },
+              },
+            },
+            y: {
+              grid: {
+                drawOnChartArea: false,
+                drawTicks: false,
+                drawBorder: false,
+              },
+              border: {
+                display: true,
+                width: 1,
+                color: "#000",
+              },
+              ticks: {
+                color: "#000",
+                font: {
+                  size: 16,
+                  weight: "300",
+                  family: "MyFont",
+                },
+                padding: 5,
+              },
+            },
+          },
+          barPercentage: 0.9,
+          categoryPercentage: 0.2,
+        },
+        plugins: [ChartDataLabels],
+      };
+
+      const observer = new IntersectionObserver(
+        (entries, observerInstance) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !chart) {
+              const ctx = document.getElementById("myChart").getContext("2d");
+              chart = new Chart(ctx, config);
+              observerInstance.disconnect(); // ✅ Run once, stop observing
+            }
+          });
+        },
+        { threshold: 0.8 } // ✅ Trigger when 50% of chart is in view
+      );
+
+      observer.observe(document.getElementById("myChart"));
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
   </body>
 </html>
