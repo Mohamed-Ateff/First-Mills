@@ -1,0 +1,145 @@
+
+
+/* table starts */
+.custom-table-container{
+    margin-top: 25px;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px; 
+  /* max-width: 600px; */
+}
+
+.custom-table thead tr {
+  transform: translateY(5px); 
+}
+
+/*  First and Last Tables */
+.custom-table-container:nth-of-type(1) th,
+.custom-table-container:nth-of-type(5) th {
+  background-color: #73837F;
+  color: white;
+  padding: 34px 40px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/*  Middle Tables */
+.custom-table-container:nth-of-type(2) th,
+.custom-table-container:nth-of-type(3) th,
+.custom-table-container:nth-of-type(4) th {
+  background-color: #FDD292;
+  color: #4E6A63;
+  padding: 24px 40px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+
+.custom-table td {
+  background-color: #fff;
+  color: #3A4944;
+  padding: 15px 40px 15px 40px;
+  font-size: 18px;
+}
+.custom-table th:nth-child(1),
+.custom-table td:nth-child(1) {
+  width: 40%;
+}
+
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+  width: 30%;
+}
+
+.custom-table th:nth-child(3){
+  width: 20%;
+}
+.custom-table td:nth-child(3) {
+  width: 20%;
+}
+
+
+.custom-table tbody td:first-child {
+    font-weight: 600;
+}
+.custom-table tbody tr:nth-child(even) td {
+background-color: rgba(255, 255, 255, 0.5);
+}
+.custom-table caption{
+  color:#31544B;
+  font-size: 24px;
+text-align: center;
+}
+.table-caption{
+  display: flex;
+   align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.table-caption h3{
+   color:#31544B;
+  font-size: 24px;
+text-align: center;
+margin: 2px;
+}
+.line-caption{
+  height: 4px; 
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+ background-color: rgba(252, 180, 74, 0.4); 
+}
+.table-first-caption{
+display: flex;
+justify-content: space-between;
+align-items: end;
+margin: 0;
+
+}
+.table-first-caption h3{
+color: #163029;
+font-size: 26px;
+font-weight: 700;
+}
+.table-first-caption p{
+color: #5E6863;
+font-size: 18px;
+font-weight: 500;
+}
+/* table-ends */
+
+
+
+
+@media (max-width: 1025px) {
+ 
+  
+}
+
+
+@media (max-width: 768px) {
+ 
+.section-with-picture{
+    flex-wrap: wrap;
+}
+}
+
+
+@media (max-width: 480px) {
+  
+  
+
+.table-title h2{
+font-size: 20px;
+
+}
+}
