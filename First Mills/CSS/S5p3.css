@@ -50,3 +50,41 @@
   width: 100%;
   overflow-x: auto;
 }
+
+/* for s5p10 beacuse it's the same table */
+.custom-table caption{
+  color:#31544B;
+  font-size: 24px;
+text-align: center;
+}
+.table-caption{
+  display: flex;
+   align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.table-caption h3{
+   color:#31544B;
+  font-size: 24px;
+text-align: center;
+margin: 2px;
+}
+.line-caption{
+  height: 4px; 
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+ background-color: rgba(252, 180, 74, 0.4); 
+}
+.table-first-caption{
+display: flex;
+justify-content: space-between;
+align-items: end;
+margin: 0;
+
+}
+.table-first-caption h3{
+color: #163029;
+font-size: 26px;
+font-weight: 700;
+}
