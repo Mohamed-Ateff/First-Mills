@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>القروض</title>
+    <link rel="stylesheet" href="CSS/Navbar.css" />
+    <link rel="stylesheet" href="CSS/SideMenu.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/Footer.css" />
+    <link rel="stylesheet" href="CSS/Hero.css" />
+    <link rel="stylesheet" href="CSS/S5p3.css" />
+    <script src="Javascript/Navbar.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img class="logo" src="Images/logo.png" alt="" /></a>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="hero">
+            <div class="side-menu">
+                <div class="circle">
+                    <div class="border-for-circle">EN</div>
+                </div>
+                <div class="line-one"></div>
+
+                <a href="">
+                    <div class="hexagon hexagon1 active">
+                        <img src="Images/one.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/two.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/three.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/four.png" alt="" />
+                    </div>
+                </a>
+                <a href="">
+                    <div class="hexagon hexagon2">
+                        <img src="Images/five.png" alt="" />
+                    </div>
+                </a>
+
+                <div class="line-two"></div>
+            </div>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+                    نظرة عامة
+                </div>
+                <div class="mobile-submenu" id="mobile-overview">
+                    <a href="S1p1.html" class="page">أبرز النتائج المالية والتشغيلية</a>
+                    <a href="S1p2.html" class="page">لمحة عن شركة المطاحن الأولى</a>
+                    <a href="S1p3.html" class="page">مسيرة نمو الشركة</a>
+                    <a href="S1p4.html" class="page">مزايا الاستثمار</a>
+                    <a href="S1p5.html" class="page">القيم الأساسية</a>
+                    <a href="S1p6.html" class="page">الوجود الجغرافي</a>
+                    <a href="S1p7.html" class="page">الشركات التابعة</a>
+                    <a href="S1p8.html" class="page">منتجات الشركة</a>
+                    <a href="S1p9.html" class="page">العلامات التجارية</a>
+                    <a href="S1p10.html" class="page">أبرز إنجازات عام 2024</a>
+                    <a href="S1p11.html" class="page">الجوائز والشهادات</a>
+                    <a href="S1p12.html" class="page">شعار العام</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-management')">
+                    كلمة الإدارة
+                </div>
+                <div class="mobile-submenu" id="mobile-management">
+                    <a href="S2p1.html" class="page">كلمة رئيس مجلس الادارة</a>
+                    <a href="S2p2.html" class="page">رسالة الرئيس التنفيذي</a>
+                    <a href="S2p3.html" class="page">كلمة رئيس القطاع المالي</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-strategy')">
+                    التقرير الاستراتيجي
+                </div>
+                <div class="mobile-submenu" id="mobile-strategy">
+                    <a href="S3p1.html" class="page">نموذج العمل التجاري</a>
+                    <a href="S3p2.html" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+                    <a href="S3p3.html" class="page">نظرة عامة على السوق والقطاع</a>
+                    <a href="S3p4.html" class="page">مشاركة الجهات المعنية</a>
+                    <a href="S3p5.html" class="page">الأهداف المستقبلية والتطلعات</a>
+                    <a href="S3p6.html" class="page">التحديات والفرص</a>
+                    <a href="S3p7.html" class="page">إدارة المخاطر</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-operational')">
+                    المراجعة التشغيلية
+                </div>
+                <div class="mobile-submenu" id="mobile-operational">
+                    <a href="S4p1.html" class="page">الأنشطة الرئيسية للشركة</a>
+                    <a href="S4p2.html" class="page">منتجات الشركة وعلاماتها التجارية</a>
+                    <a href="S4p3.html" class="page">القدرات التشغيلية في أرقام</a>
+                    <a href="S4p4.html" class="page">معلومات عن صناع الشركة</a>
+                    <a href="S4p5.html" class="page">العمالء وشركاء النجاح</a>
+                    <a href="S4p6.html" class="page">ضمان الجودة ورقابتها</a>
+                    <a href="S4p7.html" class="page">البيئة والصحة والسلامة</a>
+                    <a href="S4p8.html" class="page">البنية التحتية</a>
+                    <a href="S4p9.html" class="page">مشروع العلاج الحراري</a>
+                    <a href="S4p10.html" class="page">التسويق والتواصل المؤسسي</a>
+                    <a href="S4p11.html" class="page">الموظفون والثقافة المؤسسية</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-governance')">
+                    الحوكمة و الاستدامة
+                </div>
+                <div class="mobile-submenu" id="mobile-governance">
+                    <a href="S5p1.html" class="page">حوكمة الشركة</a>
+                    <a href="S5p2.html" class="page">القوانين ودرجة الالتزام</a>
+                    <a href="S5p3.html" class="page">العقوبات والجزاءات والمخالفات</a>
+                    <a href="S5p4.html" class="page">الهيكل التنظيمي للشركة</a>
+                    <a href="S5p5.html" class="page">مجلس الإدارة</a>
+                    <a href="S5p6.html" class="page">لجان مجلس الإدارة</a>
+                    <a href="S5p7.html" class="page">الجمعيات العامة للمساهمين</a>
+                    <a href="S5p8.html" class="page">الإدارة التنفيذية</a>
+                    <a href="S5p9.html" class="page">مكافآت مجلس الإدارة</a>
+                    <a href="S5p10.html" class="page">الأطراف ذوي العلاقة</a>
+                    <a href="S5p11.html" class="page">المدفوعات النظامية</a>
+                    <a href="S5p12.html" class="page">أسهم الخزينة</a>
+                    <a href="S5p13.html" class="page">اللوائح</a>
+                    <a href="S5p14.html" class="page">المساهمون وأهداف المستثمرين</a>
+                    <a href="S5p15.html" class="page">المراجعة والرقابة الداخلية</a>
+                    <a href="S5p16.html" class="page">إفصاحات مجلس الإدارة</a>
+                    <a href="S5p17.html" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+                </div>
+
+                <div class="section" onclick="toggleSubmenu(this, 'mobile-financials')">
+                    القوائم المالية
+                </div>
+                <div class="mobile-submenu" id="mobile-financials">
+                    <a href="S6p1.html" class="page">ملخص الأداء المالي السنوي</a>
+                    <a href="S6p2.html" class="page">تطور القوائم خلال 5 سنوات</a>
+                    <a href="S6p3.html" class="page">أبرز النسب والمؤشرات المالية</a>
+                    <a href="S6p4.html" class="page">تحليل النتائج المالية السنوية</a>
+                    <a href="S6p5.html" class="page">نظرة على النتائج الفصلية</a>
+                    <a href="S6p6.html" class="page">تقرير المراجع والقوائم المالية</a>
+                </div>
+
+                <div class="section">
+                    <a href="S7p1.html" class="page">مركز التحميل</a>
+                </div>
+            </div>
+
+            <div class="hero-images">
+                <img class="image-hero" src="Images/img1.png" alt="" />
+                <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+                <div class="title-section">
+                    <div class="white-title">
+                        <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+                        <p>الرئيسية</p>
+                        <img class="arrow" src="Images/arrow-footer.png" alt="" />
+                        <p>نظرة عامة</p>
+                    </div>
+                    <div class="green-title">
+                        <h1>القروض </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-Union"></div>
+            <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+            <div class="menu-container">
+                <div class="main-menu">
+                    <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+                    <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+                    <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+                    <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+                    <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+                    <div class="section" data-submenu="Tab6">القوائم المالية</div>
+                    <a href="" class="section" data-submenu="Tab7">مركز التحميل</a>
+                </div>
+
+                <div class="menu-divider"></div>
+
+                <div class="submenu active" id="Tab1">
+                    <a href="S1p1.html" class="page">أبرز النتائج المالية والتشغيلية</a>
+                    <a href="S1p2.html" class="page">لمحة عن شركة المطاحن الأولى</a>
+                    <a href="S1p3.html" class="page">مسيرة نمو الشركة</a>
+                    <a href="S1p4.html" class="page">مزايا الاستثمار</a>
+                    <a href="S1p5.html" class="page">القيم الأساسية</a>
+                    <a href="S1p6.html" class="page">الوجود الجغرافي</a>
+                    <a href="S1p7.html" class="page">الشركات التابعة</a>
+                    <a href="S1p8.html" class="page">منتجات الشركة</a>
+                    <a href="S1p9.html" class="page">العلامات التجارية</a>
+                    <a href="S1p10.html" class="page">أبرز إنجازات عام 2024</a>
+                    <a href="S1p11.html" class="page">الجوائز والشهادات</a>
+                    <a href="S1p12.html" class="page">شعار العام</a>
+                </div>
+
+                <div class="submenu" id="Tab2">
+                    <a href="S2p1.html" class="page">كلمة رئيس مجلس الادارة</a>
+                    <a href="S2p2.html" class="page">رسالة الرئيس التنفيذي</a>
+                    <a href="S2p3.html" class="page">كلمة رئيس القطاع المالي</a>
+                </div>
+
+                <div class="submenu" id="Tab3">
+                    <a href="S3p1.html" class="page">نموذج العمل التجاري</a>
+                    <a href="S3p2.html" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+                    <a href="S3p3.html" class="page">نظرة عامة على السوق والقطاع</a>
+                    <a href="S3p4.html" class="page">مشاركة الجهات المعنية</a>
+                    <a href="S3p5.html" class="page">الأهداف المستقبلية والتطلعات</a>
+                    <a href="S3p6.html" class="page">التحديات والفرص</a>
+                    <a href="S3p7.html" class="page">إدارة المخاطر</a>
+                </div>
+
+                <div class="submenu" id="Tab4">
+                    <a href="S4p1.html" class="page">الأنشطة الرئيسية للشركة</a>
+                    <a href="S4p2.html" class="page">منتجات الشركة وعلاماتها التجارية</a>
+                    <a href="S4p3.html" class="page">القدرات التشغيلية في أرقام </a>
+                    <a href="S4p4.html" class="page">معلومات عن صناع الشركة </a>
+                    <a href="S4p5.html" class="page">العمالء وشركاء النجاح</a>
+                    <a href="S4p6.html" class="page">ضمان الجودة ورقابتها</a>
+                    <a href="S4p7.html" class="page">البيئة والصحة والسلامة</a>
+                    <a href="S4p8.html" class="page">البنية التحتية</a>
+                    <a href="S4p9.html" class="page">مشروع العلاج الحراري</a>
+                    <a href="S4p10.html" class="page">التسويق والتواصل المؤسسي</a>
+                    <a href="S4p11.html" class="page">الموظفون والثقافة المؤسسية</a>
+                </div>
+
+                <div class="submenu" id="Tab5">
+                    <a href="S5p1.html" class="page">حوكمة الشركة</a>
+                    <a href="S5p2.html" class="page">القوانين ودرجة الالتزام</a>
+                    <a href="S5p3.html" class="page">العقوبات والجزاءات والمخالفات</a>
+                    <a href="S5p4.html" class="page">الهيكل التنظيمي للشركة</a>
+                    <a href="S5p5.html" class="page">مجلس الإدارة</a>
+                    <a href="S5p6.html" class="page">لجان مجلس الإدارة</a>
+                    <a href="S5p7.html" class="page">الجمعيات العامة للمساهمين</a>
+                    <a href="S5p8.html" class="page">الإدارة التنفيذية</a>
+                    <a href="S5p9.html" class="page">مكافآت مجلس الإدارة</a>
+                    <a href="S5p10.html" class="page">الأطراف ذوي العلاقة</a>
+                    <a href="S5p11.html" class="page">المدفوعات النظامية</a>
+                    <a href="S5p12.html" class="page">أسهم الخزينة</a>
+                    <a href="S5p13.html" class="page">اللوائح</a>
+                    <a href="S5p14.html" class="page">المساهمون وأهداف المستثمرين</a>
+                    <a href="S5p15.html" class="page">المراجعة والرقابة الداخلية</a>
+                    <a href="S5p16.html" class="page">إفصاحات مجلس الإدارة</a>
+                    <a href="S5p17.html" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+                </div>
+
+                <div class="submenu" id="Tab6">
+                    <a href="S6p1.html" class="page">ملخص الأداء المالي السنوي</a>
+                    <a href="S6p2.html" class="page">تطور القوائم خلال 5 سنوات</a>
+                    <a href="S6p3.html" class="page">أبرز النسب والمؤشرات المالية</a>
+                    <a href="S6p4.html" class="page">تحليل النتائج المالية السنوية</a>
+                    <a href="S6p5.html" class="page">نظرة على النتائج الفصلية</a>
+                    <a href="S6p6.html" class="page">تقرير المراجع والقوائم المالية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="start">
+
+
+        <!-- tables -->
+        <div class="custom-table-container">
+            <div class="table-responsive">
+                <table class="custom-table">
+                    <caption>
+                        <div class="table-caption">
+                            <div class="line-caption"></div>
+
+                            <h3>
+                                بيان مفصل بقيمة القروض الاجمالية للشركة اخر ثلاث سنوات
+                                <p>(جميع المبالغ بالمليون ريال السعودي)</p>
+                            </h3>
+                            <div class="line-caption"></div>
+                        </div>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>بيان / العام</th>
+                            <th>عام 2024م</th>
+                            <th>عام 2023م</th>
+                            <th>عام 2022م</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+                        <tr>
+                            <td>
+                                قروض طويلة الأجل
+
+                            </td>
+                            <td>848,270,768
+                            </td>
+                            <td> 936,386,086
+                            </td>
+                            <td>1,006,401,558
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                جزء متداول من قروض طويلة الأجل
+
+                            </td>
+                            <td>162,367,151
+                            </td>
+                            <td> 107,722,374
+                            </td>
+                            <td>164,272,151
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>قروض قصيرة الأجل
+                            </td>
+                            <td>-</td>
+                            <td> -</td>
+                            <td>-</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>الإجمالي
+
+                            </td>
+                            <td>1,010,637,919
+                            </td>
+                            <td> 1,044,108,460
+                            </td>
+                            <td>1,170,673,709
+                            </td>
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <div class="custom-table-container" style="margin-top: 100px;">
+            <div class="table-responsive">
+                <table class="custom-table">
+                    <caption>
+                        <div class="table-caption">
+                            <div class="line-caption"></div>
+
+                            <h3>
+                                قيمة القروض التي على الشركة لصالح البنوك حتى نهاية عام 2024م
+                                <p>(جميع المبالغ بالمليون ريال السعودي)</p>
+                            </h3>
+                            <div class="line-caption"></div>
+                        </div>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>م</th>
+                            <th>اسم الجهة المانحة للقرض
+                            </th>
+                            <th>مبلغ أصل القرض</th>
+                            <th>مدة القرض</th>
+                            <th>مبالغ مسددة
+                                خلال العام </th>
+                            <th>مبالغ مسحوبة خلال العام</th>
+                            <th>رصيد القروض كما في نهاية العام</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>مصرف الإنماء
+                            </td>
+                            <td>1,300,000,000
+                            </td>
+                            <td>15 سنة
+                            </td>
+                            <td>151,705,645.53</td>
+                            <td>0</td>
+                            <td>877,751,785.46</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>صندوق التنمية
+                                الصناعية السعودي 
+                            </td>
+                            <td>150,000,000
+                            </td>
+                            <td>سنتين</td>
+                            <td>0</td>
+                            <td>150,000,000</td>
+                            <td>150,000,000</td>
+
+                        </tr>
+                       
+                
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- tables ends  -->
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="side-of-footer">
+                <a href="" class="next">
+                    <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+                </a>
+                <h2>عنوان الشاشة التالية</h2>
+            </div>
+            <div class="side-of-footer">
+                <a href="" style="background: #30444e; color: white" class="contact-us btn-footer">
+                    <img src="Images/email.png" alt="" />
+                    تواصلوا معنا</a>
+                <a href="" style="background: #ffb548; color: #30444e" class="download-center btn-footer">
+                    <img src="Images/download.png" alt="" />
+                    مركز التحميل</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="Javascript/jquery.counterup.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/counter.js"></script>
+    <!-- CounterUp (CDN version) -->
+    <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+</body>
+
+</html>

@@ -95,3 +95,11 @@ color: #163029;
 font-size: 26px;
 font-weight: 700;
 }
+
+/* for S5p13 */
+
+.custom-table tbody tr.highlight td {
+  background-color: #FFC46C;
+  /* font-weight: bold; */
+  color: #31544B;
+}
