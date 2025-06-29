@@ -27,22 +27,28 @@
   width: 100%;
   height: auto;
 }
+.executive-image-big-small{
 
-.executive-image,.executive-image-big {
+}
+.executive-image,.executive-image-big,.executive-image-small {
  width: 385.8px;
   height: 481px;
   position: absolute;
   right: 7.3%;
   z-index: 3;
   top: auto;
-bottom: -456px; /* the image height */
+bottom: -466px; /* the image height */
 
 }
 .executive-image-big {
-bottom: -496px; /* the image height */
-
+bottom: -536px; /* the image height */
+right: 7%;
 }
-.executive-image img,.executive-image-big img {
+.executive-image-small {
+bottom: -506px; /* the image height */
+right: 7%;
+}
+.executive-image img,.executive-image-big img,.executive-image-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
