@@ -27,7 +27,7 @@
   right: 50%; /* adjust for second title */
 }
 .List {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 .List-header {
   display: flex;
@@ -71,7 +71,7 @@
   justify-content: flex-start;
   color: #6b95bd;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 300;
   padding-bottom: 15px;
 }
 .title-with-arrow {
@@ -79,8 +79,8 @@
   align-items: center;
   justify-content: flex-start;
   color: #3a4944;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 100;
   padding-right: 30px;
 }
 .intersect {

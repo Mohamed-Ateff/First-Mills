@@ -1,10 +1,58 @@
+.List {
+  padding-top: 25px;
+}
+.List-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  flex-grow: 1;
+  background-color: #31544b;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  padding: 20px;
+}
+.list-item img {
+  height: 55px;
+  margin-right: 10px;
+}
+.list-item h1 {
+  font-size: 28px;
+  padding: 20px;
+}
+.orange-number {
+  color: #ffb548;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 20px;
+}
+.list-big {
+  padding-top: 30px;
+}
+.list-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #6b95bd;
+  font-size: 18px;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
 .title-with-arrow {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #4e6a63;
-  font-size: 14px;
-  font-weight: 500;
+  color: #3a4944;
+  font-size: 17px;
+  font-weight: 100;
   padding-right: 30px;
 }
 .intersect {
@@ -16,75 +64,68 @@
   background-size: 100% 100%;
 }
 
-.list-big {
-  padding-top: 24px;
-}
-.list-text {
-   display: flex;
+.circle-orange {
+  width: 40px;
+  height: 40px;
+  background-color: #f9a826;
+  border-radius: 50%;
+  margin-right: 10px;
   align-items: center;
-  justify-content: flex-start;
-  padding-bottom: 15px;
-}
-.circle-orange{
-    width: 40px;
-    height: 40px;
-    background-color: #F9A826;
-    border-radius: 50%;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
 
-.arrow-div,.arrow-div-grey{
+.arrow-div,
+.arrow-div-grey {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-    align-items: center;
+  align-items: center;
   color: #4e6a63;
   font-size: 14px;
   font-weight: 500;
   padding: 14px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-bottom: 12px;
 }
 .arrow-div-grey {
-  background-color: #DFDDDD;
+  background-color: #dfdddd;
 }
 
 .arrow-text {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-right: 40px;
+  font-size: 17px;
 }
 
 /* grid */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  background-color: #F6F5F4;
-   padding-top: 20px; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background-color: #f6f5f4;
+  padding-top: 25px;
   direction: rtl;
   font-family: Bahij TheSansArabic;
 }
 
 .grid-item {
   background-color: white;
-  padding: 10px;
+  padding: 35px;
   text-align: right;
 }
 
 .grid-item.wide {
-  grid-column: span 2;
-  padding-left: 230px;
+  grid-column: span 1.5;
+  /* padding-left: 230px; */
 }
 
 .grid-item .number {
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-weight: bold;
-  color: #31544B;
+  color: #31544b;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -94,19 +135,18 @@
   content: "";
   display: block;
   width: 70px;
+  bottom: 10px;
+  position: relative;
   height: 10px;
-  background-color: #FCB44A;
+  background-color: #fcb44a;
   margin: 1px 0 0 0;
 }
 
 .grid-item p {
-  color: #31544B;
+  color: #31544b;
   font-size: 1rem;
   line-height: 1.8;
 }
-
-
-
 
 /* grid ends*/
 
@@ -115,56 +155,57 @@
     font-size: 12px;
     padding-right: 20px;
   }
-  
+
   .list-text {
     padding-bottom: 10px;
   }
- .intersect {
+  .intersect {
     width: 15px;
     height: 15px;
-  } 
-  .arrow-div, .arrow-div-grey {
+  }
+  .arrow-div,
+  .arrow-div-grey {
     padding: 10px;
     font-size: 12px;
   }
-  
+
   .circle-orange {
     width: 30px;
     height: 30px;
     margin-right: 8px;
   }
-  .circle-orange img{
+  .circle-orange img {
     width: 15px;
     height: 15px;
   }
-  
+
   .arrow-text {
     padding-right: 20px;
   }
   .grid-container {
-  grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-item.wide {
+    grid-column: span 1;
+    padding-left: 230px;
+  }
+  .grid-item.wide {
+    padding-left: 0px;
+  }
 }
-.grid-item.wide {
-  grid-column: span 1;
-  padding-left: 230px;
-}
-    .grid-item.wide {
-  padding-left: 0px;
-}
-}
-@media screen  and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .circle-orange {
     width: 25px;
     height: 25px;
     margin-right: 2px;
     padding: 7px;
   }
-  .circle-orange img{
+  .circle-orange img {
     width: 10px;
     height: 10px;
   }
-    .intersect {
+  .intersect {
     width: 10px;
     height: 10px;
-  } 
+  }
 }
