@@ -194,6 +194,7 @@
   }
   .list-item h1 {
     padding-right: 10px;
+    font-size: 13px;
   }
   .orange-number {
     font-size: 40px;
@@ -202,8 +203,8 @@
     width: 48%;
   }
   .logo-div::before {
-  top: -28px;
-}
+    top: -28px;
+  }
 }
 
 @media (max-width: 480px) {

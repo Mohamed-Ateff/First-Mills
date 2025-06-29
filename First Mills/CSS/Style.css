@@ -47,6 +47,17 @@ a {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .start {
+    margin-top: 20px !important;
+    width: 90%;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
 .border-with-title-under-it {
   width: fit-content;
   color: #31544b;
