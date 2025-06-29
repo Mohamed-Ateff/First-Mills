@@ -9,6 +9,7 @@
 
 .table-container {
   overflow-x: auto;
+  margin: 30px auto 300px auto;
 }
 
 table {
@@ -24,12 +25,19 @@ td {
 }
 
 th {
-  background-color: #73837f;
+  background-color: #4E6A63;
   color: white;
   padding: 30px;
   text-align: start;
 }
 
 .total-row {
-  background-color: #ffc46c;
+  background-color: #FDD292 !important;
+  font-weight: bold;
 }
+tbody tr{
+  background-color: #ffffff;
+}
+tbody tr:nth-child(odd) {
+      background-color: rgb(255, 255, 255, 0.5);
+    }
