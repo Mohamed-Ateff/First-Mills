@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>إدارة المخاطر</title>
+    <title>Side Menu</title>
     <link rel="stylesheet" href="CSS/Navbar.css" />
     <link rel="stylesheet" href="CSS/SideMenu.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
     <link rel="stylesheet" href="CSS/Header.css" />
     <link rel="stylesheet" href="CSS/Footer.css" />
     <link rel="stylesheet" href="CSS/Hero.css" />
-    <link rel="stylesheet" href="CSS/S3p7.css" />
+    <link rel="stylesheet" href="CSS/S6p2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="Javascript/Navbar.js"></script>
   </head>
   <body>
@@ -22,7 +24,7 @@
       </header>
     </div>
 
-    <div class="container">
+    <div class="container-for-hero">
       <div class="hero">
         <div class="side-menu">
           <div class="circle"><div class="border-for-circle">EN</div></div>
@@ -170,20 +172,21 @@
         </div>
 
         <div class="hero-images">
-          <img class="image-hero" src="Images/img1.png" alt="" />
+          <img class="image-hero" src="Images/S6p2_img1.png" alt="" />
           <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
           <div class="title-section">
             <div class="white-title">
               <img class="hero-icon" src="Images/hero-icon.png" alt="" />
               <p>الرئيسية</p>
               <img class="arrow" src="Images/arrow-footer.png" alt="" />
-              <p>التقرير الاستراتيجي</p>
+              <p>نظرة عامة</p>
             </div>
             <div class="green-title">
-              <h1>إدارة المخاطر</h1>
+              <h1>تطور القوائم المالية خلال 5 سنوات</h1>
             </div>
           </div>
         </div>
+
         <div class="image-Union"></div>
         <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
 
@@ -282,164 +285,239 @@
     </div>
 
     <div class="start">
-      <div class="border-with-title-under-it" style="margin-top: 130px">
-        <div>
-          <h2>إدارة المخاطر</h2>
+      <div class="title-flex">
+        <div class="section-title border-with-title-under-it">
+          <h2>تطور القوائم المالية خلال الخمس سنوات الأخيرة</h2>
           <div class="border-bottom"></div>
         </div>
+        <span class="title-span">(جميع المبالغ بالمليون ريال)</span>
       </div>
 
-      <div class="arrow-div" style="margin-top: 32px">
-        <div class="circle-blue">
-          <p class="counter number-orange">1</p>
-        </div>
-        <div class="arrow-text">
-          يتوافق إطار عمل إدارة المخاطر الخاص بشركة المطاحن الأولى مع المعايير
-          العالمية الرائدة وأفضل الممارسات في القطاع.
-        </div>
-      </div>
-      <div class="arrow-div">
-        <div class="circle-blue">
-          <p class="counter number-orange">2</p>
-        </div>
-        <div class="arrow-text">
-          تدير الشركة المخاطر تحت إشراف مجلس الإدارة، مع متابعة من الرئيس
-          التنفيذي وفريق من مختلف المستويات.
-        </div>
-      </div>
-      <div class="arrow-div">
-        <div class="circle-blue">
-          <p class="counter number-orange">3</p>
-        </div>
-        <div class="arrow-text">
-          تتخذ الشركة التدابير اللازمة للاستجابة للمخاطر وتراقبها عن كثب من أجل
-          تجنب التعرض لتلك المخاطر أو تقليلها.
-        </div>
-      </div>
-      <div class="arrow-div">
-        <div class="circle-blue">
-          <p class="counter number-orange">4</p>
-        </div>
-        <div class="arrow-text">
-          تُرتب المخاطر حسب التأثير لتسهيل اتخاذ القرارات وإدارة الموارد بشكل
-          أمثل.
-        </div>
-      </div>
-      <div class="arrow-div">
-        <div class="circle-blue">
-          <p class="counter number-orange">5</p>
-        </div>
-        <div class="arrow-text">
-          تعمل الإدارة الاستراتيجية مع فريق المخاطر لضمان توافق التقييمات والخطط
-          مع الإطار العام للعمل.
-        </div>
-      </div>
-      <div class="arrow-div">
-        <div class="circle-blue">
-          <p class="counter number-orange">6</p>
-        </div>
-        <div class="arrow-text">
-          يتم مراجعة المخاطر بانتظام عبر اجتماعات أسبوعية وشهرية وربعية، مع
-          إعداد تقارير دورية.
-        </div>
-      </div>
-      <div class="arrow-div">
-        <div class="circle-blue">
-          <p class="counter number-orange">7</p>
-        </div>
-        <div class="arrow-text">
-          تعرض على الإدارة التنفيذية ومجلس الإدارة لضمان الشفافية.
-        </div>
-      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>البيان / العام المالي</th>
+              <th>2020</th>
+              <th>2021</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th>2024</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #ffffff">
+              <td>الإيرادات</td>
+              <td>469.88</td>
+              <td>494.86</td>
+              <td>507.43</td>
+              <td>552.9</td>
+              <td>599.12</td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>تكلفة الإيرادات</td>
+              <td>15 %</td>
+              <td>15 %</td>
+              <td>12 %</td>
+              <td>13 %</td>
+              <td>14 %</td>
+            </tr>
+            <tr style="background-color: #ffffff">
+              <td>إجمالي الربح</td>
+              <td>77 %</td>
+              <td>78 %</td>
+              <td>81 %</td>
+              <td>80 %</td>
+              <td>79 %</td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>مصاريف عمومية وادارية</td>
+              <td>8 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>مصاريف البيع والتوزيع</td>
+              <td>8 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+            </tr>
 
-      <div class="border-with-title-under-it-center" style="margin-top: 30px">
-        <div>
-          <h2>المخاطر الرئيسية</h2>
-          <div class="border-bottom"></div>
-        </div>
-      </div>
-      <div class="four-cards-only">
-        <div class="one-card">
-          <div class="logo-div">
-            <span class="counter">1</span>
-            <span>0</span>
-          </div>
-          <h3>المخاطر التشغيلية</h3>
-          <div class="text-padding">
-            <span>- ارتفاع التكاليف وزيادة المصاريف التشغيلية </span>
-            <br />
-            <span>- الحوادث المتعلقة بالسلامة المهنية </span>
-            <br />
-            <span>- الأعطال الفنية والتقنية </span>
-            <br />
-            <span>- سوء حفظ وإدارة المخزون </span>
-            <br />
-            <span>- عيوب الإنتاج </span>
-            <br />
-            <span>- اضطراب سلاسل الإمداد وتغير أسعار المواد الخام </span>
-          </div>
-        </div>
-        <div class="one-card">
-          <div class="logo-div">
-            <span class="counter">2</span>
-            <span>0</span>
-          </div>
-          <h3>المخاطر المالية والاقتصادية</h3>
-          <div class="text-padding">
-            <span>- أسعار الفائدة </span>
-            <br />
-            <span>- تذبذب أسعار الصرف </span>
-            <br />
-            <span>- مخاطر الائتمان </span>
-            <br />
-            <span>- عجز السيولة والتوسع في الاقتراض </span>
-            <br />
-          </div>
-        </div>
-        <div class="one-card">
-          <div class="logo-div">
-            <span class="counter">3</span>
-            <span>0</span>
-          </div>
-          <h3>المخاطرالتنظيمية</h3>
-          <div class="text-padding">
-            <span>- الدعم الحكومي </span>
-            <br />
-            <span>- الالتزام التنظيمي </span>
-            <br />
-            <span>- نطاق الترخيص </span>
-            <br />
-            <span>- الضرائب والرسوم </span>
-            <br />
-            <span>- اللوائح والأنظمة </span>
-            <br />
-            <span>- متطلبات التوطين والعمالة الأجنبية </span>
-            <br />
-          </div>
-        </div>
-        <div class="one-card">
-          <div class="logo-div">
-            <span class="counter">4</span>
-            <span>0</span>
-          </div>
-          <h3>المخاطر السوقية</h3>
-          <div class="text-padding">
-            <span>- البيئة التنافسية </span>
-            <br />
-            <span>- التركز الجغرافي للإيرادات </span>
-            <br />
-            <span>- تغير أنماط الاستهلاك </span>
-            <br />
-            <span>- ظروف السوق الخارجة عن السيطرة </span>
-            <br />
-            <span>- الكوارث الطبيعية وتغيرات المناخ </span>
-            <br />
-            <span>- تفشي الفيروسات والأمراض المُعدية </span>
-            <br />
-            <span>- الأمن السيبراني </span>
-            <br />
-          </div>
-        </div>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>الربح التشغيلي</td>
+              <td>8 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+            </tr>
+
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>الربح قبل الزكاة</td>
+              <td>8 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+            </tr>
+
+            <tr class="total-row">
+              <td>مصروف الزكاة</td>
+              <td>857,243.03</td>
+              <td>903,765.62</td>
+              <td>987,810.05</td>
+              <td>1,031,400.43</td>
+              <td>1,125,616.14</td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>صافي الربح</td>
+              <td>8 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+              <td>7 %</td>
+            </tr>
+
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>ربحية السهم (ريال)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td>قائمة المركز المالي</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="background-color: #ffffff; opacity: 50%">
+              <td></td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -483,5 +561,145 @@
     <script src="Javascript/counter.js"></script>
     <!-- CounterUp (CDN version) -->
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+    <script src="Javascript/bars.js"></script>
+
+    <script>
+      Chart.register(ChartDataLabels);
+
+      let chart;
+
+      const config = {
+        type: "bar",
+        data: {
+          labels: ["الدقـيق", "الأعلاف", "النخالة"],
+          datasets: [
+            {
+              label: "2024",
+              data: [599.12, 311.9, 137.83],
+              backgroundColor: "#f8b545",
+              barThickness: 40,
+              borderSkipped: false,
+            },
+            {
+              label: "2023",
+              data: [552.9, 271.05, 140.31],
+              backgroundColor: "#5f7068",
+              barThickness: 40,
+              borderSkipped: false,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          animation: {
+            duration: 2500, // ✅ Slower animation (1.5s)
+            easing: "easeOutQuart", // ✅ Smooth animation curve
+          },
+          plugins: {
+            legend: {
+              position: "bottom",
+              rtl: true,
+              reverse: true,
+              labels: {
+                boxWidth: 20,
+                font: {
+                  family: "MyFont",
+                  size: 14,
+                },
+              },
+            },
+            tooltip: {
+              enabled: false,
+            },
+            datalabels: {
+              display: true,
+              anchor: "start",
+              align: "center",
+              offset: 0,
+              color: "#ffffff",
+              font: {
+                size: 13,
+                weight: "bold",
+                family: "MyFont",
+              },
+              formatter: (value) => value.toFixed(2),
+            },
+          },
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0,
+            },
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              grid: {
+                drawOnChartArea: false,
+                drawTicks: false,
+                drawBorder: true,
+                color: "#000",
+                lineWidth: 0,
+              },
+              border: {
+                display: true,
+                width: 1,
+                color: "#000",
+              },
+              ticks: {
+                font: {
+                  family: "MyFont",
+                },
+              },
+            },
+            y: {
+              grid: {
+                drawOnChartArea: false,
+                drawTicks: false,
+                drawBorder: false,
+              },
+              border: {
+                display: true,
+                width: 1,
+                color: "#000",
+              },
+              ticks: {
+                color: "#000",
+                font: {
+                  size: 16,
+                  weight: "300",
+                  family: "MyFont",
+                },
+                padding: 5,
+              },
+            },
+          },
+          barPercentage: 0.9,
+          categoryPercentage: 0.2,
+        },
+        plugins: [ChartDataLabels],
+      };
+
+      const observer = new IntersectionObserver(
+        (entries, observerInstance) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !chart) {
+              const ctx = document.getElementById("myChart").getContext("2d");
+              chart = new Chart(ctx, config);
+              observerInstance.disconnect(); // ✅ Run once, stop observing
+            }
+          });
+        },
+        { threshold: 0.8 } // ✅ Trigger when 50% of chart is in view
+      );
+
+      observer.observe(document.getElementById("myChart"));
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
   </body>
 </html>

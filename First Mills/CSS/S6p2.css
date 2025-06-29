@@ -1,0 +1,35 @@
+.title-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-span{
+    color: #787878;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+th {
+  background-color: #73837f;
+  color: white;
+  padding: 30px;
+  text-align: start;
+}
+
+.total-row {
+  background-color: #ffc46c;
+}
