@@ -1,83 +1,80 @@
 .executive-wrapper {
+  position: relative;
+  background-color: #f6f5f4;
+  padding-bottom: 306px; /* reserve space for the name bar */
+}
+
+/* the orange name bar absolutely at bottom */
+.executive-name-bar {
   width: 100%;
+  height: 306px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:
+    radial-gradient(circle at 75% top, #f6f5f4 0px, #f6f5f4 220px, transparent 220px),
+    linear-gradient(to right, #31544b, #eda842);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 100px;
+  z-index: 1;
 }
 
+/* rest same as before */
 .executive-top {
-  margin: 0 auto;
-  padding: 0px 0px 0;
   position: relative;
-  width: 50%;
+  width: 100%;
+  height: auto;
 }
 
-.executive-text {
-  flex: 1;
-  width: 60%;
-  padding: 0 20px;
-}
-
-.executive-text p {
-  font-size: 19px;
-  line-height: 36px;
-  color: #31544b;
-  text-align: justify;
-  padding-top: 40px;
-}
-
-.executive-image {
-  width: 384.8px;
+.executive-image,.executive-image-big {
+ width: 385.8px;
   height: 481px;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  transform: translate(-18%, -1%);
-}
+  position: absolute;
+  right: 7.3%;
+  z-index: 3;
+  top: auto;
+bottom: -456px; /* the image height */
 
-.executive-image img {
+}
+.executive-image-big {
+bottom: -496px; /* the image height */
+
+}
+.executive-image img,.executive-image-big img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* === Orange Name Box === */
-.executive-name-bar {
-  width: 100%;
-  height: 306px;
-  margin-top: -200px; /* Pull up so image overlaps */
-  background: radial-gradient(
-      circle at 76% top,
-      #f6f5f4 0px,
-      #f6f5f4 220px,
-      transparent 220px
-    ),
-    linear-gradient(to right, #31544b, #eda842);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-left: 200px;
-  position: relative;
-  z-index: 1;
+.executive-text {
+  max-width: 60%;
+  margin-inline-start: auto;
+  padding: 90px 90px 0 0;
+  z-index: 2;
+}
+.executive-text p {
+  font-size: 19px;
+  line-height: 36px;
+  color: #31544b;
+  text-align: justify;
 }
 
 .name-box {
   color: white;
   text-align: right;
 }
-
 .name-box h3 {
   font-size: 2.5rem;
   margin: 0;
   font-weight: bold;
 }
-
 .name-box p {
   font-size: 1.5rem;
   color: #ffd891;
   margin: 5px 0 0;
 }
-
 /* second section */
 
 /* Some P under each other */
@@ -105,127 +102,220 @@ ul {
 
 /* Some P under each other Ends */
 
-@media (max-width: 1025px) {
-  .executive-image {
-    width: 284.8px;
-    height: 281px;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-    transform: translate(-22%, 82%);
+@media (max-width: 1024px) {
+  
+  .executive-wrapper {
+    grid-template-rows: auto 250px;
   }
-  .executive-image img {
-    width: 80%;
+
+  .executive-image,
+  .executive-image-big {
+    width: 250px;
+    height: 300px;
+    right: 10%;
+    bottom: -450px;
+  }
+  .executive-image-big {
+   
+   bottom: -530px;
   }
 
   .executive-name-bar {
-    height: 180px;
-    margin-top: 0px; /* Pull up so image overlaps */
-    background: radial-gradient(
-        circle at 76% top,
-        #f6f5f4 0px,
-        #f6f5f4 140px,
-        transparent 140px
-      ),
+    height: 300px;
+    padding-left: 60px;
+    background:
+      radial-gradient(circle at 73% top, #f6f5f4 0px, #f6f5f4 180px, transparent 180px),
       linear-gradient(to right, #31544b, #eda842);
-    padding-left: 50px;
+      padding-left:20px;
+  
   }
+  .name-box h3{
+    font-size: 30px;
+  }
+  .name-box p{
+    font-size: 18px;
+  }
+
   .executive-text {
-    flex: 1;
-    width: 90%;
-    padding: 0 0px;
+    max-width: 80%;
+    padding: 60px 200px 0px 0px;
   }
 }
 
 @media (max-width: 768px) {
-  .executive-image {
-    order: 1;
-    margin: 0 auto;
-    transform: translate(-8%, 0);
-    scale: 1;
+  /* move radial to center at 50% top */
+   .executive-wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "name"
+      "text";
+    background-color: #f6f5f4;
+     height: auto;
+  }
+  .executive-wrapper {
+  
+  padding-bottom: 0px; /* reserve space for the name bar */
+}
+
+
+  .executive-top {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
   }
 
-  .executive-text {
-    order: 3;
-    max-width: 100%;
-    height: 160px;
-    text-align: justify;
-    /* padding: 20px; */
+  .executive-image,
+  .executive-image-big {
+    position: relative;
+    width: 220px;
+    height: 280px;
+    right: auto;
+    bottom: auto;
+    
   }
-  .executive-text p {
-    padding-right: 0px;
+
+  .executive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .executive-name-bar {
-    order: 2;
-    height: 240px;
-    /* margin-top: 60px; */
-    transform: translate(0, -50%);
-    background: radial-gradient(
-        circle at 50% top,
-        #f6f5f4 0px,
-        #f6f5f4 140px,
-        transparent 140px
-      ),
+    grid-area: name;
+    width: 100%;
+    height: 220px;
+    background:
+      radial-gradient(circle at 50% top, #f6f5f4 0px, #f6f5f4 140px, transparent 140px),
       linear-gradient(to right, #31544b, #eda842);
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 0 30px;
+    align-items: center;
+    padding-left: 0;
   }
-  .executive-text {
-    transform: translate(0, -50%);
-  }
-  .executive-text p {
-    padding-top: 0px;
-  }
+
   .name-box {
+    text-align: center;
+    color: white;
     padding-top: 130px;
   }
   .name-box h3 {
-    font-size: 1.5rem;
+    font-size: 25px;
+  }
+  .name-box p {
+    font-size: 16px;
+    
+  }
+  
+  
+  .executive-text {
+    grid-area: text;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px;
+    text-align: justify;
   }
 
-  .name-box p {
-    font-size: 1.5rem;
+  .executive-text p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .executive-image,
+  .executive-image-big {
+    position: relative !important;
+     bottom: 70px;
+  }
+  .executive-wrapper {
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+  
+  .executive-top {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+.executive-text {
+    max-width: 100%;
+    padding: 0px;
   }
 }
 
 @media (max-width: 480px) {
-  .executive-image {
-    transform: translate(13%, -20%);
+  .executive-wrapper {
+    padding: 0px;
+  }
+ .executive-wrapper {
+    display: grid;
+    grid-template-areas:
+      "img"
+      "name"
+      "text";
+    grid-template-rows: auto 50px auto;
+    grid-template-columns: 1fr;
+    background-color: #f6f5f4;
+  }
+
+  .executive-top {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0;
+    width: 100%;
+    position: relative;
+  }
+
+  .executive-image,
+  .executive-image-big {
+    position: relative !important;
+    width: 160px;
+    height: 200px;
+    bottom: 40px;
+    right: auto;
   }
 
   .executive-name-bar {
-    height: 250px;
-    /* padding-left: 20px; */
-    transform: translate(0, -70%);
-    background: radial-gradient(
-        circle at 50% top,
-        #f6f5f4 10px,
-        #f6f5f4 130px,
-        transparent 130px
-      ),
+    grid-area: name;
+    width: 100%;
+    height: 180px;
+    background:
+      radial-gradient(circle at 50% top, #f6f5f4 0px, #f6f5f4 100px, transparent 100px),
       linear-gradient(to right, #31544b, #eda842);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
   }
 
-  .name-box h3 {
-    font-size: 1.8rem;
-  }
-
-  .name-box p {
-    font-size: 1.1rem;
+  .name-box {
     text-align: center;
+    color: white;
+    padding-top: 100px;
+  }
+  .name-box h3 {
+    font-size: 24px;
+  }
+  .name-box p {
+    font-size: 14px;
+    color: #ffd891;
   }
 
   .executive-text {
-    order: 3;
+    grid-area: text;
+    width: 100%;
     max-width: 100%;
-    height: 280px;
+    margin: 0 0px;
+    padding: 0px;
     text-align: justify;
-    /* padding: 20px; */
   }
+
   .executive-text p {
-    padding-right: 0px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
