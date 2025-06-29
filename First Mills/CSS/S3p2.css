@@ -2,37 +2,38 @@
 .four-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  margin-top: 50px;
+  gap: 10px;
+  margin-top: 35px;
   text-align: center;
   position: relative;
 }
 
 .four-cards .card-4 {
   background-color: white;
-  /* padding: 30px 50px 30px 0px; */
   text-align: center;
   height: 275px;
+  /* background-color: red !important; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 120px;
   position: relative;
 }
 
-
-
 .four-cards p {
-  font-size: 30px;
-  color: #FFB548;
-  line-height: 30px;
-  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+  color: #ffb548;
+  font-weight: 800;
 }
 .circle-green {
+  border: 30px solid #f6f5f4;
   position: absolute;
-  width: 302.22px;
-  height: 302.22px;
+  width: 300px;
+  height: 300px;
   background-color: #163029;
+  padding: 50px;
   border-radius: 50%;
   top: 50%; /* Centered vertically relative to the container */
   left: 50%;
@@ -44,108 +45,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .circle-content {
   font-size: 20px;
-  color: #Fcb44a;
+  color: #fcb44a;
   text-align: center;
   z-index: 2; /* Ensures text is on top of the circle */
 }
 .circle-content h2 {
   font-size: 30px;
-  line-height: 50px;
+  line-height: 40px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.four-cards div:nth-child(2) {
-  justify-content: flex-start;
-  background: radial-gradient(
-    circle at bottom left,
-    transparent,
-    transparent 180px,
-    #ffffff 30px,
-    #ffffff
-  );
-  text-align: right;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
-  padding: 100px;
-}
-.four-cards div:nth-child(3) {
-  justify-content: flex-start;
-  background: radial-gradient(
-    circle at bottom right,
-    transparent,
-    transparent 180px,
-    #ffffff 30px,
-    #ffffff
-  );
-  text-align: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: end;
-  text-align: center;
-  padding: 90px 200px 30px 50px;
-}
-
-.four-cards div:nth-child(4) {
-  justify-content: flex-end;
-  background: radial-gradient(
-    circle at top left,
-    transparent,
-    transparent 180px,
-    #ffffff 12px,
-    #ffffff
-  );
-  text-align: right;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
-  text-align: center;
-  padding: 100px 100px 30px 150px;
-}
-.four-cards div:nth-child(5) {
-  justify-content: flex-end;
-  background: radial-gradient(
-    circle at top right,
-    transparent,
-    transparent 180px,
-    #ffffff 12px,
-    #ffffff
-  );
-  text-align: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: end;
-  text-align: center;
-  padding: 90px 140px 30px 10px;
-}
-.four-cards div:nth-child(2) h3 {
-  padding-bottom: 20px;
-}
-
-.four-cards div:nth-child(5) h3 {
-  padding-bottom: 20px;
-}
-
-
- /* 4 cards with circle ends*/
+/* 4 cards with circle ends*/
 
 .four-cards-section {
-background-color: #fff;
-padding: 5px;
+  background-color: #fff;
+  padding: 35px;
 }
-.Blue-span{
-  color: #31544B;
+.Blue-span {
+  color: #31544b;
   font-weight: 700;
 }
-.four-cards-title-center,.four-cards-title {
+.four-cards-title-center,
+.four-cards-title {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -157,15 +85,13 @@ padding: 5px;
   justify-content: flex-start;
   padding-right: 20px;
 }
-.four-cards-body ul{
-color: #000000;
-font-size: 16px;
-line-height: 37px;
+.four-cards-body ul {
+  color: #000000;
+  font-size: 16px;
+  line-height: 37px;
 }
 .four-cards-body li::marker {
-  color: #FFB548;
- 
-
+  color: #ffb548;
 }
 
 /* four  cards only */
@@ -180,7 +106,7 @@ line-height: 37px;
 .one-card {
   width: 24%;
   margin-bottom: 60px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 30px;
   position: relative;
   text-align: center;
@@ -193,16 +119,16 @@ line-height: 37px;
   line-height: 43.7px;
 }
 .logo-div {
-  height: 40px; 
+  height: 40px;
   aspect-ratio: cos(4deg);
-  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
   background: #31544b;
   color: white;
   right: 18px;
   top: -70px;
   transform: translateY(20px);
   scale: 2;
-   font-weight: bold;
+  font-weight: bold;
   color: white;
   position: absolute;
 }
@@ -225,41 +151,35 @@ line-height: 37px;
   text-align: center;
 }
 
-
 /* four  cards only ends*/
 
-@media (max-width: 1024px){
- 
-  
-
+@media (max-width: 1024px) {
 }
- @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .circle-green {
-  width: 200px;
-  height: 200px;
-  transform: translate(
-    -50%,
-    -50%
-  );
-}
-.circle-content h2 {
-  font-size: 20px;
-}
-.card-4 {
-  height: 180px;
-}
-.card-4 img {
-  width: 48px;
-  height: 48px;
-}
-.four-cards div:nth-child(2) {
-  background: radial-gradient(
-    circle at bottom left,
-    transparent,
-    transparent 120px,
-    #ffffff 30px,
-    #ffffff
-  );}
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+  }
+  .circle-content h2 {
+    font-size: 20px;
+  }
+  .card-4 {
+    height: 180px;
+  }
+  .card-4 img {
+    width: 48px;
+    height: 48px;
+  }
+  .four-cards div:nth-child(2) {
+    background: radial-gradient(
+      circle at bottom left,
+      transparent,
+      transparent 120px,
+      #ffffff 30px,
+      #ffffff
+    );
+  }
   .four-cards div:nth-child(3) {
     background: radial-gradient(
       circle at bottom right,
@@ -267,61 +187,61 @@ line-height: 37px;
       transparent 120px,
       #ffffff 30px,
       #ffffff
-    );}
-    .four-cards div:nth-child(4) {
-      background: radial-gradient(
-        circle at top left,
-        transparent,
-        transparent 120px,
-        #ffffff 12px,
-        #ffffff
-      );}
-      .four-cards div:nth-child(5) {
-        background: radial-gradient(
-          circle at top right,
-          transparent,
-          transparent 120px,
-          #ffffff 12px,
-          #ffffff
-        );}
-.four-cards div:nth-child(2),
-.four-cards div:nth-child(4) {
-  padding: 30px 50px 20px 110px;
+    );
+  }
+  .four-cards div:nth-child(4) {
+    background: radial-gradient(
+      circle at top left,
+      transparent,
+      transparent 120px,
+      #ffffff 12px,
+      #ffffff
+    );
+  }
+  .four-cards div:nth-child(5) {
+    background: radial-gradient(
+      circle at top right,
+      transparent,
+      transparent 120px,
+      #ffffff 12px,
+      #ffffff
+    );
+  }
+  .four-cards div:nth-child(2),
+  .four-cards div:nth-child(4) {
+    padding: 30px 50px 20px 110px;
+  }
+  .four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 30px 110px 20px 30px;
+  }
+  .one-card {
+    width: 33%;
+  }
+  .four-cards-only {
+    justify-content: space-around;
+    gap: 3px;
+  }
 }
-.four-cards div:nth-child(3),
-.four-cards div:nth-child(5) {
-  padding: 30px 110px 20px 30px;
-}
-    .one-card {
-  width: 33%;
-  
-}
-.four-cards-only {
-  justify-content: space-around;
-  gap: 3px;
-}
- }
 
- @media (max-width: 480px){
- .card-4 {
-  height: 80px;
-}
-.circle-green {
-  width: 120px;
-  height: 120px;
-  transform: translate(
-    -43%,
-    -50%
-  );
-}
-.four-cards div:nth-child(2) {
-  background: radial-gradient(
-    circle at bottom left,
-    transparent,
-    transparent 80px,
-    #ffffff 30px,
-    #ffffff
-  );}
+@media (max-width: 480px) {
+  .card-4 {
+    height: 80px;
+  }
+  .circle-green {
+    width: 120px;
+    height: 120px;
+    transform: translate(-43%, -50%);
+  }
+  .four-cards div:nth-child(2) {
+    background: radial-gradient(
+      circle at bottom left,
+      transparent,
+      transparent 80px,
+      #ffffff 30px,
+      #ffffff
+    );
+  }
   .four-cards div:nth-child(3) {
     background: radial-gradient(
       circle at bottom right,
@@ -329,45 +249,45 @@ line-height: 37px;
       transparent 80px,
       #ffffff 30px,
       #ffffff
-    );}
-    .four-cards div:nth-child(4) {
-      background: radial-gradient(
-        circle at top left,
-        transparent,
-        transparent 80px,
-        #ffffff 12px,
-        #ffffff
-      );}
-      .four-cards div:nth-child(5) {
-        background: radial-gradient(
-          circle at top right,
-          transparent,
-          transparent 80px,
-          #ffffff 12px,
-          #ffffff
-        );}
-.four-cards div:nth-child(2),
-.four-cards div:nth-child(4) {
-  padding: 60px 40px 20px 50px;
-}
-.four-cards div:nth-child(3),
-.four-cards div:nth-child(5) {
-  padding: 60px 60px 20px 20px;
-}
-.circle-content h2 {
-  padding-top: 15px;
-  font-size: 12px;
-  line-height: 15px;
-}
-.four-cards p {
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 700;
-}
-      .one-card {
-  width: 100%;
-  
-}
-
-
+    );
+  }
+  .four-cards div:nth-child(4) {
+    background: radial-gradient(
+      circle at top left,
+      transparent,
+      transparent 80px,
+      #ffffff 12px,
+      #ffffff
+    );
+  }
+  .four-cards div:nth-child(5) {
+    background: radial-gradient(
+      circle at top right,
+      transparent,
+      transparent 80px,
+      #ffffff 12px,
+      #ffffff
+    );
+  }
+  .four-cards div:nth-child(2),
+  .four-cards div:nth-child(4) {
+    padding: 60px 40px 20px 50px;
+  }
+  .four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 60px 60px 20px 20px;
+  }
+  .circle-content h2 {
+    padding-top: 15px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .four-cards p {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+  }
+  .one-card {
+    width: 100%;
+  }
 }
