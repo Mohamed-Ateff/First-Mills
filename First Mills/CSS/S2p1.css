@@ -1,83 +1,80 @@
 .executive-wrapper {
+  position: relative;
+  background-color: #f6f5f4;
+  padding-bottom: 306px; /* reserve space for the name bar */
+}
+
+/* the orange name bar absolutely at bottom */
+.executive-name-bar {
   width: 100%;
+  height: 306px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background:
+    radial-gradient(circle at 75% top, #f6f5f4 0px, #f6f5f4 220px, transparent 220px),
+    linear-gradient(to right, #31544b, #eda842);
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 100px;
+  z-index: 1;
 }
 
+/* rest same as before */
 .executive-top {
-  margin: 0 auto;
-  padding: 0px 0px 0;
   position: relative;
-  width: 50%;
+  width: 100%;
+  height: auto;
 }
 
-.executive-text {
-  flex: 1;
-  width: 60%;
-  padding: 0 20px;
-}
-
-.executive-text p {
-  font-size: 19px;
-  line-height: 36px;
-  color: #31544b;
-  text-align: justify;
-  padding-top: 40px;
-}
-
-.executive-image {
-  width: 384.8px;
+.executive-image,.executive-image-big {
+ width: 385.8px;
   height: 481px;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  transform: translate(-18%, -1%);
-}
+  position: absolute;
+  right: 7.3%;
+  z-index: 3;
+  top: auto;
+bottom: -456px; /* the orange bar height */
 
+}
+.executive-image-big {
+bottom: -496px; /* the orange bar height */
+
+}
 .executive-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* === Orange Name Box === */
-.executive-name-bar {
-  width: 100%;
-  height: 306px;
-  margin-top: -200px; /* Pull up so image overlaps */
-  background: radial-gradient(
-      circle at 76% top,
-      #f6f5f4 0px,
-      #f6f5f4 220px,
-      transparent 220px
-    ),
-    linear-gradient(to right, #31544b, #eda842);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-left: 200px;
-  position: relative;
-  z-index: 1;
+.executive-text {
+  max-width: 60%;
+  margin-inline-start: auto;
+  padding: 90px 90px 0 0;
+  z-index: 2;
+}
+.executive-text p {
+  font-size: 19px;
+  line-height: 36px;
+  color: #31544b;
+  text-align: justify;
 }
 
 .name-box {
   color: white;
   text-align: right;
 }
-
 .name-box h3 {
   font-size: 2.5rem;
   margin: 0;
   font-weight: bold;
 }
-
 .name-box p {
   font-size: 1.5rem;
   color: #ffd891;
   margin: 5px 0 0;
 }
-
 /* second section */
 
 /* Some P under each other */
@@ -105,127 +102,81 @@ ul {
 
 /* Some P under each other Ends */
 
-@media (max-width: 1025px) {
-  .executive-image {
-    width: 284.8px;
-    height: 281px;
-    overflow: hidden;
-    position: relative;
-    z-index: 2;
-    transform: translate(-22%, 82%);
-  }
-  .executive-image img {
-    width: 80%;
-  }
-
-  .executive-name-bar {
-    height: 180px;
-    margin-top: 0px; /* Pull up so image overlaps */
-    background: radial-gradient(
-        circle at 76% top,
-        #f6f5f4 0px,
-        #f6f5f4 140px,
-        transparent 140px
-      ),
-      linear-gradient(to right, #31544b, #eda842);
-    padding-left: 50px;
-  }
+@media (max-width: 1024px) {
   .executive-text {
-    flex: 1;
-    width: 90%;
-    padding: 0 0px;
+    max-width: 100%;
+    padding: 40px 40px 0 40px;
+  }
+  .executive-image {
+    width: 300px;
+    height: 375px;
+    right: 5%;
+    bottom: -350px;
+  }
+  .executive-name-bar {
+    height: 250px;
+    padding-left: 50px;
+    background:
+      radial-gradient(circle at 75% top, #f6f5f4 0px, #f6f5f4 180px, transparent 180px),
+      linear-gradient(to right, #31544b, #eda842);
   }
 }
 
 @media (max-width: 768px) {
-  .executive-image {
-    order: 1;
-    margin: 0 auto;
-    transform: translate(-8%, 0);
-    scale: 1;
+  .executive-wrapper {
+    padding-bottom: 250px;
   }
-
   .executive-text {
-    order: 3;
     max-width: 100%;
-    height: 160px;
-    text-align: justify;
-    /* padding: 20px; */
+    padding: 30px 20px 0 20px;
   }
-  .executive-text p {
-    padding-right: 0px;
+  .executive-image {
+    width: 220px;
+    height: 300px;
+    right: 5%;
+    bottom: -250px;
   }
-
   .executive-name-bar {
-    order: 2;
-    height: 240px;
-    /* margin-top: 60px; */
-    transform: translate(0, -50%);
-    background: radial-gradient(
-        circle at 50% top,
-        #f6f5f4 0px,
-        #f6f5f4 140px,
-        transparent 140px
-      ),
+    height: 200px;
+    padding-left: 30px;
+    background:
+      radial-gradient(circle at 75% top, #f6f5f4 0px, #f6f5f4 150px, transparent 150px),
       linear-gradient(to right, #31544b, #eda842);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 30px;
-  }
-  .executive-text {
-    transform: translate(0, -50%);
-  }
-  .executive-text p {
-    padding-top: 0px;
-  }
-  .name-box {
-    padding-top: 130px;
   }
   .name-box h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-
   .name-box p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  .executive-image {
-    transform: translate(13%, -20%);
+  .executive-wrapper {
+    padding-bottom: 200px;
   }
-
-  .executive-name-bar {
+  .executive-image {
+    width: 180px;
     height: 250px;
-    /* padding-left: 20px; */
-    transform: translate(0, -70%);
-    background: radial-gradient(
-        circle at 50% top,
-        #f6f5f4 10px,
-        #f6f5f4 130px,
-        transparent 130px
-      ),
+    right: 2%;
+    bottom: -200px;
+  }
+  .executive-text {
+    padding: 20px 15px 0 15px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .executive-name-bar {
+    height: 180px;
+    padding-left: 15px;
+    background:
+      radial-gradient(circle at 75% top, #f6f5f4 0px, #f6f5f4 120px, transparent 120px),
       linear-gradient(to right, #31544b, #eda842);
   }
-
   .name-box h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-
   .name-box p {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .executive-text {
-    order: 3;
-    max-width: 100%;
-    height: 280px;
-    text-align: justify;
-    /* padding: 20px; */
-  }
-  .executive-text p {
-    padding-right: 0px;
+    font-size: 1rem;
   }
 }
