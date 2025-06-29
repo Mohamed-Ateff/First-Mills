@@ -106,6 +106,7 @@ ul {
   
   .executive-wrapper {
     grid-template-rows: auto 250px;
+    
   }
 
   .executive-image,
@@ -158,6 +159,7 @@ ul {
   .executive-wrapper {
   
   padding-bottom: 0px; /* reserve space for the name bar */
+   padding-top: 106px;
 }
 
 
