@@ -1,13 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 .overview_title {
   color: #31544b;
   font-size: 25px;
   text-align: justify;
 }
-
 
 .operational_performance {
   margin-top: 50px;
@@ -55,7 +50,7 @@
 }
 
 .card p {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: lighter;
   color: #31544b;
 }
@@ -132,6 +127,14 @@
   .vision img,
   .mission img {
     margin-right: 0;
+    margin-top: 20px ;
+  }
+
+  .vision,
+  .mission {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 0px;
   }
 }
 
