@@ -21,7 +21,7 @@
 .executive-text p {
   font-size: 19px;
   line-height: 36px;
-  color: #31544B;
+  color: #31544b;
   text-align: justify;
   padding-top: 40px;
 }
@@ -32,14 +32,13 @@
   overflow: hidden;
   position: relative;
   z-index: 2;
-   transform: translate(-18%, -1%);
+  transform: translate(-18%, -1%);
 }
 
 .executive-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
 }
 
 /* === Orange Name Box === */
@@ -47,10 +46,13 @@
   width: 100%;
   height: 306px;
   margin-top: -200px; /* Pull up so image overlaps */
- background: 
-    radial-gradient(circle at 76% top, #F6F5F4 0px, #F6F5F4 220px, transparent 220px),
-    linear-gradient(to right, #31544B, #EDA842);
-; 
+  background: radial-gradient(
+      circle at 76% top,
+      #f6f5f4 0px,
+      #f6f5f4 220px,
+      transparent 220px
+    ),
+    linear-gradient(to right, #31544b, #eda842);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -72,26 +74,30 @@
 
 .name-box p {
   font-size: 1.5rem;
-  color: #FFD891;
+  color: #ffd891;
   margin: 5px 0 0;
 }
-
 
 /* second section */
 
 /* Some P under each other */
 
- h2 {
+.Paragraph > h1{
+  margin-top: 50px;
+  /* background-color: red; */
+}
+
+h2 {
   color: #000000;
   margin-top: 40px;
   margin-bottom: 10px;
 }
- h1 {
-    margin-bottom: 24px;
-    font-size: 27px;
+h1 {
+  margin-bottom: 24px;
+  font-size: 27px;
   color: #000000;
 }
- ul {
+ul {
   font-weight: 400;
   font-size: 19px;
   line-height: 37px;
@@ -100,37 +106,38 @@
 /* Some P under each other Ends */
 
 @media (max-width: 1025px) {
-.executive-image {
-  width: 284.8px;
-  height: 281px;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-   transform: translate(-22%, 82%);
-}
-.executive-image img{
-  width: 80%;
-}
+  .executive-image {
+    width: 284.8px;
+    height: 281px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    transform: translate(-22%, 82%);
+  }
+  .executive-image img {
+    width: 80%;
+  }
 
-.executive-name-bar {
- 
-  height: 180px;
-  margin-top: 0px; /* Pull up so image overlaps */
- background: 
-    radial-gradient(circle at 76% top, #F6F5F4 0px, #F6F5F4 140px, transparent 140px),
-    linear-gradient(to right, #31544B, #EDA842);
-; 
-  padding-left: 50px;
-}
+  .executive-name-bar {
+    height: 180px;
+    margin-top: 0px; /* Pull up so image overlaps */
+    background: radial-gradient(
+        circle at 76% top,
+        #f6f5f4 0px,
+        #f6f5f4 140px,
+        transparent 140px
+      ),
+      linear-gradient(to right, #31544b, #eda842);
+    padding-left: 50px;
+  }
   .executive-text {
-  flex: 1;
-  width: 90%;
-  padding: 0 0px;
-}
+    flex: 1;
+    width: 90%;
+    padding: 0 0px;
+  }
 }
 
 @media (max-width: 768px) {
- 
   .executive-image {
     order: 1;
     margin: 0 auto;
@@ -146,33 +153,35 @@
     /* padding: 20px; */
   }
   .executive-text p {
-  
-  padding-right:0px;
-}
+    padding-right: 0px;
+  }
 
   .executive-name-bar {
     order: 2;
     height: 240px;
     /* margin-top: 60px; */
-     transform: translate(0, -50%);
-    background: 
-      radial-gradient(circle at 50% top, #F6F5F4 0px, #F6F5F4 140px, transparent 140px),
-      linear-gradient(to right, #31544B, #EDA842);
+    transform: translate(0, -50%);
+    background: radial-gradient(
+        circle at 50% top,
+        #f6f5f4 0px,
+        #f6f5f4 140px,
+        transparent 140px
+      ),
+      linear-gradient(to right, #31544b, #eda842);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 30px;
   }
-  .executive-text  {
-   transform: translate(0, -50%);
-}
+  .executive-text {
+    transform: translate(0, -50%);
+  }
   .executive-text p {
-  
-  padding-top: 0px;
-}
-.name-box{
-  padding-top: 130px;
-}
+    padding-top: 0px;
+  }
+  .name-box {
+    padding-top: 130px;
+  }
   .name-box h3 {
     font-size: 1.5rem;
   }
@@ -184,29 +193,31 @@
 
 @media (max-width: 480px) {
   .executive-image {
-  
-   transform: translate(13%, -20%);
-}
+    transform: translate(13%, -20%);
+  }
 
   .executive-name-bar {
     height: 250px;
     /* padding-left: 20px; */
-     transform: translate(0, -70%);
-    background: 
-      radial-gradient(circle at 50% top, #F6F5F4 10px, #F6F5F4 130px, transparent 130px),
-      linear-gradient(to right, #31544B, #EDA842);
+    transform: translate(0, -70%);
+    background: radial-gradient(
+        circle at 50% top,
+        #f6f5f4 10px,
+        #f6f5f4 130px,
+        transparent 130px
+      ),
+      linear-gradient(to right, #31544b, #eda842);
   }
 
-  .name-box h3 { 
-    font-size: 1.8rem; 
-    
+  .name-box h3 {
+    font-size: 1.8rem;
   }
 
   .name-box p {
     font-size: 1.1rem;
-        text-align: center;
+    text-align: center;
   }
-  
+
   .executive-text {
     order: 3;
     max-width: 100%;
@@ -217,5 +228,4 @@
   .executive-text p {
     padding-right: 0px;
   }
-  
 }
