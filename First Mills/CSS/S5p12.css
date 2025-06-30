@@ -1,6 +1,6 @@
 .custom-table {
   width: 100%;
-  border-collapse: collapse; 
+  border-collapse: collapse;  
   table-layout: fixed;
   min-width: 800px;
 }

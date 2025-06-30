@@ -148,6 +148,7 @@
   border-spacing: 0 4px;
   position: relative;
 }
+
 .staff-table caption{
   color:#31544B;
   font-size: 24px;
@@ -242,6 +243,105 @@ margin: 2px;
   border-spacing: 0 !important; 
 }
 /* second table */
+
+
+
+/* third table */
+.numbers-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  position: relative;
+}
+
+.numbers-table caption{
+  color:#31544B;
+  font-size: 24px;
+text-align: center;
+}
+
+
+.numbers-table thead tr:first-child th {
+  background-color: #73837F;
+  color: #fff;
+  padding: 38px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  z-index:2;
+}
+
+.numbers-table thead tr.highlight th {
+  background-color: #FFC46C;
+  color: #31544B;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.numbers-table td {
+  background-color: #fff;
+  color: #31544B;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+.numbers-table tr :nth-child(3){
+  color: #000000 !important;
+}
+.numbers-table tr :nth-child(5){
+  color: #000000 !important;
+}
+
+.numbers-table tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.numbers-table tbody tr.highlight td {
+  background-color: #FFC46C;
+  font-weight: bold;
+  color: #31544B;
+}
+.numbers-table thead tr.highlight {
+  transform: translateY(-4px);
+}
+.numbers-table tbody {
+  transform: translateY(-4px);
+}
+/* black vertical line between col 4 and 5 using pseudo */
+.numbers-table::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: calc(32.3%);
+  width: 1px;
+  background-color: #ddd;
+  z-index: 1;
+   height: 260px;
+}
+.numbers-table::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  right: calc(70.3%);
+  width: 1px;
+  background-color: #ddd;
+  z-index: 1;
+   height: 260px;
+}
+.numbers-table thead {
+  border-collapse: collapse;
+  border-spacing: 0 !important; 
+}
+
+
+
+
+/* third table */
+
+
 
 .custom-table {
   width: 100%;

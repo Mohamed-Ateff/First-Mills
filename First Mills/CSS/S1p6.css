@@ -1,0 +1,194 @@
+
+.cards-section{
+ 
+}
+.card-hz{
+    display: flex;
+    justify-content: space-between;
+     background-color: #fff;
+     margin-top: 20px;
+     margin-bottom: 5.23px;
+      padding: 10px 40px 10px 40px;
+}
+
+.icon-div{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-right: 150px;
+   
+}
+.icon-div h3{
+  font-size: 40px;
+  color: #31544B;
+   margin: 0;
+}
+.icon-div p{
+  font-size: 20px;
+  color: #787878;
+   margin: 0;
+}
+.icon-div-text{
+    padding-right: 20px;
+}
+
+.card-hz:first-of-type .icon-div{
+  padding-right: 210px;
+}
+
+.icon-div img{
+   width: 33px;
+   height: 48px;
+}
+
+.bg-float {
+  position: absolute;
+  top: 360px;
+  right: 20px;
+  width: 387px;
+  height: 362px;
+ 
+  z-index: 1;
+}
+
+.number-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number-div h1{
+    font-size: 50px;
+    margin: 0;
+    color: #4E6A63;
+     width: 80px;     /* 3hsan el div maythzsh */
+}
+
+/* table */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 50px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  table-layout: fixed;
+  min-width: 800px;
+}
+
+.custom-table thead tr {
+  transform: translateY(5px);
+}
+
+.custom-table th {
+  background-color: #4E6A63;
+  color: white !important;
+  padding: 20px 25px;
+  text-align: center;
+  font-weight: 600 !important;
+  font-size: 20px !important; 
+}
+
+.custom-table th span {
+  display: block;
+  font-size: 16px ;
+  color: #DDD;
+  margin-top: 4px;
+  margin: 0px;
+}
+.custom-table th  p{
+ 
+  margin: 0px;
+}
+
+.custom-table td {
+  background-color: #fff;
+  color: #4E6A63;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: baseline;
+  font-weight: 700;
+}
+
+.custom-table tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* first column slightly wider */
+.custom-table th:first-child,
+.custom-table td:first-child {
+  width: 18%;
+  text-align: right;
+  color: #3A4944;
+    font-size: 20px;
+font-weight: 500;
+  /* padding-right: 20px; */
+}
+
+/* for s5p10 beacuse it's the same table */
+
+
+
+@media (max-width: 1025px){
+.bg-float {
+ 
+  top: 460px;
+  right: 10px;
+  width: 287px;
+  height: 262px;
+ 
+}
+
+}
+
+@media (max-width: 768px){
+.bg-float {
+
+  top: 460px;
+  right: 35%;
+  width: 287px;
+  height: 262px;
+ 
+}
+.empty{
+    display: none;
+}
+.card-hz:first-of-type .icon-div{
+  padding-right: 0px;
+}
+.icon-div{
+
+    padding-right: 0px;
+   
+}
+}
+
+@media (max-width: 480px){
+     .bg-float {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto 20px auto;
+        z-index: 1;
+        padding-top: 20px;
+    }
+.icon-div h3{
+  font-size: 30px;
+ 
+}
+.icon-div p{
+  font-size: 16px;
+ 
+}
+.number-div h1{
+    font-size: 40px;
+     width: 40px;     /* 3hsan el div maythzsh */
+}
+}
