@@ -308,25 +308,44 @@ text-align: center;
   transform: translateY(-4px);
 }
 /* black vertical line between col 4 and 5 using pseudo */
-.numbers-table::after {
-  content: "";
-  position: absolute;
-  bottom: 12px;
-  right: calc(32.3%);
-  width: 1px;
-  background-color: #ddd;
-  z-index: 1;
-   height: 260px;
+.table-wrapper {
+  position: relative;
 }
-.numbers-table::before {
-  content: "";
+
+/* absolute vertical lines inside the table wrapper */
+.vertical-line {
   position: absolute;
-  bottom: 12px;
-  right: calc(70.3%);
+  /* top: 0; */
+  bottom: 8px; /* this ensures the line stretches the entire height of the table-wrapper */
   width: 1px;
   background-color: #ddd;
   z-index: 1;
-   height: 260px;
+}
+.vertical-line-2 {
+  position: absolute;
+  /* top: 0; */
+  bottom: 8px; /* this ensures the line stretches the entire height of the table-wrapper */
+  width: 1px;
+  background-color: #ddd;
+  z-index: 1;
+}
+
+/* specific positions of your lines */
+.vertical-line.line1 {
+  right: 32.3%; 
+  height: 280px;
+}
+.vertical-line.line2 {
+  right: 70.3%; 
+  height: 280px;
+}
+.vertical-line-2.line1 {
+  right: 32.3%; 
+  height: 280px;
+}
+.vertical-line-2.line2 {
+  right: 70.3%; 
+  height: 280px;
 }
 .numbers-table thead {
   border-collapse: collapse;
@@ -544,6 +563,7 @@ background-color: rgba(255, 255, 255, 0.5);
   right: calc(56.6%);
    height: 490px;
    }
+ 
 }
 
 @media (max-width: 480px){
@@ -559,15 +579,32 @@ background-color: rgba(255, 255, 255, 0.5);
     padding: 8px 10px;
   }
    .custom-table th {
-  padding: 34px 20px 34px 20px;
-  font-size: 16px;
+  padding: 20px 20px 20px 20px;
+ 
 }
 
 .custom-table td {
   padding: 15px 20px 15px 20px;
-  font-size: 12px;
+ 
 }
  .final-card {
     width: 100%;
   }
+
+  .vertical-line.line1 {
+  right: 29.3%;
+  height: 500px;
+}
+.vertical-line.line2 {
+  right: 76.3%;
+  height: 500px;
+}
+  .vertical-line-2.line1 {
+  right: 32.3%;
+  height: 300px;
+}
+.vertical-line-2.line2 {
+  right: 67.3%;
+  height: 300px;
+}
 }
