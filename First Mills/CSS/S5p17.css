@@ -96,9 +96,9 @@ vertical-align: middle;
 
 .materiality-grid {
   display: grid;
-  grid-template-columns: 55% 1fr; /* reduced image area to leave room for texts */
+  grid-template-columns: 55% 1fr; 
   gap: 40px;
-  align-items: start; /* align image top */
+  align-items: start; 
 }
 
 .materiality-text {
@@ -110,11 +110,11 @@ vertical-align: middle;
 .category h3 {
   background-color: #ddd;
   color: #31544b;
-  padding: 12px; /* give more consistent spacing */
+  padding: 12px; 
   font-weight: bold;
   font-size: 18px;
   margin: 0;
-  width: 70%;  /* stretch to match UL */
+  width: 70%;  
   box-sizing: border-box;
    margin-bottom: 10px;
 }
@@ -155,13 +155,13 @@ vertical-align: middle;
 .circle-map.green { background-color: #C6F884; }
 .circle-map.gray { background-color: #E9E9E9; }
 
-/* IMAGE CONTAINER */
+
 .materiality-image {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  max-width: 85%; /* reduced width to leave space for extra text on the left side */
+  max-width: 85%;
 }
 
 .materiality-image img {
@@ -172,12 +172,12 @@ vertical-align: middle;
   z-index: 1;
 }
 
-/* BEFORE and AFTER labels around the image: */
+/* BEFORE and AFTER : */
 .materiality-image::before {
   content: "الأهمية بالنسبة لأصحاب المصلحة";
   position: absolute;
 bottom: 230px;
-  left: -40px; /* adjust based on your layout */
+  left: -40px; 
   transform: rotate(-90deg);
   transform-origin: top left;
   font-size: 19px;
@@ -189,7 +189,7 @@ bottom: 230px;
   content: "اﻷﻫﻤﻴﺔ ﺑﺎﻟﻨﺴﺒﺔ ﻟﻠﻤﺆﺳﺴﺔ أو الشركة";
   position: absolute;
   bottom: 175px;
-  right: 20%; /* adjust to align under the graph */
+  right: 20%;
  font-size: 19px;
   color: #000000;
   width: max-content;
@@ -217,13 +217,13 @@ bottom: 230px;
   }
   .category h3 {
  
-  width: 100%;  /* stretch to match UL */
+  width: 100%;  
   
 }
 .materiality-image::before {
   
 bottom: 300px;
-  left: -40px; /* adjust based on your layout */
+  left: -40px; 
   
   font-size: 19px;
   
@@ -232,7 +232,7 @@ bottom: 300px;
 .materiality-image::after {
   
   bottom: 175px;
-  right: 30%; /* adjust to align under the graph */
+  right: 30%; 
  
 }
 
@@ -240,17 +240,19 @@ bottom: 300px;
 @media(max-width: 480px){
   .materiality-image::before {
   
-bottom: 210px;
-  left: -40px; /* adjust based on your layout */
+bottom: 170px;
+  left: -40px; 
   
   font-size: 16px;
   
 }
-
+.materiality-caption ul{
+   padding-top: 50px;
+}
 .materiality-image::after {
   
-  bottom: 175px;
-  right: 15%; /* adjust to align under the graph */
+  bottom: 140px;
+  right: 15%; 
  font-size: 16px;
 }
 }
