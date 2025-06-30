@@ -87,3 +87,170 @@ vertical-align: middle;
 }
 
 /* table ends */
+
+.materiality-section {
+  background-color: #f6f5f4;
+  padding: 40px 20px;
+  width: 95%;
+}
+
+.materiality-grid {
+  display: grid;
+  grid-template-columns: 55% 1fr; /* reduced image area to leave room for texts */
+  gap: 40px;
+  align-items: start; /* align image top */
+}
+
+.materiality-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category h3 {
+  background-color: #ddd;
+  color: #31544b;
+  padding: 12px; /* give more consistent spacing */
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  width: 70%;  /* stretch to match UL */
+  box-sizing: border-box;
+   margin-bottom: 10px;
+}
+
+.category ul,
+.materiality-caption ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category ul li,
+.materiality-caption ul li {
+  margin-bottom: 6px;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #31544b;
+}
+.materiality-caption ul{
+   padding-top: 90px;
+}
+
+.circle-map {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #4E4E4E;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.circle-map.orange { background-color: #FFB548; }
+.circle-map.green { background-color: #C6F884; }
+.circle-map.gray { background-color: #E9E9E9; }
+
+/* IMAGE CONTAINER */
+.materiality-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  max-width: 85%; /* reduced width to leave space for extra text on the left side */
+}
+
+.materiality-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* BEFORE and AFTER labels around the image: */
+.materiality-image::before {
+  content: "الأهمية بالنسبة لأصحاب المصلحة";
+  position: absolute;
+bottom: 230px;
+  left: -40px; /* adjust based on your layout */
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  font-size: 19px;
+  color: #000000;
+  width: max-content;
+}
+
+.materiality-image::after {
+  content: "اﻷﻫﻤﻴﺔ ﺑﺎﻟﻨﺴﺒﺔ ﻟﻠﻤﺆﺳﺴﺔ أو الشركة";
+  position: absolute;
+  bottom: 175px;
+  right: 20%; /* adjust to align under the graph */
+ font-size: 19px;
+  color: #000000;
+  width: max-content;
+}
+
+.materiality-caption {
+  margin-top: 10px;
+  text-align: right;
+  color: #31544b;
+}
+
+/* responsive */
+@media(max-width: 1024px){
+  .materiality-grid {
+    grid-template-columns: 1fr;
+  }
+  .materiality-image {
+    order: -1;
+    max-width: 100%;
+  }
+  .materiality-text {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+  .category h3 {
+ 
+  width: 100%;  /* stretch to match UL */
+  
+}
+.materiality-image::before {
+  
+bottom: 300px;
+  left: -40px; /* adjust based on your layout */
+  
+  font-size: 19px;
+  
+}
+
+.materiality-image::after {
+  
+  bottom: 175px;
+  right: 30%; /* adjust to align under the graph */
+ 
+}
+
+}
+@media(max-width: 480px){
+  .materiality-image::before {
+  
+bottom: 210px;
+  left: -40px; /* adjust based on your layout */
+  
+  font-size: 16px;
+  
+}
+
+.materiality-image::after {
+  
+  bottom: 175px;
+  right: 15%; /* adjust to align under the graph */
+ font-size: 16px;
+}
+}
