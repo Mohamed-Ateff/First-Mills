@@ -1,3 +1,9 @@
+.text-desc {
+  font-size: 28px;
+  color: #444444;
+  line-height: 1.5;
+  margin: 20px auto;
+}
 .title-flex{
     display: flex;
     justify-content: space-between;
@@ -41,3 +47,65 @@ tbody tr{
 tbody tr:nth-child(odd) {
       background-color: rgb(255, 255, 255, 0.5);
     }
+
+.table-container5 th{
+  text-align: center;
+}
+.table-container5 th:first-child{
+  text-align: start;
+}
+
+.table-container5 td{
+  text-align: start;
+}
+.table-container5 th, .table-container5 .add-border{
+  border-left: 1px solid #BFBFBF;
+  
+}
+.table-container5 td{
+  font-size: 16px;
+  
+}
+.table-container5 .years td{
+  color: #163029;
+  background-color: #FDD292 ;
+  font-weight: bold; 
+}
+
+
+
+@media (max-width: 768px) {
+  .text-desc {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .title-flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .title-span {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+    min-width: 700px; 
+  }
+
+  th, td {
+    padding: 8px 15px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    margin-bottom: 100px;
+  }
+
+  .table-container5 td {
+    font-size: 14px;
+  }
+}
