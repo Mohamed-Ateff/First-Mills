@@ -58,6 +58,9 @@ td {
   font-weight: 700;
   background-color: #ffffff;
 }
+td {
+color: #31544b;
+}
 
 th {
   background-color: #73837f;
@@ -73,7 +76,47 @@ tr:nth-child(even) td {
 .td-span {
   margin: 0px 30px;
 }
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2px; 
+  margin-top: 40px;
+}
 
+.custom-table thead tr {
+  transform: translateY(5px); 
+}
+
+.custom-table th {
+  background-color: #73837F;
+  color: white;
+  padding: 34px 40px 34px 40px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.custom-table td {
+  color: #000000;
+  padding: 15px 40px 15px 40px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.custom-table th,
+.custom-table td {
+  width: 70%; 
+}
+
+/* Center align only the second column */
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+  text-align: center;
+}
+
+.custom-table tbody tr:nth-child(even) td {
+background-color: rgba(255, 255, 255, 0.5);
+}
 
 .card-grid {
   display: flex;
@@ -157,4 +200,10 @@ tr:nth-child(even) td {
     font-size: 16px;
     line-height: 1.6;
   }
+
+  .custom-table th {
+  padding: 20px 40px 20px 40px;
+  font-size: 14px;
+}
+
 }

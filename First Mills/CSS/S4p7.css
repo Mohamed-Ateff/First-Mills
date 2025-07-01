@@ -18,7 +18,7 @@
   position: absolute;
   width: 300px;
   height: 4px;
-  background-color: #ffb548;
+  background-color: rgba(255, 181, 72, 0.4);;
   top: 50%;
   right: 0px;
   transform: translateY(-50%);
@@ -28,7 +28,7 @@
   position: absolute;
   width: 300px;
   height: 4px;
-  background-color: #ffb548;
+  background-color: rgba(255, 181, 72, 0.4);;
   top: 50%;
   left: 0px;
   transform: translateY(-50%);
@@ -82,7 +82,7 @@
   position: absolute;
   width: 370px;
   height: 4px;
-  background-color: #ffb548;
+  background-color: rgba(255, 181, 72, 0.4);;
   top: 50%;
   right: 0px;
   transform: translateY(-50%);
@@ -92,7 +92,7 @@
   position: absolute;
   width: 370px;
   height: 4px;
-  background-color: #ffb548;
+  background-color: rgba(255, 181, 72, 0.4);;
   top: 50%;
   left: 0px;
   transform: translateY(-50%);
@@ -138,7 +138,23 @@ tr:nth-child(even) td {
 }
 
 
+@media (max-width: 1025px) {
+.title1::before {
+  width: 130px;
+}
+.title1::after {
+  width: 130px;
+}
 
+.title2::before {
+  width: 200px;
+}
+.title2::after {
+  width: 200px;
+ 
+}
+
+}
 @media (max-width: 992px) {
   .card-grid {
     flex-direction: column;
@@ -164,6 +180,7 @@ tr:nth-child(even) td {
   .activities_card span {
     font-size: 13px;
   }
+  
 }
 
 
@@ -179,6 +196,9 @@ tr:nth-child(even) td {
   th {
     padding: 15px;
   }
+  .padding-top{
+  padding-top: 50px;
+}
 }
 
 @media (max-width: 576px) {
@@ -202,6 +222,9 @@ tr:nth-child(even) td {
   .activities_card {
     padding: 20px 15px;
   }
+ .padding-top{
+  padding-top: 0px;
+}
 }
 
 @media (max-width: 480px) {
