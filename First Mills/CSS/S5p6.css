@@ -159,15 +159,23 @@ font-weight: 200;
   }
 }
 
+@media (max-width: 768px) {
+   .title1::before,
+  .title1::after,
+  .title2::before,
+  .title2::after,
+  .title3::before,
+  .title3::after {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .growth-path-title {
     font-size: 18px;
   }
 
-  .title1::before,
-  .title1::after {
-    width: 60px;
-  }
+ 
 
   th,
   td {
