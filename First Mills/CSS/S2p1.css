@@ -42,14 +42,14 @@
 }
 .executive-image1 {
   bottom: -470px;
-  right: 11%;
+  right: 157px;
 }
 .executive-image2 {
-  right: 11.3%;
+  right: 150px;
   bottom: -432px;
 }
 .executive-image3 {
-  right: 11.5%;
+  right: 150px;
   bottom: -438px;
 }
 
@@ -110,8 +110,35 @@ ul {
   font-size: 19px;
   line-height: 37px;
 }
+@media (max-width: 1800px) {
+  .executive-image1 {
+    bottom: -510px;
+    right: 130px;
+  }
 
-/* Some P under each other Ends */
+  .executive-image2 {
+ bottom: -466px;
+        right: 130px;
+  }
+  .executive-image3 {
+            bottom: -475px;
+        right: 132px;
+  }
+}
+@media (max-width: 1600px) {
+  .executive-image1 {
+    bottom: -510px;
+    right: 95px;
+  }
+  .executive-image2 {
+    right: 100px;
+    bottom: -470px;
+  }
+  .executive-image3 {
+    bottom: -473px;
+    right: 95px;
+  }
+}
 @media (max-width: 1200px) {
   .executive-image1 {
     bottom: -584px;
@@ -175,12 +202,12 @@ ul {
 }
 
 @media (max-width: 992px) {
-    .executive-image1 {
-           bottom: -654px;
-        right: 10%;
-    }
+  .executive-image1 {
+    bottom: -654px;
+    right: 10%;
+  }
   .executive-image2 {
-            bottom: -550px;
+    bottom: -550px;
     right: 9%;
   }
 
