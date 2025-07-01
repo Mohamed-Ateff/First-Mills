@@ -11,24 +11,24 @@
 }
 
 .outer-title-chart {
-  margin-right: 35px;
-  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
 }
 .outer-title-chart h1 {
   color: #163029;
+  margin-bottom: 0px;
 }
 .outer-title-chart p {
+  margin-top: 0px;
   color: #163029;
   font-size: 18px;
 }
 .title-bar-chart {
-  color: #5e6863;
-  text-align: right !important;
-  width: 100%;
-  position: absolute;
-  top: -20px;
-  right: 25px;
-  font-size: 13px;
+  color: #7c8b9d !important;
+  font-size: 14px !important;
+  margin-top: 50px !important;
 }
 body[lang="en"] {
   .title-bar-chart {
@@ -112,7 +112,6 @@ body[lang="en"] {
 }
 
 .one-chart {
-  padding-top: 50px;
 }
 
 .one-chart-container {
