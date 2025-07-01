@@ -1,19 +1,18 @@
 .org-container {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 800px;
   background: #fff;
   margin-top:30px;
 }
 
 .card {
   position: absolute;
-  background-color: rgb(0, 183, 255);
   color: #fff;
   text-align: center;
   line-height: 88px;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* الجمعية العامة (big) centered top */
@@ -24,6 +23,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #163029;
+  
 }
 
 /* لجنة المراجعة الداخلية (middle) */
@@ -32,6 +32,8 @@
   height: 88.1px;
   top: 80px;  /* slightly lower than الجمعية العامة */
   left: calc(45% + 250px);
+  background-color: rgba(208, 214, 212, 0.5);
+  color: #3A73A8;
 }
 
 /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
@@ -40,6 +42,9 @@
   height: 88.1px;
   top: 210px;
   left: calc(45% + 250px);
+  background-color: rgba(208, 214, 212, 0.5);
+  
+  color: #3A73A8;
 }
 
 /* arrow from الجمعية العامة to audit-committee (angled right + down) */
@@ -50,7 +55,7 @@
   left: 100%;
   width: 166px;  /* horizontal line length */
   height: 2px;
-  background: #15352f;
+  background: #3A73A8;
 }
 
 
@@ -62,7 +67,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #15352f;
+  border-top-color: #3A73A8;
 }
 
 .audit-committee::before {
@@ -73,7 +78,7 @@
   transform: translateX(-50%);
   width: 2px;
   height: 16px;
-  background: #15352f;
+  background: #3A73A8;
 }
 
 .audit-dept::after {
@@ -83,17 +88,17 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #15352f;
+  border-top-color: #3A73A8;
 }
 .audit-dept::before {
     content: "";
   position: absolute;
-  top: -30px;  /* adjust to match distance */
+  top: -30px;  
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
   height: 16px;
-  background: #15352f;
+  background: #3A73A8;
 }
 
 .board {
@@ -102,6 +107,8 @@
   top: 170px; /* below الجمعية العامة */
   left: 50%;
   transform: translateX(-50%);
+  background-color: #455954;
+
 }
 /* el line el shmal مجلس الاداراة */
 .board::after {
@@ -109,9 +116,9 @@
   position: absolute;
   top: 50%;
   right: 100%;
-  width: 175px;  /* horizontal line length */
+  width: 131px;  /* horizontal line length */
   height: 2px;
-  background: #15352f;
+  background: #3A73A8;
 }
 
 /* el line el foo2 مجلس الاداراة */
@@ -123,14 +130,16 @@
   transform: translateX(-50%);
   width: 2px;
   height: 50px;
-  background: #15352f;
+  background: #3A73A8;
 }
 /* لجنة الترشيحات والمكافات */
 .nominations-committee {
   width: 220px;
   height: 88.1px;
   top: 230px; /* slightly below board */
-  left: calc(46% - 400px); /* move left */
+  left: calc(51% - 400px); /* move left */
+    background-color: rgba(208, 214, 212, 0.5);
+  color: #3A73A8;
 }
 
 /* el sahm el foo2 لجنة الترشيحات والمكافات */
@@ -141,7 +150,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #15352f;
+  border-top-color: #3A73A8;
 }
 /* el sahm el foo2 لجنة الترشيحات والمكافات */
 
@@ -153,35 +162,29 @@
   transform: translateX(-50%);
   width: 2px;
   height: 16px;
-  background: #15352f;
+  background: #3A73A8;
 }
 
 .executive-committee {
   width: 220px;
   height: 88.1px;
-  top: 370px; /* directly below nominations-committee */
-  left: calc(46% - 400px);
+  top: 350px; /* directly below nominations-committee */
+  left: calc(51% - 400px);
+    background-color: rgba(208, 214, 212, 0.5);
+  color: #3A73A8;
 }
 
 
-.executive-committee::after {
-    content: "";
-  position: absolute;
-  top: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: #15352f;
-}
+/* el line el foo2 لجنة مجلس الاداراة التنفيذية */
 .executive-committee::before {
     content: "";
   position: absolute;
-  top: -30px;  /* adjust to match distance */
+  top: -28px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
   height: 16px;
-  background: #15352f;
+  background: #3A73A8;
 }
 
 .chief-executive-officer{
@@ -190,8 +193,9 @@ width: 300.85px;
   top: 340px; /* below الجمعية العامة */
   left: 50%;
   transform: translateX(-50%);
-
+background-color: #455954;
 }
+/* el line el foor الرئيس التنفيذي */
 .chief-executive-officer::before {
     content: "";
   position: absolute;
@@ -200,5 +204,150 @@ width: 300.85px;
   transform: translateX(-50%);
   width: 2px;
   height: 50px;
-  background: #15352f;
+  background: #3A73A8;
+}
+
+/* el line el t7t الرئيس التنفيذي */
+.chief-executive-officer::after {
+    content: "";
+  position: absolute;
+  top: 100px;  /* adjust to match distance */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 46px;
+  background: #3A73A8;
+}
+
+/* el line el be el 3ard el ta7t الرئيس التنفيذي */
+.middle-line{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.blue-line{
+    background-color: #3A73A8;
+    height: 2px;
+    width: 72.8%;
+   position: absolute;
+   top:485px;
+   right:94px;
+}
+
+.finance-head,
+.operations-head,
+.sales-head,
+.marketing-head,
+.hr-head {
+  width: 160px;
+  height: 72.87px;
+  background-color: #E8EBEA;
+  color: #3A73A8;
+  position: absolute;
+  top: 553px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* positions left to right */
+.finance-head { left: 2%; }
+.operations-head { left: 21.5%; }
+.sales-head { left: 41%; }
+.marketing-head { left: 60.5%; }
+.hr-head { left: 80%; }
+
+/* vertical arrows from blue-line to each small card */
+.finance-head::before,
+.operations-head::before,
+.marketing-head::before,
+.hr-head::before {
+  content: "";
+  position: absolute;
+  top: -66px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 67px;
+  background-color: #3A73A8;
+}
+.finance-head::before{left: 80%;}
+.operations-head::before{left: 100%;}
+.marketing-head::before{left: 20%;}
+
+
+
+/* final name boxes under each head */
+.finance-name,
+.operations-name,
+.sales-name,
+.marketing-name,
+.hr-name {
+  width: 160px;
+  height: 50px;
+  color: #3A73A8;
+  position: absolute;
+  top: 700px;  /* below the head cards */
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* match the same left positions */
+.finance-name { left: 2%; }
+.operations-name { left: 21.5%; }
+.sales-name { left: 41%; }
+.marketing-name { left: 60.5%; }
+.hr-name { left: 80%; }
+
+/* vertical arrow from head to name */
+.finance-name::before,
+.operations-name::before,
+.sales-name::before,
+.marketing-name::before,
+.hr-name::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 46px;
+  background-color: #D3E0EB;
+}
+.finance-name::after,
+.operations-name::after,
+.sales-name::after,
+.marketing-name::after,
+.hr-name::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+
+
+  border: 6px solid transparent;
+  border-top-color: #D3E0EB;
+}
+
+.nominations-committee::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #3A73A8;
 }
