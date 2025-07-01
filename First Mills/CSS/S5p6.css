@@ -5,8 +5,13 @@
   margin: 20px auto;
 }
 
+.text-block2 {
+  color: #163029;
+}
+
 .list{
     color: #163029;
+    font-size: 20px;
     line-height: 0.5;
     margin: 30px auto 50px auto;
 }
@@ -88,10 +93,15 @@ font-weight: 200;
 .th-table3 > th,
 .td-table3 > td{
 
-    font-size: 10px;
+ font-size: 16px;
     padding: 10px 15px;
+    font-weight: 500;
 }
 
+.th-table3 > .small-th{
+ font-size: 10px;
+
+}
 .td img{
     width: 30%;
 }
@@ -149,15 +159,23 @@ font-weight: 200;
   }
 }
 
+@media (max-width: 768px) {
+   .title1::before,
+  .title1::after,
+  .title2::before,
+  .title2::after,
+  .title3::before,
+  .title3::after {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .growth-path-title {
     font-size: 18px;
   }
 
-  .title1::before,
-  .title1::after {
-    width: 60px;
-  }
+ 
 
   th,
   td {
