@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   height: 600px;
-  background: #f6f5f4;
+  background: #fff;
+  margin-top:30px;
 }
 
 .card {
@@ -22,6 +23,7 @@
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #163029;
 }
 
 /* لجنة المراجعة الداخلية (middle) */
@@ -97,25 +99,10 @@
 .board {
   width: 300.85px;
   height: 88.1px;
-  top: 150px; /* below الجمعية العامة */
+  top: 170px; /* below الجمعية العامة */
   left: 50%;
   transform: translateX(-50%);
 }
-
-.nominations-committee {
-  width: 220px;
-  height: 88.1px;
-  top: 210px; /* slightly below board */
-  left: calc(46% - 400px); /* move left */
-}
-
-.executive-committee {
-  width: 220px;
-  height: 88.1px;
-  top: 340px; /* directly below nominations-committee */
-  left: calc(46% - 400px);
-}
-
 /* el line el shmal مجلس الاداراة */
 .board::after {
   content: "";
@@ -127,7 +114,26 @@
   background: #15352f;
 }
 
+/* el line el foo2 مجلس الاداراة */
+.board::before {
+    content: "";
+  position: absolute;
+  top: -55px;  /* adjust to match distance */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 50px;
+  background: #15352f;
+}
+/* لجنة الترشيحات والمكافات */
+.nominations-committee {
+  width: 220px;
+  height: 88.1px;
+  top: 230px; /* slightly below board */
+  left: calc(46% - 400px); /* move left */
+}
 
+/* el sahm el foo2 لجنة الترشيحات والمكافات */
 .nominations-committee::after {
   content: "";
   position: absolute;
@@ -137,6 +143,7 @@
   border: 6px solid transparent;
   border-top-color: #15352f;
 }
+/* el sahm el foo2 لجنة الترشيحات والمكافات */
 
 .nominations-committee::before {
   content: "";
@@ -148,6 +155,14 @@
   height: 16px;
   background: #15352f;
 }
+
+.executive-committee {
+  width: 220px;
+  height: 88.1px;
+  top: 370px; /* directly below nominations-committee */
+  left: calc(46% - 400px);
+}
+
 
 .executive-committee::after {
     content: "";
@@ -166,5 +181,24 @@
   transform: translateX(-50%);
   width: 2px;
   height: 16px;
+  background: #15352f;
+}
+
+.chief-executive-officer{
+width: 300.85px;
+  height: 88.1px;
+  top: 340px; /* below الجمعية العامة */
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.chief-executive-officer::before {
+    content: "";
+  position: absolute;
+  top: -70px;  /* adjust to match distance */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 50px;
   background: #15352f;
 }
