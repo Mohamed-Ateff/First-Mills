@@ -135,17 +135,24 @@ margin: 10px auto;
   }
 }
 
+@media (max-width: 768px) {
+      .growth-path-title {
+        font-size: 18px;
+        margin: 120px 15px 30px;
+    }
+     .title1::before,
+  .title1::after {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .growth-path-title {
     font-size: 18px;
     margin: 30px 10px;
   }
 
-  .title1::before,
-  .title1::after {
-    width: 60px;
-    height: 2px;
-  }
+  
 
   th,
   td {

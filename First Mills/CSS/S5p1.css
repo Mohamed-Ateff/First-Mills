@@ -79,8 +79,8 @@
 /* hexagon section */
 
 .honeycomb {
-  background: #f6f5f4;
   position: relative;
+  margin-bottom: -250px;
 }
 
 /* base row style */
@@ -94,40 +94,40 @@
 
 /* green row (centered) */
 .row-1 .hex {
-    width: 250px;
-    height: 261px;
-    font-size: 25px;
+  width: 250px;
+  height: 261px;
+  font-size: 25px;
 }
 
 /* white row */
 .row-2 .hex {
-    width: 170px;
-    height: 200px;
+  width: 170px;
+  height: 200px;
 }
 
 /* gray row */
 .row-3 .hex {
-    width: 170px;
-    height: 200px;
+  width: 170px;
+  height: 200px;
 }
 /* orange row */
 .row-4 .hex {
-    width: 170px;
-    height: 200px;
+  width: 170px;
+  height: 200px;
 }
 
 /* vertical shift to make honeycomb */
 .row-2 {
-    transform: translateY(-87px);
-    gap: 80px;
+  transform: translateY(-87px);
+  gap: 80px;
 }
 .row-3 {
-    transform: translateY(-200px);
-    gap: 75px;
+  transform: translateY(-200px);
+  gap: 75px;
 }
 .row-4 {
-    transform: translateY(-310px);
-    gap: 80px;
+  transform: translateY(-310px);
+  gap: 80px;
 }
 
 /* general hexagon shape */
@@ -142,7 +142,7 @@
   align-items: center;
   justify-content: center;
   font-size: 16px;
-   border-radius: 8px;
+  border-radius: 8px;
 }
 
 /* colors */
@@ -150,7 +150,7 @@
   background: #31544b;
   color: white;
   padding: 0px 30px;
-} 
+}
 .white {
   background: white;
   color: #787878;
@@ -165,110 +165,101 @@
 }
 /* hexagon section ends*/
 
-@media (max-width: 1025px) {
-  .row-1 .hex {
-    width: 180px;
-  }
-  .row-2 .hex,
-  .row-3 .hex,
-  .row-4 .hex {
-    width: 140px;
-  }
-
-  .hex {
-    margin: 0 60px;
-    padding: 0 20px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .row-2 {
-    transform: translateY(-70px);
-  }
-  .row-3 {
-    transform: translateY(-150px);
-  }
-  .row-4 {
-    transform: translateY(-220px);
-  }
-}
-
 @media (max-width: 768px) {
-  .final-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .honeycomb {
+    margin-bottom: 0px;
   }
+
+   .final-cards {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+  }
+
   .title-final h4 {
     width: 70%;
-  }
-  .row-1 .hex {
-    width: 150px;
-  }
-  .row-2 .hex,
-  .row-3 .hex,
-  .row-4 .hex {
-    width: 130px;
+    font-size: 20px;
+    padding: 15px 20px;
+    transform: translate(0px, 20px);
   }
 
-  /*.hex {
-    margin: 0 20px;
-    padding: 0 10px;
-    font-size: 16px;
-    line-height: 17px;
-  }*/
+  .final-card {
+    padding: 20px;
+  }
 
-  .row-2 {
-    transform: translateY(-60px);
+  .final-card.wide {
+    grid-column: span 2; 
   }
-  .row-3 {
-    transform: translateY(-120px);
+
+  .final-card p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
   }
-  .row-4 {
-    transform: translateY(-180px);
-  }
-   .row {
+
+  .row {
     flex-direction: column;
     align-items: center;
-  }
-  .hex {
-    width: 150px;
-    font-size: 14px;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-final h4 {
-    width: 90%;
-    transform: translate(-5px, 30px);
+    gap: 30px;
   }
   .row-1 .hex {
-    width: 140px;
+    width: 230px;
+    height: 220px;
+    font-size: 20px;
+    line-height: 1.3;
   }
   .row-2 .hex,
   .row-3 .hex,
   .row-4 .hex {
-    width: 90px;
+    max-width: 100%;
+    flex: 1 1 100%;
+    width: 230px;
+  }
+  .row-2,
+  .row-3,
+  .row-4 {
+    transform: none;
   }
 
- /* .hex {
-    margin: 0 10px;
-    padding: 0 10px;
-    font-size: 10px;
-    line-height: 10px;
-  }*/
-   .hex {
+  .hex {
     width: 130px;
     font-size: 12px;
     padding: 10px;
   }
+}
 
-  .row-2 {
-    transform: translateY(-40px);
+@media (max-width: 480px) {
+   .final-cards {
+    grid-template-columns: 1fr; 
+    gap: 15px;
   }
-  .row-3 {
-    transform: translateY(-80px);
+
+  .title-final h4 {
+    width: 90%;
+    font-size: 18px;
+    padding: 10px 15px;
+    transform: translate(0px, 15px);
   }
-  .row-4 {
-    transform: translateY(-120px);
+
+  .final-card.wide {
+    grid-column: span 1; 
+  }
+
+  .final-card p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+
+  .row-1 .hex {
+    width: 180px;
+    height: 190px;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .row-2 .hex,
+  .row-3 .hex,
+  .row-4 .hex {
+    max-width: 100%;
+    flex: 1 1 100%;
   }
 }

@@ -56,7 +56,7 @@
   top: 50%;
   left: 100%;
   width: 173px;  /* horizontal line length */
-  height: 2px;
+  height: 3px;
   background: #3A73A8;
 }
 
@@ -78,7 +78,7 @@
   top: -16px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3px;
   height: 16px;
   background: #3A73A8;
 }
@@ -98,7 +98,7 @@
   top: -30px;  
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3px;
   height: 16px;
   background: #3A73A8;
 }
@@ -119,18 +119,18 @@
   top: 50%;
   right: 100%;
   width: 174px;  /* horizontal line length */
-  height: 2px;
+  height: 3px;
   background: #3A73A8;
 }
 
 /* el line el foo2 مجلس الاداراة */
 .board::before {
-    content: "";
+  content: "";
   position: absolute;
   top: -55px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3.5px;
   height: 50px;
   background: #3A73A8;
 }
@@ -162,8 +162,8 @@
   top: -16px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
-  height: 16px;
+  width: 3px;
+  height: 14px;
   background: #3A73A8;
 }
 
@@ -184,7 +184,7 @@
   top: -28px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3px;
   height: 16px;
   background: #3A73A8;
 }
@@ -204,7 +204,7 @@ background-color: #455954;
   top: -70px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3px;
   height: 50px;
   background: #3A73A8;
 }
@@ -216,7 +216,7 @@ background-color: #455954;
   top: 100px;  /* adjust to match distance */
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3px;
   height: 46px;
   background: #3A73A8;
 }
@@ -232,11 +232,11 @@ background-color: #455954;
 
 .blue-line{
     background-color: #3A73A8;
-    height: 2px;
-    width: 74.4%;
+    height: 3px;
+    width: 74.55%;
    position: absolute;
    top:485px;
-   right:107px;
+   right:106px;
 }
 
 .finance-head,
@@ -275,7 +275,7 @@ background-color: #455954;
   top: -66px;
   left: 50%;
   transform: translateX(-50%);
-  width: 1px;
+  width: 3px;
   height: 67px;
   background-color: #3A73A8;
 }
@@ -323,7 +323,7 @@ background-color: #455954;
   top: -70px;
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 3px;
   height: 46px;
   background-color: #D3E0EB;
 }
@@ -409,10 +409,7 @@ background-color: #455954;
         font-size: 14px;
     }
 
-    .blue-line {
-        width: 70%;
-        right: 50px;
-    }
+ 
 
     .nominations-committee {
         left: calc(59% - 400px);
@@ -427,10 +424,15 @@ background-color: #455954;
         width: 114px;
         /* horizontal line length */
     }
+    .board::before {
+  
+  width: 3px;
+
+}
 
     .blue-line {
-        width: 72.5%;
-        right: 77px;
+        width: 74.6%;
+        right: 73px;
     }
     
 }

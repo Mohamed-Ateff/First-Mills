@@ -87,7 +87,7 @@
     
     .activities-title2::before,
     .activities-title2::after {
-      width: 300px;
+      width: 140px;
     }
   }
 
@@ -101,7 +101,7 @@
     
     .activities-title2::before,
     .activities-title2::after {
-      width: 250px;
+      width: 150px;
     }
     
     .activities_card {
@@ -125,7 +125,7 @@
     
     .activities-title2::before,
     .activities-title2::after {
-      width: 150px;
+      width: 120px;
     }
     
     .activities_card {
@@ -183,7 +183,7 @@
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .activities-title2::before,
     .activities-title2::after {
       display: none;
