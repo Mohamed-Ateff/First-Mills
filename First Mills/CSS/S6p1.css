@@ -1,0 +1,146 @@
+  .title-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-span{
+    color: #787878;
+}
+  
+.charts section{
+    padding: auto 50px;
+}
+  .chart-section {
+      background-color: white;
+      margin: 30px 0;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .donut-container {
+      flex: 1 1 300px;
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+    .donut-container canvas {
+      width: 400px !important;
+      height: 300px !important;
+    }
+    .legend-container {
+      flex: 1 1 200px;
+    }
+    .bar-container {
+      flex: 1 1 200px;
+    }
+    .bar-container canvas {
+      height: 350px !important;
+      width: 350px !important;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      /*justify-content: center;*/
+      margin: 8px 0;
+    }
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-left: 10px;
+      margin: auto 20px;
+    }
+        .legend-item p{
+            font-size: 20px;
+        }
+    .total {
+      font-size: 20px;
+      font-weight: bold;
+      color: #73837F;
+    }
+    .total p{
+        margin: 0;
+    }
+        .total p:first-child{
+            color: #31544B;
+            font-size: 30px;
+                  margin: 10px 150px auto auto;
+
+        }
+         .total p:last-child{
+            color: #444444;
+            font-weight: 500;
+                              margin: 10px 160px auto auto;
+
+        }
+    canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 1024px) {
+  .chart-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .donut-container,
+  .legend-container,
+  .bar-container {
+    width: 100% !important;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .donut-container canvas,
+  .bar-container canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .total p:first-child,
+  .total p:last-child {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .legend-item {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .legend-color {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .title-flex {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .title-span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .legend-item p {
+    font-size: 16px;
+  }
+
+  .total p:first-child {
+    font-size: 24px;
+  }
+
+  .total p:last-child {
+    font-size: 18px;
+  }
+}
