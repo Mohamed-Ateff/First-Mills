@@ -1,44 +1,50 @@
-.container-big-f{
+.container-big-f {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    gap:110px
+    gap: 110px
 }
 
-.card-small{
-display: flex;
-width: 43%;
-flex-direction: column;
+.card-small {
+    display: flex;
+    width: 43%;
+    flex-direction: column;
 }
-.card-small p{
-color:#444;
-font-size: 24px;
+
+.card-small p {
+    color: #444;
+    font-size: 24px;
 }
-.card-small ul{
-color:#4E6A63;
-font-size: 18px;
+
+.card-small ul {
+    color: #4E6A63;
+    font-size: 18px;
 }
-.button-div{
+
+.button-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 30px;
     color: #FFFFFF;
+    margin-top: 63px;
 }
-.button-big{
+
+.button-big {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 4px 20px;
-    background-color: #21333B;  
+    background-color: #21333B;
     width: 200px;
     border-radius: 20px;
 }
-.button-big p{
-  color: #FFFFFF;  
-  font-size: 20px;
+
+.button-big p {
+    color: #FFFFFF;
+    font-size: 20px;
 }
 
 .button-div:nth-of-type(2) {
@@ -50,73 +56,70 @@ font-size: 18px;
 }
 
 .button-small {
- display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-   
-    
-    background-color: #FCB44A;  
+
+
+    background-color: #FCB44A;
     width: 83px;
     height: 83px;
-    
+
     border-radius: 10px;
 }
-.button-small img{
+
+.button-small img {
     width: 44px;
     height: 43px;
 }
 
 .button-small:nth-of-type(4) img {
-  width: 21px; 
-  height: 41px;
+    width: 21px;
+    height: 41px;
 
 }
+
 .button-small:nth-of-type(5) img {
-  width: 49px; 
-  height: 35px;
+    width: 49px;
+    height: 35px;
 
 }
 
 @media (max-width: 1026px) {
- 
-    .container-big-f{
+
+    .container-big-f {
+        gap: 80px
+    }
+    .card-small {
+        width: 37%;
+    }
     
-    gap:80px
 }
 
-.card-small{
-
-width: 37%;
-
-}
-}
 @media (max-width: 768px) {
- .padding-top{
-    padding-top: 40px;
- }
-    .container-big-f{
-    
-    gap:80px
+    .padding-top {
+        padding-top: 40px;
+    }
+    .container-big-f {
+        gap: 80px
+    }
+    .card-small {
+        width: 41%;
+    }
 }
 
-.card-small{
-
-width: 41%;
-
-}
-}
 @media (max-width: 480px) {
- .padding-top{
-    padding-top: 0px;
- }
-    .container-big-f{
+    .padding-top {
+        padding-top: 0px;
+    }
+    .container-big-f {
+        gap: 10px
+    }
+    .card-small {
+        width: 100%;
+    }
+        .button-div{
     
-    gap:10px
-}
-
-.card-small{
-
-width: 100%;
-
+    margin-top: 20px;
 }
 }

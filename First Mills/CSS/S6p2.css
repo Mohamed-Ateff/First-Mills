@@ -7,7 +7,7 @@
 .title-flex{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:end;
 }
 .title-span{
     color: #787878;
@@ -19,9 +19,14 @@
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 4px;
   width: 100%;
   margin-bottom: 20px;
+} 
+
+table thead tr {
+  transform: translateY(5px); 
 }
 
 th,
@@ -58,6 +63,7 @@ tbody tr:nth-child(odd) {
 
 .table-container5 td{
   text-align: start;
+  color: #163029;
 }
 .table-container5 th, .table-container5 .add-border{
   border-left: 1px solid #BFBFBF;
@@ -67,6 +73,15 @@ tbody tr:nth-child(odd) {
   font-size: 16px;
   
 }
+/* added css */
+.table-container5 table thead tr:nth-child(1) {
+  transform: translateY(9px); 
+}
+.table-container5 table{
+ border-collapse: separate;
+  border-spacing: 0 0px;
+}
+/* added css */
 .table-container5 .years td{
   color: #163029;
   background-color: #FDD292 ;
@@ -105,7 +120,10 @@ tbody tr:nth-child(odd) {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+    align-items:center;
+        padding-top: 80px;
   }
+ 
 
   .title-span {
     font-size: 14px;
@@ -116,7 +134,10 @@ tbody tr:nth-child(odd) {
     min-width: 700px; 
   }
 
-  th, td {
+  th {
+    padding: 20px 15px;
+  }
+  td {
     padding: 8px 15px;
   }
 
@@ -135,6 +156,20 @@ tbody tr:nth-child(odd) {
   .btn button p {
     font-size: 16px;
   }
+  /* for s6p3 */
+    .padding-top {
+    
+        padding-top: 40px;
+  }
 }
-
+@media (max-width: 480px) {
+  .title-flex {
+        padding-top: 0px;
+  }
+  /* for s6p3 */
+    .padding-top {
+    
+        padding-top: 0px;
+  }
+}
 
