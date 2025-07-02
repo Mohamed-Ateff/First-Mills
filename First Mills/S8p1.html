@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Menu</title>
+    <link rel="stylesheet" href="CSS/Navbar.css" />
+    <link rel="stylesheet" href="CSS/SideMenu.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/Header.css" />
+    <link rel="stylesheet" href="CSS/S8p1.css" />
+    <link rel="stylesheet" href="CSS/Footer.css" />
+    <link rel="stylesheet" href="CSS/Hero.css" />
+    <script src="Javascript/Navbar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="Images/logo.png" alt=""
+        /></a>
+      </header>
+    </div>
+
+    <div class="container-for-hero">
+      <div class="hero">
+        <div class="side-menu">
+          <div class="circle"><div class="border-for-circle">EN</div></div>
+          <div class="line-one"></div>
+
+          <a href=""
+            ><div class="hexagon hexagon1 active">
+              <img src="Images/one.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/two.png" alt="" />
+            </div>
+          </a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/three.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/four.png" alt="" /></div
+          ></a>
+          <a href=""
+            ><div class="hexagon hexagon2">
+              <img src="Images/five.png" alt="" /></div
+          ></a>
+
+          <div class="line-two"></div>
+        </div>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+            نظرة عامة
+          </div>
+          <div class="mobile-submenu" id="mobile-overview">
+            <a href="S1p1.html" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="S1p2.html" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="S1p3.html" class="page">مسيرة نمو الشركة</a>
+            <a href="S1p4.html" class="page">مزايا الاستثمار</a>
+            <a href="S1p5.html" class="page">القيم الأساسية</a>
+            <a href="S1p6.html" class="page">الوجود الجغرافي</a>
+            <a href="S1p7.html" class="page">الشركات التابعة</a>
+            <a href="S1p8.html" class="page">منتجات الشركة</a>
+            <a href="S1p9.html" class="page">العلامات التجارية</a>
+            <a href="S1p10.html" class="page">أبرز إنجازات عام 2024</a>
+            <a href="S1p11.html" class="page">الجوائز والشهادات</a>
+            <a href="S1p12.html" class="page">شعار العام</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-management')"
+          >
+            كلمة الإدارة
+          </div>
+          <div class="mobile-submenu" id="mobile-management">
+            <a href="S2p1.html" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="S2p2.html" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="S2p3.html" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-strategy')">
+            التقرير الاستراتيجي
+          </div>
+          <div class="mobile-submenu" id="mobile-strategy">
+            <a href="S3p1.html" class="page">نموذج العمل التجاري</a>
+            <a href="S3p2.html" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="S3p3.html" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="S3p4.html" class="page">مشاركة الجهات المعنية</a>
+            <a href="S3p5.html" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="S3p6.html" class="page">التحديات والفرص</a>
+            <a href="S3p7.html" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-operational')"
+          >
+            المراجعة التشغيلية
+          </div>
+          <div class="mobile-submenu" id="mobile-operational">
+            <a href="S4p1.html" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="S4p2.html" class="page"
+              >منتجات الشركة وعلاماتها التجارية</a
+            >
+            <a href="S4p3.html" class="page">القدرات التشغيلية في أرقام</a>
+            <a href="S4p4.html" class="page">معلومات عن صناع الشركة</a>
+            <a href="S4p5.html" class="page">العمالء وشركاء النجاح</a>
+            <a href="S4p6.html" class="page">ضمان الجودة ورقابتها</a>
+            <a href="S4p7.html" class="page">البيئة والصحة والسلامة</a>
+            <a href="S4p8.html" class="page">البنية التحتية</a>
+            <a href="S4p9.html" class="page">مشروع العلاج الحراري</a>
+            <a href="S4p10.html" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="S4p11.html" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-governance')"
+          >
+            الحوكمة و الاستدامة
+          </div>
+          <div class="mobile-submenu" id="mobile-governance">
+            <a href="S5p1.html" class="page">حوكمة الشركة</a>
+            <a href="S5p2.html" class="page">القوانين ودرجة الالتزام</a>
+            <a href="S5p3.html" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="S5p4.html" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="S5p5.html" class="page">مجلس الإدارة</a>
+            <a href="S5p6.html" class="page">لجان مجلس الإدارة</a>
+            <a href="S5p7.html" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="S5p8.html" class="page">الإدارة التنفيذية</a>
+            <a href="S5p9.html" class="page">مكافآت مجلس الإدارة</a>
+            <a href="S5p10.html" class="page">الأطراف ذوي العلاقة</a>
+            <a href="S5p11.html" class="page">المدفوعات النظامية</a>
+            <a href="S5p12.html" class="page">أسهم الخزينة</a>
+            <a href="S5p13.html" class="page">اللوائح</a>
+            <a href="S5p14.html" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="S5p15.html" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="S5p16.html" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="S5p17.html" class="page"
+              >الاستدامة والمسؤولية الاجتماعية</a
+            >
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-financials')"
+          >
+            القوائم المالية
+          </div>
+          <div class="mobile-submenu" id="mobile-financials">
+            <a href="S6p1.html" class="page">ملخص الأداء المالي السنوي</a>
+            <a href="S6p2.html" class="page">تطور القوائم خلال 5 سنوات</a>
+            <a href="S6p3.html" class="page">أبرز النسب والمؤشرات المالية</a>
+            <a href="S6p4.html" class="page">تحليل النتائج المالية السنوية</a>
+            <a href="S6p5.html" class="page">نظرة على النتائج الفصلية</a>
+            <a href="S6p6.html" class="page">تقرير المراجع والقوائم المالية</a>
+          </div>
+
+          <div class="section">
+            <a href="S7p1.html" class="page">مركز التحميل</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <img class="image-hero" src="Images/S6p2_img1.png" alt="" />
+          <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+          <div class="title-section">
+            <div class="white-title">
+              <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+              <p>الرئيسية</p>
+              <img class="arrow" src="Images/arrow-footer.png" alt="" />
+              <p>القوائم المالية</p>
+            </div>
+            <div class="green-title">
+              <h1>مركز التحميل</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-Union"></div>
+        <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+        <div class="menu-container">
+          <div class="main-menu">
+            <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+            <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+            <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+            <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+            <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+            <div class="section" data-submenu="Tab6">القوائم المالية</div>
+            <a href="" class="section" data-submenu="Tab7">مركز التحميل</a>
+          </div>
+
+          <div class="menu-divider"></div>
+
+          <div class="submenu active" id="Tab1">
+            <a href="S1p1.html" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="S1p2.html" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="S1p3.html" class="page">مسيرة نمو الشركة</a>
+            <a href="S1p4.html" class="page">مزايا الاستثمار</a>
+            <a href="S1p5.html" class="page">القيم الأساسية</a>
+            <a href="S1p6.html" class="page">الوجود الجغرافي</a>
+            <a href="S1p7.html" class="page">الشركات التابعة</a>
+            <a href="S1p8.html" class="page">منتجات الشركة</a>
+            <a href="S1p9.html" class="page">العلامات التجارية</a>
+            <a href="S1p10.html" class="page">أبرز إنجازات عام 2024</a>
+            <a href="S1p11.html" class="page">الجوائز والشهادات</a>
+            <a href="S1p12.html" class="page">شعار العام</a>
+          </div>
+
+          <div class="submenu" id="Tab2">
+            <a href="S2p1.html" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="S2p2.html" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="S2p3.html" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="submenu" id="Tab3">
+            <a href="S3p1.html" class="page">نموذج العمل التجاري</a>
+            <a href="S3p2.html" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="S3p3.html" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="S3p4.html" class="page">مشاركة الجهات المعنية</a>
+            <a href="S3p5.html" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="S3p6.html" class="page">التحديات والفرص</a>
+            <a href="S3p7.html" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div class="submenu" id="Tab4">
+            <a href="S4p1.html" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="S4p2.html" class="page"
+              >منتجات الشركة وعلاماتها التجارية</a
+            >
+            <a href="S4p3.html" class="page">القدرات التشغيلية في أرقام </a>
+            <a href="S4p4.html" class="page">معلومات عن صناع الشركة </a>
+            <a href="S4p5.html" class="page">العمالء وشركاء النجاح</a>
+            <a href="S4p6.html" class="page">ضمان الجودة ورقابتها</a>
+            <a href="S4p7.html" class="page">البيئة والصحة والسلامة</a>
+            <a href="S4p8.html" class="page">البنية التحتية</a>
+            <a href="S4p9.html" class="page">مشروع العلاج الحراري</a>
+            <a href="S4p10.html" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="S4p11.html" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div class="submenu" id="Tab5">
+            <a href="S5p1.html" class="page">حوكمة الشركة</a>
+            <a href="S5p2.html" class="page">القوانين ودرجة الالتزام</a>
+            <a href="S5p3.html" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="S5p4.html" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="S5p5.html" class="page">مجلس الإدارة</a>
+            <a href="S5p6.html" class="page">لجان مجلس الإدارة</a>
+            <a href="S5p7.html" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="S5p8.html" class="page">الإدارة التنفيذية</a>
+            <a href="S5p9.html" class="page">مكافآت مجلس الإدارة</a>
+            <a href="S5p10.html" class="page">الأطراف ذوي العلاقة</a>
+            <a href="S5p11.html" class="page">المدفوعات النظامية</a>
+            <a href="S5p12.html" class="page">أسهم الخزينة</a>
+            <a href="S5p13.html" class="page">اللوائح</a>
+            <a href="S5p14.html" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="S5p15.html" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="S5p16.html" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="S5p17.html" class="page"
+              >الاستدامة والمسؤولية الاجتماعية</a
+            >
+          </div>
+
+          <div class="submenu" id="Tab6">
+            <a href="S6p1.html" class="page">ملخص الأداء المالي السنوي</a>
+            <a href="S6p2.html" class="page">تطور القوائم خلال 5 سنوات</a>
+            <a href="S6p3.html" class="page">أبرز النسب والمؤشرات المالية</a>
+            <a href="S6p4.html" class="page">تحليل النتائج المالية السنوية</a>
+            <a href="S6p5.html" class="page">نظرة على النتائج الفصلية</a>
+            <a href="S6p6.html" class="page">تقرير المراجع والقوائم المالية</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="start">
+    
+       <div class=" container-for-center">
+       <div class="Paragraph" style="color: #444;">
+        <p>
+        قم باختيار القسم 
+        أو الأقسام التيتريد تحميلها من القائمة أدناه. أو يمكنكم اختيار
+         القسم كاملاً  كما يمكنكم تحميل التقرير كاملاً  في أي وقت للاطلاع
+         على الصورة الشاملة لأداء شركة المطاحن الأولى لعام 2025.
+        </p>
+       </div>
+
+        <div class="section">
+          <div class="section-header-div">
+            <input
+              type="checkbox"
+              class="section-header custom-checkbox"
+              id="section1-header"
+            />
+            <label for="section1-header" data-en="Maharah Overview"
+              >نظرة عامة</label
+            > 
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/About_Maharah.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/About_Maharah.pdf"
+            /> -->
+            <span data-en="About Maharah">أبرز النتائج المالية والتشغيلية</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/Brief_Overview_of_Financial_and_Operational_Results_Maharah.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/Brief_Overview_of_Financial_and_Operational_Results_Maharah.pdf"
+            /> -->
+            <span data-en="Financial and Operational Results Maharah"
+              >لمحة عن شركة المطاحن الأولي</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/History_of_the_Company.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/History_of_the_Company.pdf"
+            /> -->
+            <span data-en="History of the Company">مسيرة نمو الشركة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/Maharah–Distinguished_Solutions_and_Sustainable_Services.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/Maharah–Distinguished_Solutions_and_Sustainable_Services.pdf"
+            /> -->
+            <span data-en="Maharah .. Distinguished Solutions">
+              مزايا الاستثمار</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/Geographical_Outreach.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/Geographical_Outreach.pdf"
+            /> -->
+            <span data-en="Geographical Outreach">القيم الأساسية للشركة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/Initiatives.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/Initiatives.pdf"
+            /> -->
+            <span data-en="Initiatives">الوجود الجغرافي</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/Competitive_Advantages.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/Competitive_Advantages.pdf"
+            /> -->
+            <span data-en="Competitive Advantages">الشركات التابعة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/The_Theme_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/The_Theme_of_the_Year.pdf"
+            /> -->
+            <span data-en="The Theme of the Year ">منتجات الشركة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/The_Theme_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/The_Theme_of_the_Year.pdf"
+            /> -->
+            <span data-en="The Theme of the Year ">العلامات التجارية</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox" 
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/The_Theme_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/The_Theme_of_the_Year.pdf"
+            /> -->
+            <span data-en="The Theme of the Year ">أبرز إنجازات عام 2024</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox" 
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/The_Theme_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/The_Theme_of_the_Year.pdf"
+            /> -->
+            <span data-en="The Theme of the Year ">الجوائز والشهادات</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox" 
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Overview_Ar/The_Theme_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Overview/The_Theme_of_the_Year.pdf"
+            /> -->
+            <span data-en="The Theme of the Year ">شعار العام</span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header-div">
+            <input
+              type="checkbox"
+              class="section-header custom-checkbox"
+              id="section2-header"
+            />
+            <label for="section2-header" data-en="Company Management"
+              >إدارة الشــركة</label
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Company_Management_Ar/Chairman_Message.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Company_Management/Chairman_Message.pdf"
+            /> -->
+            <span data-en="Chairman Message">كلمة رئيس مجلس الادارة </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Company_Management_Ar/CEO_Message.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Company_Management/CEO_Message.pdf"
+            /> -->
+            <span data-en="CEO Message">رسالة الرئيس التنفيذي </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Company_Management_Ar/CEO_Message.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Company_Management/CEO_Message.pdf"
+            /> -->
+            <span data-en="CEO Message">كلمة رئيس القطاع المالي </span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header-div">
+            <input
+              type="checkbox"
+              class="section-header custom-checkbox"
+              id="section3-header"
+            />
+            <label for="section3-header" data-en="Strategic Report"
+              >التقرير الاستراتيجي</label
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Vision_Mission_and_Values.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Vision_Mission_and_Values.pdf"
+            /> -->
+            <span data-en="Vision, Mission  and Values"
+              >نموذج العمل التجاري
+            </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Company_Strategy.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Company_Strategy.pdf"
+            /> -->
+            <span data-en="Company Strategy">استراتيجيتنا ومؤشرات الأداء </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Operational_Model_and_Sustainable_Development.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Operational_Model_and_Sustainable_Development.pdf"
+            /> -->
+            <span data-en="Operational Model">نظرة عامة على السوق والقطاع </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Achievements.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Achievements.pdf"
+            /> -->
+            <span data-en="Achievements">مشاركة الجهات المعنية </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Future_Aspirations_and_Steps_for_Expansion.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Future_Aspirations_and_Steps_for_Expansion.pdf"
+            /> -->
+            <span data-en="Aspirations">الأهداف المستقبلية والتطلعات </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Challenges.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Challenges.pdf"
+            /> -->
+            <span data-en="Challenges">التحديات والفرص </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Overview_on_the_Strategy_Ar/Challenges.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Overview_on_the_Strategy/Challenges.pdf"
+            /> -->
+            <span data-en="Challenges">إدارة المخاطر </span>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header-div">
+            <input
+              type="checkbox"
+              class="section-header custom-checkbox"
+              id="section4-header"
+            />
+            <label for="section4-header" data-en="Operational Performance"
+              >المراجعة التشغيلية</label
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Operational_Model.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Operational_Model.pdf"
+            /> -->
+            <span data-en="Operational Model">الأنشطة الرئيسة للشركة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Operational_Performance.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Operational_Performance.pdf"
+            /> -->
+            <span data-en="Operational Performance">منتجات الشركة وعلاماتها التجارية</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Operational_Objectives.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Operational_Objectives.pdf"
+            /> -->
+            <span data-en="Operational Objectives">القدرات التشغيلية في أرقام</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Human_Resources_and_Employment.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Human_Resources_and_Employment.pdf"
+            /> -->
+            <span data-en="Human Resources and Employment"
+              >معلومات عن مصانع الشركة</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Highlights_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Highlights_of_the_Year.pdf"
+            /> -->
+            <span data-en="Highlights of the Year 2023"
+              >ضمان الجودة ورقابتها</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Highlights_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Highlights_of_the_Year.pdf"
+            /> -->
+            <span data-en="Highlights of the Year 2023"
+              >البيئة والصحة والسلامة</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Highlights_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Highlights_of_the_Year.pdf"
+            /> -->
+            <span data-en="Highlights of the Year 2023"
+              >البنية التحتية</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Highlights_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Highlights_of_the_Year.pdf"
+            /> -->
+            <span data-en="Highlights of the Year 2023"
+              >مشروع العلاج الحراري</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Highlights_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Highlights_of_the_Year.pdf"
+            /> -->
+            <span data-en="Highlights of the Year 2023"
+              >التسويق والتواصل المؤسسي</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Maharah_Operational_Performance_Ar/Highlights_of_the_Year.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Maharah_Operational_Performance/Highlights_of_the_Year.pdf"
+            /> -->
+            <span data-en="Highlights of the Year 2023"
+              >الموظفون والثقافة المؤسسية</span
+            >
+          </div>
+        </div>
+        <div class="section">
+          <div class="section-header-div">
+            <input
+              type="checkbox"
+              class="section-header custom-checkbox"
+              id="section5-header"
+            />
+            <label for="section5-header" data-en="Governance and Compliance"
+              >الحوكمة والاستدامة</label
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Maharah_Governance_General_Framework.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Maharah_Governance_General_Framework.pdf"
+            /> -->
+            <span data-en="Maharah Governance General Framework"
+              >حوكمة المطاحن الاولي
+            </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Company_Organizational_Structure.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Company_Organizational_Structure.pdf"
+            /> -->
+            <span data-en="Company Organizational Structure"
+              >الأحكام ودرجة الالتزام</span
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Board_of_Directors.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Board_of_Directors.pdf"
+            /> -->
+            <span data-en="Board of Directors">العقوبات والجزاءات والقضايا</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">الهيكل التنظيمي للشركة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">مجلس الإدارة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">لجان مجلس الإدارة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">الجمعيات العامة للمساهمين</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">الإدارة التنفيذية</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">مكافآت مجلس الإدارة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">الأطراف ذوي العلاقة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">المدفوعات النظامية</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">أسهم الخزينة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">القروض</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">المساهمون وعلاقات المستثمرين</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">المراجعة والرقابة الداخلية</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">إقرارات مجلس الإدارة</span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Governance_and_Compliance_Ar/Our_Shareholders.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Governance_and_Compliance/Our_Shareholders.pdf"
+            /> -->
+            <span data-en="Our Shareholders">الاستدامة والمسؤولية الاجتماعية</span>
+          </div>
+          
+        </div>
+        <div class="section">
+          <div class="section-header-div">
+            <input
+              type="checkbox"
+              class="section-header custom-checkbox"
+              id="section6-header"
+            />
+            <label
+              for="section6-header"
+              data-en="Financial Statements and Development of Performance"
+              >القوائم المالية</label
+            >
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Financial_Performance_Ar/Analysis_of_Financial_Performance.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Financial_Performance/Analysis_of_Financial_Performance.pdf"
+            /> -->
+            <span data-en="Analysis of Financial Performance"
+              >ملخص الأداء المالي السنوي
+            </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Financial_Performance_Ar/Financial_Statements.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Financial_Performance/Financial_Statements.pdf"
+            /> -->
+            <span data-en="Financial Statements">تطور القوائم المالية خلال 5 سنوات </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Financial_Performance_Ar/Financial_Statements.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Financial_Performance/Financial_Statements.pdf"
+            /> -->
+            <span data-en="Financial Statements">أبرز النسب والمؤشرات المالية </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Financial_Performance_Ar/Financial_Statements.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Financial_Performance/Financial_Statements.pdf"
+            /> -->
+            <span data-en="Financial Statements">تحليل النتائج المالية السنوية </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Financial_Performance_Ar/Financial_Statements.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Financial_Performance/Financial_Statements.pdf"
+            /> -->
+            <span data-en="Financial Statements">نظرة على النتائج الفصلية </span>
+          </div>
+          <div class="sub-item">
+            <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox arabic-item"
+              data-file="pdfs/Financial_Performance_Ar/Financial_Statements.pdf"
+            />
+            <!-- <input
+              type="checkbox"
+              class="sub-checkbox custom-checkbox english-item"
+              data-file="pdfs/Financial_Performance/Financial_Statements.pdf"
+            /> -->
+            <span data-en="Financial Statements">تقرير المراجع والقوائم المالية </span>
+          </div>
+        </div>
+      </div>
+      <div class="button-div">
+<button class="button-for-footer" id="download-selected">
+             <img src="./Images/S8p1-icon1.png" alt="">
+          <span data-en="Download Selected">تحميل ما تم تحديده </span>
+        </button>
+        <button class="button-for-footer" id="download-all">
+            <img src="./Images/S8p1-icon2.png" alt="">
+            
+          <span data-en="Download Full Report">تحميل التقرير بالكامل </span>
+        </button>
+        
+      </div>
+ 
+    
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="side-of-footer">
+          <a href="S7p1.html" class="next">
+            <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+          </a>
+          <h2>مركز التحميل</h2>
+        </div>
+        <div class="side-of-footer">
+          <a
+            href=""
+            style="background: #30444e; color: white"
+            class="contact-us btn-footer"
+          >
+            <img src="Images/email.png" alt="" />
+            تواصلوا معنا</a
+          >
+          <a
+            href=""
+            style="background: #ffb548; color: #30444e"
+            class="download-center btn-footer"
+          >
+            <img src="Images/download.png" alt="" />
+            مركز التحميل</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- CounterUp -->
+    <script src="Javascript/jquery.counterup.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Javascript/counter.js"></script>
+    <!-- CounterUp (CDN version) -->
+    <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+    <script src="Javascript/bars.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+  </body>
+</html>
