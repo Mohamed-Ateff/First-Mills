@@ -1,7 +1,7 @@
 .title-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 .title-span {
   color: #787878;
@@ -136,7 +136,7 @@
 .total p:last-child {
   color: #444444;
   font-weight: 500;
-  margin: 10px 100px auto auto;
+  margin: 10px 105px auto auto;
 }
 canvas {
   max-width: 100%;
