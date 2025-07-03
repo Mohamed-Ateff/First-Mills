@@ -106,3 +106,80 @@ canvas {
   font-size: 16px;
   font-weight: 300;
 }
+
+
+@media (max-width: 1024px) {
+  .text-desc {
+    font-size: 22px;
+    line-height: 1.6;
+  }
+
+  .chart-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  th, td {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .table-caption h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .charts-grid {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    flex: 1 1 100%;
+  }
+
+  .table-caption {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-caption h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .text-desc {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-desc {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .chart-title {
+    font-size: 16px;
+  }
+
+  th, td {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .table-caption h3 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}

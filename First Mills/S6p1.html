@@ -336,13 +336,10 @@
           <span class="title-span">(جميع المبالغ بالمليون ريال)</span>
         </div>
         <div class="chart-section">
-          <div class="donut-container">
-            <canvas id="branchDonut"></canvas>
-            <div class="total">
-              <p>1,048.85</p>
-              <p>الإجمالي</p>
-            </div>
+          <div class="bar-container">
+            <canvas id="branchBar"></canvas>
           </div>
+         
           <div class="legend-container">
             <div class="legend-item">
               <p>%45.04</p>
@@ -365,8 +362,12 @@
               <p>مصنع تبوك</p>
             </div>
           </div>
-          <div class="bar-container">
-            <canvas id="branchBar"></canvas>
+           <div class="donut-container">
+            <canvas id="branchDonut"></canvas>
+            <div class="total">
+              <p>1,048.85</p>
+              <p>الإجمالي</p>
+            </div>
           </div>
         </div>
       </section>
@@ -414,139 +415,131 @@
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
     <script src="Javascript/bars.js"></script>
 
-    <script>
-      Chart.register(ChartDataLabels);
+   <script>
+  Chart.register(ChartDataLabels);
 
-      const productDonutData = [
-        { value: 900, color: "#438977" },
-        { value: 800, color: "#FCB44A" },
-        { value: 700, color: "#B9C6D3" },
-      ];
+  const productDonutData = [
+    { value: 900, color: "#438977" },
+    { value: 800, color: "#FCB44A" },
+    { value: 700, color: "#B9C6D3" },
+  ];
 
-      const branchDonutData = [
-        { value: 800, color: "#438977" },
-        { value: 700, color: "#FCB44A" },
-        { value: 600, color: "#73837F" },
-        { value: 550, color: "#B9C6D3" },
-      ];
+  const branchDonutData = [
+    { value: 800, color: "#438977" },
+    { value: 700, color: "#FCB44A" },
+    { value: 600, color: "#73837F" },
+    { value: 550, color: "#B9C6D3" },
+  ];
 
-      const productBars = [599.12, 311.90, 137.83];
-      const branchBars = [472.41, 326.6, 129, 117.85];
+  const productBars = [599.12, 311.90, 137.83];
+  const branchBars = [472.41, 326.6, 129, 117.85];
 
-      function createRingChart(ctx, dataSet) {
-        const datasets = dataSet.map((d, i) => ({
-          data: [d.value, 1048.85 - d.value],
-          backgroundColor: [d.color, "#f4f4f4"],
-          cutout: `${60 - i * 10}%`,
-          radius: `${90 - i * 10}%`,
-          borderRadius: 10,
-        }));
+  function createRingChart(ctx, dataSet) {
+    const datasets = dataSet.map((d, i) => ({
+      data: [d.value, 1048.85 - d.value],
+      backgroundColor: [d.color, "#f4f4f4"],
+      cutout: `${60 - i * 10}%`,
+      radius: `${90 - i * 10}%`,
+      borderRadius: 10,
+    }));
 
-        return new Chart(ctx, {
-          type: "doughnut",
-          data: { datasets },
-          options: {
-            responsive: true,
-            plugins: {
-              legend: { display: false },
-              tooltip: { enabled: false },
-              datalabels: { display: false },
-            },
-            animation: {
-              animateRotate: true,
-              duration: 2000,
-              easing: "easeOutQuad",
-            },
-          },
-        });
-      }
-
-      createRingChart(
-        document.getElementById("productDonut"),
-        productDonutData
-      );
-      createRingChart(document.getElementById("branchDonut"), branchDonutData);
-
-      new Chart("productBar", {
-        type: "bar",
-        data: {
-          labels: ["الدقيق", "الأعلاف", "النخالة"],
-          datasets: [
-            {
-              data: productBars,
-              backgroundColor: productDonutData.map((d) => d.color),
-              borderRadius: 5,
-              datalabels: {
-                anchor: "end",
-                align: "end",
-                color: "#333",
-                formatter: (value) => value,
-                padding: {
-                  left: 50,
-                },
-              },
-            },
-          ],
+    return new Chart(ctx, {
+      type: "doughnut",
+      data: { datasets },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          tooltip: { enabled: false },
+          datalabels: { display: false },
         },
-        options: {
-          indexAxis: "y",
-          plugins: {
-            legend: { display: false },
-            tooltip: { enabled: false },
-            datalabels: { display: true },
-          },
-          scales: {
-            x: { display: true, grid: { display: false } },
-            y: { display: false, grid: { display: false } },
-          },
-          animation: {
-            duration: 2000,
-            easing: "easeOutQuart",
-          },
-          responsive: true,
+        animation: {
+          animateRotate: true,
+          duration: 2000,
+          easing: "easeOutQuad",
         },
-      });
+      },
+    });
+  }
 
-      new Chart("branchBar", {
-        type: "bar",
-        data: {
-          labels: ["مصنع جدة", "مصنع القصيم", "مصنع الأحساء", "مصنع تبوك"],
-          datasets: [
-            {
-              data: branchBars,
-              backgroundColor: branchDonutData.map((d) => d.color),
-              borderRadius: 5,
-              datalabels: {
-                anchor: "end",
-                align: "end",
-                color: "#333",
-                formatter: (value) => value,
-                padding: {
-                  left: 50,
-                },
-              },
-            },
-          ],
+  createRingChart(document.getElementById("productDonut"), productDonutData);
+  createRingChart(document.getElementById("branchDonut"), branchDonutData);
+
+  new Chart("productBar", {
+    type: "bar",
+    data: {
+      labels: ["الدقيق", "الأعلاف", "النخالة"],
+      datasets: [{
+        data: productBars,
+        backgroundColor: productDonutData.map(d => d.color),
+        borderRadius: 5,
+        datalabels: {
+          anchor: "end",
+          align: "end",
+          color: "#333",
+          formatter: (value) => value,
+          padding: { left: 50 }
         },
-        options: {
-          indexAxis: "y",
-          plugins: {
-            legend: { display: false },
-            tooltip: { enabled: false },
-            datalabels: { display: true },
-          },
-          scales: {
-            x: { display: false, grid: { display: false } },
-            y: { display: false, grid: { display: false } },
-          },
-          animation: {
-            duration: 2000,
-            easing: "easeOutQuart",
-          },
-          responsive: true,
+      }]
+    },
+    options: {
+      indexAxis: "y",
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false },
+        datalabels: { display: true },
+      },
+      scales: {
+        x: { display: true, grid: { display: false } },
+        y: { display: false, grid: { display: false } },
+      },
+      animation: {
+        duration: 2000,
+        easing: "easeOutQuart",
+      },
+      responsive: true,
+    }
+  });
+
+  new Chart("branchBar", {
+    type: "bar",
+    data: {
+      labels: ["مصنع جدة", "مصنع القصيم", "مصنع الأحساء", "مصنع تبوك"],
+      datasets: [{
+        data: branchBars,
+        backgroundColor: branchDonutData.map(d => d.color),
+        borderRadius: 5,
+        datalabels: {
+          anchor: "end",
+          align: "end",
+          color: "#333",
+          formatter: (value) => value,
+          padding: { left: 50 }
         },
-      });
-    </script>
+      }]
+    },
+    options: {
+      indexAxis: "y",
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: false },
+        datalabels: { display: true },
+      },
+      scales: {
+        x: { display: false, grid: { display: false } },
+        y: { display: false, grid: { display: false } },
+      },
+      animation: {
+        duration: 2000,
+        easing: "easeOutQuart",
+      },
+      responsive: true,
+    }
+  });
+
+ 
+</script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>

@@ -566,122 +566,158 @@
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
     <script src="Javascript/bars.js"></script>
 
-   <script>
-  // chart 1 - معدل التضخم الشهري
-  new Chart(document.getElementById("monthlyInflationChart"), {
-    type: "line",
-    data: {
-      labels: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-      datasets: [{
-        label: "٪",
-        data: [1.6, 1.7, 1.7, 1.8, 1.9, 1.9, 2.0, 2.0, 2.1, 2.1, 2.1, 2.1],
-        borderColor: "#FFB548",
-        backgroundColor: "transparent",
-        tension: 0.3,
-        pointBackgroundColor: "#163029"
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: {
-            callback: function (val) {
-              const displayMonths = ["يناير", "مارس", "مايو", "يوليو", "سبتمبر", "ديسمبر"];
-              return displayMonths.includes(this.getLabelForValue(val)) ? this.getLabelForValue(val) : "";
+<script>
+
+  function createMonthlyInflationChart() {
+    new Chart(document.getElementById("monthlyInflationChart"), {
+      type: "line",
+      data: {
+        labels: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+        datasets: [{
+          label: "٪",
+          data: [1.6, 1.7, 1.7, 1.8, 1.9, 1.9, 2.0, 2.0, 2.1, 2.1, 2.1, 2.1],
+          borderColor: "#FFB548",
+          backgroundColor: "transparent",
+          tension: 0.3,
+          pointBackgroundColor: "#163029"
+        }]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: 'easeOutQuart'
+        },
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: {
+              callback: function (val) {
+                const displayMonths = ["يناير", "مارس", "مايو", "يوليو", "سبتمبر", "ديسمبر"];
+                return displayMonths.includes(this.getLabelForValue(val)) ? this.getLabelForValue(val) : "";
+              }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            grid: { display: false },
+            min: 0,
+            max: 2.5,
+            ticks: {
+              stepSize: 0.5
             }
           }
-        },
-        y: {
-          beginAtZero: true,
-          grid: { display: false },
-          min: 0,
-          max: 2,
-          ticks: {
-            stepSize: 0.5
-          }
         }
       }
-    }
-  });
+    });
+  }
 
-  // chart 2 - معدل التضخم خلال 5 سنوات
-  new Chart(document.getElementById("fiveYearInflationChart"), {
-    type: "line",
-    data: {
-      labels: ["2023", "2024", "2025", "2026", "2027"],
-      datasets: [{
-        label: "٪",
-        data: [2.4, 1.7, 1.9, 1.9, 1.9],
-        borderColor: "#FFB548",
-        backgroundColor: "transparent",
-        tension: 0.3,
-        pointBackgroundColor: "#163029"
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: {
-          grid: { display: false }
+  function createFiveYearInflationChart() {
+    new Chart(document.getElementById("fiveYearInflationChart"), {
+      type: "line",
+      data: {
+        labels: ["2023", "2024", "2025", "2026", "2027"],
+        datasets: [{
+          label: "٪",
+          data: [2.4, 1.7, 1.9, 1.9, 1.9],
+          borderColor: "#FFB548",
+          backgroundColor: "transparent",
+          tension: 0.3,
+          pointBackgroundColor: "#163029"
+        }]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: 'easeOutQuart'
         },
-        y: {
-          beginAtZero: true,
-          grid: { display: false },
-          min: 0,
-          max: 2.4,
-          ticks: {
-            stepSize: 0.6
-          }
-        }
-      }
-    }
-  });
-
-  // chart 3 - تطور التعداد السكاني
-  new Chart(document.getElementById("populationChart"), {
-    type: "line",
-    data: {
-      labels: ["2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"],
-      datasets: [{
-        label: "مليون نسمة",
-        data: [33, 32, 29, 29, 30, 31, 32, 33, 34, 35, 36],
-        fill: true,
-        backgroundColor: "rgba(78, 106, 99, 0.3)",
-        borderColor: "#4E6A63",
-        tension: 0.4,
-        pointRadius: 0,
-        pointHoverRadius: 0
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: { legend: { display: false } },
-      scales: {
-        x: {
-          grid: { display: false },
-          ticks: {
-            callback: function (val) {
-              const labelsToShow = ["2020", "2024", "2030"];
-              return labelsToShow.includes(this.getLabelForValue(val)) ? this.getLabelForValue(val) : "";
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            grid: { display: false }
+          },
+          y: {
+            beginAtZero: true,
+            grid: { display: false },
+            min: 0,
+            max: 2.4,
+            ticks: {
+              stepSize: 0.6
             }
           }
+        }
+      }
+    });
+  }
+
+  function createPopulationChart() {
+    new Chart(document.getElementById("populationChart"), {
+      type: "line",
+      data: {
+        labels: ["2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027", "2028", "2029", "2030"],
+        datasets: [{
+          label: "مليون نسمة",
+          data: [33, 32, 29, 29, 30, 31, 32, 33, 34, 35, 36],
+          fill: true,
+          backgroundColor: "rgba(78, 106, 99, 0.3)",
+          borderColor: "#4E6A63",
+          tension: 0.4,
+          pointRadius: 0,
+          pointHoverRadius: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: 'easeOutQuart'
         },
-        y: {
-          beginAtZero: true,
-          grid: { display: false },
-          min: 0,
-          max: 40,
-          ticks: {
-            stepSize: 10
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: {
+              callback: function (val) {
+                const labelsToShow = ["2020", "2024", "2030"];
+                return labelsToShow.includes(this.getLabelForValue(val)) ? this.getLabelForValue(val) : "";
+              }
+            }
+          },
+          y: {
+            beginAtZero: true,
+            grid: { display: false },
+            min: 0,
+            max: 40,
+            ticks: {
+              stepSize: 10
+            }
           }
         }
       }
-    }
-  });
+    });
+  }
+
+  function observeChart(canvasId, chartFn) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          chartFn();           
+          obs.unobserve(entry.target); 
+        }
+      });
+    }, {
+      threshold: 0.3 
+    });
+
+    const canvas = document.getElementById(canvasId);
+    if (canvas) observer.observe(canvas);
+  }
+
+  observeChart("monthlyInflationChart", createMonthlyInflationChart);
+  observeChart("fiveYearInflationChart", createFiveYearInflationChart);
+  observeChart("populationChart", createPopulationChart);
 </script>
 
 
