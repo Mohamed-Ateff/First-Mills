@@ -59,11 +59,12 @@
   background-color: #F6F5F4;
   padding-top: 20px; 
 }
+
 .grid-white{
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
 }
 .grid-green{
-  background-color: #4E6A63;
+  background-color: #4E6A63 !important;
   color: #FFFFFF;
 }
 
@@ -71,7 +72,7 @@
 .grid-item {
   padding: 10px;
   text-align: right;
-  
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .grid-content{
   display: flex;
@@ -405,12 +406,12 @@ background-color: rgba(255, 255, 255, 0.5);
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 90px;
+  margin-top:30px;
 }
 
 .final-card {
   width: 32%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   background-color: white;
   padding: 30px 30px 90px 30px;
   position: relative;
@@ -430,7 +431,7 @@ background-color: rgba(255, 255, 255, 0.5);
   font-size: 30px;
   font-weight: 700;
   color: #A2ACAA;
-  margin-top: 10px;
+  margin-top: 0px;
   vertical-align: center;
   text-align: right;
   line-height: 40px;
