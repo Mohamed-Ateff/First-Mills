@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>نموذج العمل التجاري</title>
@@ -13,550 +12,583 @@
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/S3p1.css" />
     <script src="Javascript/Navbar.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <a href="index.html"><img class="logo" src="Images/logo.png" alt="" /></a>
-        </header>
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="Images/logo.png" alt=""
+        /></a>
+      </header>
     </div>
 
     <div class="container">
-        <div class="hero">
-            <div class="side-menu">
-                <div class="circle">
-                    <div class="border-for-circle">EN</div>
-                </div>
-                <div class="line-one"></div>
+      <div class="hero">
+        <div class="side-menu">
+          <div class="circle">
+            <div class="border-for-circle">EN</div>
+          </div>
+          <div class="line-one"></div>
 
-                <a href="">
-                    <div class="hexagon hexagon1 active">
-                        <img src="Images/one.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/two.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/three.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/four.png" alt="" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="hexagon hexagon2">
-                        <img src="Images/five.png" alt="" />
-                    </div>
-                </a>
-
-                <div class="line-two"></div>
+          <a href="">
+            <div class="hexagon hexagon1 active">
+              <img src="Images/one.png" alt="" />
             </div>
-
-            <div class="burger" onclick="toggleMenu()">☰</div>
-
-            <div class="mobile-menu" id="mobileMenu">
-                <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
-                    نظرة عامة
-                </div>
-                <div class="mobile-submenu" id="mobile-overview">
-                    <a href="#" class="page">كلمة الإدارة</a>
-                    <a href="#" class="page">التقرير الاستراتيجي</a>
-                    <a href="#" class="page">المراجعة التشغيلية</a>
-                    <a href="#" class="page">الحوكمة و الاستدامة</a>
-                    <a href="#" class="page">القوائم المالية</a>
-                    <a href="#" class="page">مركز التحميل</a>
-                </div>
-
-                <div class="section" onclick="toggleSubmenu(this, 'mobile-highlights')">
-                    أبرز النتائج المالية والتشغيلية
-                </div>
-                <div class="mobile-submenu" id="mobile-highlights">
-                    <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
-                    <a href="#" class="page">مسيرة نمو الشركة</a>
-                    <a href="#" class="page">مزايا الاستثمار</a>
-                    <a href="#" class="page">القيم الأساسية</a>
-                    <a href="#" class="page">الوجود الجغرافي</a>
-                    <a href="#" class="page">الشركات التابعة</a>
-                    <a href="#" class="page">منتجات الشركة</a>
-                    <a href="#" class="page">العلامات التجارية</a>
-                    <a href="#" class="page">أبرز إنجازات عام 2024</a>
-                    <a href="#" class="page">الجوائز والشهادات</a>
-                    <a href="#" class="page">شعار العام</a>
-                </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/two.png" alt="" />
             </div>
-
-            <div class="hero-images">
-                <img class="image-hero" src="Images/img1.png" alt="" />
-                <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
-                <div class="title-section">
-                    <div class="white-title">
-                        <img class="hero-icon" src="Images/hero-icon.png" alt="" />
-                        <p>الرئيسية</p>
-                        <img class="arrow" src="Images/arrow-footer.png" alt="" />
-                        <p>التقرير الاستراتيجي</p>
-                    </div>
-                    <div class="green-title">
-                        <h1>نموذج العمل التجاري</h1>
-                    </div>
-                </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/three.png" alt="" />
             </div>
-
-            <div class="image-Union"></div>
-            <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
-
-            <div class="menu-container">
-                <div class="main-menu">
-                    <div class="section active" data-submenu="Tab1">نظرة عامة</div>
-                    <div class="section" data-submenu="Tab2">كلمة الادارة</div>
-                    <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
-                    <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
-                    <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
-                    <div class="section" data-submenu="Tab6">القوائم المالية</div>
-                    <div class="section" data-submenu="Tab7">مركز التحميل</div>
-                </div>
-
-                <div class="menu-divider"></div>
-
-                <div class="submenu active" id="Tab1">
-                    <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
-                    <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
-                    <a href="#" class="page">مسيرة نمو الشركة</a>
-                    <a href="#" class="page">مزايا الاستثمار</a>
-                    <a href="#" class="page">القيم الأساسية</a>
-                    <a href="#" class="page">الوجود الجغرافي</a>
-                    <a href="#" class="page">الشركات التابعة</a>
-                    <a href="#" class="page">منتجات الشركة</a>
-                    <a href="#" class="page">العلامات التجارية</a>
-                    <a href="#" class="page">أبرز إنجازات عام 2024</a>
-                    <a href="#" class="page">الجوائز والشهادات</a>
-                    <a href="#" class="page">شعار العام</a>
-                </div>
-
-                <div class="submenu" id="Tab2">
-                    <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
-                    <a href="#" class="page">رسالة الرئيس التنفيذي</a>
-                    <a href="#" class="page">كلمة رئيس القطاع المالي</a>
-                </div>
-
-                <div class="submenu" id="Tab3">
-                    <a href="#" class="page">نموذج العمل التجاري</a>
-                    <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
-                    <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
-                    <a href="#" class="page">مشاركة الجهات المعنية</a>
-                    <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
-                    <a href="#" class="page">التحديات والفرص</a>
-                    <a href="#" class="page">إدارة المخاطر</a>
-                </div>
-
-                <div class="submenu" id="Tab4">
-                    <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
-                    <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
-                    <a href="#" class="page">القدرات التشغيلية في أرقام </a>
-                    <a href="#" class="page">معلومات عن صناع الشركة </a>
-                    <a href="#" class="page">العمالء وشركاء النجاح</a>
-                    <a href="#" class="page">ضمان الجودة ورقابتها</a>
-                    <a href="#" class="page">البيئة والصحة والسلامة</a>
-                    <a href="#" class="page">البنية التحتية</a>
-                    <a href="#" class="page">مشروع العلاج الحراري</a>
-                    <a href="#" class="page">التسويق والتواصل المؤسسي</a>
-                    <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
-                </div>
-
-                <div class="submenu" id="Tab5">
-                    <a href="#" class="page">حوكمة الشركة</a>
-                    <a href="#" class="page">القوانين ودرجة الالتزام</a>
-                    <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
-                    <a href="#" class="page">الهيكل التنظيمي للشركة</a>
-                    <a href="#" class="page">مجلس الإدارة</a>
-                    <a href="#" class="page">لجان مجلس الإدارة</a>
-                    <a href="#" class="page">الجمعيات العامة للمساهمين</a>
-                    <a href="#" class="page">الإدارة التنفيذية</a>
-                    <a href="#" class="page">مكافآت مجلس الإدارة</a>
-                    <a href="#" class="page">الأطراف ذوي العلاقة</a>
-                    <a href="#" class="page">المدفوعات النظامية</a>
-                    <a href="#" class="page">أسهم الخزينة</a>
-                    <a href="#" class="page">اللوائح</a>
-                    <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
-                    <a href="#" class="page">المراجعة والرقابة الداخلية</a>
-                    <a href="#" class="page">إفصاحات مجلس الإدارة</a>
-                    <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
-                </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/four.png" alt="" />
             </div>
+          </a>
+          <a href="">
+            <div class="hexagon hexagon2">
+              <img src="Images/five.png" alt="" />
+            </div>
+          </a>
+
+          <div class="line-two"></div>
         </div>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="section" onclick="toggleSubmenu(this, 'mobile-overview')">
+            نظرة عامة
+          </div>
+          <div class="mobile-submenu" id="mobile-overview">
+            <a href="#" class="page">كلمة الإدارة</a>
+            <a href="#" class="page">التقرير الاستراتيجي</a>
+            <a href="#" class="page">المراجعة التشغيلية</a>
+            <a href="#" class="page">الحوكمة و الاستدامة</a>
+            <a href="#" class="page">القوائم المالية</a>
+            <a href="#" class="page">مركز التحميل</a>
+          </div>
+
+          <div
+            class="section"
+            onclick="toggleSubmenu(this, 'mobile-highlights')"
+          >
+            أبرز النتائج المالية والتشغيلية
+          </div>
+          <div class="mobile-submenu" id="mobile-highlights">
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <img class="image-hero" src="Images/img1.png" alt="" />
+          <!-- <img class="hero-img-title" src="Images/Hero.png" alt="" /> -->
+          <div class="title-section">
+            <div class="white-title">
+              <img class="hero-icon" src="Images/hero-icon.png" alt="" />
+              <p>الرئيسية</p>
+              <img class="arrow" src="Images/arrow-footer.png" alt="" />
+              <p>التقرير الاستراتيجي</p>
+            </div>
+            <div class="green-title">
+              <h1>نموذج العمل التجاري</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-Union"></div>
+        <!-- <img src="Images/Union.png" class="image-Union" alt="" /> -->
+
+        <div class="menu-container">
+          <div class="main-menu">
+            <div class="section active" data-submenu="Tab1">نظرة عامة</div>
+            <div class="section" data-submenu="Tab2">كلمة الادارة</div>
+            <div class="section" data-submenu="Tab3">التقرير الاستراتيجي</div>
+            <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
+            <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
+            <div class="section" data-submenu="Tab6">القوائم المالية</div>
+            <div class="section" data-submenu="Tab7">مركز التحميل</div>
+          </div>
+
+          <div class="menu-divider"></div>
+
+          <div class="submenu active" id="Tab1">
+            <a href="#" class="page">أبرز النتائج المالية والتشغيلية</a>
+            <a href="#" class="page">لمحة عن شركة المطاحن الأولى</a>
+            <a href="#" class="page">مسيرة نمو الشركة</a>
+            <a href="#" class="page">مزايا الاستثمار</a>
+            <a href="#" class="page">القيم الأساسية</a>
+            <a href="#" class="page">الوجود الجغرافي</a>
+            <a href="#" class="page">الشركات التابعة</a>
+            <a href="#" class="page">منتجات الشركة</a>
+            <a href="#" class="page">العلامات التجارية</a>
+            <a href="#" class="page">أبرز إنجازات عام 2024</a>
+            <a href="#" class="page">الجوائز والشهادات</a>
+            <a href="#" class="page">شعار العام</a>
+          </div>
+
+          <div class="submenu" id="Tab2">
+            <a href="#" class="page">كلمة رئيس مجلس الادارة</a>
+            <a href="#" class="page">رسالة الرئيس التنفيذي</a>
+            <a href="#" class="page">كلمة رئيس القطاع المالي</a>
+          </div>
+
+          <div class="submenu" id="Tab3">
+            <a href="#" class="page">نموذج العمل التجاري</a>
+            <a href="#" class="page">استراتيجيتنا ومؤشرات الأداء</a>
+            <a href="#" class="page">نظرة عامة على السوق والقطاع</a>
+            <a href="#" class="page">مشاركة الجهات المعنية</a>
+            <a href="#" class="page">الأهداف المستقبلية والتطلعات</a>
+            <a href="#" class="page">التحديات والفرص</a>
+            <a href="#" class="page">إدارة المخاطر</a>
+          </div>
+
+          <div class="submenu" id="Tab4">
+            <a href="#" class="page">الأنشطة الرئيسية للشركة</a>
+            <a href="#" class="page">منتجات الشركة وعلاماتها التجارية</a>
+            <a href="#" class="page">القدرات التشغيلية في أرقام </a>
+            <a href="#" class="page">معلومات عن صناع الشركة </a>
+            <a href="#" class="page">العمالء وشركاء النجاح</a>
+            <a href="#" class="page">ضمان الجودة ورقابتها</a>
+            <a href="#" class="page">البيئة والصحة والسلامة</a>
+            <a href="#" class="page">البنية التحتية</a>
+            <a href="#" class="page">مشروع العلاج الحراري</a>
+            <a href="#" class="page">التسويق والتواصل المؤسسي</a>
+            <a href="#" class="page">الموظفون والثقافة المؤسسية</a>
+          </div>
+
+          <div class="submenu" id="Tab5">
+            <a href="#" class="page">حوكمة الشركة</a>
+            <a href="#" class="page">القوانين ودرجة الالتزام</a>
+            <a href="#" class="page">العقوبات والجزاءات والمخالفات</a>
+            <a href="#" class="page">الهيكل التنظيمي للشركة</a>
+            <a href="#" class="page">مجلس الإدارة</a>
+            <a href="#" class="page">لجان مجلس الإدارة</a>
+            <a href="#" class="page">الجمعيات العامة للمساهمين</a>
+            <a href="#" class="page">الإدارة التنفيذية</a>
+            <a href="#" class="page">مكافآت مجلس الإدارة</a>
+            <a href="#" class="page">الأطراف ذوي العلاقة</a>
+            <a href="#" class="page">المدفوعات النظامية</a>
+            <a href="#" class="page">أسهم الخزينة</a>
+            <a href="#" class="page">اللوائح</a>
+            <a href="#" class="page">المساهمون وأهداف المستثمرين</a>
+            <a href="#" class="page">المراجعة والرقابة الداخلية</a>
+            <a href="#" class="page">إفصاحات مجلس الإدارة</a>
+            <a href="#" class="page">الاستدامة والمسؤولية الاجتماعية</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="start">
-
-        
-        <div class="border-with-title-under-it">
+      <div class="border-with-title-under-it">
         <h2>جوانب تميز الشركة ونقاط القوة</h2>
         <div class="border-bottom"></div>
       </div>
 
-        <!-- section Lists -->
-        <div class="List">
-            <div class="List-header">
-                <div class="list-item">
-                    <img src="./Images/S3p1-icon1.png" alt="" />
+      <!-- section Lists -->
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon1.png" alt="" />
 
-                    <h1>المكانة الريادية في السوق المحلية</h1>
-                </div>
-                <div class="orange-number">
-                    <p>0<span class="counter">1</span></p>
-                </div>
-            </div>
-            <div class="list-big">
-                <div class="list-text">
-                    <span class="title-with-arrow">بلوغ الحصة السوقية للشركة نحو 30 %(1) في السوق المحلية للدقيق.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-
-                <div class="list-text">
-                    <span class="title-with-arrow">تحقيق هوامش ربحية مميزة ونمو مستدام يتجاوز معدلات السوق
-                        والمستهدفات.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">الحفاظ على القيادة الحالية في قطاع العلف والتوسع في إنتاج النخالة
-                        بما يتماشى مع النمو في كميات طحن الدقيق.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">90 % من مبيعات منتجات الشركة تتم نقداً وتحصل في الحال.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">امتلاك أول مطحنة من نوعها لانتاج السميد بطاقة انتاجية قادرة على
-                        تلبية طلب السوق المحلي مع إمكانية التصدير لأسواق المنطقة.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-            </div>
+            <h1>المكانة الريادية في السوق المحلية</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">1</span></p>
+          </div>
         </div>
-        <div class="List">
-            <div class="List-header">
-                <div class="list-item">
-                    <img src="./Images/S3p1-icon2.png" alt="" />
+        <div class="list-big">
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >بلوغ الحصة السوقية للشركة نحو 30 %(1) في السوق المحلية للدقيق.
+            </span>
+            <div class="intersect"></div>
+          </div>
 
-                    <h1>قاعدة متينة من المرافق اللوجستية والإنتاجية</h1>
-                </div>
-                <div class="orange-number">
-                    <p>0<span class="counter">2</span></p>
-                </div>
-            </div>
-            <div class="list-big">
-                <div class="list-text">
-                    <span class="title-with-arrow">
-                        قاعدة أصول ثابتة، تبلغ قيمتها الدفترية أكثر من نصف مليار ريال
-                        سعودي، مدعومة بأفضل التقنيات الحديثة لإنتاج الدقيق والأعلاف.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-
-                <div class="list-text">
-                    <span class="title-with-arrow">متابعة مستمرة حول زيادة الطاقة الإنتاجية وتوسعة المنشآت، والعمل
-                        على تجديدها بشكل مستمر؛ لتحقيق أفضل عوائد ممكنة، وتلبية متطلبات
-                        السوق المتزايدة.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">الاعتماد على أنظمة وتقنيات متطورة في جميع عمليات الإنتاج لضمان
-                        أفضل جودة ممكنة.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">العمل نحو بناء شراكات استراتيجية ذات قيمة نوعية مع القطاعين العام
-                        والخاص.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-            </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >تحقيق هوامش ربحية مميزة ونمو مستدام يتجاوز معدلات السوق
+              والمستهدفات.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الحفاظ على القيادة الحالية في قطاع العلف والتوسع في إنتاج النخالة
+              بما يتماشى مع النمو في كميات طحن الدقيق.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >90 % من مبيعات منتجات الشركة تتم نقداً وتحصل في الحال.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >امتلاك أول مطحنة من نوعها لانتاج السميد بطاقة انتاجية قادرة على
+              تلبية طلب السوق المحلي مع إمكانية التصدير لأسواق المنطقة.
+            </span>
+            <div class="intersect"></div>
+          </div>
         </div>
-        <div class="List">
-            <div class="List-header">
-                <div class="list-item">
-                    <img src="./Images/S3p1-icon3.png" alt="" />
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon2.png" alt="" />
 
-                    <h1>المكانة الريادية في السوق المحلية</h1>
-                </div>
-                <div class="orange-number">
-                    <p>0<span class="counter">3</span></p>
-                </div>
-            </div>
-            <div class="list-big">
-                <div class="list-text">
-                    <span class="title-with-arrow">
-                        التعامل مع كافة المخاطر من قبل فريق عمل متخصص في مختلف المستويات.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-
-                <div class="list-text">
-                    <span class="title-with-arrow">ترتيبات دعم مبرمة للمواد الخام بين الشركة وجميع الموردين؛ بما
-                        يساهم في تقليل وإدارة المخاطر المتعلقة بتقلبات الأسعار في
-                        الأسواق العالمية.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">المراجعة والتقييم الشامل لتقليل آثار المخاطر
-                        ومواكبة تطورات البيئة التنظيمية في المملكة.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">فريق عمل متخصص لإدارة توريد المواد الخام والمشتريات الأخرى بما
-                        يضمن الإستدامة الأمثل للأعمال.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-            </div>
+            <h1>قاعدة متينة من المرافق اللوجستية والإنتاجية</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">2</span></p>
+          </div>
         </div>
-        <div class="List">
-            <div class="List-header">
-                <div class="list-item">
-                    <img src="./Images/S3p1-icon4.png" alt="" />
+        <div class="list-big">
+          <div class="list-text">
+            <span class="title-with-arrow">
+              قاعدة أصول ثابتة، تبلغ قيمتها الدفترية أكثر من نصف مليار ريال
+              سعودي، مدعومة بأفضل التقنيات الحديثة لإنتاج الدقيق والأعلاف.
+            </span>
+            <div class="intersect"></div>
+          </div>
 
-                    <h1>تنوع المنتجات والتواجد الجغرافي
-                </div>
-                <div class="orange-number">
-                    <p>0<span class="counter">4</span></p>
-                </div>
-            </div>
-            <div class="list-big">
-                <div class="list-text">
-                    <span class="title-with-arrow">
-                        محفظة منتجات متنوعة بأكثر من 50 صنفاً رئيسياَ من الأغذية والأعلاف.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-
-                <div class="list-text">
-                    <span class="title-with-arrow">عدد (4) مصانع في مناطق جغرافية استراتيجية: منطقة مكة المكرمة (محافظة
-                        جدة)، منطقة القصيم (مدينة بريدة)، منطقة تبوك (مدينة تبوك)، المنطقة الشرقية (محافظة الأحساء).
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">مستودعات بيع وتوزيع تابعة للشركة أو موزعيها منتشرة لتغطي جميع أنحاء
-                        المملكة.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">علاقة وثيقة ومتينة مع جميع موردي المواد الخام بما فيهم الهيئة العامة
-                        للأمن الغذائي.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-            </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >متابعة مستمرة حول زيادة الطاقة الإنتاجية وتوسعة المنشآت، والعمل
+              على تجديدها بشكل مستمر؛ لتحقيق أفضل عوائد ممكنة، وتلبية متطلبات
+              السوق المتزايدة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الاعتماد على أنظمة وتقنيات متطورة في جميع عمليات الإنتاج لضمان
+              أفضل جودة ممكنة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >العمل نحو بناء شراكات استراتيجية ذات قيمة نوعية مع القطاعين العام
+              والخاص.
+            </span>
+            <div class="intersect"></div>
+          </div>
         </div>
-        <div class="List">
-            <div class="List-header">
-                <div class="list-item">
-                    <img src="./Images/S3p1-icon5.png" alt="" />
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon3.png" alt="" />
 
-                    <h1> الالتزام بتقديم منتجات عالية الجودة
-                    </h1>
-                </div>
-                <div class="orange-number">
-                    <p>0<span class="counter">5<span></p>
-                </div>
-            </div>
-            <div class="list-big">
-                <div class="list-text">
-                    <span class="title-with-arrow">
-                        مراقبة مستمرة وعمل اختبارات دقيقة للمواد الخام والمنتجات النهائية بشكل احترافي.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">الاستجابة والمرونة العالية لمواجهة متغيرات السوق المحلية وحركة السوق
-                        العالمية لتلبية احتياجات العملاء المتغيرة.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">القدرة العالية على التوسع والدخول لمناطق جغرافية جديدة بتقديم منتجات
-                        تحظى بطلب زائد وذات جودة عالية.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">الحصول على عدد من الإعتمادات وشهادات الإعتراف بجودة منتجات الشركة
-                        وتعزيز مكانتها كشريك موثوق ومهم للعديد من كبار العملاء.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-            </div>
+            <h1>المكانة الريادية في السوق المحلية</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">3</span></p>
+          </div>
         </div>
-        <div class="List">
-            <div class="List-header">
-                <div class="list-item">
-                    <img src="./Images/S3p1-icon5.png" alt="" />
+        <div class="list-big">
+          <div class="list-text">
+            <span class="title-with-arrow">
+              التعامل مع كافة المخاطر من قبل فريق عمل متخصص في مختلف المستويات.
+            </span>
+            <div class="intersect"></div>
+          </div>
 
-                    <h1>الخبرة والكفاءة العالية للفريق الإداري</h1>
-                </div>
-                <div class="orange-number">
-                    <p>0<span class="counter">6</span></p>
-                </div>
-            </div>
-            <div class="list-big">
-                <div class="list-text">
-                    <span class="title-with-arrow">
-                        أعضاء مجلس إدارة مستقلون يتمتعون بمستوى متميز من الخبرات نتيجة عملهم لدى عدد من أبرز الشركات
-                        المحلية والعالمية في نفس المجال والقطاع.
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-
-                <div class="list-text">
-                    <span class="title-with-arrow">فريق إدارة تنفيذية متمرس يتمتع بتجربة واسعة في قطاع المطاحن والأغذية
-                        تفوق 200 عام من الخبرة التراكمية ذات الصلة.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">يدعم الشركة هيكل حوكمة شامل وسياسات وإجراءات رقابة داخلية قوية.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-                <div class="list-text">
-                    <span class="title-with-arrow">بيئة عمل محفزة ساهمت في الحصول على أعلى درجات الولاء والرضا ومدعومة
-                        بمبادرات وحوافز وظيفية مميزة.
-
-                    </span>
-                    <div class="intersect"></div>
-                </div>
-            </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >ترتيبات دعم مبرمة للمواد الخام بين الشركة وجميع الموردين؛ بما
+              يساهم في تقليل وإدارة المخاطر المتعلقة بتقلبات الأسعار في
+              الأسواق العالمية.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >المراجعة والتقييم الشامل لتقليل آثار المخاطر
+              ومواكبة تطورات البيئة التنظيمية في المملكة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >فريق عمل متخصص لإدارة توريد المواد الخام والمشتريات الأخرى بما
+              يضمن الإستدامة الأمثل للأعمال.
+            </span>
+            <div class="intersect"></div>
+          </div>
         </div>
-        <!-- section Lists ends-->
-        <!-- Six-cards -->
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon4.png" alt="" />
 
-  
-    <div class="border-with-title-under-it-center" style="margin-top: 70px;">
+            <h1>تنوع المنتجات والتواجد الجغرافي</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">4</span></p>
+          </div>
+        </div>
+        <div class="list-big">
+          <div class="list-text">
+            <span class="title-with-arrow">
+              محفظة منتجات متنوعة بأكثر من 50 صنفاً رئيسياَ من الأغذية والأعلاف.
+            </span>
+            <div class="intersect"></div>
+          </div>
+
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >عدد (4) مصانع في مناطق جغرافية استراتيجية: منطقة مكة المكرمة
+              (محافظة جدة)، منطقة القصيم (مدينة بريدة)، منطقة تبوك (مدينة تبوك)،
+              المنطقة الشرقية (محافظة الأحساء).
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >مستودعات بيع وتوزيع تابعة للشركة أو موزعيها منتشرة لتغطي جميع
+              أنحاء المملكة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >علاقة وثيقة ومتينة مع جميع موردي المواد الخام بما فيهم الهيئة
+              العامة للأمن الغذائي.
+            </span>
+            <div class="intersect"></div>
+          </div>
+        </div>
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon5.png" alt="" />
+
+            <h1>الالتزام بتقديم منتجات عالية الجودة</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">5</span></p>
+          </div>
+        </div>
+        <div class="list-big">
+          <div class="list-text">
+            <span class="title-with-arrow">
+              مراقبة مستمرة وعمل اختبارات دقيقة للمواد الخام والمنتجات النهائية
+              بشكل احترافي.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الاستجابة والمرونة العالية لمواجهة متغيرات السوق المحلية وحركة
+              السوق العالمية لتلبية احتياجات العملاء المتغيرة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >القدرة العالية على التوسع والدخول لمناطق جغرافية جديدة بتقديم
+              منتجات تحظى بطلب زائد وذات جودة عالية.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >الحصول على عدد من الإعتمادات وشهادات الإعتراف بجودة منتجات الشركة
+              وتعزيز مكانتها كشريك موثوق ومهم للعديد من كبار العملاء.
+            </span>
+            <div class="intersect"></div>
+          </div>
+        </div>
+      </div>
+      <div class="List">
+        <div class="List-header">
+          <div class="list-item">
+            <img src="./Images/S3p1-icon5.png" alt="" />
+
+            <h1>الخبرة والكفاءة العالية للفريق الإداري</h1>
+          </div>
+          <div class="orange-number">
+            <p>0<span class="counter">6</span></p>
+          </div>
+        </div>
+        <div class="list-big">
+          <div class="list-text">
+            <span class="title-with-arrow">
+              أعضاء مجلس إدارة مستقلون يتمتعون بمستوى متميز من الخبرات نتيجة
+              عملهم لدى عدد من أبرز الشركات المحلية والعالمية في نفس المجال
+              والقطاع.
+            </span>
+            <div class="intersect"></div>
+          </div>
+
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >فريق إدارة تنفيذية متمرس يتمتع بتجربة واسعة في قطاع المطاحن
+              والأغذية تفوق 200 عام من الخبرة التراكمية ذات الصلة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >يدعم الشركة هيكل حوكمة شامل وسياسات وإجراءات رقابة داخلية قوية.
+            </span>
+            <div class="intersect"></div>
+          </div>
+          <div class="list-text">
+            <span class="title-with-arrow"
+              >بيئة عمل محفزة ساهمت في الحصول على أعلى درجات الولاء والرضا
+              ومدعومة بمبادرات وحوافز وظيفية مميزة.
+            </span>
+            <div class="intersect"></div>
+          </div>
+        </div>
+      </div>
+      <!-- section Lists ends-->
+      <!-- Six-cards -->
+
+      <div class="border-with-title-under-it-center" style="margin-top: 70px">
         <div>
-            <h2>جوانب تميز الشركة ونقاط القوة</h2>
-            <div class="border-bottom"></div>
+          <h2>جوانب تميز الشركة ونقاط القوة</h2>
+          <div class="border-bottom"></div>
         </div>
       </div>
 
-        <div class="six-cards">
-            <div class="one-card" data-aos="fade-up" data-aos-duration="2000">
-                <div class="logo-div">
-                    <span class="counter">1</span>
-                    <span>0</span>
-                </div>
-                <h1>المساهمون والمستثمرون</h1>
-                <p>
-                    تلتزم الشركة بحماية حقوق مساهميها، وضمان العدالة والشفافية في توفير المعلومات، وتسعى لتحقيق عوائد
-                    مُستدامة عبر توزيعات الأرباح، حيث وزعت 2.84 ريال لكل سهم عن العام 2024م. كما تلتزم بالإفصاح المالي
-                    وفق اللوائح التنظيمية، ويضم قسم علاقات المستثمرين فريقاً مؤهلاً لمعالجة استفسارات المساهمين بكفاءة.
-                </p>
-            </div>
-            <div class="one-card">
-                <div class="logo-div">
-                    <span class="counter">2</span>
-                    <span>0</span>
-                </div>
-                <h1>العملاء</h1>
-                <p>
-                    تتبنى الشركة مبدأ "محورية العميل" لضمان تلبية احتياجاته بجودة عالية، وتخضع عملية تسجيل العملاء
-                    وإمدادهم بالدقيق المدعوم لإشراف الهيئة العامة للأمن الغذائي، وفق تقييم شامل لقدراتهم الإنتاجية. </p>
-            </div>
-            <div class="one-card">
-                <div class="logo-div">
-                    <span class="counter">3</span>
-                    <span>0</span>
-                </div>
-                <h1>الموظفون</h1>
-
-                <p>
-                    تعمل الشركة على تطوير مواردها البشرية وكوادرها الوطنية لمواكبة التطورات التكنولوجية، وحازت جائزة
-                    "أفضل مكان للعمل" لعام 2024م، واعتمدت برنامج أسهم الحوافز لاستقطاب الكفاءات والحفاظ على المواهب.
-                </p>
-            </div>
-            <div class="one-card">
-                <div class="logo-div">
-                    <span class="counter">4</span>
-                    <span>0</span>
-                </div>
-                <h1>المجتمعات</h1>
-
-                <p>
-                    تطوير الشركة لبرامج الاستدامة و يشمل أكثر من 20 مبادرة، والمسؤولية الاجتماعية مثل برنامج «المخبز
-                    السعودي» لتدريب الشباب في مجال المخبوزات، والمشاركة في التدريب التعاوني وملتقيات التوظيف. كما حصلت
-                    على شهادة الموائمة كبيئة عمل داعمة لتوظيف ذوي الاحتياجات الخاصة. </p>
-            </div>
-            <div class="one-card">
-                <div class="logo-div">
-                    <span class="counter">5</span>
-                    <span>0</span>
-                </div>
-                <h1>الجهات التنظيمية والحكومية</h1>
-
-                <p>
-                    تلتزم الشركة بالإفصاح الكامل وتتعاون مع الجهات التنظيمية مثل هيئة السوق المالية وهيئة الزكاة
-                    والضريبة والجمارك والدفاع المدني، وتتماشى مع استراتيجية الأمن الغذائي ورؤية المملكة 2030. كما تدعم
-                    التوطين بالتعاون مع وزارة الموارد البشرية. </p>
-            </div>
-            <div class="one-card">
-                <div class="logo-div">
-                    <span class="counter">6</span>
-                    <span>0</span>
-                </div>
-                <h1>الشركاء</h1>
-
-                <p>
-                    توفير القيمة المستدامة الى جميع الشركاء نحو تقديم تجارب رفيعة المستوى وبما يضمن حصولهم على أفضل
-                    المنتجات ذات الجودة العالية مع إتاحة إمكانية التخصيص وتشكيل خليط المنتجات حسب المواصفات المطلوبة.
-                </p>
-            </div>
+      <div class="six-cards">
+        <div class="one-card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="logo-div">
+            <span class="counter">1</span>
+            <span>0</span>
+          </div>
+          <h1>المساهمون والمستثمرون</h1>
+          <p>
+            تلتزم الشركة بحماية حقوق مساهميها، وضمان العدالة والشفافية في توفير
+            المعلومات، وتسعى لتحقيق عوائد مُستدامة عبر توزيعات الأرباح، حيث وزعت
+            2.84 ريال لكل سهم عن العام 2024م. كما تلتزم بالإفصاح المالي وفق
+            اللوائح التنظيمية، ويضم قسم علاقات المستثمرين فريقاً مؤهلاً لمعالجة
+            استفسارات المساهمين بكفاءة.
+          </p>
         </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">2</span>
+            <span>0</span>
+          </div>
+          <h1>العملاء</h1>
+          <p>
+            تتبنى الشركة مبدأ "محورية العميل" لضمان تلبية احتياجاته بجودة عالية،
+            وتخضع عملية تسجيل العملاء وإمدادهم بالدقيق المدعوم لإشراف الهيئة
+            العامة للأمن الغذائي، وفق تقييم شامل لقدراتهم الإنتاجية.
+          </p>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">3</span>
+            <span>0</span>
+          </div>
+          <h1>الموظفون</h1>
 
-    
+          <p>
+            تعمل الشركة على تطوير مواردها البشرية وكوادرها الوطنية لمواكبة
+            التطورات التكنولوجية، وحازت جائزة "أفضل مكان للعمل" لعام 2024م،
+            واعتمدت برنامج أسهم الحوافز لاستقطاب الكفاءات والحفاظ على المواهب.
+          </p>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">4</span>
+            <span>0</span>
+          </div>
+          <h1>المجتمعات</h1>
 
-        <!-- Six-cards ends-->
+          <p>
+            تطوير الشركة لبرامج الاستدامة و يشمل أكثر من 20 مبادرة، والمسؤولية
+            الاجتماعية مثل برنامج «المخبز السعودي» لتدريب الشباب في مجال
+            المخبوزات، والمشاركة في التدريب التعاوني وملتقيات التوظيف. كما حصلت
+            على شهادة الموائمة كبيئة عمل داعمة لتوظيف ذوي الاحتياجات الخاصة.
+          </p>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">5</span>
+            <span>0</span>
+          </div>
+          <h1>الجهات التنظيمية والحكومية</h1>
+
+          <p>
+            تلتزم الشركة بالإفصاح الكامل وتتعاون مع الجهات التنظيمية مثل هيئة
+            السوق المالية وهيئة الزكاة والضريبة والجمارك والدفاع المدني، وتتماشى
+            مع استراتيجية الأمن الغذائي ورؤية المملكة 2030. كما تدعم التوطين
+            بالتعاون مع وزارة الموارد البشرية.
+          </p>
+        </div>
+        <div class="one-card">
+          <div class="logo-div">
+            <span class="counter">6</span>
+            <span>0</span>
+          </div>
+          <h1>الشركاء</h1>
+
+          <p>
+            توفير القيمة المستدامة الى جميع الشركاء نحو تقديم تجارب رفيعة
+            المستوى وبما يضمن حصولهم على أفضل المنتجات ذات الجودة العالية مع
+            إتاحة إمكانية التخصيص وتشكيل خليط المنتجات حسب المواصفات المطلوبة.
+          </p>
+        </div>
+      </div>
+
+      <!-- Six-cards ends-->
     </div>
 
     <footer>
-        <div class="container">
-            <div class="side-of-footer">
-                <a href="S3p2.html" class="next">
-                    <img src="Images/arrow-footer.png" alt="" /> التـــالـي
-                </a>
-                <h2>استراتيجيتنا ومؤشرات الأداء</h2>
-            </div>
-            <div class="side-of-footer">
-                <a href="" style="background: #30444e; color: white" class="contact-us btn-footer">
-                    <img src="Images/email.png" alt="" />
-                    تواصلوا معنا</a>
-                <a href="" style="background: #ffb548; color: #30444e" class="download-center btn-footer">
-                    <img src="Images/download.png" alt="" />
-                    مركز التحميل</a>
-            </div>
+      <div class="container">
+        <div class="side-of-footer">
+          <a href="S3p2.html" class="next">
+            <img src="Images/arrow-footer.png" alt="" /> التـــالـي
+          </a>
+          <h2>استراتيجيتنا ومؤشرات الأداء</h2>
         </div>
+        <div class="side-of-footer">
+          <a
+            href="S7p1.html"
+            style="background: #30444e; color: white"
+            class="contact-us btn-footer"
+          >
+            <img src="Images/email.png" alt="" />
+            تواصلوا معنا</a
+          >
+          <a
+            href="S8p1.html"
+            style="background: #ffb548; color: #30444e"
+            class="download-center btn-footer"
+          >
+            <img src="Images/download.png" alt="" />
+            مركز التحميل</a
+          >
+        </div>
+      </div>
     </footer>
 
     <!-- jQuery -->
@@ -570,6 +602,5 @@
     <script src="Javascript/counter.js"></script>
     <!-- CounterUp (CDN version) -->
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
-</body>
-
+  </body>
 </html>
