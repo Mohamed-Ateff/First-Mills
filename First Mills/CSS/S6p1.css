@@ -7,33 +7,29 @@
   color: #787878;
 }
 
-.charts section {
-  padding: auto 50px;
-}
 .chart-section {
-    background-color: white;
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+  background-color: #ffffff;
+  margin: 30px 0;
+  padding: 20px 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 
-    /*opacity: 0;
+  /*opacity: 0;
     transform: translateY(50px);
     transition: all 2s ease;*/
-  }
+}
 
-  /*.chart-section.visible {
+/*.chart-section.visible {
     opacity: 1;
     transform: translateY(0);
   }*/
 .donut-container {
-  flex: 1 1 300px;
+  /*flex: 1 1 300px;*/
   position: relative;
-  width: 400px;
   height: 400px;
 }
 .donut-container canvas {
@@ -41,15 +37,73 @@
   height: 300px !important;
 }
 .legend-container {
-  flex: 1 1 200px;
+  /*flex: 1 1 200px;*/
 }
 .bar-container {
-  flex: 1 1 300px;
+  /*flex: 1 1 300px;*/
+  position: relative;
+  display: flex;
+  justify-content: end;
+  width: 370px !important;
 }
 .bar-container canvas {
-  height: 300px !important;
-  width: 300px !important;
+  height: 330px !important;
+  width: 350px !important;
 }
+
+.productBarValues,
+.branchBarValues {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.productBarValues h6,
+.branchBarValues h6 {
+  position: absolute;
+  font-size: 14px;
+  color: #333;
+  transform: translateY(-50%);
+}
+
+.productBarValues h6:nth-child(1) {
+  top: 5%;
+  right: -3%;
+}
+
+.productBarValues h6:nth-child(2) {
+  top: 36%;
+  right: 40%;
+}
+
+.productBarValues h6:nth-child(3) {
+  top: 67%;
+  right: 65%;
+}
+
+.branchBarValues h6:nth-child(1) {
+  top: 3%;
+  right: -2%;
+}
+
+.branchBarValues h6:nth-child(2) {
+  top: 28%;
+  right: 27%;
+}
+
+.branchBarValues h6:nth-child(3) {
+  top: 53%;
+  right: 68%;
+}
+
+.branchBarValues h6:last-child {
+  top: 78%;
+  right: 66%;
+}
+
 .legend-item {
   display: flex;
   align-items: center;

@@ -324,9 +324,7 @@ td:first-child {
   text-align: start;
 }
 
-.table-container4{
-  margin-bottom: 300px;
-}
+
 
 @media (max-width: 1200px) {
   .cards-grid {
