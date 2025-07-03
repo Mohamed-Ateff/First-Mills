@@ -7,7 +7,6 @@
   color: #787878;
 }
 
-
 .chart-section {
   background-color: #ffffff;
   margin: 30px 0;
@@ -52,17 +51,18 @@
   width: 350px !important;
 }
 
-.productBarValues,.branchBarValues
- {
+.productBarValues,
+.branchBarValues {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
-.productBarValues h6, .branchBarValues h6 {
+.productBarValues h6,
+.branchBarValues h6 {
   position: absolute;
   font-size: 14px;
   color: #333;
@@ -86,22 +86,22 @@
 
 .branchBarValues h6:nth-child(1) {
   top: 3%;
-    right: -2%;
+  right: -2%;
 }
 
 .branchBarValues h6:nth-child(2) {
   top: 28%;
-    right: 27%;
+  right: 27%;
 }
 
 .branchBarValues h6:nth-child(3) {
   top: 53%;
-    right: 68%;
+  right: 68%;
 }
 
 .branchBarValues h6:last-child {
- top: 78%;
-    right: 66%;
+  top: 78%;
+  right: 66%;
 }
 
 .legend-item {

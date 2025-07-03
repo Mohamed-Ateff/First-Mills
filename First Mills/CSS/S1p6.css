@@ -1,53 +1,50 @@
+.cards-section {
+  position: relative;
+  margin: 30px auto 50px auto;
+}
+.card-hz {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 6px;
+  padding: 20px 30px;
+}
 
-.cards-section{
- 
+.icon-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 150px;
 }
-.card-hz{
-    display: flex;
-    justify-content: space-between;
-     background-color: #fff;
-     margin-top: 20px;
-     margin-bottom: 5.23px;
-      padding: 10px 40px 10px 40px;
+.icon-div h3 {
+  font-size: 30px;
+  color: #31544b;
+  margin: 0;
 }
-
-.icon-div{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding-right: 150px;
-   
-}
-.icon-div h3{
-  font-size: 40px;
-  color: #31544B;
-   margin: 0;
-}
-.icon-div p{
-  font-size: 20px;
+.icon-div p {
+  font-size: 16px;
   color: #787878;
-   margin: 0;
+  margin: 0;
 }
-.icon-div-text{
-    padding-right: 20px;
+.icon-div-text {
+  padding-right: 20px;
 }
 
-.card-hz:first-of-type .icon-div{
+.card-hz:first-of-type .icon-div {
   padding-right: 210px;
 }
 
-.icon-div img{
-   width: 33px;
-   height: 48px;
+.icon-div img {
+  width: 33px;
+  height: 48px;
 }
 
 .bg-float {
   position: absolute;
-  top: 360px;
-  right: 20px;
-  width: 387px;
-  height: 362px;
- 
+  top: 70px;
+  right: 65px;
+  width: 360px;
+  height: 320px;
   z-index: 1;
 }
 
@@ -56,11 +53,11 @@
   align-items: center;
   justify-content: center;
 }
-.number-div h1{
-    font-size: 50px;
-    margin: 0;
-    color: #4E6A63;
-     width: 80px;     /* 3hsan el div maythzsh */
+.number-div h1 {
+  font-size: 38px;
+  margin: 0;
+  color: #4e6a63;
+  width: 80px; /* 3hsan el div maythzsh */
 }
 
 /* table */
@@ -83,29 +80,28 @@
 }
 
 .custom-table th {
-  background-color: #4E6A63;
+  background-color: #4e6a63;
   color: white !important;
   padding: 20px 25px;
   text-align: center;
   font-weight: 600 !important;
-  font-size: 20px !important; 
+  font-size: 20px !important;
 }
 
 .custom-table th span {
   display: block;
-  font-size: 16px ;
-  color: #DDD;
+  font-size: 16px;
+  color: #ddd;
   margin-top: 4px;
   margin: 0px;
 }
-.custom-table th  p{
- 
+.custom-table th p {
   margin: 0px;
 }
 
 .custom-table td {
   background-color: #fff;
-  color: #4E6A63;
+  color: #4e6a63;
   padding: 15px 30px;
   font-size: 16px;
   text-align: center;
@@ -122,73 +118,67 @@
 .custom-table td:first-child {
   width: 18%;
   text-align: right;
-  color: #3A4944;
-    font-size: 20px;
-font-weight: 500;
+  color: #3a4944;
+  font-size: 20px;
+  font-weight: 500;
   /* padding-right: 20px; */
 }
 
-
-
-
-
-@media (max-width: 1025px){
-.bg-float {
- 
-  top: 460px;
-  right: 10px;
-  width: 287px;
-  height: 262px;
- 
+@media (max-width: 1025px) {
+  .bg-float {
+    top: 100px;
+    right: 10px;
+    width: 287px;
+    height: 262px;
+  }
 }
 
-}
-
-@media (max-width: 768px){
-.bg-float {
-
-  top: 460px;
-  right: 35%;
-  width: 287px;
-  height: 262px;
+@media (max-width: 992px) {
  
 }
-.empty{
+
+@media (max-width: 768px) {
+  .bg-float {
+           top: 100px;
+        right: 30%;
+        width: 287px;
+        height: 262px;
+  }
+  .empty {
     display: none;
-}
-.card-hz:first-of-type .icon-div{
-  padding-right: 0px;
-}
-.icon-div{
-
+  }
+  .card-hz:first-of-type .icon-div {
     padding-right: 0px;
-   
-}
+  }
+  .icon-div {
+    padding-right: 0px;
+  }
 }
 
-@media (max-width: 480px){
-     .bg-float {
-        position: relative;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: auto;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto 20px auto;
-        z-index: 1;
-        padding-top: 20px;
+@media (max-width: 480px) {
+  .bg-float {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
+    z-index: 1;
+    padding-top: 20px;
+  }
+    .bg-float {
+      display: none;
     }
-.icon-div h3{
-  font-size: 30px;
- 
-}
-.icon-div p{
-  font-size: 16px;
- 
-}
-.number-div h1{
+  .icon-div h3 {
+    font-size: 30px;
+  }
+  .icon-div p {
+    font-size: 16px;
+  }
+  .number-div h1 {
     font-size: 40px;
-     width: 40px;     /* 3hsan el div maythzsh */
-}
+    width: 40px; /* 3hsan el div maythzsh */
+  }
 }
