@@ -3,7 +3,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 110px
+    gap: 30px
 }
 
 .card-small {
@@ -28,7 +28,7 @@
     justify-content: flex-start;
     gap: 30px;
     color: #FFFFFF;
-    margin-top: 63px;
+    margin-top: 13px;
 }
 
 .button-big {
@@ -85,7 +85,7 @@
 @media (max-width: 1026px) {
 
     .container-big-f {
-        gap: 80px
+        gap: 30px
     }
     .card-small {
         width: 37%;
@@ -98,7 +98,7 @@
         padding-top: 40px;
     }
     .container-big-f {
-        gap: 80px
+        gap: 30px
     }
     .card-small {
         width: 41%;

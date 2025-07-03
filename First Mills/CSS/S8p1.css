@@ -142,11 +142,11 @@ input[type="checkbox"].custom-checkbox:checked {
 }
 .button-div button{
    height: 80px;
-   width: 337px;
+   width: 270px;
    display: flex;
-   gap:20px;
-   padding: 44px 40px;
-   justify-content: space-between;
+   gap:10px;
+   padding: 20px 20px;
+   justify-content: center;
 }
 
 #download-selected {
@@ -190,7 +190,7 @@ input[type="checkbox"].custom-checkbox:checked {
 }
 
 input[type="checkbox"] {
-  accent-color: #005491;
+  accent-color: #ffb548;
 }
 
 body[lang="ar"] {
