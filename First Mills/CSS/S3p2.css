@@ -2,7 +2,7 @@
 .four-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
   margin-top: 35px;
   text-align: center;
   position: relative;
@@ -27,11 +27,26 @@
   color: #ffb548;
   font-weight: 800;
 }
-.circle-green {
-  border: 30px solid #f6f5f4;
+.circle-grey{
+  background-color: rgba(128, 133, 132, 0.2);
+  width: 350px;
+  height: 350px;
   position: absolute;
-  width: 300px;
-  height: 300px;
+   top: 50%; /* Centered vertically relative to the container */
+  left: 50%;
+   transform: translate(
+    -50%,
+    -50%
+  );
+  border-radius: 50%;
+  z-index: 4;
+    
+}
+.circle-green {
+  /* border: 30px solid #f6f5f4; */
+  position: absolute;
+  width: 270px;
+  height: 270px;
   background-color: #163029;
   padding: 50px;
   border-radius: 50%;
@@ -46,7 +61,14 @@
   justify-content: center;
   align-items: center;
 }
-
+.four-cards div:nth-child(2),
+  .four-cards div:nth-child(4) {
+    padding: 30px 120px 20px 140px;
+  }
+  .four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 30px 130px 20px 80px;
+  }
 .circle-content {
   font-size: 20px;
   color: #fcb44a;
@@ -161,6 +183,10 @@
     height: 200px;
     transform: translate(-50%, -50%);
   }
+  .circle-grey{
+  width: 260px;
+  height: 260px;  
+}
   .circle-content h2 {
     font-size: 20px;
   }
@@ -171,42 +197,7 @@
     width: 48px;
     height: 48px;
   }
-  .four-cards div:nth-child(2) {
-    background: radial-gradient(
-      circle at bottom left,
-      transparent,
-      transparent 120px,
-      #ffffff 30px,
-      #ffffff
-    );
-  }
-  .four-cards div:nth-child(3) {
-    background: radial-gradient(
-      circle at bottom right,
-      transparent,
-      transparent 120px,
-      #ffffff 30px,
-      #ffffff
-    );
-  }
-  .four-cards div:nth-child(4) {
-    background: radial-gradient(
-      circle at top left,
-      transparent,
-      transparent 120px,
-      #ffffff 12px,
-      #ffffff
-    );
-  }
-  .four-cards div:nth-child(5) {
-    background: radial-gradient(
-      circle at top right,
-      transparent,
-      transparent 120px,
-      #ffffff 12px,
-      #ffffff
-    );
-  }
+ 
   .four-cards div:nth-child(2),
   .four-cards div:nth-child(4) {
     padding: 30px 50px 20px 110px;
@@ -231,51 +222,22 @@
   .circle-green {
     width: 120px;
     height: 120px;
-    transform: translate(-43%, -50%);
+    transform: translate(-50%, -50%);
   }
-  .four-cards div:nth-child(2) {
-    background: radial-gradient(
-      circle at bottom left,
-      transparent,
-      transparent 80px,
-      #ffffff 30px,
-      #ffffff
-    );
-  }
-  .four-cards div:nth-child(3) {
-    background: radial-gradient(
-      circle at bottom right,
-      transparent,
-      transparent 80px,
-      #ffffff 30px,
-      #ffffff
-    );
-  }
-  .four-cards div:nth-child(4) {
-    background: radial-gradient(
-      circle at top left,
-      transparent,
-      transparent 80px,
-      #ffffff 12px,
-      #ffffff
-    );
-  }
-  .four-cards div:nth-child(5) {
-    background: radial-gradient(
-      circle at top right,
-      transparent,
-      transparent 80px,
-      #ffffff 12px,
-      #ffffff
-    );
-  }
+    .circle-grey{
+  width: 180px;
+  height: 180px;
+  
+    
+}
+ 
   .four-cards div:nth-child(2),
   .four-cards div:nth-child(4) {
-    padding: 60px 40px 20px 50px;
+    padding: 10px 40px 10px 50px;
   }
   .four-cards div:nth-child(3),
   .four-cards div:nth-child(5) {
-    padding: 60px 60px 20px 20px;
+    padding: 10px 60px 10px 20px;
   }
   .circle-content h2 {
     padding-top: 15px;
