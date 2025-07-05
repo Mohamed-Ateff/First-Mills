@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/S6p2.css" />
     <script src="Javascript/Navbar.js"></script>
+
+    <link rel="stylesheet" href="CSS/oldBars.CSS" />
   </head>
   <body>
     <div class="container">
@@ -196,7 +198,9 @@
             <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
             <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
             <div class="section" data-submenu="Tab6">القوائم المالية</div>
-            <a href="S8p1.html" class="section" data-submenu="Tab7">مركز التحميل</a>
+            <a href="S8p1.html" class="section" data-submenu="Tab7"
+              >مركز التحميل</a
+            >
           </div>
 
           <div class="menu-divider"></div>
@@ -351,6 +355,125 @@
         </table>
       </div>
 
+      <div class="one-chart">
+        <div class="one-chart-container">
+          <div class="full-width-one-chart">
+            <!-- الإيرادات -->
+            <div class="chart">
+              <div class="progress-bar" data-value="91.93">
+                <div class="progress" style="background-color: #31544b">
+                  <p class="progress-value counter">964.26</p>
+                </div>
+              </div>
+              <div class="progress-bar" data-value="100">
+                <div class="progress" style="background-color: #fcb44a">
+                  <p class="progress-value counter">1,048.85</p>
+                </div>
+              </div>
+              <p class="progress-date">الإيرادات</p>
+            </div>
+
+            <!-- تكلفة الإيرادات -->
+            <div class="chart">
+              <div class="progress-bar" data-value="52.54">
+                <div class="progress" style="background-color: #31544b">
+                  <p class="progress-value counter">551.12</p>
+                </div>
+              </div>
+              <div class="progress-bar" data-value="56.42">
+                <div class="progress" style="background-color: #fcb44a">
+                  <p class="progress-value counter">591.77</p>
+                </div>
+              </div>
+              <p class="progress-date">تكلفة الإيرادات</p>
+            </div>
+
+            <!-- مجمل الربح -->
+            <div class="chart">
+              <div class="progress-bar" data-value="39.38">
+                <div class="progress" style="background-color: #31544b">
+                  <p class="progress-value counter">413.14</p>
+                </div>
+              </div>
+              <div class="progress-bar" data-value="43.59">
+                <div class="progress" style="background-color: #fcb44a">
+                  <p class="progress-value counter">457.09</p>
+                </div>
+              </div>
+              <p class="progress-date">مجمل الربح</p>
+            </div>
+
+            <!-- الربح التشغيلي -->
+            <div class="chart">
+              <div class="progress-bar" data-value="27.37">
+                <div class="progress" style="background-color: #31544b">
+                  <p class="progress-value counter">286.96</p>
+                </div>
+              </div>
+              <div class="progress-bar" data-value="30.36">
+                <div class="progress" style="background-color: #fcb44a">
+                  <p class="progress-value counter">318.48</p>
+                </div>
+              </div>
+              <p class="progress-date">الربح التشغيلي</p>
+            </div>
+
+            <!-- صافي الربح -->
+            <div class="chart">
+              <div class="progress-bar" data-value="20.99">
+                <div class="progress" style="background-color: #31544b">
+                  <p class="progress-value counter">220.21</p>
+                </div>
+              </div>
+              <div class="progress-bar" data-value="23.93">
+                <div class="progress" style="background-color: #fcb44a">
+                  <p class="progress-value counter">250.90</p>
+                </div>
+              </div>
+              <p class="progress-date">صافي الربح</p>
+            </div>
+
+            <!-- ربحية السهم -->
+            <div class="chart">
+              <div class="progress-bar" data-value="0.38">
+                <div class="progress" style="background-color: #31544b">
+                  <p class="progress-value counter">3.97</p>
+                </div>
+              </div>
+              <div class="progress-bar" data-value="0.43">
+                <div class="progress" style="background-color: #fcb44a">
+                  <p class="progress-value counter">4.53</p>
+                </div>
+              </div>
+              <p class="progress-date">ربحية السهم (ريال)</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="one-chart-container-data"
+          id="s-one-chart-container-data"
+          style="padding-bottom: 0px !important"
+        >
+          <div>
+            <div class="box-one-chart-container-data">
+              <div class="color-box" style="background-color: #455954"></div>
+              <p data-en="Feed">2022</p>
+            </div>
+            <div class="box-one-chart-container-data">
+              <div class="color-box" style="background-color: #fcb44a"></div>
+              <p data-en="Flour">2023</p>
+            </div>
+          </div>
+          <p
+            class="title-bar-chart"
+            id="s-title-bar-chart"
+            data-en="(All Amounts In SAR Million)"
+          >
+            (جميع المبالغ بالمليون ريال)
+          </p>
+        </div>
+      </div>
+
       <!--charts-->
 
       <div class="title-flex">
@@ -434,6 +557,192 @@
           </tbody>
         </table>
       </div>
+
+      <!-- Two charts -->
+
+      <div class="spread-charts">
+        <div class="chart-div">
+          <div class="one-chart">
+            <div class="one-chart-container">
+              <div class="full-width-one-chart">
+                <!-- الموجودات المتداولة -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="15.21">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">379.70</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="16.17">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">403.76</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>الموجودات</span>
+                    <span>المتداولة</span>
+                  </p>
+                </div>
+
+                <!-- الموجودات غير المتداولة -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="83.79">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">2,091.01</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="83.82">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">2,091.78</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>الموجودات</span>
+                    <span>غير المتداولة</span>
+                  </p>
+                </div>
+
+                <!-- إجمالي الموجودات -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="98.99">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">2,470.72</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="100">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">2,495.53</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>إجمالي</span>
+                    <span>الموجودات</span>
+                  </p>
+                </div>
+
+                <!-- المطلوبات المتداولة -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="11.59">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">289.36</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="14.45">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">360.67</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>المطلوبات</span>
+                    <span>المتداولة</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chart-div">
+          <div class="one-chart">
+            <div class="one-chart-container">
+              <div class="full-width-one-chart">
+                <!-- المطلوبات غير المتداولة -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="51.64">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">1,289.22</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="47.68">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">1,189.81</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>المطلوبات</span>
+                    <span>غير المتداولة</span>
+                  </p>
+                </div>
+
+                <!-- إجمالي المطلوبات -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="63.26">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">1,578.58</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="62.13">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">1,550.48</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>إجمالي</span>
+                    <span>المطلوبات</span>
+                  </p>
+                </div>
+
+                <!-- إجمالي حقوق الملكية -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="35.74">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">892.14</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="37.86">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">945.05</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>إجمالي</span>
+                    <span>حقوق الملكية</span>
+                  </p>
+                </div>
+
+                <!-- إجمالي المطلوبات وحقوق الملكية -->
+                <div class="chart">
+                  <div class="progress-bar" data-value="98.99">
+                    <div class="progress" style="background-color: #31544b">
+                      <p class="progress-value counter">2,470.72</p>
+                    </div>
+                  </div>
+                  <div class="progress-bar" data-value="100">
+                    <div class="progress" style="background-color: #fcb44a">
+                      <p class="progress-value counter">2,495.53</p>
+                    </div>
+                  </div>
+                  <p class="progress-date2">
+                    <span>إجمالي المطلوبات</span>
+                    <span>وحقوق الملكية</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="one-chart-container-data"
+          id="s-one-chart-container-data"
+          style="margin-top: 70px; margin-bottom: 0px;"
+        >
+          <div>
+            <div class="box-one-chart-container-data">
+              <div class="color-box" style="background-color: #455954"></div>
+              <p data-en="Feed">2022</p>
+            </div>
+            <div class="box-one-chart-container-data">
+              <div class="color-box" style="background-color: #fcb44a"></div>
+              <p data-en="Flour">2023</p>
+            </div>
+          </div>
+          <p
+            class="title-bar-chart"
+            id="s-title-bar-chart"
+            data-en="(All Amounts In SAR Million)"
+          >
+            (جميع المبالغ بالمليون ريال)
+          </p>
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -478,6 +787,7 @@
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
     <script src="Javascript/bars.js"></script>
 
+    <script src="Javascript/oldBars.JS"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
   </body>
