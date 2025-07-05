@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="CSS/Footer.css" />
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/S5p14.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="Javascript/Navbar.js"></script>
   </head>
   <body>
@@ -196,7 +199,9 @@
             <div class="section" data-submenu="Tab4">المراجعة التشغيلية</div>
             <div class="section" data-submenu="Tab5">الحوكمة و الاستدامة</div>
             <div class="section" data-submenu="Tab6">القوائم المالية</div>
-            <a href="S8p1.html" class="section" data-submenu="Tab7">مركز التحميل</a>
+            <a href="S8p1.html" class="section" data-submenu="Tab7"
+              >مركز التحميل</a
+            >
           </div>
 
           <div class="menu-divider"></div>
@@ -307,7 +312,10 @@
               </h1>
             </div>
 
-            <div class="grid-box" style="background-color: rgba(255, 255, 255, 0.5);">
+            <div
+              class="grid-box"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-number">1</div>
               <div class="text-block">
                  التزام مجلس الإدارة بتوفير المعلومات
@@ -336,7 +344,10 @@
             </div>
           </div>
           <div class="row2">
-            <div class="grid-box" style="background-color: rgba(255, 255, 255, 0.5);">
+            <div
+              class="grid-box"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-number">3</div>
               <div class="text-block">
                  تفعيل برامج علاقات المستثمرين التي
@@ -360,7 +371,10 @@
                 الماليين للوقوف على كافة المستجدات.
               </div>
             </div>
-            <div class="grid-box" style="background-color: rgba(255, 255, 255, 0.5);">
+            <div
+              class="grid-box"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-number">5</div>
               <div class="text-block">
                 ترتيب عدد من الاجتماعات في المكتب
@@ -386,7 +400,10 @@
                 الاستفسارات.
               </div>
             </div>
-            <div class="grid-box" style="background-color: rgba(255, 255, 255, 0.5);">
+            <div
+              class="grid-box"
+              style="background-color: rgba(255, 255, 255, 0.5)"
+            >
               <div class="card-number">7</div>
               <div class="text-block">
                 المشاركة في مؤتمرات
@@ -420,7 +437,11 @@
         المالي والتشغيلي، مما يسهم في بناء الثقة وتعزيز العلاقة معهم.
       </div>
 
-      <h2 class="growth-path-title title1">عام حافل بالتكريم والانجازات</h2>
+      <div class="table-caption" style="margin-top: 50px">
+        <div class="line-caption"></div>
+        <h3>عام حافل بالتكريم والانجازات</h3>
+        <div class="line-caption"></div>
+      </div>
 
       <div class="card-grid">
         <div class="activities_card">
@@ -599,6 +620,32 @@
 
       <!--chart 1-->
 
+      <div class="chart-container">
+        <canvas id="donutChart"></canvas>
+        <div class="legend">
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #31544b"></div>
+            مجموعة المطلق للاستثمار الصناعي - %30
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #fcb44a"></div>
+            شركة عبدالله أبونيان التجارية - %21
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #55716a"></div>
+            شركة الصافي المتقدمة للاستثمار - %12
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #a9b5b2"></div>
+            شركة عيسى الغرير للاستثمار - %7
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background-color: #cecece"></div>
+            الجمهور - %30
+          </div>
+        </div>
+      </div>
+
       <div class="section-title border-with-title-under-it">
         <h2>ملكية جميع المستثمرين الأجانب</h2>
         <div class="border-bottom"></div>
@@ -745,9 +792,8 @@
         قبل المساهمين في اجتماع الجمعية العامة.
       </div>
 
-      <div class="table-container table-container4" >
+      <div class="table-container table-container4">
         <table>
-           <table>
           <thead>
             <tr>
               <th>بيان</th>
@@ -763,7 +809,7 @@
               <td>1.29</td>
               <td>2.84</td>
             </tr>
-      
+
             <tr>
               <td style="background-color: #ffffff">2023</td>
               <td style="background-color: #ffffff">1.37</td>
@@ -815,5 +861,45 @@
     <script src="Javascript/counter.js"></script>
     <!-- CounterUp (CDN version) -->
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
+
+    <script>
+      const ctx = document.getElementById("donutChart").getContext("2d");
+      new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: [
+            "مجموعة المطلق",
+            "شركة عبدالله أبونيان",
+            "شركة الصافي",
+            "شركة عيسى الغرير",
+            "الجمهور",
+          ],
+          datasets: [
+            {
+              data: [30, 21, 12, 7, 30],
+              backgroundColor: [
+                "#31544B",
+                "#FCB44A",
+                "#55716A",
+                "#A9B5B2",
+                "#CECECE",
+              ],
+              borderWidth: 2,
+              borderColor: "#fff",
+            },
+          ],
+        },
+        options: {
+          cutout: "65%",
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
   </body>
 </html>

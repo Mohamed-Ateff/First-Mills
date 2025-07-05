@@ -82,33 +82,24 @@
   text-align: start;
 }
 
-.growth-path-title {
-  text-align: center;
+.table-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.table-caption h3 {
   color: #31544b;
-  font-size: 26px;
-  margin: 60px 0 40px;
-  position: relative;
+  font-size: 24px;
+  text-align: center;
+  margin: 2px;
 }
-
-.title1::before {
-  content: "";
-  position: absolute;
-  width: 370px;
+.line-caption {
   height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-}
-.title1::after {
-  content: "";
-  position: absolute;
-  width: 370px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(252, 180, 74, 0.4);
 }
 
 .card-grid {
@@ -325,6 +316,46 @@ td:first-child {
 }
 
 
+/*chart 1*/
+ .chart-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      background-color: white;
+      padding: 40px;
+     
+    }
+
+    #donutChart {
+      width: 300px !important;
+      height: 300px !important;
+      transform: rotate(30deg);
+    }
+
+    .legend {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      margin-left: 10px;
+    }
+
+    canvas {
+      max-width: 300px;
+    }
 
 @media (max-width: 1200px) {
   .cards-grid {
@@ -337,6 +368,21 @@ td:first-child {
   }
   .card.up {
     transform: none;
+  }
+
+  .activities_card {
+    width: calc(48% - 1px);
+  }
+
+  .stock-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .activities_card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -360,11 +406,6 @@ td:first-child {
 
   .text-desc {
     font-size: 20px;
-  }
-
-  .activities_card {
-    width: 100%;
-    margin-bottom: 20px;
   }
 
   .stock-card {
