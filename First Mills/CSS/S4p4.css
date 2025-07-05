@@ -26,6 +26,7 @@ table {
     border-bottom: 5px solid #f7f7f7;
     background-color: white;
     color: #3a4944;
+    font-size: 16px;
   }
 
   td span:nth-child(2) {
