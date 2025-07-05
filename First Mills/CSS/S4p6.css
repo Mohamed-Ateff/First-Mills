@@ -59,7 +59,7 @@ td {
   background-color: #ffffff;
 }
 td {
-color: #31544b;
+  color: #31544b;
 }
 
 th {
@@ -79,16 +79,16 @@ tr:nth-child(even) td {
 .custom-table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 2px; 
+  border-spacing: 0 2px;
   margin-top: 40px;
 }
 
 .custom-table thead tr {
-  transform: translateY(5px); 
+  transform: translateY(5px);
 }
 
 .custom-table th {
-  background-color: #73837F;
+  background-color: #73837f;
   color: white;
   padding: 34px 40px 34px 40px;
   text-align: right;
@@ -105,7 +105,7 @@ tr:nth-child(even) td {
 
 .custom-table th,
 .custom-table td {
-  width: 70%; 
+  width: 70%;
 }
 
 /* Center align only the second column */
@@ -115,7 +115,7 @@ tr:nth-child(even) td {
 }
 
 .custom-table tbody tr:nth-child(even) td {
-background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .card-grid {
@@ -150,8 +150,14 @@ background-color: rgba(255, 255, 255, 0.5);
     max-width: 400px;
   }
 
+  .card-grid {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .activities_card {
-    width: 100%;
+    width: calc(50% - 10px);
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -159,11 +165,6 @@ background-color: rgba(255, 255, 255, 0.5);
 
   .activities_card img {
     margin: 0 auto;
-  }
-
-  .card-grid {
-    flex-direction: column;
-    align-items: center;
   }
 
   .text-block {
@@ -179,6 +180,12 @@ background-color: rgba(255, 255, 255, 0.5);
 
   th {
     padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities_card {
+    width: 100%;
   }
 }
 
@@ -202,8 +209,7 @@ background-color: rgba(255, 255, 255, 0.5);
   }
 
   .custom-table th {
-  padding: 20px 40px 20px 40px;
-  font-size: 14px;
-}
-
+    padding: 20px 40px 20px 40px;
+    font-size: 14px;
+  }
 }

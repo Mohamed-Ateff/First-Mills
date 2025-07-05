@@ -67,6 +67,47 @@ body[lang="en"] {
   justify-content: center;
   align-items: center;
   width: 100%;
+  /* background-color: brown; */
+}
+
+.percentage-for-bars {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -73px;
+  left: 100%;
+  transform: translateX(-48%);
+  /* background-color: red; */
+}
+.percentage-for-bars p {
+  position: relative;
+  /* background-color: blue; */
+  text-align: center;
+  font-weight: 700;
+  color: #31544b;
+  font-size: 17px;
+}
+.percentage-for-bars p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  width: 25px;
+  height: 1.5px;
+  background-color: #fcb44a;
+  text-align: center;
+}
+.percentage-for-bars p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  width: 25px;
+  height: 1.5px;
+  background-color: #fcb44a;
+  text-align: center;
 }
 
 .progress-bar {
