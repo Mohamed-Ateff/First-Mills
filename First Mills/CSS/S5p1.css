@@ -166,6 +166,9 @@
 /* hexagon section ends*/
 
 @media (max-width: 768px) {
+  .text-desc p {
+  margin-top: 80px;
+}
   .honeycomb {
     margin-bottom: 0px;
   }
@@ -228,6 +231,9 @@
 }
 
 @media (max-width: 480px) {
+    .text-desc p {
+  margin-top: 0px;
+}
    .final-cards {
     grid-template-columns: 1fr; 
     gap: 15px;
