@@ -624,24 +624,30 @@
         <canvas id="donutChart"></canvas>
         <div class="legend">
           <div class="legend-item">
+            <p>%30</p>
             <div class="legend-color" style="background-color: #31544b"></div>
-            مجموعة المطلق للاستثمار الصناعي - %30
+            <p>مجموعة المطلق للاستثمار الصناعي</p>
           </div>
           <div class="legend-item">
+            <p>%21</p>
             <div class="legend-color" style="background-color: #fcb44a"></div>
-            شركة عبدالله أبونيان التجارية - %21
+            <p>شركة عبدالله أبونيان التجارية</p>
           </div>
           <div class="legend-item">
+            <p>%12</p>
             <div class="legend-color" style="background-color: #55716a"></div>
-            شركة الصافي المتقدمة للاستثمار - %12
+            <p>شركة الصافي المتقدمة للاستثمار</p>
           </div>
           <div class="legend-item">
+            <p>%7</p>
             <div class="legend-color" style="background-color: #a9b5b2"></div>
-            شركة عيسى الغرير للاستثمار - %7
+            <p>شركة عيسى الغرير للاستثمار</p>
           </div>
           <div class="legend-item">
+            <p>%30</p>
             <div class="legend-color" style="background-color: #cecece"></div>
-            الجمهور - %30
+
+            <p>الجمهور</p>
           </div>
         </div>
       </div>
@@ -732,7 +738,13 @@
         </div>
       </div>
 
-      <!--charts -->
+      <!--chart 2 -->
+      <div id="chart-container">
+              <h3>تطور الإغلاق الشهري للسهم في 2024</h3>
+              <p style="color: #5E6863;">(السعر بالريال السعودي)</p>
+
+    <canvas id="stockChart"></canvas>
+  </div>
 
       <div class="section-title border-with-title-under-it">
         <h2>الإفصاح والشفافية</h2>
@@ -899,7 +911,77 @@
         },
       });
     </script>
+
+       <script>
+    const canvas = document.getElementById('stockChart');
+    const ctx2 = canvas.getContext('2d');
+
+    // ✅ اضبط العرض والارتفاع حسب الصفحة
+    canvas.width = 1200;
+    canvas.height = 400;  // تقدر تغير الرقم دا لو عايز
+
+    const stockData = {
+      labels: [
+        'يناير', 'فبراير', 'مارس', 'أبريل',
+        'مايو', 'يونيو', 'يوليو', 'أغسطس',
+        'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'
+      ],
+      datasets: [{
+        data: [73.4, 81.6, 77.5, 82.6, 70.5, 74, 70.9, 71.7, 70.8, 64.7, 60.1, 60.5],
+        borderColor: '#71948D',
+        backgroundColor: 'transparent',
+        tension: 0.4,
+        pointBackgroundColor: '#71948D',
+        pointBorderColor: '#71948D',
+        pointRadius: 4,
+        pointHoverRadius: 6
+      }]
+    };
+
+    const stockOptions = {
+      responsive: false,    // ✅ عطل الريسبونسيف عشان مقاساتك تشتغل
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          color: '#E19422',
+          anchor: 'end',
+          align: 'top',
+          font: {
+            weight: 'bold',
+            size: 12
+          },
+          formatter: function(value) {
+            return value;
+          }
+        }
+      },
+      scales: {
+        y: {
+          min: 0,
+          max: 100,
+          ticks: {
+            stepSize: 25
+          },
+          grid: { display: false }
+        },
+        x: {
+          grid: {
+            display: false
+          }
+        }
+      }
+    };
+
+    new Chart(ctx2, {
+      type: 'line',
+      data: stockData,
+      options: stockOptions,
+      plugins: [ChartDataLabels]
+    });
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
   </body>
 </html>
