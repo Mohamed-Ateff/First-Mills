@@ -69,5 +69,14 @@
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+  } 
+.padding-top{
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .padding-top{
+    padding-top: 0px;
   }
 }
