@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: fit-content !important;
+  height: fit-content;
   padding-bottom: 50px;
   position: relative;
 }
@@ -26,13 +26,13 @@
   font-size: 18px;
 }
 .title-bar-chart {
-  color: #7c8b9d !important;
-  font-size: 14px !important;
-  margin-top: 50px !important;
+  color: #7c8b9d;
+  font-size: 14px;
+  margin-top: 50px;
 }
 body[lang="en"] {
   .title-bar-chart {
-    text-align: left !important;
+    text-align: left;
     left: 25px;
   }
 }
@@ -142,7 +142,7 @@ body[lang="en"] {
   text-align: center;
   color: #455954;
   font-weight: 700;
-  min-width: 200px !important;
+  min-width: 200px;
   position: absolute;
   bottom: -24%;
   left: 50%;
@@ -150,6 +150,29 @@ body[lang="en"] {
   min-height: 50px;
   font-size: 16px;
   line-height: 20px;
+  /* background-color: brown; */
+}
+
+.progress-date2 {
+  display: flex;
+  flex-direction: column; /* 👈 forces vertical stacking */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #455954;
+  font-weight: 700;
+  min-width: 200px;
+  position: absolute;
+  bottom: -24%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 50px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.progress-date2 span {
+  display: block; /* forces each <span> to take a full line */
 }
 
 .one-chart {
@@ -188,9 +211,9 @@ body[lang="en"] {
   top: -15px;
   left: -3px;
   width: 5px;
-  height: 2px !important;
-  min-height: 2px !important;
-  max-height: 2px !important;
+  height: 2px;
+  min-height: 2px;
+  max-height: 2px;
   background-color: black;
 }
 
@@ -201,6 +224,18 @@ body[lang="en"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#s-one-chart-container-data {
+  flex-direction: column;
+}
+#s-one-chart-container-data > div {
+  display: flex;
+}
+#s-title-bar-chart {
+  margin-top: -8px;
+  margin-left: 26px;
+  cursor: #787878;
 }
 
 .box-one-chart-container-data {
@@ -234,7 +269,7 @@ body[lang="en"] {
 /* ALL charts beside each other */
 @media screen and (max-width: 768px) {
   .container {
-    overflow: hidden !important;
+    overflow: hidden;
   }
   .left-chart-container {
     width: 100%;
@@ -244,16 +279,16 @@ body[lang="en"] {
     margin-top: 50px;
   }
   .right-chart .chart .progress-bar {
-    margin: 27px 10px 0px 10px !important;
+    margin: 27px 10px 0px 10px;
   }
   .left-chart .chart .progress-bar {
-    margin: 27px 10px 0px 10px !important;
+    margin: 27px 10px 0px 10px;
   }
   .two-charts .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: fit-content !important;
+    height: fit-content;
     padding-bottom: 50px;
     position: relative;
     flex-direction: column;
@@ -264,14 +299,14 @@ body[lang="en"] {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px;
   }
 
   .progress-bar {
-    width: 11px !important;
+    width: 11px;
     height: 400px;
     position: relative;
-    margin: 27px 1px 0px 1px !important;
+    margin: 27px 1px 0px 1px;
   }
 
   .progress {
@@ -293,7 +328,7 @@ body[lang="en"] {
   }
 
   .progress-date {
-    min-width: 100% !important;
+    min-width: 100%;
     justify-content: center;
     display: flex;
     align-items: flex-start;
@@ -311,14 +346,14 @@ body[lang="en"] {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 100% !important;
+    min-width: 100%;
     margin-top: 40px;
   }
   .box-one-chart-container-data {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content !important ;
+    width: fit-content;
   }
   .box-one-chart-container-data p {
     font-weight: bold;
@@ -333,7 +368,7 @@ body[lang="en"] {
 
 /* @media screen and (max-width: 768px) {
   .container{
-    overflow: hidden !important;
+    overflow: hidden ;
   }
   .one-chart-container {
     display: flex;
@@ -346,7 +381,7 @@ body[lang="en"] {
   }
   .one-chart-container .title-bar-chart {
     color: #5e6863;
-    text-align: right !important;
+    text-align: right ;
     width: 100%;
     position: absolute;
     top: 40px;
@@ -403,3 +438,12 @@ body[lang="en"] {
     margin: 15px 15px 0px 15px;
   }
 } */
+
+.spread-charts {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap ;
+}
+.chart-div {
+  width: 49%;
+}
