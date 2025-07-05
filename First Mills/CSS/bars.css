@@ -71,17 +71,18 @@ body[lang="en"] {
   align-items: center;
   height: 100% !important;
   min-height: 100% !important;
+  /* background-color: darkblue; */
   /* background-color: red; */
 }
 
 #line-and-numbers-first {
-  margin-top: 1px;
-  align-items: flex-start;
+  margin-top: -2px;
+  /* align-items: flex-start; */
   /* background-color: forestgreen !important; */
 }
 #line-and-numbers-last {
-  margin-bottom: 0.7px;
-  align-items: flex-end;
+  margin-bottom: -1.5px;
+  /* align-items: flex-end; */
   /* background-color: forestgreen !important; */
 }
 
@@ -115,10 +116,11 @@ body[lang="en"] {
 }
 
 .progress-bar {
+  /* background-color: chocolate; */
   width: 120px;
   height: 270px;
   position: relative;
-  margin: 27px 27px 0px 27px;
+  margin: 0px 27px 0px 27px;
 }
 
 .progress {
@@ -479,7 +481,7 @@ canvas {
   width: 80px;
   height: 270px;
   position: relative;
-  margin: 27px 3px 0px 3px;
+  margin: 0px 3px 0px 3px;
   /* background-color: chocolate !important; */
 }
 .chart .group .progress {
@@ -487,7 +489,7 @@ canvas {
 }
 
 .chart .group .progress-date {
-  bottom: -27.5%;
+  bottom: -30%;
 }
 .chart .group .progress-value {
   position: absolute;
