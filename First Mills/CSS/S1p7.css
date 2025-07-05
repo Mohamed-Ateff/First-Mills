@@ -35,7 +35,7 @@
 
 .text-box h1 {
   font-size: 24px;
-  color: #003d2d;
+  color: #31544B;
   margin-bottom: 12px;
   position: relative;
 }
@@ -53,19 +53,26 @@
   text-align: justify;
   font-size: 16px;
   line-height: 2;
-  color: #444;
+  color: #31544B;
   font-weight: 600;
 }
-
+.padding-top-bottom{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 @media (max-width: 768px) {
   .flex-sections {
     flex-direction: column-reverse;
     text-align: center;
   }
   .text-box {
-    width: 50%;
+    width: 100%;
   }
   .logo-box {
-    width: 50%;
+    width: 100%;
   }
+.logo-box img {
+  margin-top: 0px;
 }
+}
+

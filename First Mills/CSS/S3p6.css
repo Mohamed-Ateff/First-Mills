@@ -47,11 +47,15 @@
 .text {
   text-align: center;
   font-weight: bold;
-  color: #333;
+  color: #333333;
   font-size: 20px;
   padding: 20px;
   z-index: 0;
   margin-top: 10px;
+}
+.padding-top-bottom{
+  margin-top: 50px;
+  margin-bottom: 30px
 }
 
 @media (max-width: 768px) {
@@ -60,6 +64,11 @@
   }
 
   .card {
-    width: 90%;
+    width: 100%;
   }
+  .padding-top-bottom{
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
 }

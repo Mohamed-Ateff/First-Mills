@@ -670,7 +670,7 @@
       Chart.register(ChartDataLabels);
 
       let chart;
-
+const isMobile = window.innerWidth <= 480;
       const config = {
         type: "bar",
         data: {
@@ -680,14 +680,14 @@
               label: "2024",
               data: [599.12, 311.9, 137.83],
               backgroundColor: "#f8b545",
-              barThickness: 40,
+           barThickness: window.innerWidth <= 480 ? 20 : 40,
               borderSkipped: false,
             },
             {
               label: "2023",
               data: [552.9, 271.05, 140.31],
               backgroundColor: "#5f7068",
-              barThickness: 40,
+            barThickness: window.innerWidth <= 480 ? 20 : 40,
               borderSkipped: false,
             },
           ],

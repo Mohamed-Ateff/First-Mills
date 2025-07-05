@@ -169,7 +169,7 @@
     padding-top: 20px;
   }
     .bg-float {
-      display: none;
+      /* display: none; */
     }
   .icon-div h3 {
     font-size: 30px;
@@ -180,5 +180,8 @@
   .number-div h1 {
     font-size: 40px;
     width: 40px; /* 3hsan el div maythzsh */
+  }
+  .card-hz {
+    padding:20px 30px 20px 50px;
   }
 }
