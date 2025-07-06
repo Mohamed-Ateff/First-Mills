@@ -387,6 +387,40 @@ body[lang="en"] {
     height: 15px;
     margin-left: 5px;
   }
+  .percentage-for-bars {
+  
+  top: -83px;
+
+ 
+}
+.percentage-for-bars p {
+  position: relative;
+  /* background-color: blue; */
+  text-align: center;
+  font-weight: 700;
+  color: #31544b;
+  font-size: 17px;
+}
+.percentage-for-bars p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 110%;
+  width: 15px;
+  height: 1.5px;
+  background-color: #fcb44a;
+  text-align: center;
+}
+.percentage-for-bars p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  width: 15px;
+  height: 1.5px;
+  background-color: #fcb44a;
+  text-align: center;
+}
 }
 
 /* @media screen and (max-width: 768px) {
