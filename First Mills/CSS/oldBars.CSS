@@ -303,7 +303,7 @@ body[lang="en"] {
   }
 
   .progress-bar {
-    width: 11px;
+    width: 14px !important;  /* changedk */
     height: 400px;
     position: relative;
     margin: 27px 1px 0px 1px;
@@ -317,14 +317,28 @@ body[lang="en"] {
     left: 0;
     transition: height 1.5s ease-in-out;
   }
+  /* 
   .progress-value {
     position: absolute;
-    top: -10px;
+    top: -30px;  
+   
     font-weight: 600;
     left: 50%;
     transform: translateX(-50%);
+  
     color: #163029;
-    font-size: 5px;
+    font-size: 14px;
+  } 
+  */
+  .progress-value {
+    position: absolute;
+    top: -45px;  /* changedk */
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    color: #163029;
+    font-size: 12px;
+    white-space: nowrap;
   }
 
   .progress-date {
@@ -336,11 +350,20 @@ body[lang="en"] {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 9px;
+    font-size: 14px;  /* changedk */
     min-height: 50px;
-    line-height: 12px;
-    bottom: -14%;
+    line-height: 18px;  /* changedk */
+    bottom: -25%;   /* changedk */
   }
+  .progress-date2 {
+ 
+  bottom: -27%;/* changedk */
+  
+  transform: translateX(-50%) rotate(-90deg);/* changedk */
+  min-height: 50px; /* changedk */ 
+  font-size: 12px; /* changedk */
+  line-height: 20px; /* changedk */
+}
   .one-chart-container-data {
     display: flex;
     justify-content: center;
