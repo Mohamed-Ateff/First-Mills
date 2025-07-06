@@ -18,7 +18,6 @@
   background-color: rgba(252, 180, 74, 0.4);
 }
 
-
 .table-container {
   overflow-x: auto;
   margin: 30px auto;
@@ -34,8 +33,7 @@ thead {
 }
 th,
 td {
-  padding: 20px;
-  font-size: 14px;
+  padding: 20px 35px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -50,48 +48,52 @@ td:last-child {
 th {
   background-color: #73837f;
   color: white;
-  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
   text-align: center;
+}
+td {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 tr:nth-child(even) td {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.th-date{
-color: #FCB44A;
-font-size: 14px;
-font-weight: 200;
-margin: 10px auto;
+.th-date {
+  color: #fcb44a;
+  font-size: 14px;
+  font-weight: 200;
+  margin: 10px auto;
 }
 
 .th-table3 > th,
-.td-table3 > td{
-
-    font-size: 10px;
-    padding: 10px 15px;
+.td-table3 > td {
+  font-size: 10px;
+  padding: 10px 15px;
 }
 
-.td img{
-    width: 30%;
+.td img {
+  width: 30%;
 }
 
 .align-start td:nth-child(2),
-.align-start td:nth-child(3){
-    text-align: start;
+.align-start td:nth-child(3) {
+  text-align: start;
 }
 
 .attendance-row {
-  background-color: #FCB44A;
+  background-color: #fcb44a;
+  color: #31544b;
   text-align: center;
   font-weight: bold;
 }
 .attendance-row td {
   vertical-align: middle;
-    text-align: center;
-
+  text-align: center;
+  font-size: 22px;
 }
-
 
 @media (max-width: 992px) {
   .growth-path-title {
@@ -126,11 +128,11 @@ margin: 10px auto;
 }
 
 @media (max-width: 768px) {
-      .growth-path-title {
-        font-size: 18px;
-        margin: 120px 15px 30px;
-    }
-     .title1::before,
+  .growth-path-title {
+    font-size: 18px;
+    margin: 120px 15px 30px;
+  }
+  .title1::before,
   .title1::after {
     display: none;
   }
@@ -141,8 +143,6 @@ margin: 10px auto;
     font-size: 18px;
     margin: 30px 10px;
   }
-
-  
 
   th,
   td {

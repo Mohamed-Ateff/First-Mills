@@ -1,8 +1,6 @@
-.text-desc {
-  font-size: 25px;
-  color: #4e6a63;
-  line-height: 1.5;
-  margin: 20px auto;
+.Paragraph p {
+    font-size: 25px !important;
+    color: #4E6A63 !important;
 }
 
 .flour-products img {
