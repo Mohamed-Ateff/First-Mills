@@ -765,6 +765,24 @@
         <canvas id="stockChart"></canvas>
       </div>
 
+      <div id="chart-container">
+        <h3>أحجام التداولات الشهرية للسهم في 2024</h3>
+        <p>(مليون سهم)</p>
+        <canvas id="ctx3" class="ctx3"></canvas>
+      </div>
+
+      <div id="chart-container">
+        <h3>قيم التداولات الشهرية للسهم في 2024</h3>
+        <p>(مليون ريال)</p>
+        <canvas id="ctx4" class="ctx4"></canvas>
+      </div>
+
+      <div id="chart-container">
+        <h3>تطور القيمة السوقية الشهرية للسهم في 2024</h3>
+        <p>(مليار ريال)</p>
+        <canvas id="ctx5" class="ctx5"></canvas>
+      </div>
+
       <div class="section-title border-with-title-under-it">
         <h2>الإفصاح والشفافية</h2>
         <div class="border-bottom"></div>
@@ -1029,6 +1047,183 @@
         plugins: [ChartDataLabels],
       });
     </script>
+
+    <script>
+      const labels = [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "أبريل",
+        "مايو",
+        "يونيو",
+        "يوليو",
+        "أغسطس",
+        "سبتمبر",
+        "أكتوبر",
+        "نوفمبر",
+        "ديسمبر",
+      ];
+
+      // ctx3: أحجام التداول
+      new Chart(document.getElementById("ctx3").getContext("2d"), {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              data: [
+                12.05, 11.99, 14.37, 8.93, 7.15, 5.38, 5.05, 7.7, 7.01, 6.52,
+                3.09, 2.26,
+              ],
+              backgroundColor: "#FFB548",
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            datalabels: {
+              anchor: "end",
+              align: "end",
+              textAlign: "center",
+              color: "#1a1a1a",
+              font: { weight: "bold" },
+              formatter: (value) => value,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              min: 0,
+              max: 16,
+              ticks: {
+                stepSize: 4,
+              },
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+      });
+
+      // ctx4: قيم التداول
+      new Chart(document.getElementById("ctx4").getContext("2d"), {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              data: [
+                905.87, 957.36, 1226.07, 691.72, 579.18, 382.61, 371.33, 524.72,
+                502.95, 435.54, 190.34, 137.71,
+              ],
+              backgroundColor: "#FFB548",
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            datalabels: {
+              anchor: "end",
+              align: "end",
+              textAlign: "center",
+              color: "#1a1a1a",
+              font: { weight: "bold" },
+              formatter: (value) => value,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              min: 0,
+              max: 1400,
+              ticks: {
+                stepSize: 350,
+              },
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+      });
+
+      // ctx5: تطور القيمة السوقية
+      new Chart(document.getElementById("ctx5").getContext("2d"), {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              data: [
+                4.07, 4.53, 4.3, 4.58, 3.91, 4.11, 3.93, 3.98, 3.93, 3.59, 3.34,
+                3.36,
+              ],
+              backgroundColor: "#FFB548",
+              borderRadius: 4,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            datalabels: {
+              anchor: "end",
+              align: "end",
+              textAlign: "center",
+              color: "#1a1a1a",
+              font: { weight: "bold" },
+              formatter: (value) => value,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              min: 0,
+              max: 8,
+              ticks: {
+                stepSize: 2,
+              },
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+                drawBorder: false,
+              },
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+      });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
