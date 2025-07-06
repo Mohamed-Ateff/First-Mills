@@ -271,104 +271,7 @@ body[lang="en"] {
 }
 
 /* ALL charts beside each other */
-@media screen and (max-width: 768px) {
-  .container {
-    overflow: hidden !important;
-  }
-  .left-chart-container {
-    width: 100%;
-  }
-  .right-chart-container {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .right-chart .chart .progress-bar {
-    margin: 27px 10px 0px 10px !important;
-  }
-  .left-chart .chart .progress-bar {
-    margin: 27px 10px 0px 10px !important;
-  }
-  .two-charts .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: fit-content !important;
-    padding-bottom: 50px;
-    position: relative;
-    flex-direction: column;
-  }
-  .chart {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0px 0px 0px 0px !important;
-  }
 
-  .progress-bar {
-    width: 11px !important;
-    height: 400px;
-    position: relative;
-    margin: 27px 1px 0px 1px !important;
-  }
-
-  .progress {
-    width: 100%;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: height 1.5s ease-in-out;
-  }
-  .progress-value {
-    position: absolute;
-    top: -10px;
-    font-weight: 600;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #163029;
-    font-size: 5px;
-  }
-
-  .progress-date {
-    min-width: 100% !important;
-    justify-content: center;
-    display: flex;
-    align-items: flex-start;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 9px;
-    min-height: 50px;
-    line-height: 12px;
-    bottom: -14%;
-  }
-  .one-chart-container-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-width: 100% !important;
-    margin-top: 40px;
-  }
-  .box-one-chart-container-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content !important ;
-  }
-  .box-one-chart-container-data p {
-    font-weight: bold;
-    font-size: 13px;
-  }
-  .color-box {
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
-  }
-}
 
 /* @media screen and (max-width: 768px) {
   .container{
@@ -583,4 +486,193 @@ canvas {
   text-align: right;
   display: flex;
   justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+
+  .All-chart {
+  width: 100%; /* changedK */
+}
+.line-and-numbers {
+  
+  min-height: 456px; /* changedK */
+ 
+}
+
+
+
+
+  .container {
+    overflow: hidden !important;
+  }
+  .left-chart-container {
+    width: 100%;
+  }
+  .right-chart-container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .right-chart .chart .progress-bar {
+    margin: 27px 10px 0px 10px !important;
+  }
+  .left-chart .chart .progress-bar {
+    margin: 27px 10px 0px 10px !important;
+  }
+  .two-charts .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content !important;
+    padding-bottom: 50px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .chart {
+    position: relative;
+    display: flex;
+    justify-content:space-evenly; /* changedK */
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 0px 0px !important;
+  }
+
+/* added */
+
+  .long-chart .chart .progress-bar {
+    width: 20px !important; /* changedK */
+    height: 480px;
+  }
+  .long-chart .chart {
+    justify-content: center; /* changedK */
+  }
+  .long-chart .chart .progress-date {
+    font-size: 16px;
+    bottom: -18%;
+  }
+  /* .long-chart .chart .group{
+    margin: 0px 40px;
+  } */
+  .long-chart .progress {
+   width: 12px !important;  /* changedK */
+   
+  }
+  .long-chart .line-and-numbers {
+    min-height: 537px;
+  }
+.long-chart .chart .group .progress-value {
+  font-size: 13px;
+  left: 60% !important;
+}
+
+.long-chart .chart .group .progress .progress-value {
+  
+  font-size: 12px;
+  
+  left: 60% !important;
+  top: -40px;
+}
+.long-chart .group:nth-of-type(1) .progress-bar:nth-of-type(1) .progress-value {
+  top: -30px; 
+}
+
+.long-chart .group:nth-of-type(2) .progress-bar:nth-of-type(1) .progress-value {
+  top: -30px; /
+}
+.long-chart .contain-numbers-and-chart {
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: space-between; /* or space-evenly if you prefer */
+  align-items: center;
+  line-height: 15px;
+}
+.long-chart .titles-for-chart .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 300px;
+  height: 40px;
+}
+.two-charts-next-to-each-other{
+  flex-direction: column;
+  gap: 40px;
+}
+.one-chart-from-two{
+  width: 100%;
+}
+.two-charts-next-to-each-other 
+.one-chart-from-two   
+.progress-date{
+ /* color: red !important; */
+ line-height: 17px;
+}
+  /* added */
+
+  .progress-bar {
+    width: 50px !important;  /* changedK */
+    
+    height: 400px;
+    position: relative;
+    margin: 27px 1px 0px 1px !important;
+  }
+
+  .progress {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 1.5s ease-in-out;
+  }
+  .progress-value {
+    position: absolute;
+    top: -10px;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #163029;
+    font-size: 12px;
+  }
+
+  .progress-date {
+    min-width: 100% !important;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px; /* changedK */
+    min-height: 50px;
+    line-height: 12px;
+    bottom: -22%; /* changedK */
+    
+  }
+  .one-chart-container-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 100% !important;
+    margin-top: 40px;
+  }
+  .box-one-chart-container-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content !important ;
+  }
+  .box-one-chart-container-data p {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .color-box {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
 }
