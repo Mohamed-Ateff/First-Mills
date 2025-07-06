@@ -110,13 +110,16 @@
 }
 .activities_card {
   width: calc(33.333% - 1px);
-  padding: 35px 20px;
+  padding: 35px 0px;
   box-sizing: border-box;
   text-align: center;
 }
 .activities_card h3 {
   font-size: 20px;
   font-weight: lighter;
+}
+.activities_card img{
+  width: 95%;
 }
 
 .cards-wrapper {
@@ -181,13 +184,13 @@
 .card .title {
   color: #4e6a63;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 0px 0px 0px;
 }
 
 .card .subtitle {
   color: #777777;
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .table-container {
@@ -309,9 +312,12 @@ td:first-child {
 
 .table-container3 td:first-child {
   color: #4e6a63;
+  width: 10%;
 }
 .table-container3 td:nth-child(2) {
+  color: #21333B;
   font-size: 20px;
+  font-weight: 400;
   text-align: start;
 }
 
@@ -412,6 +418,9 @@ td:first-child {
     width: 100%;
     margin-bottom: 20px;
   }
+  .activities_card img{
+  width: unset;
+}
 }
 
 @media (max-width: 768px) {
