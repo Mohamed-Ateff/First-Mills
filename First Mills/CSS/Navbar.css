@@ -129,9 +129,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto; /* cover the entire screen */
+  height: auto; 
   overflow-y: auto;
-  z-index: 999; /* ensure on top of side menu */
+  z-index: 999; 
 }
 
 .mobile-menu .section {
