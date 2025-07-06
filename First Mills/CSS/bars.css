@@ -50,6 +50,11 @@ body[lang="en"] {
   padding: 10px 35px 50px 35px !important;
 }
 
+#All-chart-one-all-width{
+  width: 100%;
+
+}
+
 .contain-numbers-and-chart {
   display: flex;
   justify-content: center;

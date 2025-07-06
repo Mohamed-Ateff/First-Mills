@@ -74,14 +74,6 @@ canvas {
   height: auto !important;
 }
 
-.section-title {
-  font-size: 22px;
-  font-weight: bold;
-  border-bottom: 4px solid #ffb548;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 .table-caption {
   display: flex;
   align-items: center;
@@ -107,7 +99,6 @@ canvas {
   font-weight: 300;
 }
 
-
 @media (max-width: 1024px) {
   .text-desc {
     font-size: 22px;
@@ -124,7 +115,8 @@ canvas {
     text-align: center;
   }
 
-  th, td {
+  th,
+  td {
     font-size: 18px;
     padding: 10px 15px;
   }
@@ -173,7 +165,8 @@ canvas {
     font-size: 16px;
   }
 
-  th, td {
+  th,
+  td {
     font-size: 16px;
     padding: 8px;
   }
