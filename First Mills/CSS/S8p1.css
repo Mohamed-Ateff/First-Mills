@@ -23,10 +23,6 @@
   margin-bottom: 10px;
 }
 
-.sub-item {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
 .footer {
   margin-top: 100px;
   display: flex;
@@ -50,36 +46,34 @@
   transition: 0.3s ease;
 }
 
-
-
 .sub-item {
   padding: 3px 0;
 }
 label {
   margin-top: -5px;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 22px;
   color: #163029;
 }
 .section-header-div {
   padding: 5px 0;
   margin-bottom: 10px;
 }
-.section-header-div input{
-   width: 40px;
-  height: 40px;
-   border-radius: 7px !important;
-   border: 2px solid #4e6a63 !important;
+.section-header-div input {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px !important;
+  border: 2px solid #4e6a63 !important;
 }
 .custom-checkbox {
   position: relative;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  min-height: 30px;
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  min-height: 25px;
   margin-left: 5px;
-  border: 1px solid #5E6863;
+  border: 1px solid #5e6863;
   cursor: pointer;
   outline: none !important;
 }
@@ -89,7 +83,7 @@ input[type="checkbox"].custom-checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 3px;
-  background-color: #F6F5F4;
+  background-color: #f6f5f4;
 }
 
 input[type="checkbox"].custom-checkbox:checked {
@@ -130,41 +124,44 @@ input[type="checkbox"].custom-checkbox:checked {
   gap: 5px;
   display: flex;
   align-items: center;
-   color: #5E6863;
+  color: #5e6863;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
-.button-div{
+
+.button-div {
   margin-top: 70px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: flex-start !important;
   flex-wrap: wrap;
-  gap:20px
+  gap: 20px;
 }
-.button-div button{
-   height: 80px;
-   width: 270px;
-   display: flex;
-   gap:10px;
-   padding: 20px 20px;
-   justify-content: center;
+.button-div button {
+ height: 75px;
+    width: 250px;
+  display: flex;
+  gap: 20px;
+  padding: 20px 20px;
+  justify-content: center;
 }
 
 #download-selected {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   color: white;
   background-color: transparent;
- background-color: #21333B;
+  background-color: #21333b;
   border-radius: 20px;
 }
 
 #download-all {
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 18px;
   color: white;
-  
+
   border-radius: 20px;
-   background-color: #FFB548;
+  background-color: #ffb548;
 }
 
 /* Disabled style */
@@ -185,8 +182,6 @@ input[type="checkbox"].custom-checkbox:checked {
   .footer {
     display: grid;
   }
-  
-  
 }
 
 input[type="checkbox"] {
@@ -204,4 +199,3 @@ body[lang="en"] {
     display: none;
   }
 }
-

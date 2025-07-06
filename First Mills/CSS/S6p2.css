@@ -93,17 +93,17 @@ tbody tr:nth-child(odd) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   background-color: #FCB44A;
   border: none;
   border-radius: 20px;
-  padding: 8px 40px;
+  padding: 5px 20px;
   margin: 40px 0px;
   cursor: pointer;
 }
 .btn button p{
   color: #163029;
-  font-size: 16px;
+  font-size: 17px;
 }
 .btn button img{
   width: 12%;
