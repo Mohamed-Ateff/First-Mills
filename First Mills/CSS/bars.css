@@ -50,9 +50,8 @@ body[lang="en"] {
   padding: 10px 35px 50px 35px !important;
 }
 
-#All-chart-one-all-width{
+#All-chart-one-all-width {
   width: 100%;
-
 }
 
 .contain-numbers-and-chart {
@@ -129,7 +128,7 @@ body[lang="en"] {
 }
 
 .progress {
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 11111 !important;
   width: 100%;
   height: 0;
@@ -147,6 +146,14 @@ body[lang="en"] {
   color: #31544b;
   font-size: 22px;
 }
+.progress-value-ouside {
+  position: absolute;
+  top: -40px;
+  font-weight: 200;
+  color: #808080;
+  font-size: 15px;
+}
+
 .progress-date {
   justify-content: center;
   display: flex;
@@ -475,7 +482,10 @@ canvas {
   /* background-color: blue; */
   align-items: center !important;
 }
-
+#full-wdith-with-padding-top{
+  padding-top: 50px;
+  width: 95%;
+}
 .chart .group {
   margin: 0px 25px;
   display: flex;

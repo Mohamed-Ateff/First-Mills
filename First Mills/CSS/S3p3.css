@@ -7,6 +7,7 @@
   margin: 20px auto;
 }
 
+
 .table-container {
   overflow-x: auto;
   margin: 30px auto 100px auto;
@@ -51,10 +52,10 @@ tbody tr:nth-child(odd) {
 .chart-title {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 45px;
+  margin-top: 30px;
   color: #31544b;
 }
-
 .charts-grid {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +65,6 @@ tbody tr:nth-child(odd) {
 .chart-container {
   background: white;
   padding: 20px;
-  border-radius: 10px;
   flex: 1 1 45%;
   min-width: 300px;
 }
