@@ -108,27 +108,29 @@
 
 @media (max-width: 568px) {
   .image-hero {
-    width: 100%;
+    width: 90%;
     height: 250px !important;
     margin: auto;
     display: flex;
-    justify-content: center;
+     transform:translatex(20px) ; 
+    justify-content: flex-start;
     align-items: center;
   }
   .hero-images {
-    height: 400px;
+    height: 350px;
     position: relative;
   }
 
   .title-section {
-    height: 175px;
+    height: 135px;
     width: 100%;
     position: absolute;
     bottom: 0%;
+    
   }
 
   .green-title {
-    width: 80%;
+    width: 60%;
     height: 200px !important;
     display: flex;
     justify-content: center;
@@ -138,10 +140,19 @@
     position: relative;
     margin: 0 auto;
     z-index: 10000 !important;
+      transform:translatex(20px) ; 
+    
+  }
+  .green-title h1{
+   
+    font-size: 25px;
   }
 
   .green-title::after {
-    border-radius: 0px;
+    border-radius: 5px;
+    width: 135%;
+    transform: translateY(-50%);
+  right: -17%;
   }
   .white-title .hero-icon {
     display: none;
@@ -150,21 +161,26 @@
     display: none;
   }
   .white-title {
-    margin-right: 10%;
+    margin-right: 20%;
     margin-top: 20px;
-    width: 80%;
-    height: 53px;
-    background-color: white;
+    width: 60%;
+    height: 38px;
+    transform:translatex(20px) ; 
     border-top-left-radius: 60px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 60px;
-    display: flex;
-    justify-content: flex-start;
+   
+    justify-content: center;
     align-items: center;
-    padding-right: 58px;
-    position: relative;
-    top: 10px;
-    z-index: 100000000 !important;
+    padding-right: 0px;
+   
+ 
+   
+   
   }
+  .white-title p {
+
+  font-size: 12px;
+}
 }

@@ -71,3 +71,52 @@
 .hexagon.active .icon {
   color: white;
 }
+
+@media (max-width: 1025px){
+   .side-menu {
+  top: 27%;
+  left: -2%;
+}
+
+}
+
+@media (max-width: 768px){
+     .side-menu {
+  top: 26.5%;
+  left: -3%;
+}
+}
+
+@media (max-width: 568px){
+
+ .side-menu {
+  top: 28.5% !important;
+  left: -3%;
+   gap: 5px;
+}
+  .line-one {
+ 
+  height: 40px;
+  
+}
+.line-two {
+ 
+  height: 22.5px;
+
+}
+.hexagon {
+  width: 32px;
+  height: 36px;
+
+}
+.hexagon img {
+  height: 40%;
+}
+}
+
+@media (max-width: 480px){
+   /* .side-menu {
+  top: 30.5% !important;
+  left: -3%;
+} */
+}
