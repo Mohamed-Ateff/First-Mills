@@ -21,6 +21,7 @@
   position: relative;
   z-index: 2;
   border-radius: 10px;
+ 
 }
 
 .main-menu a {
@@ -124,6 +125,13 @@
   flex-direction: column;
   background-color: #34594d;
   color: white;
+  position: absolute; /* important */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* cover the entire screen */
+  overflow-y: auto;
+  z-index: 999; /* ensure on top of side menu */
 }
 
 .mobile-menu .section {
@@ -203,10 +211,15 @@
 
 }
 
-@media (min-width: 568px) {
+@media (max-width: 568px) {
   .mobile-submenu .page {
-    background-color: red;
+    /* background-color: red; */
     flex-direction: column !important;
+  }
+    .burger {
+   top: -65px;
+    left: 50px;
+  
   }
 }
 @media (min-width: 480px) {
