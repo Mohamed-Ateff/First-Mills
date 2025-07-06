@@ -108,11 +108,11 @@
 
 @media (max-width: 568px) {
   .image-hero {
-    width: 90%;
+    width: 95%;
     height: 250px !important;
     margin: auto;
     display: flex;
-     transform:translatex(20px) ; 
+     /* transform:translatex(20px) ;  */
     justify-content: flex-start;
     align-items: center;
   }
@@ -140,7 +140,7 @@
     position: relative;
     margin: 0 auto;
     z-index: 10000 !important;
-      transform:translatex(20px) ; 
+      /* transform:translatex(20px) ;  */
     
   }
   .green-title h1{
@@ -165,7 +165,7 @@
     margin-top: 20px;
     width: 60%;
     height: 38px;
-    transform:translatex(20px) ; 
+    /* transform:translatex(20px) ;  */
     border-top-left-radius: 60px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;

@@ -84,33 +84,46 @@
      .side-menu {
   top: 26.5%;
   left: -3%;
+  
 }
 }
 
 @media (max-width: 568px){
 
  .side-menu {
-  top: 28.5% !important;
-  left:-1%;
-   gap: 5px;
+  top: -11% !important;
+  left:15%;
+   gap: 2px;
+   flex-direction: row-reverse;
 }
   .line-one {
  
-  height: 40px;
   
+  display: none;
 }
 .line-two {
  
-  height: 22.5px;
-
+ 
+display: none;
 }
 .hexagon {
-  width: 32px;
-  height: 36px;
+  width: 28px;
+  height: 32px;
 
 }
 .hexagon img {
-  height: 40%;
+  height: 30%;
+}
+.circle {
+  border-radius: 50%;
+  border: 3px solid #b2c0c7;
+}
+.border-for-circle {
+  margin: 4px;
+  width:33px;
+  height:33px;
+ 
+
 }
 }
 
