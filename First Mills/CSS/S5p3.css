@@ -5,7 +5,6 @@
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 4px; 
-  table-layout: fixed;
   min-width: 800px;
 }
 
@@ -25,7 +24,7 @@
 .custom-table td {
   background-color: #fff;
   color: #3A4944;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 25px 15px 20px;
   font-size: 18px;
   vertical-align:baseline;
   
@@ -99,12 +98,21 @@ font-size: 26px;
 font-weight: 700;
 }
 
+.custom-table-container th, .custom-table-container td{
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* for S5p13 */
 
 .custom-table tbody tr.highlight td {
   background-color: #FFC46C;
   /* font-weight: bold; */
   color: #31544B;
+}
+
+.table-container6 th, .table-container6 td {
+    font-size: 15px;
 }
 
 @media  (max-width: 768px) {

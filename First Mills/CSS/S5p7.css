@@ -87,12 +87,12 @@ tr:nth-child(even) td {
   background-color: #fcb44a;
   color: #31544b;
   text-align: center;
-  font-weight: bold;
 }
 .attendance-row td {
   vertical-align: middle;
   text-align: center;
   font-size: 22px;
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
