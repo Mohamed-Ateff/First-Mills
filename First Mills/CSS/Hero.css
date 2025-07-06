@@ -128,7 +128,7 @@
   }
 
   .green-title {
-    width: 80%;
+    width: 60%;
     height: 200px !important;
     display: flex;
     justify-content: center;
@@ -139,9 +139,13 @@
     margin: 0 auto;
     z-index: 10000 !important;
   }
+  .green-title h1{
+   
+    font-size: 25px;
+  }
 
   .green-title::after {
-    border-radius: 0px;
+    border-radius: 5px;
   }
   .white-title .hero-icon {
     display: none;
@@ -150,10 +154,10 @@
     display: none;
   }
   .white-title {
-    margin-right: 10%;
+    margin-right: 20%;
     margin-top: 20px;
-    width: 80%;
-    height: 53px;
+    width: 60%;
+    height: 38px;
     background-color: white;
     border-top-left-radius: 60px;
     border-bottom-left-radius: 0px;
@@ -162,9 +166,15 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-right: 58px;
+    padding-right: 20px;
     position: relative;
     top: 10px;
     z-index: 100000000 !important;
+   
   }
+  .white-title p {
+  color: #30444e;
+  font-weight: 600;
+  font-size: 12px;
+}
 }
