@@ -563,6 +563,7 @@ canvas {
 .long-chart .chart .group .progress-value {
   font-size: 13px;
   left: 60% !important;
+  transform: translateX(-55%) rotate(-90deg);
 }
 
 .long-chart .chart .group .progress .progress-value {
@@ -572,20 +573,14 @@ canvas {
   left: 60% !important;
   top: -40px;
 }
-.long-chart .group:nth-of-type(1) .progress-bar:nth-of-type(1) .progress-value {
-  top: -30px; 
-}
 
-.long-chart .group:nth-of-type(2) .progress-bar:nth-of-type(1) .progress-value {
-  top: -30px; /
-}
 .long-chart .contain-numbers-and-chart {
   width: 100%; 
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   padding-top: 100px;
-  justify-content: space-between; /* or space-evenly if you prefer */
+  justify-content: space-between; 
   align-items: center;
   line-height: 15px;
 }
@@ -609,6 +604,17 @@ canvas {
  /* color: red !important; */
  line-height: 17px;
 }
+.outer-title-chart {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
   /* added */
 
   .progress-bar {
