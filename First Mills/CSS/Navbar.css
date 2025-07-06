@@ -125,13 +125,13 @@
   flex-direction: column;
   background-color: #34594d;
   color: white;
-  position: absolute; /* important */
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
   height: auto; 
   overflow-y: auto;
-  z-index: 999; 
+ z-index: 99999; 
 }
 
 .mobile-menu .section {
