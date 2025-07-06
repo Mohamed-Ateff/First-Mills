@@ -32,6 +32,14 @@
   font-weight: 200;
   font-size: 15px;
 }
+.outer-title-chart-p-center {
+  padding: 0px;
+  color: #5e6863;
+  text-align: center;
+  font-weight: 200;
+  font-size: 15px;
+  margin-top: -8px;
+}
 
 body[lang="en"] {
   .title-bar-chart {
@@ -438,7 +446,7 @@ body[lang="en"] {
 /*  right bar  */
 
 .chart-container {
-  background-color: #fbfafa;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,7 +490,7 @@ canvas {
   /* background-color: blue; */
   align-items: center !important;
 }
-#full-wdith-with-padding-top{
+#full-wdith-with-padding-top {
   padding-top: 50px;
   width: 95%;
 }
@@ -532,7 +540,6 @@ canvas {
   width: 15%;
   height: 100%;
   margin-top: -100px;
-  /* background-color: darkgreen; */
 }
 .titles-for-chart .title-box {
   display: flex;
@@ -540,7 +547,6 @@ canvas {
   justify-content: flex-start;
   width: 100%;
   height: 30px;
-  /* background-color: darkkhaki; */
 }
 .titles-for-chart .title-color {
   width: 18px;
@@ -551,4 +557,30 @@ canvas {
   color: #4e6a63;
   font-weight: 200;
   font-size: 14px;
+}
+
+.two-charts-next-to-each-other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px 10px 40px;
+}
+
+.one-chart-from-two {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 48%;
+}
+
+.one-chart-from-two > .contain-numbers-and-chart > .chart {
+  width: 96%;
+}
+
+.title-for-chart-for-one-two-beside-with-value-outside {
+  color: #4e6a63;
+  font-size: 20px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
 }
