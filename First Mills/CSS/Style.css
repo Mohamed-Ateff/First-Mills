@@ -12,7 +12,13 @@ body {
   font-family: "MyFont";
   word-spacing: -1px !important;
   background-color: #f6f5f4;
+  direction: rtl;
 }
+
+body[lang="en"] {
+  direction: ltr;
+}
+
 * {
   box-sizing: border-box;
   font-family: "MyFont";

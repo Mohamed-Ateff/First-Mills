@@ -12,6 +12,8 @@
 }
 
 .circle {
+  z-index: 999;
+  background-color: red;
   border-radius: 50%;
   border: 3px solid #b2c0c7;
 }
