@@ -79,8 +79,8 @@
 /* hexagon section */
 
 .honeycomb {
+  height: 600px;
   position: relative;
-  margin-bottom: -250px;
 }
 
 /* base row style */
@@ -89,7 +89,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* green row (centered) */
@@ -167,14 +167,15 @@
 
 @media (max-width: 768px) {
   .text-desc p {
-  margin-top: 80px;
-}
+    margin-top: 80px;
+  }
   .honeycomb {
+    height: fit-content !important ;
     margin-bottom: 0px;
   }
 
-   .final-cards {
-    grid-template-columns: repeat(2, 1fr); 
+  .final-cards {
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
@@ -190,7 +191,7 @@
   }
 
   .final-card.wide {
-    grid-column: span 2; 
+    grid-column: span 2;
   }
 
   .final-card p {
@@ -231,11 +232,11 @@
 }
 
 @media (max-width: 480px) {
-    .text-desc p {
-  margin-top: 0px;
-}
-   .final-cards {
-    grid-template-columns: 1fr; 
+  .text-desc p {
+    margin-top: 0px;
+  }
+  .final-cards {
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
@@ -247,7 +248,7 @@
   }
 
   .final-card.wide {
-    grid-column: span 1; 
+    grid-column: span 1;
   }
 
   .final-card p {

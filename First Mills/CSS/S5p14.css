@@ -255,7 +255,7 @@ td:first-child {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 30px auto;
+  margin: 0px auto;
 }
 
 .label {
