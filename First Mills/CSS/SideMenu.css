@@ -11,9 +11,15 @@
   z-index: 99;
 }
 
+body[lang="en"] {
+  .side-menu {
+    top: 28%;
+    left: 96.5%;
+  }
+}
+
 .circle {
   z-index: 999;
-  background-color: red;
   border-radius: 50%;
   border: 3px solid #b2c0c7;
 }
@@ -74,63 +80,53 @@
   color: white;
 }
 
-@media (max-width: 1025px){
-   .side-menu {
-  top: 27%;
-  left: -2%;
+@media (max-width: 1025px) {
+  .side-menu {
+    top: 27%;
+    left: -2%;
+  }
 }
 
+@media (max-width: 768px) {
+  .side-menu {
+    top: 26.5%;
+    left: -3%;
+  }
 }
 
-@media (max-width: 768px){
-     .side-menu {
-  top: 26.5%;
-  left: -3%;
-  
-}
-}
-
-@media (max-width: 568px){
-
- .side-menu {
-  top: -11% !important;
-  left:15%;
-   gap: 2px;
-   flex-direction: row-reverse;
-}
+@media (max-width: 568px) {
+  .side-menu {
+    top: -11% !important;
+    left: 15%;
+    gap: 2px;
+    flex-direction: row-reverse;
+  }
   .line-one {
- 
-  
-  display: none;
-}
-.line-two {
- 
- 
-display: none;
-}
-.hexagon {
-  width: 28px;
-  height: 32px;
-
-}
-.hexagon img {
-  height: 40%;
-}
-.circle {
-  border-radius: 50%;
-  border: 3px solid #b2c0c7;
-}
-.border-for-circle {
-  margin: 4px;
-  width:33px;
-  height:33px;
- 
-
-}
+    display: none;
+  }
+  .line-two {
+    display: none;
+  }
+  .hexagon {
+    width: 28px;
+    height: 32px;
+  }
+  .hexagon img {
+    height: 40%;
+  }
+  .circle {
+    border-radius: 50%;
+    border: 3px solid #b2c0c7;
+  }
+  .border-for-circle {
+    margin: 4px;
+    width: 33px;
+    height: 33px;
+  }
 }
 
-@media (max-width: 480px){
-   /* .side-menu {
+@media (max-width: 480px) {
+  /* .side-menu {
   top: 30.5% !important;
   left: -3%;
 } */
