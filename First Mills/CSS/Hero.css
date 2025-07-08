@@ -1,6 +1,32 @@
 .hero {
 }
 
+
+.image-hero {
+  animation: heroVibe 3s ease-in-out forwards;
+  /* transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+  filter: brightness(1) contrast(1);
+}
+
+@keyframes heroVibe {
+  0%, 100% {
+    transform: perspective(1000px) rotateY(0deg) scale(1);
+    filter: brightness(1) contrast(1);
+  }
+  25% {
+    transform: perspective(1000px) rotateY(3.5deg) scale(1.0);
+    filter: brightness(1.05) contrast(1.05);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(0deg) scale(1.02) translateY(-15px);
+  }
+  75% {
+    transform: perspective(1000px) rotateY(-3.5deg) scale(1.0);
+    filter: brightness(1.05) contrast(1.05);
+  }
+}
+
+
 .image-hero {
   width: 90%;
   height: 650px;
@@ -8,7 +34,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
+
+
 .hero-images {
   position: relative;
 }
