@@ -14,28 +14,14 @@
 body[lang="en"] {
   .side-menu {
     top: 28%;
-    left: 96.5%;
+    left: 96%;
   }
 }
 
 .circle {
   z-index: 999;
   border-radius: 50%;
-  border: 3px solid #b2c0c7;
-}
-.border-for-circle {
-  margin: 4px;
-  width: 43px;
-  height: 43px;
-  border-radius: 50%;
-  background-color: #21333b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  box-sizing: border-box;
-  font-weight: 500;
+  border: 4px solid #b2c0c7;
 }
 
 .line-one {
@@ -79,6 +65,23 @@ body[lang="en"] {
 .hexagon.active .icon {
   color: white;
 }
+
+
+.english-button{
+  background-color: #21333b;
+  border-radius: 500px;
+  color: #f1f5f8;
+  outline: auto;
+  border: 0px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
 
 @media (max-width: 1025px) {
   .side-menu {
