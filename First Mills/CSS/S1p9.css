@@ -48,3 +48,11 @@
     height: 30px;
   }
 }
+
+
+body[lang="ar"] {
+  background-color: red;
+}
+body[lang="en"] {
+  background-color: blue;
+}
