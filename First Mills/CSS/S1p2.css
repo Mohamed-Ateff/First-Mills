@@ -127,7 +127,7 @@
   .vision img,
   .mission img {
     margin-right: 0;
-    margin-top: 20px ;
+    margin-top: 20px;
   }
 
   .vision,
@@ -174,4 +174,15 @@
   .mission p {
     font-size: 14px;
   }
+}
+
+body[lang="en"] {
+  .vision,
+  .mission {
+ 
+    text-align: left;
+   
+  }
+
+
 }
