@@ -117,7 +117,7 @@
 .custom-table th:first-child,
 .custom-table td:first-child {
   width: 18%;
-  text-align: right;
+  text-align: start;
   color: #3a4944;
   font-size: 20px;
   font-weight: 500;
@@ -134,15 +134,14 @@
 }
 
 @media (max-width: 992px) {
- 
 }
 
 @media (max-width: 768px) {
   .bg-float {
-           top: 100px;
-        right: 30%;
-        width: 287px;
-        height: 262px;
+    top: 100px;
+    right: 30%;
+    width: 287px;
+    height: 262px;
   }
   .empty {
     display: none;
@@ -168,9 +167,9 @@
     z-index: 1;
     padding-top: 20px;
   }
-    .bg-float {
-      /* display: none; */
-    }
+  .bg-float {
+    /* display: none; */
+  }
   .icon-div h3 {
     font-size: 30px;
   }
@@ -182,6 +181,27 @@
     width: 40px; /* 3hsan el div maythzsh */
   }
   .card-hz {
-    padding:20px 30px 20px 50px;
+    padding: 20px 30px 20px 50px;
   }
+}
+
+body[lang="en"] {
+  .bg-float {
+    left: 40px;
+  }
+
+  .icon-div {
+    padding-left: 150px;
+  }
+
+  .icon-div-text {
+    padding-left: 20px;
+  }
+   .card-hz {
+    padding: 20px 70px;
+  }
+  .card-hz:first-of-type .icon-div {
+    padding-left: 300px;
+  }
+ 
 }
