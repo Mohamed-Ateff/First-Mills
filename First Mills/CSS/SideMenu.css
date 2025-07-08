@@ -22,6 +22,20 @@ body[lang="en"] {
   z-index: 999;
   border-radius: 50%;
   border: 4px solid #b2c0c7;
+  display: inline-block;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .line-one {
@@ -29,12 +43,65 @@ body[lang="en"] {
   height: 100px;
   background-color: #abb7bd;
   border-radius: 2px;
+  transform-origin: top; /* So it grows from the top */
+  transform: scaleY(0);
+  animation: drawLine 1s ease-out forwards;
 }
+
 .line-two {
   width: 4px;
   height: 45px;
   background-color: #abb7bd;
   border-radius: 2px;
+  transform-origin: top; /* So it grows from the top */
+  transform: scaleY(0);
+  animation: drawLine 1s ease-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes drawLine {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* Pop-in animation */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hexagon {
+  opacity: 0;
+  transform: scale(0.5);
+  animation: popIn 0.6s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.hexagon1 {
+  animation-delay: 1.1s;
+}
+
+.hexagon2 {
+  animation-delay: 1.2s;
+}
+
+.hexagon3 {
+  animation-delay: 1.3s;
+}
+
+.hexagon4 {
+  animation-delay: 1.4s;
+}
+
+.hexagon5 {
+  animation-delay: 1.5s;
 }
 
 .hexagon {
@@ -54,7 +121,10 @@ body[lang="en"] {
 .hexagon1 {
   background-image: url(../Images/Polygon.png);
 }
-.hexagon2 {
+.hexagon2,
+.hexagon3,
+.hexagon4,
+.hexagon5 {
   background-image: url(../Images/Polygon-two.png);
 }
 
@@ -66,8 +136,7 @@ body[lang="en"] {
   color: white;
 }
 
-
-.english-button{
+.english-button {
   background-color: #21333b;
   border-radius: 500px;
   color: #f1f5f8;
@@ -79,9 +148,6 @@ body[lang="en"] {
   font-size: 16px;
   font-weight: 500;
 }
-
-
-
 
 @media (max-width: 1025px) {
   .side-menu {
