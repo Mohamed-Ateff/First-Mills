@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       body.setAttribute("dir", "ltr");
     } else {
       body.classList.remove("english");
-      languageToggle.textContent = "English";
+      languageToggle.textContent = "En";
       body.setAttribute("lang", "ar");
       body.setAttribute("dir", "rtl");
     }
