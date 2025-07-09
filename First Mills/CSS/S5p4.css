@@ -353,6 +353,72 @@ background-color: #455954;
   border: 6px solid transparent;
   border-top-color: #3A73A8;
 }
+@media (max-width: 1600px) {
+.general-assembly::after {
+
+        width: 171px;
+        /* horizontal line length */
+
+    }
+    .board::after {
+        width: 173px;
+        /* horizontal line length */
+    }
+    .blue-line {
+        width: 74.4%;
+        right: 104px;
+    }
+
+}
+@media (max-width: 1445px) {
+ .general-assembly,
+    .board,
+    .chief-executive-officer {
+        width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+.general-assembly::after {
+
+        width: 200px;
+        /* horizontal line length */
+
+    }
+     .audit-committee,
+    .audit-dept,
+    .nominations-committee,
+    .executive-committee {
+        width: 240px;
+    }
+     .finance-head,
+    .operations-head,
+    .sales-head,
+    .marketing-head,
+    .hr-head {
+        width: 160px;
+    }
+      .finance-head { left: 3.2%; }
+.operations-head { left: 22.5%; }
+.sales-head { left: 43.5%; }
+.marketing-head { left: 63.5%; }
+.hr-head { left: 82.5%; }
+      .nominations-committee {
+        left: calc(44% - 400px);
+        /* move left */
+    }
+
+    .executive-committee {
+        left: calc(44% - 400px);
+    }
+    .blue-line {
+        width: 75%;
+        right: 100px;
+    }
+    .board::after {
+        width: 194px;
+        /* horizontal line length */
+    }
+}
 
 @media (max-width: 1025px) {
 
@@ -431,8 +497,8 @@ background-color: #455954;
 }
 
     .blue-line {
-        width: 74.6%;
-        right: 73px;
+        width: 74%;
+        right: 57.5px;
     }
     
 }
@@ -493,8 +559,8 @@ background-color: #455954;
 .hr-head { left: 86.5%; }
 
     .blue-line {
-        width: 75.9%;
-        right: 54px;
+        width: 76.3%;
+        right: 52px;
     }
 }
 @media (max-width: 480px) {
@@ -567,4 +633,27 @@ background-color: #455954;
         width: 76%;
         right: 37px;
     }
+}
+@media (max-width: 425px) {
+.blue-line {
+        width: 76%;
+        right: 31px;
+    }
+ .audit-committee {
+        left: calc(0% + 250px);
+    }
+    /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
+    .audit-dept {
+        left: calc(0% + 250px);
+    }
+    .general-assembly::after {
+        width: 63px;
+        /* horizontal line length */
+    }
+       .board::after {
+
+  width: 55px;  /* horizontal line length */
+ 
+  
+}
 }
