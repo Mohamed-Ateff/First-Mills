@@ -47,6 +47,9 @@
   height: 320px;
   z-index: 1;
 }
+.bg-float-en{
+  display: none;
+}
 
 .number-div {
   display: flex;
@@ -167,9 +170,7 @@
     z-index: 1;
     padding-top: 20px;
   }
-  .bg-float {
-    /* display: none; */
-  }
+ 
   .icon-div h3 {
     font-size: 30px;
   }
@@ -188,6 +189,12 @@
 body[lang="en"] {
   .bg-float {
     left: 40px;
+  }
+  .bg-float-ar{
+    display: none;
+  }
+  .bg-float-en{
+    display: block;
   }
 
   .icon-div {

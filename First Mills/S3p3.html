@@ -187,7 +187,7 @@
               <img class="arrow" src="Images/arrow-footer.png" alt="" />
               <p data-en="Strategic Report">التقرير الاستراتيجي</p>
             </div>
-            <div class="green-title" data-en="Market and Sector Overview">
+            <div class="green-title">
               <h1 data-en="Market and Sector Overview">
                 نظرة عامة على السوق والقطاع
               </h1>
@@ -412,6 +412,30 @@
           <canvas id="populationChart"></canvas>
         </div>
       </div>
+
+      <ul id="monthsLabels" style="display: none">
+        <li data-en="January">يناير</li>
+        <li data-en="February">فبراير</li>
+        <li data-en="March">مارس</li>
+        <li data-en="April">أبريل</li>
+        <li data-en="May">مايو</li>
+        <li data-en="June">يونيو</li>
+        <li data-en="July">يوليو</li>
+        <li data-en="August">أغسطس</li>
+        <li data-en="September">سبتمبر</li>
+        <li data-en="October">أكتوبر</li>
+        <li data-en="November">نوفمبر</li>
+        <li data-en="December">ديسمبر</li>
+      </ul>
+
+      <ul id="displayMonths" style="display: none">
+        <li data-en="January">يناير</li>
+        <li data-en="March">مارس</li>
+        <li data-en="May">مايو</li>
+        <li data-en="July">يوليو</li>
+        <li data-en="September">سبتمبر</li>
+        <li data-en="December">ديسمبر</li>
+      </ul>
 
       <div class="section-title border-with-title-under-it">
         <h2 data-en="Global Wheat Market Overview ">
@@ -723,7 +747,7 @@
       </div>
 
       <div class="section-title border-with-title-under-it">
-        <h2 data-en="Saudi Milling Companies ">شركات المطاحن السعودية</h2>
+        <h2 data-en="Saudi Milling Companies">شركات المطاحن السعودية</h2>
         <div class="border-bottom"></div>
       </div>
 
@@ -903,24 +927,20 @@
     <script src="Javascript/bars.js"></script>
 
     <script>
+      function getMonthsFromHTML(id) {
+        return Array.from(document.querySelectorAll(`#${id} li`)).map((el) =>
+          el.textContent.trim()
+        );
+      }
+
       function createMonthlyInflationChart() {
+        const months = getMonthsFromHTML("monthsLabels");
+        const displayMonths = getMonthsFromHTML("displayMonths");
+
         new Chart(document.getElementById("monthlyInflationChart"), {
           type: "line",
           data: {
-            labels: [
-              "يناير",
-              "فبراير",
-              "مارس",
-              "أبريل",
-              "مايو",
-              "يونيو",
-              "يوليو",
-              "أغسطس",
-              "سبتمبر",
-              "أكتوبر",
-              "نوفمبر",
-              "ديسمبر",
-            ],
+            labels: months,
             datasets: [
               {
                 label: "٪",
@@ -946,17 +966,8 @@
                 grid: { display: false },
                 ticks: {
                   callback: function (val) {
-                    const displayMonths = [
-                      "يناير",
-                      "مارس",
-                      "مايو",
-                      "يوليو",
-                      "سبتمبر",
-                      "ديسمبر",
-                    ];
-                    return displayMonths.includes(this.getLabelForValue(val))
-                      ? this.getLabelForValue(val)
-                      : "";
+                    const label = this.getLabelForValue(val);
+                    return displayMonths.includes(label) ? label : "";
                   },
                 },
               },

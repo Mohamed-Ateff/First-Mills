@@ -209,6 +209,12 @@
     justify-content: space-around;
     gap: 3px;
   }
+
+    body[lang="en"] {
+    .four-cards div:nth-child(3), .four-cards div:nth-child(5) {
+        padding: 10px 40px 10px 50px;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -258,4 +264,6 @@ body[lang="en"] {
   
     left: 20px;
   }
+
+ 
 }

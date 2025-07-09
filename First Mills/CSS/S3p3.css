@@ -7,7 +7,6 @@
   margin: 20px auto;
 }
 
-
 .table-container {
   overflow-x: auto;
   margin: 30px auto 20px auto;
@@ -99,7 +98,7 @@ canvas {
   font-weight: 300;
   text-align: center;
   margin: 0;
-  color: #5E6863;
+  color: #5e6863;
 }
 
 @media (max-width: 1024px) {
@@ -177,5 +176,19 @@ canvas {
   .table-caption h3 {
     font-size: 16px;
     line-height: 1.4;
+  }
+}
+
+body[lang="en"] {
+  .contain-numbers-and-chart {
+    flex-direction: row-reverse;
+  }
+
+  .line-and-numbers .number {
+    flex-direction: row-reverse;
+  }
+
+  .chart {
+    flex-direction: row-reverse;
   }
 }
