@@ -95,3 +95,11 @@
   }
 }
 
+body[lang="en"] {
+.card-content {
+  margin-right: 0%;
+  margin-left: 8%;
+}
+
+}
+
