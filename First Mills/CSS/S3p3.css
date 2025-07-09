@@ -97,6 +97,9 @@ canvas {
 .table-caption p {
   font-size: 16px;
   font-weight: 300;
+  text-align: center;
+  margin: 0;
+  color: #5E6863;
 }
 
 @media (max-width: 1024px) {
