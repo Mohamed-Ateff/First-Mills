@@ -244,3 +244,27 @@
     margin: 30px 0;
   }
 }
+
+body[lang="en"] {
+  .orange-number {
+    padding-right: 20px;
+  }
+  .intersect {
+    left: 0%;
+
+    transform: rotateY(180deg);
+  }
+
+  .title-with-arrow {
+    padding-left: 30px;
+  }
+  .logo-div {
+    left: 0px;
+  }
+  .logo-div::before {
+    top: -27.8675px;
+  }
+  .logo-div::after {
+    bottom: -27.2px;
+  }
+}
