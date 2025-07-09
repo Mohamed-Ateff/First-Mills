@@ -69,12 +69,19 @@
     max-width: 100%;
     min-width: 100%;
   }
-  .padding-top{
+  .padding-top {
     padding-top: 70px;
   }
 }
 @media (max-width: 480px) {
-  .padding-top{
+  .padding-top {
     padding-top: 0px;
+  }
+}
+
+body[lang="en"] {
+  .div-for-image-and-text h3 {
+    margin-left: 12px;
+    color: #31544b;
   }
 }

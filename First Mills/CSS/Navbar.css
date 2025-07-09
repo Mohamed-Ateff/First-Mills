@@ -195,6 +195,17 @@ body[lang="en"] {
 .mobile-submenu.active {
   display: block;
 }
+@keyframes fadeSlideInRight {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .image-Union {
   width: 27px;
   height: 27px;
@@ -203,8 +214,11 @@ body[lang="en"] {
   position: absolute;
   bottom: 26%;
   right: 2.6%;
-  z-index: 99;
+  animation: fadeSlideInRight 0.8s ease-out forwards;
+  opacity: 0;
+  z-index: -1;
 }
+
 @media (max-width: 1025px) {
   .image-Union {
     right: 1.6%;
@@ -236,7 +250,6 @@ body[lang="en"] {
 
 @media (max-width: 568px) {
   .mobile-submenu .page {
-    /* background-color: red; */
     flex-direction: column !important;
   }
   .burger {

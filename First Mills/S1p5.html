@@ -25,9 +25,11 @@
     <div class="container">
       <div class="hero">
         <div class="side-menu">
-          <button id="languageToggle" class="toggle-btn english-button">
-            EN
-          </button>
+          <div class="circle">
+            <button id="languageToggle" class="toggle-btn english-button">
+              EN
+            </button>
+          </div>
           <div class="line-one"></div>
 
           <a href=""
@@ -178,12 +180,12 @@
             <div class="white-title">
               <img class="hero-icon" src="Images/hero-icon.png" alt="" />
               <img class="hero-icon-en" src="Images/hero-icon-en.png" alt="" />
-              <p>الرئيسية</p>
+              <p data-en="Main Page">الرئيسية</p>
               <img class="arrow" src="Images/arrow-footer.png" alt="" />
-              <p>نظرة عامة</p>
+              <p data-en="Overview">نظرة عامة</p>
             </div>
             <div class="green-title">
-              <h1>القيم الأساسية للشركة</h1>
+              <h1 data-en="Company's Core Values">القيم الأساسية للشركة</h1>
             </div>
           </div>
         </div>
@@ -290,32 +292,44 @@
     <div class="start">
       <div class="grid padding-top">
         <div class="card">
-          <h3>الزهادة</h3>
-          <p>
+          <h3 data-en="Integrity">الزهادة</h3>
+          <p
+            data-en="The Company upholds integrity and ethical principles by developing a professional conduct code to guide transparent and ethical decision-making
+in its operations."
+          >
             تلتزم الشركة بالعمل بزهادة وتقصيد مواردها الاقتصادية. وقد طورت مبادئ
             واضحة للسلوك المعتمد، التي تركز اعتماد مكونات اتخاذ القرار اليومية
             برؤية ذاتية وشفافة.
           </p>
         </div>
         <div class="card">
-          <h3>الشفافية</h3>
-          <p>
+          <h3 data-en="Transparency">الشفافية</h3>
+          <p
+            data-en="First Milling Company ensures transparent communication with all stakeholders and has recently updated its customer complaints protocol for effective and timely resolutions."
+          >
             تؤكد الشركة على شفافيتها ومصداقيتها من خلال التواصل المستمر والتكامل
             في جميع الأعمال المعتمدة. ومن أهم ذلك تنفيذ بروتوكول شكاوى العملاء
             بهدف إيجاد حلول فعالة لحل المشكلات في الوقت المناسب.
           </p>
         </div>
         <div class="card">
-          <h3>الشغف</h3>
-          <p>
+          <h3 data-en="Passion">الشغف</h3>
+          <p
+            data-en="The Company focuses on developing a diverse range of products to meet the needs
+of a growing customer base, considering the anticipated population growth in various cities across the Kingdom."
+          >
             تعمل الشركة بشغف كبير على ابتكار منتجات متنوعة وموثوقة من الجودة،
             تلبي احتياجات زبائنها وتدعم من احتياجاتهم، خاصة في ظل الرؤية
             الموضوعة لتحسين السكن للمملكة من المناطق في السنوات القادمة.
           </p>
         </div>
         <div class="card">
-          <h3>المسؤولية</h3>
-          <p>
+          <h3 data-en="Accountability">المسؤولية</h3>
+          <p
+            data-en="First Milling Company is dedicated to supporting and developing its employees
+by enhancing productivity, increasing awareness, and improving both personal and
+job-related skills."
+          >
             تلتزم الشركة بحماية موظفيها وتعليمهم وتطويرهم المستمر بشكل يساعد في
             زيادة إنتاجيتهم، ودفع شعورهم بالرضى الوظيفي، وتنمية مهاراتهم الشخصية
             والوظيفية.
@@ -323,15 +337,20 @@
         </div>
 
         <div class="card">
-          <h3>العمل الجماعي</h3>
-          <p>
+          <h3 data-en="Teamwork">العمل الجماعي</h3>
+          <p
+            data-en="The Company works to promote teamwork and pursue shared objectives with all stakeholders."
+          >
             تعمل الشركة على تعزيز العمل الجماعي، والسعي لتحقيق الأهداف المشتركة
             في جميع أصحاب المصلحة.
           </p>
         </div>
         <div class="card">
-          <h3>الصحة والسلامة</h3>
-          <p>
+          <h3 data-en="Wellbeing">الصحة والسلامة</h3>
+          <p
+            data-en="The Company prioritizes employee well-being safety, and a positive work environment while reducing harmful emissions through a thermal treatment project eliminating chemical pesticide
+use."
+          >
             تحرص الشركة على صحة الموظفين والمستفيدين، وتوفير أماكن بيئة عمل
             آمنة. ومن أبرز أولويات الشركة فحص المعدات اللازمة وتنفيذ مشروع الفحص
             الدوري. الشركة ملتزمة باستخدام المعايير الحكومية تماماً.
@@ -343,16 +362,17 @@
     <footer>
       <div class="container">
         <div class="side-of-footer">
-          <a href="S1p6.html" class="next">
+          <a href="S1p6.html" class="next" data-en="Next">
             <img src="Images/arrow-footer.png" alt="" /> التـــالـي
           </a>
-          <h2>الوجود الجغرافي</h2>
+          <h2 data-en=" Geographical Presence  ">الوجود الجغرافي</h2>
         </div>
         <div class="side-of-footer">
           <a
             href="S7p1.html"
             style="background: #30444e; color: white"
             class="contact-us btn-footer"
+            data-en="Contact Us"
           >
             <img src="Images/email.png" alt="" />
             تواصلوا معنا</a
@@ -361,6 +381,7 @@
             href="S8p1.html"
             style="background: #ffb548; color: #30444e"
             class="download-center btn-footer"
+            data-en="Download Center"
           >
             <img src="Images/download.png" alt="" />
             مركز التحميل</a

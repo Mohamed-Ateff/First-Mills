@@ -1,72 +1,24 @@
-.growth-path-title {
-  text-align: center;
+.table-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 80px auto 25px auto;
+}
+.table-caption h3 {
   color: #31544b;
-  font-size: 26px;
-  margin: 60px 0 40px;
-  position: relative;
+  font-size: 24px;
+  text-align: center;
+  margin: 2px;
+}
+.line-caption {
+  height: 4px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgba(252, 180, 74, 0.4);
 }
 
-.title1::before {
-  content: "";
-  position: absolute;
-  width: 371px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-}
-.title1::after {
-  content: "";
-  position: absolute;
-  width: 371px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-}
-
-.title2::before {
-  content: "";
-  position: absolute;
-  width: 272px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-}
-.title2::after {
-  content: "";
-  position: absolute;
-  width: 272px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-}
-.title3::before {
-  content: "";
-  position: absolute;
-  width: 192px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-}
-.title3::after {
-  content: "";
-  position: absolute;
-  width: 192px;
-  height: 4px;
-  background-color: #ffb548;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-}
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -143,16 +95,7 @@
   }
 }
 
-@media (max-width: 992px) {
-  .title1::before,
-  .title1::after,
-  .title2::before,
-  .title2::after,
-  .title3::before,
-  .title3::after {
-    display: none;
-  }
-}
+
 
 
 @media (max-width: 600px) {
@@ -160,9 +103,7 @@
     width: 100% !important;
   }
 
-  .growth-path-title {
-    font-size: 20px;
-  }
+ 
 
   .card h3 {
     font-size: 20px;
@@ -173,19 +114,6 @@
     height: 50px;
   }
 
-  .growth-path-title::before {
-    display: none;
-  }
-}
-@media (max-width: 480px) {
- .growth-path-title {
- 
-  margin: 0px 0 20px;
   
 }
-.title2,
-.title3 {
- 
-  margin: 30px 0 15px;
-}
-}
+
