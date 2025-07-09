@@ -112,3 +112,54 @@
     padding: 0 10px;
   }
 }
+
+.percent-none{
+  display: none;
+}
+
+body[lang="en"] {
+.activities_card {
+  text-align: left;
+  
+}
+
+.align-text-desktop {
+  text-align: right;
+}
+.percent-none{
+  display: inline;
+}
+.icon-english{
+  transform: translateX(110px);
+}
+.gap-english{
+  gap:0px
+}
+.padding-english{
+padding: 0px 100px;
+}
+
+
+@media (max-width: 1025px) {
+ .padding-english{
+padding: 0px 40px;
+}
+.icon-english{
+  transform: translateX(50px);
+}
+}
+@media (max-width: 992px) {
+  .activities_card {
+    text-align: center;
+  }
+  .align-text-desktop {
+    text-align: center;
+  }
+  .icon-english{
+  transform: translateX(0px);
+}
+.padding-english{
+padding: 0px 0px;
+}
+}
+}
