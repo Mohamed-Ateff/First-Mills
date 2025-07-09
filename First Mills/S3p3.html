@@ -183,12 +183,14 @@
             <div class="white-title">
               <img class="hero-icon" src="Images/hero-icon.png" alt="" />
               <img class="hero-icon-en" src="Images/hero-icon-en.png" alt="" />
-               <p data-en="Main Page ">الرئيسية</p>
+              <p data-en="Main Page ">الرئيسية</p>
               <img class="arrow" src="Images/arrow-footer.png" alt="" />
               <p data-en="Strategic Report">التقرير الاستراتيجي</p>
             </div>
             <div class="green-title" data-en="Market and Sector Overview">
-              <h1>نظرة عامة على السوق والقطاع</h1>
+              <h1 data-en="Market and Sector Overview">
+                نظرة عامة على السوق والقطاع
+              </h1>
             </div>
           </div>
         </div>
@@ -294,14 +296,18 @@
 
     <div class="start">
       <div class="section-title border-with-title-under-it">
-        <h2>الناتج المحلي الإجمالي</h2>
+        <h2 data-en="Gross Domestic Product (GDP)">الناتج المحلي الإجمالي</h2>
         <div class="border-bottom"></div>
       </div>
 
       <div class="chart-container">
         <div id="All-chart-one-all-width">
           <div class="right-chart-container second-chart-for-mobile">
-            <div class="chart-title" style="text-align: center; color: #31544b">
+            <div
+              class="chart-title"
+              style="text-align: center; color: #31544b"
+              data-en="Real GDP Growth in the Kingdom"
+            >
               النمو الفعلي للناتج المحلي الإجمالي الحقيقي في المملكة
             </div>
 
@@ -367,17 +373,24 @@
 
       <div class="section">
         <div class="section-title border-with-title-under-it">
-          <h2>التضخم</h2>
+          <h2 data-en="Inflation ">التضخم</h2>
           <div class="border-bottom"></div>
         </div>
         <!--charts-->
         <div class="charts-grid">
           <div class="chart-container">
-            <div class="chart-title">معدل التضخم خلال 5 سنوات</div>
+            <div class="chart-title" data-en="Inflation Rate over 5 Years ">
+              معدل التضخم خلال 5 سنوات
+            </div>
             <canvas id="fiveYearInflationChart"></canvas>
           </div>
           <div class="chart-container">
-            <div class="chart-title">معدل التضخم الشهري 2024</div>
+            <div
+              class="chart-title"
+              data-en="Monthly Inflation Rate during 2024 "
+            >
+              معدل التضخم الشهري 2024
+            </div>
             <canvas id="monthlyInflationChart"></canvas>
           </div>
         </div>
@@ -385,21 +398,31 @@
 
       <div class="section">
         <div class="section-title border-with-title-under-it">
-          <h2>المؤشرات السكانية</h2>
+          <h2 data-en="Demographic Indicators ">المؤشرات السكانية</h2>
           <div class="border-bottom"></div>
         </div>
         <!--charts-->
         <div class="chart-container">
-          <div class="chart-title">تطور التعداد السكاني في المملكة</div>
+          <div
+            class="chart-title"
+            data-en="Development of Population Growth in Saudi Arabia "
+          >
+            تطور التعداد السكاني في المملكة
+          </div>
           <canvas id="populationChart"></canvas>
         </div>
       </div>
 
       <div class="section-title border-with-title-under-it">
-        <h2>نظرة على سوق القمح العالمية</h2>
+        <h2 data-en="Global Wheat Market Overview ">
+          نظرة على سوق القمح العالمية
+        </h2>
         <div class="border-bottom"></div>
       </div>
-      <div class="text-desc">
+      <div
+        class="text-desc"
+        data-en="The global wheat market has experienced a sustained surge in prices, initially sparked by supply chain disruptions following the COVID-19 pandemic. This upward trend intensified with the onset of the Russia-Ukraine war, as both nations are major global wheat exporters, further exacerbating supply concerns.."
+      >
         شهدت سوق القمح العالمية ارتفاعاً كبيراً في الأسعار منذ بداية جائحة
         كورونا، بسبب تداعيات سلاسل الإمداد، واستمر هذا الارتفاع في ظل الحرب
         الروسية الأوكرانية، حيث تعد الدولتان من أكبر الدول المصدرة للقمح في
@@ -412,7 +435,11 @@
       >
         <div id="All-chart-one-all-width">
           <div class="right-chart-container second-chart-for-mobile">
-            <div class="chart-title" style="text-align: center; color: #31544b">
+            <div
+              class="chart-title"
+              style="text-align: center; color: #31544b"
+              data-en="Global Wheat Market - Russia-Ukraine War Repercussions"
+            >
               سوق القمح العالمي - تأثير الحرب الروسية الأوكرانية
             </div>
 
@@ -420,6 +447,7 @@
               <div class="one-chart-from-two">
                 <p
                   class="title-for-chart-for-one-two-beside-with-value-outside"
+                  data-en="2021 Sources of Wheat Imports Pre-Russia-Ukraine War"
                 >
                   مصادر استيراد القمح 2021 قبل الحرب
                 </p>
@@ -429,21 +457,23 @@
                       <div class="progress" style="background-color: #73837f">
                         <p class="progress-value progress-value-ouside">84</p>
                       </div>
-                      <p class="progress-date">دول أخرى</p>
+                      <p class="progress-date" data-en="Other Countries">
+                        دول أخرى
+                      </p>
                     </div>
 
                     <div class="progress-bar" data-value="9">
                       <div class="progress" style="background-color: #73837f">
                         <p class="progress-value progress-value-ouside">9</p>
                       </div>
-                      <p class="progress-date">روسيا</p>
+                      <p class="progress-date" data-en="Russia">روسيا</p>
                     </div>
 
                     <div class="progress-bar" data-value="7">
                       <div class="progress" style="background-color: #73837f">
                         <p class="progress-value progress-value-ouside">7</p>
                       </div>
-                      <p class="progress-date">أوكرانيا</p>
+                      <p class="progress-date" data-en="Ukraine">أوكرانيا</p>
                     </div>
                   </div>
 
@@ -474,6 +504,7 @@
               <div class="one-chart-from-two">
                 <p
                   class="title-for-chart-for-one-two-beside-with-value-outside"
+                  data-en="2023 Sources of Wheat Imports Post-Russia-Ukraine War"
                 >
                   مصادر استيراد القمح 2023 بعد الحرب
                 </p>
@@ -483,21 +514,23 @@
                       <div class="progress" style="background-color: #ffb548">
                         <p class="progress-value progress-value-ouside">48</p>
                       </div>
-                      <p class="progress-date">دول أخرى</p>
+                      <p class="progress-date" data-en="Other Countries    ">
+                        دول أخرى
+                      </p>
                     </div>
 
                     <div class="progress-bar" data-value="81.67">
                       <div class="progress" style="background-color: #ffb548">
                         <p class="progress-value progress-value-ouside">49</p>
                       </div>
-                      <p class="progress-date">روسيا</p>
+                      <p class="progress-date" data-en="Russia">روسيا</p>
                     </div>
 
                     <div class="progress-bar" data-value="5">
                       <div class="progress" style="background-color: #ffb548">
                         <p class="progress-value progress-value-ouside">3</p>
                       </div>
-                      <p class="progress-date">أوكرانيا</p>
+                      <p class="progress-date" data-en="Ukraine">أوكرانيا</p>
                     </div>
                   </div>
 
@@ -533,23 +566,29 @@
       <!--charts-->
 
       <div class="section-title border-with-title-under-it">
-        <h2>سوق القمح بالمملكة</h2>
+        <h2 data-en="Saudi Arabia’s Wheat Market ">سوق القمح بالمملكة</h2>
         <div class="border-bottom"></div>
       </div>
       <div class="text-desc">
-        <p>
+        <p
+          data-en="The Kingdom’s Vision 2030 aims to develop and enhance the milling sector, being one of the pivotal sectors that plays an important role in the provision of food and achieving food security in the Kingdom. "
+        >
           تهدف رؤية المملكة 2030 إلى تطوير وتحسين قطاع المطاحن باعتباره أحد
           القطاعات الحيوية التي تلعب دوراً مهماً في توفير الغذاء وتحقيق الأمن
           الغذائي في المملكة. 
         </p>
 
-        <p>
+        <p
+          data-en="The wheat and milling sectors are overseen by GFSA, which manages production, imports, and storage of strategic reserves. GFSA plays a pivotal role in regulating the sector and acts as the sole buyer of wheat, purchasing both locally produced and imported grains. "
+        >
           يخضع قطاع القمح والمطاحن لإشراف الهيئة العامة للأمن الغذائي، التي تدير
           الإنتاج والاستيراد وتخزين الاحتياطيات الاستراتيجية، حيث تضطلع الهيئة
           بدور محوري في تنظيم القطاع، وتمثل المشتري الوحيد للقمح، من خلال شراء
           الحبوب المنتجة محليًا والمستوردة.
         </p>
-        <p>
+        <p
+          data-en="GFSA procures wheat from three main sources, namely: global markets, which are the largest source of wheat; local production from licensed farmers; and Saudi investors abroad, which is the smallest quantity due to the program’s recent launch, which aims to diversify sources of purchase. "
+        >
           وتشتري الهيئة القمح من ثلاثة مصادر رئيسية، وهي: الأسواق العالمية، وهو
           المصدر الأكبر للقمح، الإنتاج المحلي من المزارعين المرخص لهم،
           والمستثمرون السعوديون في الخارج، وهي النسبة الأقل نظراً لحداثة
@@ -560,7 +599,9 @@
       <div class="table-caption">
         <div class="line-caption"></div>
 
-        <h3>
+        <h3
+          data-en="Quantities and Average Prices of Wheat Imported by GFSA in the Last Years "
+        >
           كميات ومتوسط أسعار القمح التي تعاقدت الهيئة العامة للأمن الغذائي على
           استيرادها في آخر السنوات
         </h3>
@@ -571,14 +612,14 @@
         <table>
           <thead>
             <tr>
-              <th>العام</th>
-              <th>
+              <th data-en="Year">العام</th>
+              <th data-en=" Contracted Quantity 10% (’000 Tons) ">
                 الكمية المتعاقد عليها
                 <br />
                 ± %10 (ألف طن)
               </th>
-              <th>دولار / طن</th>
-              <th>ريال / طن</th>
+              <th data-en="USD/Ton">دولار / طن</th>
+              <th data-en="SAR/Ton">ريال / طن</th>
             </tr>
           </thead>
           <tbody>
@@ -613,10 +654,14 @@
       <div class="table-caption">
         <div class="line-caption"></div>
 
-        <h3>
-          إجمالي إنتاج دقيق القمح في المملكة  2018 - 2024 م
-          <p>(الكميات بالألف طن)</p>
-        </h3>
+        <div>
+          <h3
+            data-en="Total Wheat Flour Production in the Kingdom (2018-2028)  "
+          >
+            إجمالي إنتاج دقيق القمح في المملكة  2018 - 2024 م
+          </h3>
+          <p data-en="(All Quantities in ’000 Tons) ">(الكميات بالألف طن)</p>
+        </div>
         <div class="line-caption"></div>
       </div>
 
@@ -624,10 +669,10 @@
         <table>
           <thead>
             <tr>
-              <th>السنة</th>
-              <th>الانتاج المحلي</th>
-              <th>المبيعات المحلية</th>
-              <th>القمح المستورد</th>
+              <th data-en="Year ">السنة</th>
+              <th data-en="Domestic Production">الانتاج المحلي</th>
+              <th data-en=" Domestic Sales">المبيعات المحلية</th>
+              <th data-en="Imported Wheat">القمح المستورد</th>
             </tr>
           </thead>
           <tbody>
@@ -678,17 +723,26 @@
       </div>
 
       <div class="section-title border-with-title-under-it">
-        <h2>شركات المطاحن السعودية</h2>
+        <h2 data-en="Saudi Milling Companies ">شركات المطاحن السعودية</h2>
         <div class="border-bottom"></div>
       </div>
 
       <div class="chart-container">
         <div id="All-chart-one-all-width">
           <div class="right-chart-container second-chart-for-mobile">
-            <div class="chart-title" style="text-align: center; color: #31544b">
+            <div
+              class="chart-title"
+              style="text-align: center; color: #31544b"
+              data-en="Sales of Saudi Milling Companies "
+            >
               مبيعات شركات المطاحن السعودية
             </div>
-            <p class="outer-title-chart-p-center">(الكميات بالمليون طن)</p>
+            <p
+              class="outer-title-chart-p-center"
+              data-en="(All Quantities in ’Mln Tons) "
+            >
+              (الكميات بالمليون طن)
+            </p>
 
             <div class="contain-numbers-and-chart">
               <div class="chart" id="full-wdith-with-padding-top">
@@ -751,10 +805,13 @@
       <!--charts-->
 
       <div class="section-title border-with-title-under-it">
-        <h2>الدعم الحكومي للقمح</h2>
+        <h2 data-en="Government Wheat Subsidies ">الدعم الحكومي للقمح</h2>
         <div class="border-bottom"></div>
       </div>
-      <div class="text-desc">
+      <div
+        class="text-desc"
+        data-en="The Saudi government is subsidizing the wheat sector by stabilizing prices and supplying it to milling companies at a fixed price of SAR 180 per ton. GFSA also mandates a maximum selling price of SAR 500 per ton for flour in 45 kg bags and above. This is aimed at maintaining price stability, achieving domestic economic stability, and protecting consumers from price fluctuations, as wheat is one of the most consumed food commodities in Saudi Arabia. Wheat subsidy represents more than 25% of the subsidy item in the Kingdom's budget. "
+      >
         تلتزم حكومة المملكة بدعم القمح عن طريق تثبيت أسعاره، وتوريده لشركات
         المطاحن بسعر مثبت يعادل 180 ريالاً للطن، كما تشترط الهيئة العامة للأمن
         الغذائي بيع الدقيق بحد أعلى 500 ريال للطن للأوزان 45 كيلو جرام وأعلى؛
@@ -762,8 +819,11 @@
         المستهلكين من تقلبات الأسعار، حيث يعد القمح من أكثر السلع الغذائية
         استهلاكاً في المملكة. ويمثل دعم القمح أكثر من 25 % من بند الإعانات في
         ميزانية المملكة.
-        <br />
-        <br />
+      </div>
+      <div
+        class="text-desc"
+        data-en="Saudi Arabia's wheat subsidy is slated for a mid-2025 review. Authorities will assess whether to continue, gradually phase out, or fully eliminate the subsidy. In the recent and current periods, First Milling Company has already begun to expand its portfolio of non-subsidized products and increase its marketing efforts. This is aimed at mitigating the impact of any changes in government subsidy laws or procedures, should they occur. "
+      >
         ومن المنتظر أن تتم مراجعة هذا الدعم في منتصف عام 2025، للنظر في استمراره
         أو رفعه تدريجيًا أو دفعة واحدة. كما أن شركة المطاحن الأولى قد بدأت
         بالفعل خلال الفترة الماضية والحالية في توسيع محفظة منتجاتها غير
@@ -772,17 +832,28 @@
       </div>
 
       <div class="section-title border-with-title-under-it">
-        <h2>المطاحن الأولى ورؤية المملكة 2030</h2>
+        <h2 data-en="First Milling and The Kingdom’s Vision 2030 ">
+          المطاحن الأولى ورؤية المملكة 2030
+        </h2>
         <div class="border-bottom"></div>
       </div>
-      <div class="text-desc">
+      <div
+        class="text-desc"
+        data-en="First Milling Company aspires to be a key player in achieving the objectives of the Kingdom’s Vision 2030, which focuses on food security, self-sufficiency, and the localization of knowledge and local production capacity. The Company plans to increase investment in cutting-edge technologies and enhance its production capabilities to meet growing market demands. "
+      >
         تسعى شركة المطاحن الأولى لتكون لاعباً رئيسياً في تحقيق أهداف رؤية
         المملكة 2030، التي تركز على الأمن الغذائي، وتحقيق الاكتفاء الذاتي،
         وتوطين المعرفة والقدرة الإنتاجية المحلية. وتخطط الشركة لزيادة الاستثمار
         في التقنيات المتطورة، وتعزيز قدراتها الإنتاجية، بما يتوافق مع متطلبات
-        السوق المتنامية. كما أن التزام الشركة بالجودة والاستدامة يُمكّنها من
-        الإسهام الفعّال في تحقيق أهداف الرؤية الطموحة، وهو ما يعزز من مكانتها
-        كقوة محركة للاقتصاد الوطني، ويمنحها فرصاً متعددة للنمو المستقبلي.
+        السوق المتنامية.
+      </div>
+      <div
+        class="text-desc"
+        data-en="First Milling Company's commitment to quality and sustainability enables the Company to effectively contribute to the realization of the ambitious objectives of the Kingdom’s Vision 2030, which enhances its position as a driving force in the national economy and offers numerous prospects and opportunities for future growth. "
+      >
+        كما أن التزام الشركة بالجودة والاستدامة يُمكّنها من الإسهام الفعّال في
+        تحقيق أهداف الرؤية الطموحة، وهو ما يعزز من مكانتها كقوة محركة للاقتصاد
+        الوطني، ويمنحها فرصاً متعددة للنمو المستقبلي.
       </div>
     </div>
 

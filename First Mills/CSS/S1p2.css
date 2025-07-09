@@ -179,10 +179,12 @@
 body[lang="en"] {
   .vision,
   .mission {
- 
     text-align: left;
-   
   }
 
-
+  .vision img,
+  .mission img {
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }
