@@ -27,20 +27,16 @@
   color: #ffb548;
   font-weight: 800;
 }
-.circle-grey{
+.circle-grey {
   background-color: rgba(128, 133, 132, 0.2);
   width: 350px;
   height: 350px;
   position: absolute;
-   top: 50%; /* Centered vertically relative to the container */
+  top: 50%; /* Centered vertically relative to the container */
   left: 50%;
-   transform: translate(
-    -50%,
-    -50%
-  );
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   z-index: 4;
-    
 }
 .circle-green {
   /* border: 30px solid #f6f5f4; */
@@ -62,13 +58,13 @@
   align-items: center;
 }
 .four-cards div:nth-child(2),
-  .four-cards div:nth-child(4) {
-    padding: 30px 120px 20px 140px;
-  }
-  .four-cards div:nth-child(3),
-  .four-cards div:nth-child(5) {
-    padding: 30px 130px 20px 80px;
-  }
+.four-cards div:nth-child(4) {
+  padding: 30px 120px 20px 140px;
+}
+.four-cards div:nth-child(3),
+.four-cards div:nth-child(5) {
+  padding: 30px 130px 20px 80px;
+}
 .circle-content {
   font-size: 20px;
   color: #fcb44a;
@@ -183,10 +179,10 @@
     height: 200px;
     transform: translate(-50%, -50%);
   }
-  .circle-grey{
-  width: 260px;
-  height: 260px;  
-}
+  .circle-grey {
+    width: 260px;
+    height: 260px;
+  }
   .circle-content h2 {
     font-size: 20px;
   }
@@ -197,7 +193,7 @@
     width: 48px;
     height: 48px;
   }
- 
+
   .four-cards div:nth-child(2),
   .four-cards div:nth-child(4) {
     padding: 30px 50px 20px 110px;
@@ -224,13 +220,11 @@
     height: 120px;
     transform: translate(-50%, -50%);
   }
-    .circle-grey{
-  width: 180px;
-  height: 180px;
-  
-    
-}
- 
+  .circle-grey {
+    width: 180px;
+    height: 180px;
+  }
+
   .four-cards div:nth-child(2),
   .four-cards div:nth-child(4) {
     padding: 10px 40px 10px 50px;
@@ -251,5 +245,17 @@
   }
   .one-card {
     width: 100%;
+  }
+}
+
+body[lang="en"] {
+  .four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 30px 130px 20px 150px;
+  }
+
+  .logo-div {
+  
+    left: 20px;
   }
 }
