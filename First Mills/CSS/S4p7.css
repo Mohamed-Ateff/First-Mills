@@ -201,3 +201,11 @@ tr:nth-child(even) td {
     overflow-x: auto;
   }
 }
+body[lang="en"] {
+.activities_card {
+  
+  text-align: left;
+ 
+}
+
+}
