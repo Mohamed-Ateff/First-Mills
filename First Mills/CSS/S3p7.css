@@ -84,7 +84,7 @@
 .text-padding {
   padding: 20px;
   padding-top: 100px;
-  text-align: right;
+  text-align: start;
 }
 .text-padding span {
   font-size: 18px;
@@ -211,7 +211,7 @@
     padding-left: 0px;
     font-size: 18px;
   }
-  .padding-top{
+  .padding-top {
     margin-top: 130px;
   }
 }
@@ -228,10 +228,9 @@
   .one-card {
     width: 100%;
   }
-.arrow-text {
- 
-  font-size: 18px !important;
-}
+  .arrow-text {
+    font-size: 18px !important;
+  }
   .one-card p {
     font-size: 12px;
   }
@@ -247,7 +246,17 @@
   .text-padding {
     padding-top: 60px;
   }
-  .padding-top{
+  .padding-top {
     margin-top: 0px;
+  }
+}
+
+body[lang="en"] {
+  .logo-div {
+    left: 18px;
+  }
+  .one-card h3 {
+    padding-left: 61px;
+    padding-right: 5px;
   }
 }
