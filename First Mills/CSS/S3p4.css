@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #4E6A63;
+  color: #4e6a63;
   font-size: 17px;
   font-weight: 100;
   padding-right: 30px;
@@ -107,14 +107,12 @@
   gap: 15px;
   background-color: #f6f5f4;
   padding-top: 25px;
-  direction: rtl;
   font-family: Bahij TheSansArabic;
 }
 
 .grid-item {
   background-color: white;
   padding: 35px;
-  text-align: right;
 }
 
 .grid-item.wide {
@@ -207,5 +205,20 @@
   .intersect {
     width: 10px;
     height: 10px;
+  }
+}
+
+body[lang="en"] {
+  .intersect {
+    left: 0%;
+    transform: rotateY(180deg);
+  }
+
+  .title-with-arrow {
+    padding-left: 30px;
+  }
+
+  .circle-orange {
+    transform: rotateY(178deg);
   }
 }
