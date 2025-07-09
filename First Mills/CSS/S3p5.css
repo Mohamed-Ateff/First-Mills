@@ -141,3 +141,19 @@
     margin: 30px 0;
   }
 }
+
+body[lang="en"] {
+
+  .logo-div {
+  
+    left: 0px;
+  }
+  .logo-div::before {
+    top: -27.8675px;
+  }
+
+  .logo-div::after {
+    bottom: -27.2px;
+  }
+
+}
