@@ -213,3 +213,31 @@ tr:nth-child(even) td {
     font-size: 14px;
   }
 }
+
+
+body[lang="en"] {
+.activities_card {
+  text-align: left;
+}
+
+.custom-table th {
+  text-align: left;
+}
+
+.custom-table td {
+  text-align: left;
+}
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2) {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+ 
+  .activities_card {
+  
+    align-items: center;
+    text-align: center;
+  }
+}
+}
