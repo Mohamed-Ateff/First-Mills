@@ -144,3 +144,47 @@
     padding-right: 10px;
   }
 }
+
+body[lang="en"] {
+.card-text {
+  padding: 20px 90px 20px 40px;
+ 
+  text-align: left;
+}
+
+.card-header {
+  
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 80px;
+}
+@media (max-width: 768px) {
+
+  .card-header {
+  
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 20px;
+}
+}
+@media (max-width: 480px) {
+
+  .card-text {
+  padding: 2px 5px 2px 5px;
+ height: auto;
+  text-align: left;
+  width: 56%;
+}
+.card-header {
+  
+  text-align: left;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 44%;
+}
+.card-green {
+  
+  height: 300px;
+}
+}
+}

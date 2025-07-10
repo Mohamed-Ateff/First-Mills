@@ -226,3 +226,19 @@ font-size: 20px;
 
 }
 }
+
+
+body[lang="en"] {
+.custom-table th {
+  text-align: left;
+}
+.div-with-text{
+    padding: 0px 0px 20px 20px;
+}
+.div-with-buttons button{
+    margin-right: 5px;
+    margin-left: 0px;
+  flex-direction: row-reverse;
+    }
+
+}
