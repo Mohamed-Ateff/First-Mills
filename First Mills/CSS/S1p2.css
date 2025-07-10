@@ -182,6 +182,12 @@ body[lang="en"] {
     text-align: left;
   }
 
+  .vision p,
+  .mission p {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+
   .vision img,
   .mission img {
     margin-left: 15px;

@@ -193,3 +193,23 @@ tr:nth-child(even) td {
     padding: 0 15px;
   }
 }
+
+body[lang="en"] {
+
+  .person {
+    padding-right: 15px;
+    padding-left: 0px;
+}
+
+  .info-wrapper::before {
+    left: -25px;
+  }
+
+  .card::before {
+    left: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}
