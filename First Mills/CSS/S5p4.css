@@ -353,22 +353,70 @@ background-color: #455954;
   border: 6px solid transparent;
   border-top-color: #3A73A8;
 }
-@media (max-width: 1600px) {
-.general-assembly::after {
 
+@media (max-width: 1600px) {
+.general-assembly,
+    .board,
+    .chief-executive-officer {
+        width: 268px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+     .audit-committee,
+    .audit-dept,
+    .nominations-committee,
+    .executive-committee {
+        width: 220px;
+    }
+     .finance-head,
+    .operations-head,
+    .sales-head,
+    .marketing-head,
+    .hr-head {
+        width: 180px;
+    }
+
+.general-assembly::after {
         width: 171px;
         /* horizontal line length */
 
     }
-    .board::after {
-        width: 173px;
-        /* horizontal line length */
+     .audit-committee {
+        left: calc(45% + 250px);
     }
-    .blue-line {
-        width: 74.55%;
-        right: 106px;
+    /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
+    .audit-dept {
+        left: calc(45% + 250px);
+    }
+     .nominations-committee {
+        left: calc(49% - 400px);
+        /* move left */
     }
 
+    .executive-committee {
+        left: calc(49% - 400px);
+    }
+    .board::after {
+        width: 166px;
+        /* horizontal line length */
+    }
+    .finance-head { left: 2.2%; }
+.operations-head { left: 21.5%; }
+.sales-head { left: 43%; }
+.marketing-head { left: 62.5%; }
+.hr-head { left: 81.5%; }
+      
+    .blue-line {
+        width: 74.66%;
+        right: 111.2px;
+    }
+
+}
+@media (max-width: 1456px) {
+  .blue-line {
+        width: 74.45%;
+        right: 102.2px;
+    }
 }
 @media (max-width: 1445px) {
  .general-assembly,
@@ -380,7 +428,7 @@ background-color: #455954;
     }
 .general-assembly::after {
 
-        width: 200px;
+        width: 167px;
         /* horizontal line length */
 
     }
@@ -420,7 +468,7 @@ background-color: #455954;
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1026px) {
 
     .general-assembly,
     .board,
