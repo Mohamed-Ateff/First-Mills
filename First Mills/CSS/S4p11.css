@@ -38,7 +38,9 @@
  font-weight: 400;
   font-size: 20px;
   line-height: 43.7px;
+  
 }
+
 
 .one-card h1 {
   font-size: 20px;
@@ -47,6 +49,9 @@
   margin-top: 10px;
   vertical-align: center;
   line-height: 40px;
+}
+.number-english{
+  display: none;
 }
 /* ten cards ends */
 
@@ -237,7 +242,7 @@ margin: 2px;
   width: 1px;
   background-color: #000;
   z-index: 1;
-   height: 440px;
+   height: 500px;
 }
 .staff-table thead {
   border-collapse: collapse;
@@ -504,6 +509,15 @@ background-color: rgba(255, 255, 255, 0.5);
 /* fifth-table ends*/
 
 /* final cards ends*/
+.missing-text-big{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #4E6A63;
+  font-size: px;
+}
 @media (max-width: 1026px){
   .ten-cards {
   justify-content:space-between;
@@ -631,5 +645,84 @@ body[lang="en"] {
   right: 0px;
   left: 18px;
 }
+.number-english{
+  display: inline;
+}
+.grid-item {
+  text-align: left;
+}
+.grid-item .number {
+  padding: 0px 0px 0px 15px;
+}
+.four-item p{
+  padding: 0px 50px 0px 10px;
+  
+}
+.staff-table::after {
+  right: calc(36%);
+   height: 560px;
+}
+.custom-table th {
+  text-align: left;
+}
+.final-card h1 {
+ 
+  text-align:left;
+  
+}
 
+.final-card p {
+
+  text-align:left ;
+}
+.custom-table-5 th {
+  
+  text-align: left;
+ 
+}
+
+
+@media (max-width: 1026px){
+.staff-table::after {
+  right: calc(38.5%);
+}
+.vertical-line.line1 {
+ 
+  height: 400px;
+}
+.vertical-line.line2 {
+  
+  height: 400px;
+}
+.vertical-line-2.line2 {
+  right: 64.3%;
+  height: 300px;
+}
+}
+@media (max-width: 768px){
+.staff-table::after {
+  right: calc(39.8%);
+ height: 450px;
+}
+
+}
+@media (max-width: 480px){
+.vertical-line.line1 {
+  right: 4.3%;
+  height: 400px;
+}
+.vertical-line.line2 {
+  right: 63.3%;
+  height: 400px;
+}
+ .vertical-line-2.line1 {
+  right: 32.3%;
+  height: 300px;
+}
+.vertical-line-2.line2 {
+  right: 67.3%;
+  height: 300px;
+}
+
+}
 }
