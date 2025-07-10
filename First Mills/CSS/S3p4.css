@@ -39,7 +39,7 @@
 }
 .list-text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   color: #6b95bd;
   font-size: 18px;
@@ -54,8 +54,10 @@
   font-size: 17px;
   font-weight: 100;
   padding-right: 30px;
+  text-align: justify;
 }
 .intersect {
+  margin-top: 4px;
   position: absolute;
   width: 20px;
   height: 20px;
