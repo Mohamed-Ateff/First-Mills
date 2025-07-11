@@ -167,3 +167,15 @@
     margin: 30px 10px;
   }
 }
+
+body[lang="en"] {
+
+.info-wrapper::before {
+  left: 0;
+}
+
+.info-wrapper {
+  padding-left: 30px;
+}
+
+}
