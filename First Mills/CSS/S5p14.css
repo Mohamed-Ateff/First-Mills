@@ -77,7 +77,8 @@
   color: #21333b;
   line-height: 1.5;
   margin: 20px auto;
-  text-align: start;
+  text-align: justify;
+  margin: 0% 5%;
 }
 
 .table-caption {
