@@ -161,3 +161,19 @@ font-size: 20px;
 
 }
 }
+
+body[lang="en"] {
+  .custom-table-container:nth-of-type(1) th,
+.custom-table-container:nth-of-type(5) th {
+
+  text-align: left;
+
+}
+.custom-table-container:nth-of-type(2) th,
+.custom-table-container:nth-of-type(3) th,
+.custom-table-container:nth-of-type(4) th {
+  
+  text-align:left;
+  
+}
+}
