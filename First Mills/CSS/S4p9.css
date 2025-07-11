@@ -1,72 +1,68 @@
-.section-with-picture{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    background-color: #FFF;
-    /* height: 360px; */
-    padding: 20px 0px 20px 0px;
+.section-with-picture {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* flex-wrap: wrap; */
+  margin-top: 40px;
+  background-color: #fff;
+  /* height: 360px; */
+  padding: 20px 0px 20px 0px;
 }
 
-.div-with-pic{
-    padding: 0px 60px;
-
+.div-with-pic {
+  padding: 0px 60px;
 }
 
-.div-with-text{
-    width: 52%;
-    padding: 0px 40px 0px 40px;
-    color:#4E6A63;
-    font-size: 16px;
-
+.div-with-text {
+  width: 52%;
+  padding: 0px 0px 0px 40px;
+  color: #4e6a63;
+  font-size: 16px;
 }
 @media (max-width: 1200px) {
-     .div-with-text{
-        width: 100%;
-        padding: 0px 20px;
-    }
+  .div-with-text {
+    width: 100%;
+    padding: 0px 20px;
+  }
 }
 
 @media (max-width: 1024px) {
-    .section-with-picture{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .div-with-pic{
-        padding: 0px 20px;
-    }
-    
+  .section-with-picture {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-with-pic {
+    padding: 0px 20px;
+  }
 }
 @media (max-width: 768px) {
-    .section-with-picture{
-        padding: 20px 0px;
-    }
-    .div-with-pic{
-        padding: 0px 10px;
-    }
-    .div-with-text{
-        padding: 0px 10px;
-    }
+  .section-with-picture {
+    padding: 20px 0px;
+  }
+  .div-with-pic {
+    padding: 0px 10px;
+  }
+  .div-with-text {
+    padding: 0px 10px;
+  }
 }
 @media (max-width: 480px) {
-    .section-with-picture{
-        padding: 10px 0px;
-    }
-    .div-with-pic{
-        padding: 15px  15px 0px 15px;
-    }
-    .div-with-pic img{
-       width: 280px;
-       height: 160px;
-    }
-    .div-with-text{
-        padding: 0px 15px 0px 15px;
-        
-    }
-    .div-with-text p{
-        font-size: 14px;
-    }
+  .section-with-picture {
+    padding: 10px 0px;
+  }
+  .div-with-pic {
+    padding: 15px 15px 0px 15px;
+  }
+  .div-with-pic img {
+    width: 280px;
+    height: 160px;
+  }
+  .div-with-text {
+    padding: 0px 15px 0px 15px;
+  }
+  .div-with-text p {
+    font-size: 14px;
+  }
 }
