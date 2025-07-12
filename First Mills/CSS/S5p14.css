@@ -377,7 +377,7 @@ td:first-child {
 
 #chart-container h3 {
   font-size: 20px;
-  text-align: right;
+  text-align: start;
   color: #4e6a63;
   margin: 20px;
 }
@@ -388,10 +388,11 @@ td:first-child {
 }
 #stockChart {
   width: 1000px !important;
-  height: 100% !important;
+  height: 350px !important;
   padding: 10px;
 }
 
+.ctx2,
 .ctx3,
 .ctx4,
 .ctx5 {
