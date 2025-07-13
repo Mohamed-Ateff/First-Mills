@@ -3,6 +3,7 @@
   overflow-x: auto;
   margin-top: 30px;
 }
+
 table {
   width: 100%;
   max-width: 100%;
@@ -11,79 +12,65 @@ table {
   padding: 0;
   font-size: 16pt;
 }
-.table7 {
-  thead {
-    th {
-      background-color: #73837f;
-      color: #fff;
-      border: 0;
-      padding: 30px;
-      letter-spacing: 1px;
-    }
-  }
 
-  td {
-    border-bottom: 5px solid #f7f7f7;
-    background-color: white;
-    color: #3a4944;
-    font-size: 16px;
-  }
-
-  td span:nth-child(2) {
-    display: block;
-    color: #837A7A;
-    font-weight: 400;
-    font-size: 14pt;
-    padding-top: 5px;
-  }
-
-  th {
-    font-weight: bold;
-  }
-
-  tr {
-    td:nth-child(1) {
-      text-align: right;
-      color: #4e6a63;
-      background-color: #D0D6D4 !important;
-      border: 0;
-      font-size: 18px;
-      font-weight: bold;
-      letter-spacing: 1px;
-      padding: 40px 20px;
-      width: 23%;
-    }
-  }
-
-  tr {
-    td:nth-child(6)
-     {
-      background-color: rgba(205, 204, 194, 0.3) !important;
-      color: #3A4944;
-      border-bottom: 0;
-    }
-  }
-  tr:last-child td {
-    border-bottom: 0 !important;
-  }
-
-  tr:nth-child(even) td {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
+.table7 thead th {
+  background-color: #73837f;
+  color: #fff;
+  border: 0;
+  padding: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
-body[dir="rtl"] .table7 {
-  th:nth-child(1),
-  td:nth-child(1) {
-    text-align: right;
-  }
+.table7 td {
+  border-bottom: 5px solid #f7f7f7;
+  background-color: white;
+  color: #3a4944;
+  font-size: 16px;
 }
 
-body[dir="ltr"] .table7 {
-  th:nth-child(1),
-  td:nth-child(1) {
-    text-align: left;
-  }
+.table7 td span:nth-child(2) {
+  display: block;
+  color: #837A7A;
+  font-weight: 400;
+  font-size: 14pt;
+  padding-top: 5px;
+}
+
+.table7 tr td:nth-child(1) {
+  text-align: right;
+  color: #4e6a63;
+  background-color: #D0D6D4 !important;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 40px 20px;
+  width: 23%;
+}
+
+.table7 tr td:nth-child(6) {
+  background-color: rgba(205, 204, 194, 0.3) !important;
+  color: #3A4944;
+  border-bottom: 0;
+}
+
+.table7 tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+.table7 tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body[dir="rtl"] .table7 th:nth-child(1),
+body[dir="rtl"] .table7 td:nth-child(1) {
+  text-align: right;
+}
+
+body[dir="ltr"] .table7 th:nth-child(1),
+body[dir="ltr"] .table7 td:nth-child(1) {
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -92,52 +79,49 @@ body[dir="ltr"] .table7 {
   }
 
   table {
-    font-size: 2vw !important;
+    font-size: 12px !important; /* Fallback from 2vw to fixed size for better compatibility */
   }
 
-  .table7 {
-    thead th {
-      padding: 10px;
-    }
-
-    tr td:nth-child(1),
-    tr th:nth-child(1),
-    th {
-      font-size: 2vw !important;
-      padding: 10px 7px;
-    }
-    td span:nth-child(2) {
-      font-size: 1.7vw !important;
-      padding-top: 2px;
-    }
-    tr {
-      th,
-      td {
-        letter-spacing: 0 !important;
-      }
-    }
+  .table7 thead th {
+    padding: 10px;
   }
+
+  .table7 tr td:nth-child(1),
+  .table7 tr th:nth-child(1),
+  .table7 th {
+    font-size: 12px !important; /* Fallback from 2vw */
+    padding: 10px 7px;
+  }
+
+  .table7 td span:nth-child(2) {
+    font-size: 10px !important; /* Fallback from 1.7vw */
+    padding-top: 2px;
+  }
+
+  .table7 tr th,
+  .table7 tr td {
+    letter-spacing: 0 !important;
+  }
+
   body {
     padding: 0;
   }
 }
 
 @media (max-width: 480px) {
-  .table7 {
-    td {
-      padding: 10px 2px !important;
-    }
+  .table7 td {
+    padding: 10px 2px !important;
+  }
 
-    tr td:nth-child(1),
-    tr th:nth-child(1),
-    th {
-      font-size: 2vw !important;
-      padding: 5px;
-    }
-    tr td:nth-child(1),
-    tr th:nth-child(1) {
-      padding: 10px !important;
-    }
+  .table7 tr td:nth-child(1),
+  .table7 tr th:nth-child(1),
+  .table7 th {
+    font-size: 12px !important; /* Fallback from 2vw */
+    padding: 5px;
+  }
+
+  .table7 tr td:nth-child(1),
+  .table7 tr th:nth-child(1) {
+    padding: 10px !important;
   }
 }
-
