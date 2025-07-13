@@ -1,8 +1,6 @@
 .executive-wrapper {
   position: relative;
   margin-top: 270px !important;
-  /* background-color: red !important; */
-  background-color: cadetblue;
 }
 
 /* the orange name bar absolutely at bottom */
@@ -35,16 +33,16 @@
 /* rest same as before */
 
 .executive-image {
-  height: fit-content;
-  width: fit-content;
+  height: 200px;
   position: absolute;
-  top: -145%;
+  top: -125%;
   right: 5.6%;
   transform: translateY(10%);
 }
 
 .executive-image img {
   z-index: 1 !important;
+  width: 100%;
 }
 /* Extra Extra Large Devices: 1400px and up */
 @media (min-width: 1400px) {
@@ -111,8 +109,7 @@
 }
 
 .executive-text {
-  /* background-color: cadetblue; */
-  max-width: 60%;
+  max-width: 60% !important;
   margin-inline-start: auto;
   padding: 0px 90px 0 0;
 }
@@ -127,7 +124,6 @@
 .name-box {
   color: white;
   text-align: right;
-  /* background-color: red; */
 }
 .name-box h3 {
   font-size: 2.3rem;
@@ -164,6 +160,14 @@
   line-height: 37px;
 }
 
+/* .delete-for-mobile {
+  display: inline;
+}*/
+
+.delete-for-desktop {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .executive-wrapper {
     padding-bottom: 0px; /* reserve space for the name bar */
@@ -178,16 +182,14 @@
     transform: translateX(-50%) !important;
     transform: translateY(10%);
   }
-  
+
   .executive-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  background-color: blue;
   }
-  
+
   .executive-name-bar {
-    background-color: red;
     width: 100%;
     grid-area: name;
     width: 100%;
@@ -198,14 +200,18 @@
     padding-left: 0;
   }
 
+  .delete-for-mobile {
+    display: none;
+  }
+
+  .delete-for-desktop {
+    display: inline;
+  }
   .name-box {
-    background-color: orange;
-    /* transform: translateX(50%) !important; */
     width: 100% !important;
     text-align: center;
     color: white;
     margin: 0px !important;
-    background-color: red;
     width: 100% !important;
     padding: 100px 0px 0px 0px !important;
   }
@@ -230,9 +236,10 @@
   }
   .executive-image,
   .executive-image-big {
-    position: relative !important;
-    bottom: 70px;
+    position: absolute !important;
+    top: -100px !important;
     right: 0px !important;
+    width: 50%;
   }
   .executive-wrapper {
     grid-template-rows: auto auto auto;
