@@ -1,0 +1,20 @@
+body[lang="en"] {
+  .contain-numbers-and-chart {
+    flex-direction: row-reverse;
+  }
+
+  .contain-numbers-and-chart .fix-chart {
+    flex-direction: row-reverse;
+  }
+  .line-and-numbers .number {
+    flex-direction: row-reverse;
+  }
+  .line-and-numbers {
+    align-items: flex-end;
+  }
+
+  .titles-for-chart .title-color {
+    margin-right: 10px;
+    margin-left: 0px;
+  }
+}

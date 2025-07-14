@@ -176,17 +176,17 @@
         </div>
 
         <div class="hero-images">
-            <img class="image-hero " src="Images/img2.png" alt="" />
+          <img class="image-hero" src="Images/img2.png" alt="" />
           <div class="title-section">
             <div class="white-title">
               <img class="hero-icon" src="Images/hero-icon.png" alt="" />
               <img class="hero-icon-en" src="Images/hero-icon-en.png" alt="" />
-              <p>الرئيسية</p>
+              <p data-en="Home">الرئيسية</p>
               <img class="arrow" src="Images/arrow-footer.png" alt="" />
-              <p>نظرة عامة</p>
+              <p data-en="Overview">نظرة عامة</p>
             </div>
             <div class="green-title">
-              <h1>أبرز النتائج المالية والتشغيلية</h1>
+              <h1 data-en="">أبرز النتائج المالية والتشغيلية</h1>
             </div>
           </div>
         </div>
@@ -296,8 +296,8 @@
           <div class="All-chart">
             <div class="right-chart-container second-chart-for-mobile">
               <div class="outer-title-chart">
-                <h1 data-en="Net Profit of First Mills">الإيرادات</h1>
-                <p data-en="(All Amounts In SAR Million)">
+                <h1 data-en="Revenues">الإيرادات</h1>
+                <p data-en="(All Amounts in SAR Mln)">
                   (جميع المبالغ بالمليون ريال)
                 </p>
               </div>
@@ -344,8 +344,8 @@
           <div class="All-chart">
             <div class="right-chart-container second-chart-for-mobile">
               <div class="outer-title-chart">
-                <h1 data-en="Net Profit of First Mills">الربح التشغيلي</h1>
-                <p data-en="(All Amounts In SAR Million)">
+                <h1 data-en="Operating Profit">الربح التشغيلي</h1>
+                <p data-en="(All Amounts in SAR Mln)">
                   (جميع المبالغ بالمليون ريال)
                 </p>
               </div>
@@ -395,14 +395,18 @@
       <div class="chart-container">
         <div class="right-chart-container second-chart-for-mobile">
           <div class="outer-title-chart">
-            <h1 data-en="Net Profit of First Mills">
-              الإيرادات حسب نوع المنتج
-            </h1>
-            <p data-en="(All Amounts In SAR Million)">
+            <h1 data-en="Revenue by Product Type">الإيرادات حسب نوع المنتج</h1>
+            <p data-en="(All Amounts in SAR Mln)">
               (جميع المبالغ بالمليون ريال)
             </p>
           </div>
         </div>
+        <!--<ul id="labelsFromHTML">
+          <li data-en="Flour ">الدقـيق</li>
+          <li data-en="Feed">الأعلاف</li>
+          <li data-en="Bran">النخالة</li>
+        </ul>-->
+
         <canvas id="myChart" height="500"></canvas>
       </div>
 
@@ -411,10 +415,10 @@
           <div class="All-chart long-chart">
             <div class="right-chart-container second-chart-for-mobile">
               <div class="outer-title-chart">
-                <h1 data-en="Net Profit of First Mills">
+                <h1 data-en="Revenue by Geographical Regions">
                   الإيرادات حسب الموقع الجغرافي
                 </h1>
-                <p data-en="(All Amounts In SAR Million)">
+                <p data-en="(All Amounts In SAR Mln)">
                   (جميع المبالغ بالمليون ريال)
                 </p>
               </div>
@@ -425,28 +429,28 @@
                       class="title-color"
                       style="background-color: #ffb548"
                     ></div>
-                    <p>مصنع جدة</p>
+                    <p data-en="Jeddah Plant">مصنع جدة</p>
                   </div>
                   <div class="title-box">
                     <div
                       class="title-color"
                       style="background-color: #455954"
                     ></div>
-                    <p>مصنع القصيم</p>
+                    <p data-en="Qassim Plant">مصنع القصيم</p>
                   </div>
                   <div class="title-box">
                     <div
                       class="title-color"
                       style="background-color: #73837f"
                     ></div>
-                    <p>مصنع الأحساء</p>
+                    <p data-en="Hasa Plant">مصنع الأحساء</p>
                   </div>
                   <div class="title-box">
                     <div
                       class="title-color"
                       style="background-color: #eaebed"
                     ></div>
-                    <p>مصنع تبوك</p>
+                    <p data-en="Tabuk Plant">مصنع تبوك</p>
                   </div>
                 </div>
                 <div class="fix-chart">
@@ -532,8 +536,8 @@
           <div class="All-chart" style="background-color: #fbfafa !important">
             <div class="right-chart-container second-chart-for-mobile">
               <div class="outer-title-chart">
-                <h1 data-en="Net Profit of First Mills">إجمالي الربح</h1>
-                <p data-en="(All Amounts In SAR Million)">
+                <h1 data-en="Gross Profit">إجمالي الربح</h1>
+                <p data-en="(All Amounts In SAR Mln)">
                   (جميع المبالغ بالمليون ريال)
                 </p>
               </div>
@@ -580,8 +584,8 @@
           <div class="All-chart">
             <div class="right-chart-container second-chart-for-mobile">
               <div class="outer-title-chart">
-                <h1 data-en="Net Profit of First Mills">صافي الربح</h1>
-                <p data-en="(All Amounts In SAR Million)">
+                <h1 data-en="Net Profit">صافي الربح</h1>
+                <p data-en="(All Amounts In SAR Mln)">
                   (جميع المبالغ بالمليون ريال)
                 </p>
               </div>
@@ -632,7 +636,7 @@
     <footer>
       <div class="container">
         <div class="side-of-footer">
-           <a href="S1p2.html" class="next">
+          <a href="S1p2.html" class="next">
             <img src="Images/arrow-footer.png" alt="" />
             <span data-en="Next">التـــالـي</span>
           </a>
@@ -677,10 +681,18 @@
 
       let chart;
       const isMobile = window.innerWidth <= 480;
+      function getLabelsFromHTML() {
+        return Array.from(document.querySelectorAll("#labelsFromHTML li")).map(
+          (el) => el.textContent.trim()
+        );
+      }
+
+      const labelsFromHTML = getLabelsFromHTML();
+
       const config = {
         type: "bar",
         data: {
-          labels: ["الدقـيق", "الأعلاف", "النخالة"],
+          labels: labelsFromHTML,
           datasets: [
             {
               label: "2024",
