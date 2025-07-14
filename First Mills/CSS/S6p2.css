@@ -172,3 +172,9 @@ tbody tr:nth-child(odd) {
   }
 }
 
+body[lang="en"] {
+    #s-title-bar-chart {
+    margin-left: 0px;
+    margin-right: 26px;
+    }
+}
