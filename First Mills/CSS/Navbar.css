@@ -35,7 +35,7 @@ body[lang="en"] {
   
   @media (max-width: 768px) {
   .burger {
-    left: 600px;
+    left: 530px;
   }
   .mobile-menu .section::after {
   left: 650px;
@@ -43,16 +43,16 @@ body[lang="en"] {
 }
   @media (max-width: 480px) {
   .burger {
-    left: 325px;
+    left: 365px;
   }
   .mobile-menu .section::after {
-  left: 350px;
+  left: 380px;
 }
 
 }
   @media (max-width: 425px) {
   .burger {
-    left: 307px;
+    left: 330px;
   }
   .mobile-menu .section::after {
   left: 315px;
