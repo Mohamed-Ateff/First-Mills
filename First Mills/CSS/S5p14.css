@@ -342,21 +342,24 @@ td:first-child {
   display: flex;
   flex-direction: column;
   gap: 0px;
+  direction: rtl; /* if your content is in Arabic */
 }
 
 .legend-item {
   display: flex;
   align-items: center;
+  justify-content: space-between; 
   gap: 10px;
   font-size: 18px;
   color: #333;
 }
+
 .legend-item p:first-child {
   font-size: 16px;
   font-weight: bold;
-}
-.legend-item p:nth-child(2) {
-  font-weight: 400;
+  width: 40px; 
+  text-align: left; 
+  flex-shrink: 0;
 }
 
 .legend-color {
@@ -364,6 +367,12 @@ td:first-child {
   height: 20px;
   border-radius: 3px;
   margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.legend-item p:last-child {
+  flex: 1;
+  font-weight: 400;
 }
 
 #chart-container {
@@ -490,11 +499,11 @@ td:first-child {
   }
 
   .legend {
-    align-items: center;
+    align-items:flex-start;
   }
 
   .legend-item {
-    justify-content: center;
+    justify-content: space-between;
     font-size: 16px;
   }
   #donutChart {
@@ -527,4 +536,15 @@ td:first-child {
   td {
     padding: 10px;
   }
+}
+body[lang="en"] {
+  
+.legend{
+  direction: ltr;
+}
+  @media (max-width: 480px) {
+  .small-english{
+    font-size:18px
+  }
+}
 }

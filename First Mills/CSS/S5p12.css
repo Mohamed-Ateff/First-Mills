@@ -165,7 +165,7 @@ body[lang="en"] {
   position: absolute;
   bottom: -16px;
   right: calc(50%);
-  width: 1px;
+  width: 0.5px;
   background-color: #cbcbcb;
   z-index: 1;
    height: 332px;
@@ -175,7 +175,7 @@ body[lang="en"] {
   position: absolute;
   bottom: -16px;
   left: calc(100%);
-  width: 1px;
+  width: 0.5px;
   background-color: #cbcbcb;
   z-index: 1;
    height: 419px;

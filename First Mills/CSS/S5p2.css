@@ -68,3 +68,20 @@
   width: 100%;
   overflow-x: auto;
 }
+
+body[lang="en"] {
+  .custom-table th {
+  text-align: left;
+}
+.custom-table th:nth-child(3),
+.custom-table td:nth-child(3),
+.custom-table th:nth-child(5),
+.custom-table td:nth-child(5) {
+    width: 30%; /* increase width */
+}
+.custom-table th:nth-child(2),
+.custom-table td:nth-child(2)
+ {
+    width: 16%; /* increase width */
+}
+}
