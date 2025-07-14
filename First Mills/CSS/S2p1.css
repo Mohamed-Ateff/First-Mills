@@ -97,8 +97,10 @@
     height: 260px;
   }
   .executive-image img {
-    height: 400px;
+    height: 300px;
   }
+  
+ 
 }
 
 /* Small Devices: 576px – 767.98px */
@@ -106,6 +108,7 @@
   .executive-image img {
     height: 400px;
   }
+
 }
 
 .executive-text {
@@ -171,16 +174,24 @@
 @media (max-width: 768px) {
   .executive-wrapper {
     padding-bottom: 0px; /* reserve space for the name bar */
-    margin-top: 106px !important;
+    margin-top: 356px !important;
+  }
+  .executive-image,
+  .executive-image-big {
+    position: absolute !important;
+    top: 0px !important;
+    right: 23% !important;
+    width: 50%;
   }
   .executive-image {
     height: fit-content;
     width: fit-content;
     position: absolute;
-    top: -50%;
-    right: 0% !important;
-    transform: translateX(-50%) !important;
-    transform: translateY(10%);
+    top: 0% !important;
+     width: 50%;
+    right: 23% !important;
+    transform: translateX(-30%) !important;
+    transform: translateY(-65%) !important;
   }
 
   .executive-image img {
@@ -198,6 +209,7 @@
     justify-content: center;
     align-items: center;
     padding-left: 0;
+    
   }
 
   .delete-for-mobile {
@@ -234,13 +246,7 @@
     font-size: 16px;
     line-height: 28px;
   }
-  .executive-image,
-  .executive-image-big {
-    position: absolute !important;
-    top: -100px !important;
-    right: 0px !important;
-    width: 50%;
-  }
+  
   .executive-wrapper {
     grid-template-rows: auto auto auto;
     height: auto;
@@ -255,19 +261,32 @@
     padding: 0px;
   }
 }
-
+@media (max-width: 480px) {
+     .executive-wrapper {
+    padding-bottom: 0px; /* reserve space for the name bar */
+    margin-top: 100px !important;
+  }
+  .executive-image,
+  .executive-image-big {
+    position: absolute !important;
+    top: 20% !important;
+    right: 23% !important;
+    width: 50%;
+  }
+}
 body[lang="en"] {
   .executive-name-bar {
-    background: radial-gradient(
-        circle at 25% top,
-        #f6f5f4 0px,
-        #f6f5f4 220px,
-        transparent 220px
-      ),
-      linear-gradient(to left, #31544b, #eda842);
+  
     padding-right: 120px;
     padding-left: 520px;
   }
+  .executive-image {
+  height: 100px;
+  position: absolute;
+  /* top: -125%; */
+  right: 55.6%;
+  transform: translateY(10%);
+}
   .name-box {
     text-align: left;
   }
@@ -287,7 +306,7 @@ body[lang="en"] {
   .executive-text {
     max-width: 60%;
     margin-inline-start: auto;
-    padding: 90px 0px 0 90px;
+    padding: 0px 0px 0 90px;
     z-index: 2;
   }
   /* @media (max-width: 1500px) {
@@ -379,53 +398,56 @@ body[lang="en"] {
     .executive-name-bar {
       width: 100%;
       height: 220px;
-      background: radial-gradient(
-          circle at 50% top,
-          #f6f5f4 0px,
-          #f6f5f4 140px,
-          transparent 140px
-        ),
-        linear-gradient(to right, #31544b, #eda842);
-
+     
       padding-left: 0;
       padding-right: 0;
+     
+    }
+    .name-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .executive-image,
-    .executive-image-big {
-      position: relative !important;
-      bottom: 70px;
-      left: 0px !important;
-    }
+  .executive-image-big {
+    position: absolute !important;
+    top: 0px !important;
+    right: 23% !important;
+    width: 50%;
+  }
+   .executive-image {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    top: 0% !important;
+     width: 50%;
+    right: 23% !important;
+    transform: translateX(-30%) !important;
+    transform: translateY(-65%) !important;
+  }
+  .executive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
     .executive-text {
       max-width: 100%;
       padding: 0px;
     }
+    
   }
   @media (max-width: 480px) {
-    .executive-top {
-      margin: 50px 0;
-    }
-    .executive-image,
-    .executive-image-big {
-      height: 200px;
-      bottom: 60px;
-    }
-    .executive-name-bar {
-      height: 240px;
-      background: radial-gradient(
-          circle at 50% top,
-          #f6f5f4 0px,
-          #f6f5f4 100px,
-          transparent 100px
-        ),
-        linear-gradient(to right, #31544b, #eda842);
-
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .name-box {
-      padding-top: 110px;
-    }
+        .executive-wrapper {
+    padding-bottom: 0px; /* reserve space for the name bar */
+    margin-top: 100px !important;
   }
+  .executive-image,
+  .executive-image-big {
+    position: absolute !important;
+    top: 20% !important;
+    right: 23% !important;
+    width: 50%;
+  }
+}
 }
