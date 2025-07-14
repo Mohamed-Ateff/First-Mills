@@ -254,7 +254,13 @@
   }
 }
 
+.number-english{
+  display: none;
+}
 body[lang="en"] {
+  .number-english{
+  display: inline;
+}
   .four-cards div:nth-child(3),
   .four-cards div:nth-child(5) {
     padding: 30px 130px 20px 150px;
