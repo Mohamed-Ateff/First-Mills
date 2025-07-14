@@ -32,7 +32,19 @@ body[lang="en"] {
     clip-path: polygon(0% 0%, 100% 0, 100% 100%);
     left: 2.6%;
   }
+  @media (max-width: 768px) {
+  .burger {
+    left: 600px;
+  }
 }
+  @media (max-width: 480px) {
+  .burger {
+    left: 325px;
+  }
+
+}
+}
+
 
 .main-menu {
   width: 220px;

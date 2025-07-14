@@ -16,8 +16,19 @@ body[lang="en"] {
     top: 28%;
     left: 96%;
   }
+  @media (max-width: 768px) {
+  .side-menu {
+    top: 26.5%;
+  }
 }
-
+@media (max-width: 568px) {
+  .side-menu {
+  
+    left: 30%;
+    
+  }
+}
+}
 .circle {
   z-index: 999;
   border-radius: 50%;
