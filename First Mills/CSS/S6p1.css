@@ -203,3 +203,20 @@ canvas {
     font-size: 18px;
   }
 }
+
+body[lang="en"] {
+  .percentage-for-bars {
+    left: 0%;
+  }
+
+  .total p:first-child {
+    color: #31544b;
+    font-size: 30px;
+    margin: 10px auto auto 90px;
+  }
+  .total p:last-child {
+    color: #444444;
+    font-weight: 500;
+    margin: 10px auto auto 110px;
+  }
+}
