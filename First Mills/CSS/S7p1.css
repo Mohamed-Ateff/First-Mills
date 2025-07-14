@@ -1,123 +1,124 @@
 .container-big-f {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 30px
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .card-small {
-    display: flex;
-    width: 43%;
-    flex-direction: column;
+  display: flex;
+  width: 43%;
+  flex-direction: column;
 }
 
 .card-small p {
-    color: #444;
-    font-size: 20px;
+  color: #444;
+  font-size: 20px;
 }
 
 .card-small ul {
-    color: #4E6A63;
-    font-size: 18px;
-    margin: 0px;
+  color: #4e6a63;
+  font-size: 18px;
+  margin: 0px;
 }
 
 .button-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 30px;
-    color: #FFFFFF;
-    margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+  color: #ffffff;
+  margin-top: 13px;
 }
 
 .button-big {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    padding: 0px 20px;
-    background-color: #21333B;
-    width: 170px;
-    border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0px 20px;
+  background-color: #21333b;
+  width: 170px;
+  border-radius: 20px;
 }
 
 .button-big p {
-    color: #FFFFFF;
-    font-size: 20px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .button-div:nth-of-type(2) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
-    color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #ffffff;
 }
 
 .button-small {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FCB44A;
-    width: 63px;
-    height: 63px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcb44a;
+  width: 63px;
+  height: 63px;
+  border-radius: 10px;
 }
 
 .button-small img {
-    width: 22px;
-    height: 23px;
+  width: 22px;
+  height: 23px;
 }
 
 .button-small:nth-of-type(4) img {
-    width: 15px;
-    height: 31px;
-
+  width: 15px;
+  height: 31px;
 }
 
 .button-small:nth-of-type(5) img {
-    width: 39px;
-    height: 30px;
-
+  width: 39px;
+  height: 30px;
 }
 
 @media (max-width: 1026px) {
-
-    .container-big-f {
-        gap: 30px
-    }
-    .card-small {
-        width: 37%;
-    }
-    
+  .container-big-f {
+    gap: 30px;
+  }
+  .card-small {
+    width: 37%;
+  }
 }
 
 @media (max-width: 768px) {
-    .padding-top {
-        padding-top: 40px;
-    }
-    .container-big-f {
-        gap: 30px
-    }
-    .card-small {
-        width: 41%;
-    }
+  .padding-top {
+    padding-top: 40px;
+  }
+  .container-big-f {
+    gap: 30px;
+  }
+  .card-small {
+    width: 41%;
+  }
 }
 
 @media (max-width: 480px) {
-    .padding-top {
-        padding-top: 0px;
-    }
-    .container-big-f {
-        gap: 10px
-    }
-    .card-small {
-        width: 100%;
-    }
-        .button-div{
-    
+  .padding-top {
+    padding-top: 0px;
+  }
+  .container-big-f {
+    gap: 10px;
+  }
+  .card-small {
+    width: 100%;
+  }
+  .button-div {
     margin-top: 20px;
+  }
 }
+
+body[lang="en"] {
+  .button-big {
+    flex-direction: row-reverse;
+  }
 }

@@ -192,10 +192,16 @@ body[lang="ar"] {
   .english-item {
     display: none;
   }
+   .arabic-item {
+    display: block;
+  }
 }
 
 body[lang="en"] {
   .arabic-item {
     display: none;
+  }
+   .english-item {
+    display: block;
   }
 }
