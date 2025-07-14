@@ -193,4 +193,10 @@ body[lang="en"] {
     margin-left: 15px;
     margin-right: 0;
   }
+  @media (max-width: 992px) {
+    .vision img,
+.mission img {
+  margin-left: 0px;
+}
+  }
 }
