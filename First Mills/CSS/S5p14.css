@@ -242,15 +242,15 @@ td:first-child {
 .stock-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 18px 40px;
   justify-items: center;
 }
 
 .stock-card {
   background-color: #31544b;
   color: white;
-  width: 350px;
-  height: 200px;
+  width: 420px;
+  height: 230px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
@@ -261,8 +261,8 @@ td:first-child {
 
 .label {
   color: #ffb548;
-  font-weight: bold;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 22px;
   margin-bottom: 12px;
 }
 
@@ -277,7 +277,7 @@ td:first-child {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
 }
@@ -287,7 +287,7 @@ td:first-child {
 }
 
 .currency {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: normal;
   margin-right: 5px;
 }
@@ -299,8 +299,9 @@ td:first-child {
 
 .date {
   color: #dadada;
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 15px;
+  font-weight: 500;
 }
 
 .arrow-img {
@@ -347,7 +348,7 @@ td:first-child {
 .legend-item {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 10px;
   font-size: 18px;
   color: #333;
@@ -356,8 +357,8 @@ td:first-child {
 .legend-item p:first-child {
   font-size: 16px;
   font-weight: bold;
-  width: 40px; 
-  text-align: left; 
+  width: 40px;
+  text-align: left;
   flex-shrink: 0;
 }
 
@@ -398,7 +399,6 @@ td:first-child {
   width: 1000px !important;
   height: 350px !important;
   margin: 10px auto;
-
 }
 
 .ctx2,
@@ -499,7 +499,7 @@ td:first-child {
   }
 
   .legend {
-    align-items:flex-start;
+    align-items: flex-start;
   }
 
   .legend-item {
@@ -538,11 +538,9 @@ td:first-child {
   }
 }
 body[lang="en"] {
-  
-
   @media (max-width: 480px) {
-  .small-english{
-    font-size:18px
+    .small-english {
+      font-size: 18px;
+    }
   }
-}
 }
