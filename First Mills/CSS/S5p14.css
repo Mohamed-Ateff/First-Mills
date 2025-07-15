@@ -342,7 +342,6 @@ td:first-child {
   display: flex;
   flex-direction: column;
   gap: 0px;
-  direction: rtl; /* if your content is in Arabic */
 }
 
 .legend-item {
@@ -540,9 +539,7 @@ td:first-child {
 }
 body[lang="en"] {
   
-.legend{
-  direction: ltr;
-}
+
   @media (max-width: 480px) {
   .small-english{
     font-size:18px
