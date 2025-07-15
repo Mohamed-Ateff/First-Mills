@@ -97,7 +97,7 @@
 
 body[lang="ar"] {
   .hero-icon-en {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -115,7 +115,7 @@ body[lang="en"] {
     display: none;
   }
   .hero-icon-en {
-    display: initial;
+    display: initial !important; 
     width: 75px;
     position: absolute;
     top: -2px;
