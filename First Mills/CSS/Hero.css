@@ -112,7 +112,7 @@ body[lang="en"] {
     padding-left: 58px;
   }
   .white-title .hero-icon {
-    display: none;
+    display: none !important;
   }
   .hero-icon-en {
     display: initial !important; 
