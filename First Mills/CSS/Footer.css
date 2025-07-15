@@ -85,6 +85,10 @@ body[lang="en"] {
      footer .container .side-of-footer .btn-footer {
     margin-left: 0px;
   }
+  footer .container .side-of-footer .next {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   }
 }
 
