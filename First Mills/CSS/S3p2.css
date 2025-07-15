@@ -267,9 +267,38 @@ body[lang="en"] {
   }
 
   .logo-div {
-  
     left: 20px;
   }
+@media (max-width: 1024px) {
+.four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 100px 10px 100px 150px;
+  }
+  .four-cards div:nth-child(2),
+  .four-cards div:nth-child(4) {
+    padding: 10px 150px 10px 10px;
+  }
 
- 
+
+
+}
+@media (max-width: 768px) {
+.four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 50px 30px 50px 90px;
+  }
+  .four-cards div:nth-child(2),
+  .four-cards div:nth-child(4) {
+    padding: 10px 70px 10px 50px;
+  }
+
+}
+ @media (max-width: 480px) {
+.four-cards div:nth-child(3),
+  .four-cards div:nth-child(5) {
+    padding: 30px 40px 20px 20px;
+  }
+
+  
+ }
 }
