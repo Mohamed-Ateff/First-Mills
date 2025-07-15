@@ -81,6 +81,11 @@ body[lang="en"] {
     margin-left: 25px;
     margin-right: 0px;
   }
+  @media (max-width: 768px) {
+     footer .container .side-of-footer .btn-footer {
+    margin-left: 0px;
+  }
+  }
 }
 
 @media (max-width: 768px) {
