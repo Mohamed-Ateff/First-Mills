@@ -19,6 +19,8 @@ body[lang="en"] {
   @media (max-width: 768px) {
   .side-menu {
     top: 26.5%;
+    left: unset !important;
+    right: -2%;
   }
 }
 @media (max-width: 568px) {
@@ -28,11 +30,12 @@ body[lang="en"] {
 }
 @media (max-width: 480px) {
   .side-menu {
-    left: 38%;
+    left: unset !important;
+    right: 18%;
   }
 @media (max-width: 425px) {
   .side-menu {
-    left: 33%;
+   right: 13%;
   }
 }
 }

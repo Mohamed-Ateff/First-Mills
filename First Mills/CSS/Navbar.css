@@ -35,24 +35,29 @@ body[lang="en"] {
   
   @media (max-width: 768px) {
   .burger {
-    left: 530px;
+    left: unset;
+    right: 9%;
   }
   .mobile-menu .section::after {
-  left: 650px;
+  left: unset;
+  right: 5%;
 }
 }
   @media (max-width: 480px) {
   .burger {
-    left: 365px;
+    left: unset;
+    right: 5%;
   }
   .mobile-menu .section::after {
-  left: 380px;
+ left: unset;
+  right: 5%;
 }
 
 }
   @media (max-width: 425px) {
   .burger {
-    left: 330px;
+    left: unset;
+    right: 1%;
   }
   .mobile-menu .section::after {
   left: 315px;
