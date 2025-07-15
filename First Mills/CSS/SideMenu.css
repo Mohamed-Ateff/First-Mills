@@ -23,22 +23,16 @@ body[lang="en"] {
 }
 @media (max-width: 568px) {
   .side-menu {
-  
     left: 30%;
-    
   }
 }
 @media (max-width: 480px) {
   .side-menu {
-  
     left: 38%;
-    
   }
 @media (max-width: 425px) {
   .side-menu {
-  
     left: 33%;
-    
   }
 }
 }
