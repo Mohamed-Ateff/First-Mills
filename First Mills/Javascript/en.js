@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     updateContent(language);
     localStorage.setItem("preferredLanguage", language);
+    if (typeof updateChartLabelsForLanguage === "function") {
+      updateChartLabelsForLanguage(language);
+    }
   }
 
   function updateContent(language) {

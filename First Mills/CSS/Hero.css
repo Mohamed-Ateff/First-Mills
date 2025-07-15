@@ -97,7 +97,7 @@
 
 body[lang="ar"] {
   .hero-icon-en {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -112,10 +112,10 @@ body[lang="en"] {
     padding-left: 58px;
   }
   .white-title .hero-icon {
-    display: none;
+    display: none !important;
   }
   .hero-icon-en {
-    display: initial;
+    display: initial !important; 
     width: 75px;
     position: absolute;
     top: -2px;

@@ -397,11 +397,11 @@
           </div>
         </div>
         
-        <ul id="labelsFromHTML" style="display: none">
+        <!-- <ul id="labelsFromHTML" style="display: none">
           <li data-en="Flour">الدقـيق</li>
           <li data-en="Feed">الأعلاف</li>
           <li data-en="Bran">النخالة</li>
-        </ul>
+        </ul> -->
         <canvas id="myChart" height="500"></canvas>
       </div>
 
@@ -671,150 +671,160 @@
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
     <script src="Javascript/bars.js"></script>
 
-    <script>
-      Chart.register(ChartDataLabels);
+   <script>
+  Chart.register(ChartDataLabels);
 
-      let chart;
-      const isMobile = window.innerWidth <= 480;
-      function getLabelsFromHTML() {
-        return Array.from(document.querySelectorAll("#labelsFromHTML li")).map(
-          (el) => el.textContent.trim()
-        );
-      }
+  let chart;
+  const isMobile = window.innerWidth <= 480;
 
-      const labelsFromHTML = getLabelsFromHTML();
-
-      const config = {
-        type: "bar",
-        data: {
-          labels: labelsFromHTML,
-          datasets: [
-            {
-              label: "2024",
-              data: [599.12, 311.9, 137.83],
-              backgroundColor: "#f8b545",
-              barThickness: window.innerWidth <= 480 ? 20 : 40,
-              borderSkipped: false,
-            },
-            {
-              label: "2023",
-              data: [552.9, 271.05, 140.31],
-              backgroundColor: "#5f7068",
-              barThickness: window.innerWidth <= 480 ? 20 : 40,
-              borderSkipped: false,
-            },
-          ],
+  const config = {
+    type: "bar",
+    data: {
+      labels: ["الدقـيق", "الأعلاف", "النخالة"], 
+      datasets: [
+        {
+          label: "2024",
+          data: [599.12, 311.9, 137.83],
+          backgroundColor: "#f8b545",
+          barThickness: isMobile ? 20 : 40,
+          borderSkipped: false,
         },
-        options: {
-          indexAxis: "y",
-          responsive: true,
-          animation: {
-            duration: 2500, // ✅ Slower animation (1.5s)
-            easing: "easeOutQuart", // ✅ Smooth animation curve
-          },
-          plugins: {
-            legend: {
-              position: "bottom",
-              rtl: true,
-              reverse: true,
-              labels: {
-                boxWidth: 20,
-                font: {
-                  family: "MyFont",
-                  size: 14,
-                },
-              },
-            },
-            tooltip: {
-              enabled: false,
-            },
-            datalabels: {
-              display: true,
-              anchor: "start",
-              align: "center",
-              offset: 0,
-              color: "#ffffff",
-              font: {
-                size: 13,
-                weight: "bold",
-                family: "MyFont",
-              },
-              formatter: (value) => value.toFixed(2),
-            },
-          },
-          layout: {
-            padding: {
-              left: 0,
-              right: 0,
-              top: 0,
-              bottom: 0,
-            },
-          },
-          scales: {
-            x: {
-              beginAtZero: true,
-              grid: {
-                drawOnChartArea: false,
-                drawTicks: false,
-                drawBorder: true,
-                color: "#000",
-                lineWidth: 0,
-              },
-              border: {
-                display: true,
-                width: 1,
-                color: "#000",
-              },
-              ticks: {
-                font: {
-                  family: "MyFont",
-                },
-              },
-            },
-            y: {
-              grid: {
-                drawOnChartArea: false,
-                drawTicks: false,
-                drawBorder: false,
-              },
-              border: {
-                display: true,
-                width: 1,
-                color: "#000",
-              },
-              ticks: {
-                color: "#000",
-                font: {
-                  size: 16,
-                  weight: "300",
-                  family: "MyFont",
-                },
-                padding: 5,
-              },
-            },
-          },
-          barPercentage: 0.9,
-          categoryPercentage: 0.2,
+        {
+          label: "2023",
+          data: [552.9, 271.05, 140.31],
+          backgroundColor: "#5f7068",
+          barThickness: isMobile ? 20 : 40,
+          borderSkipped: false,
         },
-        plugins: [ChartDataLabels],
-      };
-
-      const observer = new IntersectionObserver(
-        (entries, observerInstance) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting && !chart) {
-              const ctx = document.getElementById("myChart").getContext("2d");
-              chart = new Chart(ctx, config);
-              observerInstance.disconnect(); // ✅ Run once, stop observing
-            }
-          });
+      ],
+    },
+    options: {
+      indexAxis: "y",
+      responsive: true,
+      animation: {
+        duration: 2500,
+        easing: "easeOutQuart",
+      },
+      plugins: {
+        legend: {
+          position: "bottom",
+          rtl: true,
+          reverse: true,
+          labels: {
+            boxWidth: 20,
+            font: {
+              family: "MyFont",
+              size: 14,
+            },
+          },
         },
-        { threshold: 0.8 } // ✅ Trigger when 50% of chart is in view
-      );
+        tooltip: {
+          enabled: false,
+        },
+        datalabels: {
+          display: true,
+          anchor: "start",
+          align: "center",
+          offset: 0,
+          color: "#ffffff",
+          font: {
+            size: 13,
+            weight: "bold",
+            family: "MyFont",
+          },
+          formatter: (value) => value.toFixed(2),
+        },
+      },
+      layout: {
+        padding: {
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0,
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: {
+            drawOnChartArea: false,
+            drawTicks: false,
+            drawBorder: true,
+            color: "#000",
+            lineWidth: 0,
+          },
+          border: {
+            display: true,
+            width: 1,
+            color: "#000",
+          },
+          ticks: {
+            font: {
+              family: "MyFont",
+            },
+          },
+        },
+        y: {
+          grid: {
+            drawOnChartArea: false,
+            drawTicks: false,
+            drawBorder: false,
+          },
+          border: {
+            display: true,
+            width: 1,
+            color: "#000",
+          },
+          ticks: {
+            color: "#000",
+            font: {
+              size: 16,
+              weight: "300",
+              family: "MyFont",
+            },
+            padding: 5,
+          },
+        },
+      },
+      barPercentage: 0.9,
+      categoryPercentage: 0.2,
+    },
+    plugins: [ChartDataLabels],
+  };
 
-      observer.observe(document.getElementById("myChart"));
-    </script>
+  const observer = new IntersectionObserver(
+    (entries, observerInstance) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !chart) {
+          const ctx = document.getElementById("myChart").getContext("2d");
+          chart = new Chart(ctx, config);
 
+          if (document.body.classList.contains("english")) {
+            chart.data.labels = ["Flour", "Feed", "Bran"];
+          } else {
+            chart.data.labels = ["الدقـيق", "الأعلاف", "النخالة"];
+          }
+          chart.update();
+
+          observerInstance.disconnect();
+        }
+      });
+    },
+    { threshold: 0.8 }
+  );
+
+  observer.observe(document.getElementById("myChart"));
+
+  window.updateChartLabelsForLanguage = function (lang) {
+    if (!chart) return;
+    if (lang === "en") {
+      chart.data.labels = ["Flour", "Feed", "Bran"];
+    } else {
+      chart.data.labels = ["الدقـيق", "الأعلاف", "النخالة"];
+    }
+    chart.update();
+  };
+</script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="./Javascript/en.js"></script>
