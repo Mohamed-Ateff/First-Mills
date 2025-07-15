@@ -33,6 +33,13 @@
 .card-hz:first-of-type .icon-div {
   padding-right: 210px;
 }
+  .card-hz:nth-of-type(2) .icon-div {
+    padding-right: 154px;
+  }
+
+.card-hz:last-of-type .icon-div {
+  padding-right: 160px;
+}
 
 .icon-div img {
   width: 33px;
@@ -213,9 +220,26 @@ body[lang="en"] {
     padding: 20px 70px;
   }
   .card-hz:first-of-type .icon-div {
-    padding-left: 300px;
+    padding-left: 240px;
+    padding-right: 0px;
+
   }
- 
+
+  .card-hz:nth-of-type(2) .icon-div {
+    padding-left: 168px;
+    padding-right: 0px;
+
+  }
+   .card-hz:nth-of-type(3) .icon-div {
+    padding-left: 137px;
+    padding-right: 0px;
+
+  }
+     .card-hz:last-of-type .icon-div {
+    padding-left: 152px;
+padding-right: 0px;
+     }
+
 @media (max-width: 768px) {
   .bg-float-en {
     left: 40%;

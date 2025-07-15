@@ -45,7 +45,7 @@
 .logo-div::before {
   content: "";
   position: absolute;
-  top: -28.8675px;
+  top: -27.2px;
   left: 0;
   width: 0;
   height: 0;
@@ -56,7 +56,7 @@
 .logo-div::after {
   content: "";
   position: absolute;
-  bottom: -28.2px;
+  bottom: -27.2px;
   left: 0;
   width: 0;
   height: 0;
@@ -142,16 +142,15 @@
   }
 }
 
-.number-english{
+.number-english {
   display: none;
 }
 body[lang="en"] {
-  .number-english{
-  display: inline;
-}
+  .number-english {
+    display: inline;
+  }
 
   .logo-div {
-  
     left: 0px;
   }
   .logo-div::before {
@@ -161,5 +160,4 @@ body[lang="en"] {
   .logo-div::after {
     bottom: -27.2px;
   }
-
 }
