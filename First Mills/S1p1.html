@@ -680,7 +680,7 @@
   const config = {
     type: "bar",
     data: {
-      labels: ["الدقـيق", "الأعلاف", "النخالة"], // default Arabic
+      labels: ["الدقـيق", "الأعلاف", "النخالة"], 
       datasets: [
         {
           label: "2024",
@@ -792,7 +792,6 @@
     plugins: [ChartDataLabels],
   };
 
-  // Observer to delay chart creation until visible
   const observer = new IntersectionObserver(
     (entries, observerInstance) => {
       entries.forEach((entry) => {
@@ -800,7 +799,6 @@
           const ctx = document.getElementById("myChart").getContext("2d");
           chart = new Chart(ctx, config);
 
-          // ✅ Set labels based on current language
           if (document.body.classList.contains("english")) {
             chart.data.labels = ["Flour", "Feed", "Bran"];
           } else {
@@ -817,7 +815,6 @@
 
   observer.observe(document.getElementById("myChart"));
 
-  // ✅ Add this globally so your existing language toggle can access it
   window.updateChartLabelsForLanguage = function (lang) {
     if (!chart) return;
     if (lang === "en") {

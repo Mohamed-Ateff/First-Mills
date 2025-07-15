@@ -1124,11 +1124,11 @@ For Small Cap Companies' Category"
     </script>
 
     <script>
-      function getMonthsFromHTML() {
-        return Array.from(document.querySelectorAll("#monthsLabels li")).map(
-          (el) => el.textContent.trim()
-        );
-      }
+      function getMonthsFromHTML(lang = "ar") {
+  return Array.from(document.querySelectorAll("#monthsLabels li")).map((el) =>
+    lang === "en" ? el.dataset.en : el.textContent.trim()
+  );
+}
 
       function createStockChart() {
         const months = getMonthsFromHTML();
@@ -1333,13 +1333,40 @@ For Small Cap Companies' Category"
         });
       }
 
-      // تنفيذ كل المخططات بعد تحميل الصفحة
       window.addEventListener("DOMContentLoaded", () => {
         createStockChart();
         createVolumeChart();
         createValueChart();
         createMarketCapChart();
       });
+
+      let currentLanguage = "ar";
+
+// ✅ دالة تقوم بتحديث اللغة لكل التشارتات فقط
+window.updateChartLabelsForLanguage = function (lang) {
+  if (lang !== "ar" && lang !== "en") return;
+  if (lang === currentLanguage) return;
+
+  currentLanguage = lang;
+
+  // دالة جلب الشهور المحدّثة بناءً على اللغة
+  function getMonths(lang) {
+    return Array.from(document.querySelectorAll("#monthsLabels li")).map((el) =>
+      lang === "en" ? el.dataset.en : el.textContent.trim()
+    );
+  }
+
+  const updatedLabels = getMonths(lang);
+
+  // استبدال الشهور مباشرة داخل كل رسم
+  const charts = Chart.instances;
+  for (let id in charts) {
+    if (charts[id] && charts[id].data && charts[id].data.labels) {
+      charts[id].data.labels = updatedLabels;
+      charts[id].update();
+    }
+  }
+};
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
