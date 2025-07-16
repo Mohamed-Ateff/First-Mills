@@ -82,13 +82,13 @@ body[lang="en"] {
     margin-right: 0px;
   }
   @media (max-width: 768px) {
-     footer .container .side-of-footer .btn-footer {
-    margin-left: 0px;
-  }
-  footer .container .side-of-footer .next {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
+    footer .container .side-of-footer .btn-footer {
+      margin-left: 0px;
+    }
+    footer .container .side-of-footer .next {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 }
 
