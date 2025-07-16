@@ -204,40 +204,40 @@ canvas {
   }
 }
 @media (max-width: 480px) {
-.productBarValues h6:nth-child(1) {
-   right: -10%;
-   top: 4%;
-}
+  .productBarValues h6:nth-child(1) {
+    right: -10%;
+    top: 4%;
+  }
 
-.productBarValues h6:nth-child(2) {
-  right: 35%;
+  .productBarValues h6:nth-child(2) {
+    right: 35%;
     top: 34%;
-}
+  }
 
-.productBarValues h6:nth-child(3) {
-  right: 62%;
-   top: 65%;
-}
+  .productBarValues h6:nth-child(3) {
+    right: 62%;
+    top: 65%;
+  }
   /* second bar chart value for english */
   .branchBarValues h6:nth-child(1) {
-  right: -10%;
-  top: 1%;
-}
+    right: -10%;
+    top: 1%;
+  }
 
-.branchBarValues h6:nth-child(2) {
-  right: 20%;
-   top: 25%;
-}
+  .branchBarValues h6:nth-child(2) {
+    right: 20%;
+    top: 25%;
+  }
 
-.branchBarValues h6:nth-child(3) {
-  right: 65%;
-   top: 51%;
-}
+  .branchBarValues h6:nth-child(3) {
+    right: 65%;
+    top: 51%;
+  }
 
-.branchBarValues h6:last-child {
-  right: 63%;
-   top: 76%;
-}
+  .branchBarValues h6:last-child {
+    right: 63%;
+    top: 76%;
+  }
 }
 body[lang="en"] {
   .percentage-for-bars {
@@ -249,124 +249,124 @@ body[lang="en"] {
     font-size: 30px;
     margin: 10px auto auto 90px;
   }
-  
+
   .total p:last-child {
     color: #444444;
     font-weight: 500;
     margin: 10px auto auto 120px;
   }
 
-/* first bar chart value for english */
-.productBarValues h6:nth-child(1) {
-  right: -8%;
-}
-
-.productBarValues h6:nth-child(2) {
-  right: 35%;
-}
-
-.productBarValues h6:nth-child(3) {
-  right: 60%;
-}
-  /* second bar chart value for english */
-  .branchBarValues h6:nth-child(1) {
-  right: -6%;
-}
-
-.branchBarValues h6:nth-child(2) {
-  right: 22%;
-}
-
-.branchBarValues h6:nth-child(3) {
-  right: 63%;
-}
-
-.branchBarValues h6:last-child {
-  right: 61%;
-}
-
-@media (max-width: 1024px) {
-/* first bar chart value for english */
-.productBarValues h6:nth-child(1) {
-   right: -3%;
-   top: 9%;
-}
-
-.productBarValues h6:nth-child(2) {
-  right: 42%;
-    top: 40%;
-}
-
-.productBarValues h6:nth-child(3) {
-  right: 69%;
-   top: 70%;
-}
-  /* second bar chart value for english */
-  .branchBarValues h6:nth-child(1) {
-  right: -1%;
-  top: 6.6%;
-}
-
-.branchBarValues h6:nth-child(2) {
-  right: 28%;
-   top: 33%;
-}
-
-.branchBarValues h6:nth-child(3) {
-  right: 70%;
-   top: 57%;
-}
-
-.branchBarValues h6:last-child {
-  right: 70%;
-   top: 82%;
-}
-  .total p:first-child {
-    color: #31544b;
-    font-size: 30px;
-    margin: 10px auto auto 20px;
+  /* first bar chart value for english */
+  .productBarValues h6:nth-child(1) {
+    right: -8%;
   }
-  
-  .total p:last-child {
-    color: #444444;
-    font-weight: 500;
-    margin: 10px auto auto 20px;
+
+  .productBarValues h6:nth-child(2) {
+    right: 35%;
   }
-}
-@media (max-width: 480px) {
-.productBarValues h6:nth-child(1) {
-   right: -10%;
-   top: 4%;
-}
 
-.productBarValues h6:nth-child(2) {
-  right: 35%;
-    top: 34%;
-}
-
-.productBarValues h6:nth-child(3) {
-  right: 62%;
-   top: 65%;
-}
+  .productBarValues h6:nth-child(3) {
+    right: 60%;
+  }
   /* second bar chart value for english */
   .branchBarValues h6:nth-child(1) {
-  right: -10%;
-  top: 1%;
-}
+    right: -6%;
+  }
 
-.branchBarValues h6:nth-child(2) {
-  right: 20%;
-   top: 25%;
-}
+  .branchBarValues h6:nth-child(2) {
+    right: 22%;
+  }
 
-.branchBarValues h6:nth-child(3) {
-  right: 65%;
-   top: 51%;
-}
+  .branchBarValues h6:nth-child(3) {
+    right: 63%;
+  }
 
-.branchBarValues h6:last-child {
-  right: 63%;
-   top: 76%;
-}
-}
+  .branchBarValues h6:last-child {
+    right: 61%;
+  }
+
+  @media (max-width: 1024px) {
+    /* first bar chart value for english */
+    .productBarValues h6:nth-child(1) {
+      right: -3%;
+      top: 9%;
+    }
+
+    .productBarValues h6:nth-child(2) {
+      right: 42%;
+      top: 40%;
+    }
+
+    .productBarValues h6:nth-child(3) {
+      right: 69%;
+      top: 70%;
+    }
+    /* second bar chart value for english */
+    .branchBarValues h6:nth-child(1) {
+      right: -1%;
+      top: 6.6%;
+    }
+
+    .branchBarValues h6:nth-child(2) {
+      right: 28%;
+      top: 33%;
+    }
+
+    .branchBarValues h6:nth-child(3) {
+      right: 70%;
+      top: 57%;
+    }
+
+    .branchBarValues h6:last-child {
+      right: 70%;
+      top: 82%;
+    }
+    .total p:first-child {
+      color: #31544b;
+      font-size: 30px;
+      margin: 10px auto auto 20px;
+    }
+
+    .total p:last-child {
+      color: #444444;
+      font-weight: 500;
+      margin: 10px auto auto 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    .productBarValues h6:nth-child(1) {
+      right: -10%;
+      top: 4%;
+    }
+
+    .productBarValues h6:nth-child(2) {
+      right: 35%;
+      top: 34%;
+    }
+
+    .productBarValues h6:nth-child(3) {
+      right: 62%;
+      top: 65%;
+    }
+    /* second bar chart value for english */
+    .branchBarValues h6:nth-child(1) {
+      right: -10%;
+      top: 1%;
+    }
+
+    .branchBarValues h6:nth-child(2) {
+      right: 20%;
+      top: 25%;
+    }
+
+    .branchBarValues h6:nth-child(3) {
+      right: 65%;
+      top: 51%;
+    }
+
+    .branchBarValues h6:last-child {
+      right: 63%;
+      top: 76%;
+    }
+  }
 }

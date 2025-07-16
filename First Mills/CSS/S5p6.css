@@ -51,7 +51,7 @@ thead {
 }
 th,
 td {
-  padding: 20px 30px;
+  padding: 20px;
   font-size: 14px;
   background-color: #ffffff;
   text-align: center;
@@ -72,7 +72,7 @@ th {
   font-size: 16px;
 }
 th:first-child {
-  padding-right: 30px;
+  padding-right: 18px;
 }
 
 tr:nth-child(even) td {
@@ -87,12 +87,17 @@ tr:nth-child(even) td {
 
 .th-table3 > th,
 .td-table3 > td {
-  font-size: 16px;
-  padding: 10px 15px;
+  padding: 10px;
   font-weight: 500;
 }
-.td-table3 > td:last-child {
-    font-weight: 600;
+.td-table3 th:first-child {
+  padding-right: 20px;
+}
+.td-table3 td:first-child {
+  padding-right: 20px;
+}
+.td-table3 td:last-child {
+  font-weight: 600;
 }
 
 .th-table3 > .small-th {
@@ -162,6 +167,11 @@ tr:nth-child(even) td {
 
 body[lang="en"] {
   th:first-child {
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .td-table3 td:first-child {
+    padding-left: 20px;
+    padding-right: 0px;
   }
 }
