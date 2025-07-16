@@ -272,7 +272,6 @@ body[lang="en"] {
 
 /* ALL charts beside each other */
 
-
 /* @media screen and (max-width: 768px) {
   .container{
     overflow: hidden !important;
@@ -393,10 +392,7 @@ canvas {
   /* background-color: blue; */
   align-items: center !important;
 }
-#full-wdith-with-padding-top {
-  padding-top: 50px;
-  width: 95%;
-}
+
 .chart .group {
   margin: 0px 25px;
   display: flex;
@@ -488,19 +484,26 @@ canvas {
   justify-content: flex-start;
 }
 
+body[lang="en"] {
+  .contain-numbers-and-chart {
+    flex-direction: row-reverse;
+  }
+  .number {
+    flex-direction: row-reverse;
+  }
+
+  .line-and-numbers {
+    align-items: flex-end;
+  }
+}
+
 @media screen and (max-width: 768px) {
-
   .All-chart {
-  width: 100%; /* changedK */
-}
-.line-and-numbers {
-  
-  min-height: 456px; /* changedK */
- 
-}
-
-
-
+    width: 100%; /* changedK */
+  }
+  .line-and-numbers {
+    min-height: 456px; /* changedK */
+  }
 
   .container {
     overflow: hidden !important;
@@ -531,13 +534,13 @@ canvas {
   .chart {
     position: relative;
     display: flex;
-    justify-content:space-evenly; /* changedK */
+    justify-content: space-evenly; /* changedK */
     align-items: center;
     width: 100%;
     padding: 0px 0px 0px 0px !important;
   }
 
-/* added */
+  /* added */
 
   .long-chart .chart .progress-bar {
     width: 20px !important; /* changedK */
@@ -554,72 +557,68 @@ canvas {
     margin: 0px 40px;
   } */
   .long-chart .progress {
-   width: 12px !important;  /* changedK */
-   
+    width: 12px !important; /* changedK */
   }
   .long-chart .line-and-numbers {
     min-height: 537px;
   }
-.long-chart .chart .group .progress-value {
-  font-size: 13px;
-  left: 60% !important;
-  transform: translateX(-55%) rotate(-90deg);
-}
+  .long-chart .chart .group .progress-value {
+    font-size: 13px;
+    left: 60% !important;
+    transform: translateX(-55%) rotate(-90deg);
+  }
 
-.long-chart .chart .group .progress .progress-value {
-  
-  font-size: 12px;
-  
-  left: 60% !important;
-  top: -40px;
-}
+  .long-chart .chart .group .progress .progress-value {
+    font-size: 12px;
 
-.long-chart .contain-numbers-and-chart {
-  width: 100%; 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-top: 100px;
-  justify-content: space-between; 
-  align-items: center;
-  line-height: 15px;
-}
-.long-chart .titles-for-chart .title-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 300px;
-  height: 40px;
-}
-.two-charts-next-to-each-other{
-  flex-direction: column;
-  gap: 40px;
-}
-.one-chart-from-two{
-  width: 100%;
-}
-.two-charts-next-to-each-other 
-.one-chart-from-two   
-.progress-date{
- /* color: red !important; */
- line-height: 17px;
-}
-.outer-title-chart {
-  /* background-color: green; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  margin-bottom: 10px;
-  text-align: center;
-}
+    left: 60% !important;
+    top: -40px;
+  }
+
+  .long-chart .contain-numbers-and-chart {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 15px;
+  }
+  .long-chart .titles-for-chart .title-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: 40px;
+  }
+  .two-charts-next-to-each-other {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .one-chart-from-two {
+    width: 100%;
+  }
+  .two-charts-next-to-each-other .one-chart-from-two .progress-date {
+    /* color: red !important; */
+    line-height: 17px;
+  }
+  .outer-title-chart {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
   /* added */
 
   .progress-bar {
-    width: 50px !important;  /* changedK */
-    
+    width: 50px !important; /* changedK */
+
     height: 400px;
     position: relative;
     margin: 27px 1px 0px 1px !important;
@@ -656,7 +655,6 @@ canvas {
     min-height: 50px;
     line-height: 12px;
     bottom: -22%; /* changedK */
-    
   }
   .one-chart-container-data {
     display: flex;
@@ -681,5 +679,4 @@ canvas {
     height: 15px;
     margin-left: 5px;
   }
- 
 }
