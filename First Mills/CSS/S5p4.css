@@ -695,23 +695,21 @@ background-color: #455954;
 @media (max-width: 425px) {
 .blue-line {
         width: 76%;
-        right: 31px;
+        right: 8.5%;
     }
  .audit-committee {
-        left: calc(0% + 250px);
+        left: calc(70.5% );
     }
     /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
     .audit-dept {
-        left: calc(0% + 250px);
+        left: calc(70.5% );
     }
     .general-assembly::after {
-        width: 63px;
+        width: 51%;
         /* horizontal line length */
     }
        .board::after {
-
-  width: 55px;  /* horizontal line length */
- 
-  
+  width: 46%;  /* horizontal line length */
 }
+
 }
