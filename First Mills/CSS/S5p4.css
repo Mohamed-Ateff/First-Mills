@@ -771,8 +771,94 @@
     right: 8.6%;
   }
 }
+@media (max-width: 601px) {
+   /* /////////////Right Section/////////// */
+ .general-assembly::after {
+  width: 62%;
+    /* horizontal right line length */
+  }
+ .audit-committee {
+    left: calc(73.6%);
+  }
+  /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
+  .audit-dept {
+    left: calc(73.6%);
+  }
 
+   /*/////////// Left Section //////////*/
+    .nominations-committee {
+     left: calc(4.5%);
+    /* move left */
+  }
+
+  .executive-committee {
+     left: calc(4.5%);
+  }
+  
+  
+ /*/////////// bottom Section //////////*/
+ .blue-line {
+  width: 76.4%;
+    right: 9.9%;
+  }
+  .finance-name,
+  .operations-name,
+  .sales-name,
+  .marketing-name,
+  .hr-name {
+
+    width: 80px;
+    font-size: 12px;
+  }
+   .finance-head {
+    left: 2%;
+  }
+
+  .operations-head {
+    left: 22.5%;
+  }
+
+  .sales-head {
+    left: 43%;
+  }
+
+  .marketing-head {
+    left: 62.5%;
+  }
+
+  .hr-head {
+    left: 82.5%;
+  }
+}
+@media (max-width: 568px) {
+ .general-assembly::after {
+  width: 57%;
+    /* horizontal right line length */
+  }
+.board::after {
+    width: 63%;
+    /* horizontal right line length */
+  }
+  .blue-line {
+    width: 76.5%;
+    right: 9.4%;
+  }
+}
 @media (max-width: 480px) {
+   .general-assembly::after {
+  width: 46%;
+    /* horizontal right line length */
+  }
+.board::after {
+    width: 42%;
+    /* horizontal right line length */
+  }
+   .blue-line {
+    width: 75.6%;
+    right: 8%;
+  }
+}
+@media (max-width: 426px) {
 
   .general-assembly,
   .board,
