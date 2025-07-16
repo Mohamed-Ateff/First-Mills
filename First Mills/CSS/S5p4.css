@@ -603,7 +603,7 @@
   }
 }
 
-@media (max-width: 1026px) {
+@media (max-width: 1024px) {
 
   .general-assembly,
   .board,
@@ -712,7 +712,7 @@
   .marketing-name,
   .hr-name {
 
-    width: 130px;
+    width: 120px;
     font-size: 14px;
   }
 
@@ -747,28 +747,28 @@
   }
 
   .finance-head {
-    left: 7.2%;
+    left: 6.2%;
   }
 
   .operations-head {
-    left: 26.5%;
+    left: 25.5%;
   }
 
   .sales-head {
-    left: 47.5%;
+    left: 46.5%;
   }
 
   .marketing-head {
-    left: 66.5%;
+    left: 65.5%;
   }
 
   .hr-head {
-    left: 86.5%;
+    left: 85.5%;
   }
 
   .blue-line {
-    width: 76.3%;
-    right: 7.5%;
+    width: 76.1%;
+    right: 8.6%;
   }
 }
 
@@ -784,12 +784,12 @@
   }
 
   .general-assembly::after {
-    width: 56%;
+    width: 50%;
     /* horizontal right line length */
   }
 
   .board::after {
-    width: 76.7%;
+    width: 59%;
     /* horizontal right line length */
   }
 
@@ -859,12 +859,12 @@
   }
 
   .blue-line {
-    width: 77%;
-    right: 10.2%;
+    width: 76.6%;
+    right: 9.3%;
   }
 }
-
-@media (max-width: 425px) {
+/* iphone */
+@media (max-width: 391px) {
   .blue-line {
     width: 76%;
     right: 8.5%;
