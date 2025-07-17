@@ -107,6 +107,10 @@
   color: #000000;
   font-size: 16px;
   line-height: 37px;
+   
+padding-right: 50px;
+  padding-left: 0px;
+
 }
 .four-cards-body li::marker {
   color: #ffb548;
@@ -269,6 +273,15 @@ body[lang="en"] {
   .logo-div {
     left: 20px;
   }
+  .four-cards-title {
+  padding-right: 0px;
+  padding-left: 20px;
+}
+  .four-cards-body ul {
+padding-right: 0px;
+  padding-left: 50px;
+
+}
 @media (max-width: 1024px) {
 .four-cards div:nth-child(3),
   .four-cards div:nth-child(5) {

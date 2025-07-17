@@ -287,8 +287,12 @@ body[lang="en"] {
   }
   @media screen and (max-width: 480px) {
 
-
-
+ .logo-div {
+    left: 10px;
+  }
+.one-card h3{
+  padding: 0px 5px 0px 5px ;
+}
 .one-card .special-english{
     padding-left: 0px;
     padding-left: 80px;
