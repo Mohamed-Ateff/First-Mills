@@ -557,7 +557,13 @@ background-color: rgba(255, 255, 255, 0.5);
 @media (max-width: 992px) {
   .one-card {
     width: 48%;
+    padding: 35px 20px 30px 20px;
   }
+  .final-card {
+
+  padding: 30px 30px 50px 30px;
+
+}
 }
 
 @media (max-width: 768px){
@@ -588,8 +594,9 @@ background-color: rgba(255, 255, 255, 0.5);
   }
    .staff-table::after {
  
-  right: calc(56.6%);
+  right: calc(58.6%);
    height: 490px;
+   width: 0.5px;
    }
  
 }
@@ -600,7 +607,9 @@ background-color: rgba(255, 255, 255, 0.5);
   }
 .one-card {
     width: 100%;
+    justify-content: center;
   }
+
   .four-item{
   flex-direction: column-reverse;
 }
@@ -638,6 +647,11 @@ background-color: rgba(255, 255, 255, 0.5);
   right: 67.3%;
   height: 300px;
 }
+ .staff-table::after {
+ 
+  right: calc(56.6%);
+   height: 500px;
+   }
 }
 
 body[lang="en"] {
