@@ -183,7 +183,7 @@ body[lang="en"] {
   display: none;
   flex-direction: column;
   background-color: #34594d;
-  color: white;
+  color: white !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -206,6 +206,12 @@ body[lang="en"] {
   left: 15px;
   font-size: 14px;
   transition: transform 0.3s ease;
+}
+a.page{
+  color: white;
+}
+.mobile-menu .section:last-of-type::after {
+  content: none;
 }
 
 .mobile-menu .section.active::after {
