@@ -36,7 +36,7 @@ body[lang="en"] {
   @media (max-width: 768px) {
   .burger {
     left: unset;
-    right: 9%;
+    right: 10%;
   }
   .mobile-menu .section::after {
   left: unset;
@@ -278,7 +278,7 @@ a.page{
     display: block;
     position: absolute;
     top: -65px;
-    left: 50px;
+    left: 10%;
     z-index: 989;
     border-radius: 5px;
   }

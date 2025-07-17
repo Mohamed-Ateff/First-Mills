@@ -173,7 +173,11 @@
   text-align: justify !important;
 }
 /* six cards ends */
-
+@media (max-width: 1024px) {
+ .intersect{
+  margin-top: 5px;
+ }
+}
 @media (max-width: 768px) {
   .title-first {
     padding-bottom: 5px;
@@ -184,12 +188,6 @@
   .List-header {
     height: 100px;
   }
-  .List-text {
-    
- }
- .intersect{
-  margin-top: 5px;
- }
   .list-item {
     font-size: 12px;
     padding: 20px;

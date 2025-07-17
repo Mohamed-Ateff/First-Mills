@@ -20,7 +20,7 @@ body[lang="en"] {
   .side-menu {
     top: 26.5%;
     left: unset !important;
-    right: -2%;
+    right: -3%;
   }
 }
 @media (max-width: 568px) {
