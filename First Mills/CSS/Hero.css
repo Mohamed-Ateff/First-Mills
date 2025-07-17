@@ -99,6 +99,9 @@ body[lang="ar"] {
   .hero-icon-en {
     display: none !important;
   }
+  .white-title .hero-icon-en {
+    display: none !important;/*repeated just to make sure it's not working K */
+  }
 }
 
 body[lang="en"] {
@@ -112,8 +115,12 @@ body[lang="en"] {
     padding-left: 58px;
   }
   .white-title .hero-icon {
-    display: none !important;
+    display: none !important;/*repeated just to make sure it's not working K */
   }
+  .hero-icon {
+    display: none !important; /*repeated just to make sure it's not working K */
+  }
+ 
   .hero-icon-en {
     display: initial !important; 
     width: 75px;

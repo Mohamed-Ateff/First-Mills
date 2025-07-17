@@ -18,7 +18,9 @@
   background-color: rgba(252, 180, 74, 0.4);
 }
 
-
+.activities_title h2{
+margin-top: 0px;
+}
 
 .activities_p {
   background: linear-gradient(90deg, #4e6a63 0%, #88a79f 100%);
