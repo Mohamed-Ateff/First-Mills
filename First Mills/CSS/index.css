@@ -1,15 +1,124 @@
+html,
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url(../Images/homee.jpg);
-  background-size: cover;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+@font-face {
+  font-family: "MyFont";
+  src: url("../Assests/Font.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MyFont-english2";
+  src: url("../Assests/GothamBook.ttf") format("truetype");
+}
+body {
+  font-family: "MyFont";
+  word-spacing: -1px !important;
+  background-color: #f6f5f4;
+  direction: rtl;
+}
+body[lang="en"] {
+  direction: ltr;
+}
+* {
+  box-sizing: border-box;
+  font-family: "MyFont";
+}
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: "MyFont";
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.container-for-hero {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+.start {
+  margin-top: 120px !important;
+  width: 72%;
+  margin: auto;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .start {
+    margin-top: 20px !important;
+    width: 90%;
+  }
+  .container {
+    width: 90%;
+  }
+}
+.border-with-title-under-it {
+  width: fit-content;
+  color: #31544b;
+  font-size: 19px;
+}
+.border-bottom {
+  margin-top: -27px !important;
+  border-bottom: 4px solid #ffb548;
+}
+.Paragraph p {
+  text-align: justify;
+  font-size: 19px;
+  line-height: 37px;
+}
+.border-with-title-under-it-center {
+  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: #31544b;
+  font-size: 19px;
+}
+.border-with-title-under-it-center > .border-bottom {
+}
+@media (min-width: 568px) {
+  .container-for-hero {
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+}
+.background-container {
+  position: fixed;
+  top: 0;
+  load: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: url("Images/fallback.jpg") center center / cover no-repeat;
+}
+.background-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #184c43d9, #f6a635d9);
 }
 .header {
   position: absolute;
@@ -17,7 +126,7 @@ body {
   right: 60px;
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 99999999999999999999999 !important;
 }
 .logo {
   height: 75px;
@@ -33,26 +142,6 @@ body {
   font-weight: 700;
   margin-top: 4px;
 }
-.video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 0;
-}
-.video-player {
-  width: 100%;
-  height: 100vh;
-  background: url("your-image-url-here") no-repeat center center;
-  background-size: cover;
-  position: relative;
-  cursor: pointer;
-}
 .play-button {
   position: absolute;
   top: 50%;
@@ -67,22 +156,65 @@ body {
 .play-button img {
   height: 100px;
 }
-.video-player video {
+
+@media (max-width: 768px) {
+  .start {
+    margin-top: 20px !important;
+    width: 90%;
+  }
+  .container {
+    width: 90%;
+  }
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000000000000 !important;
 }
-@media (max-width: 600px) {
-  .header {
-    top: 10px;
-    right: 10px;
-  }
-  .logo {
-    height: 40px;
-  }
-  .anchor {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
+.popup-content {
+  position: relative;
+  border-radius: 10px;
+}
+.popup-content video {
+  width: 1500px !important;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffb548;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.video-player {
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  max-width: 960px;
 }
