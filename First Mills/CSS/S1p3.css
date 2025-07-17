@@ -116,4 +116,10 @@
 
   
 }
+@media (max-width: 568px) {
+ .table-caption {
+  margin: 0px auto 25px auto;
+}
+  
+}
 

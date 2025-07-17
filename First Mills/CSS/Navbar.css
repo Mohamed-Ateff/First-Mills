@@ -46,7 +46,7 @@ body[lang="en"] {
   @media (max-width: 480px) {
   .burger {
     left: unset;
-    right: 5%;
+    right: 4%;
   }
   .mobile-menu .section::after {
  left: unset;
