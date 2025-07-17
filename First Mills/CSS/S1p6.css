@@ -159,6 +159,12 @@
   .card-hz:first-of-type .icon-div {
     padding-right: 0px;
   }
+  .card-hz:nth-of-type(2) .icon-div {
+    padding-right: 0px;
+  }
+   .card-hz:nth-of-type(4) .icon-div {
+    padding-right: 0px;
+  }
   .icon-div {
     padding-right: 0px;
   }
@@ -189,7 +195,14 @@
     width: 40px; /* 3hsan el div maythzsh */
   }
   .card-hz {
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px 20px 15px;
+  }
+   .number-div h1 {
+   
+    width: 100px; /* 3hsan el div maythzsh */
+    padding-right:0px;
+    padding-left: 0px;
+    text-align: left;
   }
 }
 .percent-none{
@@ -250,9 +263,11 @@ padding-right: 0px;
   }
   .card-hz:first-of-type .icon-div {
     padding-left: 0px;
+    
   }
   .icon-div {
-    padding-left: 0px;
+    padding-left: 0px !important;
+    padding-right: 0px;
   }
 }
 @media (max-width: 480px) {
