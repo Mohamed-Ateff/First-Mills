@@ -67,7 +67,7 @@
 }
 .list-text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   color: #6b95bd;
   font-size: 18px;
@@ -184,6 +184,12 @@
   .List-header {
     height: 100px;
   }
+  .List-text {
+    
+ }
+ .intersect{
+  margin-top: 5px;
+ }
   .list-item {
     font-size: 12px;
     padding: 20px;
@@ -198,6 +204,10 @@
   }
   .orange-number {
     font-size: 40px;
+  }
+ 
+  .title-with-arrow{
+    align-items: flex-start;
   }
   .one-card {
     width: 48%;
@@ -235,6 +245,8 @@
     transform: translate(-0%, -100%);
     background: url(../Images/Intersect.png) no-repeat center;
     background-size: 100% 100%;
+  margin-top: 15px;
+ 
   }
   .orange-number {
     font-size: 20px;
@@ -259,9 +271,12 @@ body[lang="en"] {
 
     transform: rotateY(180deg);
   }
-
+.list-item{
+  text-align: left;
+}
   .title-with-arrow {
     padding-left: 30px;
+    
   }
   .logo-div {
     left: 0px;
@@ -271,5 +286,10 @@ body[lang="en"] {
   }
   .logo-div::after {
     bottom: -27.2px;
+  }
+  @media (max-width: 480px) {
+    .intersect {
+   margin-top: 4px;
+  }
   }
 }
