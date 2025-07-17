@@ -9,6 +9,8 @@
   border-spacing: 0 4px; 
   table-layout: fixed;
   min-width: 600px;
+    overflow-x: auto;
+
 }
 
 .custom-table thead tr {
