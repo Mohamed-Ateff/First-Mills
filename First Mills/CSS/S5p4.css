@@ -35,7 +35,7 @@
   /* slightly lower than الجمعية العامة */
   left: calc(48% + 250px);
   background-color: rgba(208, 214, 212, 0.5);
-  color: #3A73A8;
+  color: #3a73a8;
 }
 
 /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
@@ -45,7 +45,7 @@
   top: 210px;
   left: calc(48% + 250px);
   background-color: rgba(208, 214, 212, 0.5);
-  color: #3A73A8;
+  color: #3a73a8;
 }
 
 /* arrow from الجمعية العامة to audit-committee (angled right + down) */
@@ -57,9 +57,8 @@
   width: 173px;
   /* horizontal line length */
   height: 3px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
-
 
 /* arrow from audit-committee ↓ الإدارة العامة للمراجعة الداخلية */
 .audit-committee::after {
@@ -69,7 +68,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #3A73A8;
+  border-top-color: #3a73a8;
 }
 
 .audit-committee::before {
@@ -81,7 +80,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 16px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 .audit-dept::after {
@@ -91,7 +90,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #3A73A8;
+  border-top-color: #3a73a8;
 }
 
 .audit-dept::before {
@@ -102,7 +101,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 16px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 .board {
@@ -113,7 +112,6 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #455954;
-
 }
 
 /* el line el shmal مجلس الاداراة */
@@ -125,7 +123,7 @@
   width: 174px;
   /* horizontal line length */
   height: 3px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 /* el line el foo2 مجلس الاداراة */
@@ -138,7 +136,7 @@
   transform: translateX(-50%);
   width: 3.5px;
   height: 50px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 /* لجنة الترشيحات والمكافات */
@@ -150,7 +148,7 @@
   left: calc(37% - 400px);
   /* move left */
   background-color: rgba(208, 214, 212, 0.5);
-  color: #3A73A8;
+  color: #3a73a8;
 }
 
 /* el sahm el foo2 لجنة الترشيحات والمكافات */
@@ -161,7 +159,7 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #3A73A8;
+  border-top-color: #3a73a8;
 }
 
 /* el sahm el foo2 لجنة الترشيحات والمكافات */
@@ -175,7 +173,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 14px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 .executive-committee {
@@ -185,9 +183,8 @@
   /* directly below nominations-committee */
   left: calc(37% - 400px);
   background-color: rgba(208, 214, 212, 0.5);
-  color: #3A73A8;
+  color: #3a73a8;
 }
-
 
 /* el line el foo2 لجنة مجلس الاداراة التنفيذية */
 .executive-committee::before {
@@ -199,7 +196,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 16px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 .chief-executive-officer {
@@ -222,7 +219,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 50px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 /* el line el t7t الرئيس التنفيذي */
@@ -235,7 +232,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 46px;
-  background: #3A73A8;
+  background: #3a73a8;
 }
 
 /* el line el be el 3ard el ta7t الرئيس التنفيذي */
@@ -248,7 +245,7 @@
 }
 
 .blue-line {
-  background-color: #3A73A8;
+  background-color: #3a73a8;
   height: 3px;
   width: 74.55%;
   position: absolute;
@@ -263,8 +260,8 @@
 .hr-head {
   width: 211px;
   height: 72.87px;
-  background-color: #E8EBEA;
-  color: #3A73A8;
+  background-color: #e8ebea;
+  color: #3a73a8;
   position: absolute;
   top: 553px;
   text-align: center;
@@ -308,7 +305,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 67px;
-  background-color: #3A73A8;
+  background-color: #3a73a8;
 }
 
 .finance-head::before {
@@ -323,8 +320,6 @@
   left: 20%;
 }
 
-
-
 /* final name boxes under each head */
 .finance-name,
 .operations-name,
@@ -333,7 +328,7 @@
 .hr-name {
   width: 160px;
   height: 50px;
-  color: #3A73A8;
+  color: #3a73a8;
   position: absolute;
   top: 700px;
   /* below the head cards */
@@ -380,7 +375,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 46px;
-  background-color: #D3E0EB;
+  background-color: #d3e0eb;
 }
 
 .finance-name::after,
@@ -394,10 +389,8 @@
   left: 50%;
   transform: translateX(-50%);
 
-
-
   border: 6px solid transparent;
-  border-top-color: #D3E0EB;
+  border-top-color: #d3e0eb;
 }
 
 .nominations-committee::after {
@@ -407,16 +400,15 @@
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #3A73A8;
+  border-top-color: #3a73a8;
 }
 @media (max-width: 2560px) {
-
   /* /////////////Right Section/////////// */
- .general-assembly::after {
+  .general-assembly::after {
     width: 60%;
     /* horizontal right line length */
   }
- .audit-committee {
+  .audit-committee {
     left: calc(66.77%);
   }
   /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
@@ -424,8 +416,8 @@
     left: calc(66.77%);
   }
 
-   /*/////////// Left Section //////////*/
-    .nominations-committee {
+  /*/////////// Left Section //////////*/
+  .nominations-committee {
     left: calc(16%);
     /* move left */
   }
@@ -433,18 +425,17 @@
   .executive-committee {
     left: calc(16%);
   }
-   .board::after {
+  .board::after {
     width: 61%;
     /* horizontal line length */
   }
- /*/////////// bottom Section //////////*/
- .blue-line {
+  /*/////////// bottom Section //////////*/
+  .blue-line {
     width: 76.66%;
     right: 13.7%;
   }
 }
 @media (max-width: 1600px) {
-
   .general-assembly,
   .board,
   .chief-executive-officer {
@@ -471,7 +462,6 @@
   .general-assembly::after {
     width: 171px;
     /* horizontal line length */
-
   }
 
   .audit-committee {
@@ -521,7 +511,6 @@
     width: 74.66%;
     right: 10.11%;
   }
-
 }
 
 @media (max-width: 1456px) {
@@ -532,7 +521,6 @@
 }
 
 @media (max-width: 1445px) {
-
   .general-assembly,
   .board,
   .chief-executive-officer {
@@ -542,10 +530,8 @@
   }
 
   .general-assembly::after {
-
     width: 52%;
     /* horizontal line length */
-
   }
 
   .audit-committee,
@@ -604,7 +590,6 @@
 }
 
 @media (max-width: 1024px) {
-
   .general-assembly,
   .board,
   .chief-executive-officer {
@@ -651,8 +636,6 @@
     font-size: 14px;
   }
 
-
-
   .nominations-committee {
     left: calc(4.6%);
     /* move left */
@@ -675,11 +658,9 @@
     width: 74.8%;
     right: 9.2%;
   }
-
 }
 
 @media (max-width: 768px) {
-
   .general-assembly,
   .board,
   .chief-executive-officer {
@@ -711,16 +692,13 @@
   .sales-name,
   .marketing-name,
   .hr-name {
-
     width: 120px;
     font-size: 14px;
   }
 
   .general-assembly::after {
-
     width: 85%;
     /* horizontal right line length */
-
   }
 
   .audit-committee {
@@ -772,12 +750,12 @@
   }
 }
 @media (max-width: 601px) {
-   /* /////////////Right Section/////////// */
- .general-assembly::after {
-  width: 62%;
+  /* /////////////Right Section/////////// */
+  .general-assembly::after {
+    width: 62%;
     /* horizontal right line length */
   }
- .audit-committee {
+  .audit-committee {
     left: calc(73.6%);
   }
   /* الإدارة العامة للمراجعة الداخلية (middle) under audit-committee */
@@ -785,20 +763,19 @@
     left: calc(73.6%);
   }
 
-   /*/////////// Left Section //////////*/
-    .nominations-committee {
-     left: calc(4.5%);
+  /*/////////// Left Section //////////*/
+  .nominations-committee {
+    left: calc(4.5%);
     /* move left */
   }
 
   .executive-committee {
-     left: calc(4.5%);
+    left: calc(4.5%);
   }
-  
-  
- /*/////////// bottom Section //////////*/
- .blue-line {
-  width: 76.4%;
+
+  /*/////////// bottom Section //////////*/
+  .blue-line {
+    width: 76.4%;
     right: 9.9%;
   }
   .finance-name,
@@ -806,11 +783,10 @@
   .sales-name,
   .marketing-name,
   .hr-name {
-
     width: 80px;
     font-size: 12px;
   }
-   .finance-head {
+  .finance-head {
     left: 2%;
   }
 
@@ -831,11 +807,11 @@
   }
 }
 @media (max-width: 568px) {
- .general-assembly::after {
-  width: 57%;
+  .general-assembly::after {
+    width: 57%;
     /* horizontal right line length */
   }
-.board::after {
+  .board::after {
     width: 63%;
     /* horizontal right line length */
   }
@@ -845,21 +821,20 @@
   }
 }
 @media (max-width: 480px) {
-   .general-assembly::after {
-  width: 46%;
+  .general-assembly::after {
+    width: 46%;
     /* horizontal right line length */
   }
-.board::after {
+  .board::after {
     width: 42%;
     /* horizontal right line length */
   }
-   .blue-line {
+  .blue-line {
     width: 75.6%;
     right: 8%;
   }
 }
 @media (max-width: 426px) {
-
   .general-assembly,
   .board,
   .chief-executive-officer {
@@ -901,7 +876,6 @@
   .sales-name,
   .marketing-name,
   .hr-name {
-
     width: 50px;
     font-size: 12px;
   }
@@ -974,5 +948,4 @@
     width: 46%;
     /* horizontal right line length */
   }
-
 }
