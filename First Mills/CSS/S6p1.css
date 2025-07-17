@@ -184,9 +184,12 @@ canvas {
     gap: 20px;
     text-align: center;
   }
-
+  .border-with-title-under-it {
+    margin: auto;
+  }
   .title-span {
     font-size: 14px;
+    margin: auto;
   }
 }
 
