@@ -91,29 +91,19 @@
 }
 
 @media (max-width: 768px) {
-  .padding-top {
-    padding-top: 40px;
-  }
   .container-big-f {
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
-  .card-small {
-    width: 41%;
-  }
-}
 
-@media (max-width: 480px) {
-  .padding-top {
-    padding-top: 0px;
-  }
-  .container-big-f {
-    gap: 10px;
-  }
   .card-small {
     width: 100%;
+    max-width: 90%;
   }
+
   .button-div {
-    margin-top: 20px;
+    justify-content: center;
   }
 }
 
