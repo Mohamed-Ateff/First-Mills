@@ -118,7 +118,6 @@ tbody tr:nth-child(odd) {
     gap: 10px;
     text-align: center;
     align-items: center;
-    padding-top: 80px;
   }
 
   .title-span {
@@ -149,10 +148,7 @@ tbody tr:nth-child(odd) {
   .btn button p {
     font-size: 16px;
   }
-  /* for s6p3 */
-  .padding-top {
-    padding-top: 40px;
-  }
+
 }
 @media (max-width: 480px) {
   .title-flex {

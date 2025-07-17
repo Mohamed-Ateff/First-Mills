@@ -160,8 +160,8 @@ tr:nth-child(even) td {
   }
 
   .info-wrapper::before {
-    right: auto;
-    left: 0;
+    left: auto;
+    right: -15px;
     top: 0;
     bottom: 0;
     height: 100%;
@@ -196,14 +196,14 @@ tr:nth-child(even) td {
 }
 
 body[lang="en"] {
-
   .person {
     padding-right: 15px;
     padding-left: 0px;
-}
+  }
 
   .info-wrapper::before {
-    left: -25px;
+    left: -15px;
+    right: auto;
   }
 
   .card::before {

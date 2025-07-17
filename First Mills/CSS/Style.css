@@ -55,7 +55,7 @@ a {
 
 @media (max-width: 768px) {
   .start {
-    margin-top: 20px !important;
+    /* margin-top: 20px !important; */
     width: 90%;
   }
 
@@ -97,5 +97,11 @@ a {
     width: 80%;
     margin: auto;
     position: relative;
+  }
+}
+
+@media (max-width: 568px) {
+  .start {
+    margin-top: 20px !important;
   }
 }
