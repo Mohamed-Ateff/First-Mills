@@ -218,6 +218,12 @@ tr:nth-child(even) td {
     padding: 20px 40px 20px 40px;
     font-size: 14px;
   }
+  .full{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 118px;
+  }
 }
 
 body[lang="en"] {
@@ -242,5 +248,16 @@ body[lang="en"] {
       align-items: center;
       text-align: center;
     }
+       .full{
+         display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+  }
+  }
+  @media (max-width: 576px) {
+     .full{
+    height: 140px;
+  }
   }
 }
