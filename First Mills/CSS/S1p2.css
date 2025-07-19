@@ -175,8 +175,13 @@
     font-size: 14px;
   }
 }
-
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
   .vision,
   .mission {
     text-align: left;
