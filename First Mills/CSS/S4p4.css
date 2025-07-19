@@ -36,6 +36,13 @@ table {
   font-size: 14pt;
   padding-top: 5px;
 }
+.table7  b{
+ 
+  color: #3a4944;
+  font-weight: 500;
+  font-size: 16px;
+
+}
 
 .table7 tr td:nth-child(1) {
   text-align: right;
@@ -124,4 +131,12 @@ body[dir="ltr"] .table7 td:nth-child(1) {
   .table7 tr th:nth-child(1) {
     padding: 10px !important;
   }
+}
+.percent-none{
+  display: none;
+}
+body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
 }

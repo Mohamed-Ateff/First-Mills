@@ -223,7 +223,13 @@ th {
     padding: 10px;
   }
 }
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
 .flour {
   
   text-align: left;
