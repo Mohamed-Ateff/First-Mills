@@ -118,3 +118,11 @@
     font-size: 20px !important;
   }
 }
+.percent-none{
+  display: none;
+}
+body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
+}

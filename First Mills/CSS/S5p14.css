@@ -540,7 +540,13 @@ td:first-child {
     padding: 10px;
   }
 }
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
   @media (max-width: 480px) {
     .small-english {
       font-size: 18px;

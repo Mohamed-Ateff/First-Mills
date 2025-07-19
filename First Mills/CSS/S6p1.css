@@ -242,7 +242,13 @@ canvas {
     top: 76%;
   }
 }
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
   .percentage-for-bars {
     left: 0%;
   }

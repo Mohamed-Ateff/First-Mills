@@ -149,7 +149,13 @@
 }
 
 
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
 .player {
   padding: 30px; /*added this for english translation*/
 }

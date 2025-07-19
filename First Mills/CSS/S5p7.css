@@ -158,3 +158,11 @@ tr:nth-child(even) td {
     width: 16px;
   }
 }
+.percent-none{
+  display: none;
+}
+body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
+}

@@ -310,7 +310,11 @@
                   <div class="progress-bar" data-value="100">
                     <div class="progress" style="background-color: #31544b">
                       <div class="percentage-for-bars">
-                        <p>% 8.8</p>
+                         <p>
+                          <span class="counter">8.8</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
                       </div>
                       <p class="progress-value counter">1,048.85</p>
                     </div>
@@ -332,7 +336,11 @@ Revenues
                   <div class="progress-bar" data-value="43.61">
                     <div class="progress" style="background-color: #31544b">
                       <div class="percentage-for-bars">
-                        <p>% 10.6</p>
+                        <p>
+                          <span class="counter">10.6</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
                       </div>
                       <p class="progress-value counter">457.09</p>
                     </div>
@@ -349,7 +357,11 @@ Revenues
                   <div class="progress-bar" data-value="30.37">
                     <div class="progress" style="background-color: #31544b">
                       <div class="percentage-for-bars">
-                        <p>% 10.9</p>
+                        <p>
+                          <span class="counter">10.9</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
                       </div>
                       <p class="progress-value counter">318.48</p>
                     </div>
@@ -366,7 +378,11 @@ Revenues
                   <div class="progress-bar" data-value="23.93">
                     <div class="progress" style="background-color: #31544b">
                       <div class="percentage-for-bars">
-                        <p>% 13.9</p>
+                         <p>
+                          <span class="counter">13.9</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
                       </div>
                       <p class="progress-value counter">250.90</p>
                     </div>
@@ -400,23 +416,37 @@ Revenues
           <div class="donut-container">
             <canvas id="productDonut"></canvas>
             <div class="total">
-              <p>1,048.85</p>
+              <p class="counter">1,048.85</p>
               <p data-en="Total">الإجمالي</p>
             </div>
           </div>
           <div class="legend-container">
             <div class="legend-item">
-              <p data-en="57.12%">%57.12</p>
+              
+                <p>
+                          <span class="counter">57.12</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
+              
               <div class="legend-color" style="background: #438977"></div>
               <p data-en="Flour ">الدقيق</p>
             </div>
             <div class="legend-item">
-              <p data-en="29.74%">%29.74</p>
+               <p>
+                          <span class="counter">29.74</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
               <div class="legend-color" style="background: #fcb44a"></div>
               <p data-en="Feed ">الأعلاف</p>
             </div>
             <div class="legend-item">
-              <p data-en="13.14%">%13.14</p>
+               <p>
+                          <span class="counter">13.14</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
               <div class="legend-color" style="background: #b9c6d3"></div>
               <p data-en="Bran">النخالة</p>
             </div>
@@ -424,9 +454,9 @@ Revenues
           <div class="bar-container">
             <canvas id="productBar"></canvas>
             <div class="productBarValues">
-              <h6>599.12</h6>
-              <h6>311.90</h6>
-              <h6>137.83</h6>
+              <h6 class="counter">599.12</h6>
+              <h6 class="counter">311.90</h6>
+              <h6 class="counter">137.83</h6>
             </div>
           </div>
         </div>
@@ -444,31 +474,47 @@ Revenues
           <div class="bar-container">
             <canvas id="branchBar"></canvas>
             <div class="branchBarValues">
-              <h6>472.41</h6>
-              <h6>326.6</h6>
-              <h6>129</h6>
-              <h6>117.85</h6>
+              <h6 class="counter">472.41</h6>
+              <h6 class="counter">326.6</h6>
+              <h6 class="counter">129</h6>
+              <h6 class="counter">117.85</h6>
             </div>
           </div>
 
           <div class="legend-container">
             <div class="legend-item">
-              <p data-en="45.04%">%45.04</p>
+             <p>
+                          <span class="counter">45.04</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
               <div class="legend-color" style="background: #438977"></div>
               <p data-en="Jeddah Plant">مصنع جدة</p>
             </div>
             <div class="legend-item">
-              <p data-en="31.42%">%31.42</p>
+              <p>
+                          <span class="counter">31.42</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
               <div class="legend-color" style="background: #fcb44a"></div>
               <p data-en="Al-Qassim Plant">مصنع القصيم</p>
             </div>
             <div class="legend-item">
-              <p data-en="12.30%">%12.30</p>
+              <p>
+                          <span class="counter">12.30</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
               <div class="legend-color" style="background: #b9c6d3"></div>
               <p data-en="Al-Hasa Plant">مصنع الأحساء</p>
             </div>
             <div class="legend-item">
-              <p data-en="11.24%">%11.24</p>
+              <p>
+                          <span class="counter">11.24</span>
+                          <span data-en="">%</span>
+                          <span class="percent-none" >%</span>
+                        </p>
               <div class="legend-color" style="background: #73837f"></div>
               <p data-en="Tabuk Plant">مصنع تبوك</p>
             </div>
@@ -476,7 +522,7 @@ Revenues
           <div class="donut-container">
             <canvas id="branchDonut"></canvas>
             <div class="total">
-              <p>1,048.85</p>
+              <p class="counter">1,048.85</p>
               <p data-en="Total">الإجمالي</p>
             </div>
           </div>
