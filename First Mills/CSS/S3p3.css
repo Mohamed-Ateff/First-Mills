@@ -179,7 +179,13 @@ canvas {
   }
 }
 
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
   .contain-numbers-and-chart {
     flex-direction: row-reverse;
   }

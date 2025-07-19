@@ -72,7 +72,13 @@
   }
 }
 
+.number-english {
+  display: none;
+}
 body[lang="en"] {
+  .number-english {
+    display: inline;
+  }
   .number {
     left: 0;
   }
