@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const bodyLang = document.body.lang;
 
     if (bodyLang === "en") {
-      downloadFiles(["pdfs/Full_Report.pdf"]);
+      downloadFiles(["pdfs/إنجليزي/التقرير كاملًا انجليزي.pdf"]);
     } else {
-      downloadFiles(["pdfs/Full_Report_Arabic.pdf"]);
+      downloadFiles(["pdfs/عربي/التقرير كاملًا.pdf"]);
     }
   });
 
