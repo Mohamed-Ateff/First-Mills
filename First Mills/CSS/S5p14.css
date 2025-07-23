@@ -105,11 +105,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 .activities_card {
   width: calc(33.333% - 1px);
-  padding: 35px 0px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -540,13 +539,13 @@ td:first-child {
     padding: 10px;
   }
 }
-.percent-none{
+.percent-none {
   display: none;
 }
 body[lang="en"] {
-  .percent-none{
-  display: inline;
-}
+  .percent-none {
+    display: inline;
+  }
   @media (max-width: 480px) {
     .small-english {
       font-size: 18px;
