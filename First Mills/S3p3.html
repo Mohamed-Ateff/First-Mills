@@ -1370,207 +1370,214 @@
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
     <script src="Javascript/bars.js"></script>
 
-    <script>
-      let monthlyChart;
-      function getMonthsFromHTML(id, lang = "ar") {
-        return Array.from(document.querySelectorAll(`#${id} li`)).map((el) =>
-          lang === "en" ? el.dataset.en : el.textContent.trim()
-        );
-      }
+  <script>
+  let monthlyChart, fiveYearChart, populationChart;
 
-      function createMonthlyInflationChart(lang = "ar") {
-        const months = getMonthsFromHTML("monthsLabels", lang);
-        const displayMonths = getMonthsFromHTML("displayMonths", lang);
+  function getMonthsFromHTML(id, lang = "ar") {
+    return Array.from(document.querySelectorAll(`#${id} li`)).map((el) =>
+      lang === "en" ? el.dataset.en : el.textContent.trim()
+    );
+  }
 
-        if (monthlyChart) {
-          monthlyChart.destroy();
-        }
+  function createMonthlyInflationChart(lang = "ar") {
+    const months = getMonthsFromHTML("monthsLabels", lang);
+    const displayMonths = getMonthsFromHTML("displayMonths", lang);
+    const isRTL = lang === "ar";
 
-        const ctx = document
-          .getElementById("monthlyInflationChart")
-          .getContext("2d");
+    if (monthlyChart) monthlyChart.destroy();
 
-        monthlyChart = new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: months,
-            datasets: [
-              {
-                label: "٪",
-                data: [
-                  1.6, 1.7, 1.7, 1.8, 1.9, 1.9, 2.0, 2.0, 2.1, 2.1, 2.1, 2.1,
-                ],
-                borderColor: "#FFB548",
-                backgroundColor: "transparent",
-                tension: 0.3,
-                pointBackgroundColor: "#163029",
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            animation: {
-              duration: 2000,
-              easing: "easeOutQuart",
-            },
-            plugins: {
-              legend: { display: false },
-            },
-            scales: {
-              x: {
-                grid: { display: false },
-                ticks: {
-                  callback: function (val) {
-                    const label = this.getLabelForValue(val);
-                    return displayMonths.includes(label) ? label : "";
-                  },
-                },
-              },
-              y: {
-                beginAtZero: true,
-                grid: { display: false },
-                min: 0,
-                max: 2.5,
-                ticks: {
-                  stepSize: 0.5,
-                },
-              },
-            },
-          },
-        });
-      }
-      window.updateChartLabelsForLanguage = function (lang) {
-        createMonthlyInflationChart(lang);
-      };
+    const labels = isRTL ? [...months].reverse() : months;
+    const data = isRTL
+      ? [...[1.6, 1.7, 1.7, 1.8, 1.9, 1.9, 2.0, 2.0, 2.1, 2.1, 2.1, 2.1]].reverse()
+      : [1.6, 1.7, 1.7, 1.8, 1.9, 1.9, 2.0, 2.0, 2.1, 2.1, 2.1, 2.1];
 
-      //chart 2
-      function createFiveYearInflationChart() {
-        new Chart(document.getElementById("fiveYearInflationChart"), {
-          type: "line",
-          data: {
-            labels: ["2023", "2024", "2025", "2026", "2027"],
-            datasets: [
-              {
-                label: "٪",
-                data: [2.4, 1.7, 1.9, 1.9, 1.9],
-                borderColor: "#FFB548",
-                backgroundColor: "transparent",
-                tension: 0.3,
-                pointBackgroundColor: "#163029",
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            animation: {
-              duration: 2000,
-              easing: "easeOutQuart",
-            },
-            plugins: { legend: { display: false } },
-            scales: {
-              x: {
-                grid: { display: false },
-              },
-              y: {
-                beginAtZero: true,
-                grid: { display: false },
-                min: 0,
-                max: 2.4,
-                ticks: {
-                  stepSize: 0.6,
-                },
-              },
-            },
-          },
-        });
-      }
-
-      function createPopulationChart() {
-        new Chart(document.getElementById("populationChart"), {
-          type: "line",
-          data: {
-            labels: [
-              "2020",
-              "2021",
-              "2022",
-              "2023",
-              "2024",
-              "2025",
-              "2026",
-              "2027",
-              "2028",
-              "2029",
-              "2030",
-            ],
-            datasets: [
-              {
-                label: "مليون نسمة",
-                data: [33, 32, 29, 29, 30, 31, 32, 33, 34, 35, 36],
-                fill: true,
-                backgroundColor: "rgba(78, 106, 99, 0.3)",
-                borderColor: "#4E6A63",
-                tension: 0.4,
-                pointRadius: 0,
-                pointHoverRadius: 0,
-              },
-            ],
-          },
-          options: {
-            responsive: true,
-            animation: {
-              duration: 2000,
-              easing: "easeOutQuart",
-            },
-            plugins: { legend: { display: false } },
-            scales: {
-              x: {
-                grid: { display: false },
-                ticks: {
-                  callback: function (val) {
-                    const labelsToShow = ["2020", "2024", "2030"];
-                    return labelsToShow.includes(this.getLabelForValue(val))
-                      ? this.getLabelForValue(val)
-                      : "";
-                  },
-                },
-              },
-              y: {
-                beginAtZero: true,
-                grid: { display: false },
-                min: 0,
-                max: 40,
-                ticks: {
-                  stepSize: 10,
-                },
-              },
-            },
-          },
-        });
-      }
-
-      function observeChart(canvasId, chartFn) {
-        const observer = new IntersectionObserver(
-          (entries, obs) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                chartFn();
-                obs.unobserve(entry.target);
-              }
-            });
-          },
+    monthlyChart = new Chart(document.getElementById("monthlyInflationChart"), {
+      type: "line",
+      data: {
+        labels,
+        datasets: [
           {
-            threshold: 0.3,
+            label: "٪",
+            data,
+            borderColor: "#FFB548",
+            backgroundColor: "transparent",
+            tension: 0.3,
+            pointBackgroundColor: "#163029",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: "easeOutQuart",
+        },
+        plugins: {
+          legend: { display: false },
+        },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: {
+              callback: function (val) {
+                const label = this.getLabelForValue(val);
+                return displayMonths.includes(label) ? label : "";
+              },
+            },
+          },
+          y: {
+            beginAtZero: true,
+            grid: { display: false },
+            min: 0,
+            max: 2.5,
+            position: isRTL ? "right" : "left",
+            ticks: {
+              stepSize: 0.5,
+            },
+          },
+        },
+      },
+    });
+  }
+
+  function createFiveYearInflationChart(lang = "ar") {
+    const years = ["2023", "2024", "2025", "2026", "2027"];
+    const values = [2.4, 1.7, 1.9, 1.9, 1.9];
+    const isRTL = lang === "ar";
+
+    if (fiveYearChart) fiveYearChart.destroy();
+
+    fiveYearChart = new Chart(document.getElementById("fiveYearInflationChart"), {
+      type: "line",
+      data: {
+        labels: isRTL ? [...years].reverse() : years,
+        datasets: [
+          {
+            label: "٪",
+            data: isRTL ? [...values].reverse() : values,
+            borderColor: "#FFB548",
+            backgroundColor: "transparent",
+            tension: 0.3,
+            pointBackgroundColor: "#163029",
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: "easeOutQuart",
+        },
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            grid: { display: false },
+          },
+          y: {
+            beginAtZero: true,
+            grid: { display: false },
+            min: 0,
+            max: 2.4,
+            position: isRTL ? "right" : "left",
+            ticks: {
+              stepSize: 0.6,
+            },
+          },
+        },
+      },
+    });
+  }
+
+  function createPopulationChart(lang = "ar") {
+    const years = [
+      "2020", "2021", "2022", "2023", "2024", "2025",
+      "2026", "2027", "2028", "2029", "2030",
+    ];
+    const values = [33, 32, 29, 29, 30, 31, 32, 33, 34, 35, 36];
+    const isRTL = lang === "ar";
+
+    if (populationChart) populationChart.destroy();
+
+    populationChart = new Chart(document.getElementById("populationChart"), {
+      type: "line",
+      data: {
+        labels: isRTL ? [...years].reverse() : years,
+        datasets: [
+          {
+            label: lang === "ar" ? "مليون نسمة" : "Million People",
+            data: isRTL ? [...values].reverse() : values,
+            fill: true,
+            backgroundColor: "rgba(78, 106, 99, 0.3)",
+            borderColor: "#4E6A63",
+            tension: 0.4,
+            pointRadius: 0,
+            pointHoverRadius: 0,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        animation: {
+          duration: 2000,
+          easing: "easeOutQuart",
+        },
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            grid: { display: false },
+            ticks: {
+              callback: function (val) {
+                const labelsToShow = ["2020", "2024", "2030"];
+                const label = this.getLabelForValue(val);
+                return labelsToShow.includes(label) ? label : "";
+              },
+            },
+          },
+          y: {
+            beginAtZero: true,
+            grid: { display: false },
+            min: 0,
+            max: 40,
+            position: isRTL ? "right" : "left",
+            ticks: {
+              stepSize: 10,
+            },
+          },
+        },
+      },
+    });
+  }
+
+  window.updateChartLabelsForLanguage = function (lang) {
+    createMonthlyInflationChart(lang);
+    createFiveYearInflationChart(lang);
+    createPopulationChart(lang);
+  };
+
+  function observeChart(canvasId, chartFn, lang = "ar") {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            chartFn(lang);
+            obs.unobserve(entry.target);
           }
-        );
+        });
+      },
+      { threshold: 0.3 }
+    );
 
-        const canvas = document.getElementById(canvasId);
-        if (canvas) observer.observe(canvas);
-      }
+    const canvas = document.getElementById(canvasId);
+    if (canvas) observer.observe(canvas);
+  }
 
-      observeChart("monthlyInflationChart", createMonthlyInflationChart);
-      observeChart("fiveYearInflationChart", createFiveYearInflationChart);
-      observeChart("populationChart", createPopulationChart);
-    </script>
+  observeChart("monthlyInflationChart", createMonthlyInflationChart, "ar");
+  observeChart("fiveYearInflationChart", createFiveYearInflationChart, "ar");
+  observeChart("populationChart", createPopulationChart, "ar");
+</script>
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
