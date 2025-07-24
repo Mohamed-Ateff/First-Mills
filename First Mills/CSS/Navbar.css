@@ -28,10 +28,10 @@ body[lang="en"] {
     position: absolute;
     left: 103%;
   }
-  .image-Union {
+  /* .image-Union {
     clip-path: polygon(0% 0%, 100% 0, 100% 100%);
     left: 2.6%;
-  }
+  } */
   
   @media (max-width: 768px) {
   .burger {
@@ -245,7 +245,7 @@ a.page{
   }
 }
 
-.image-Union {
+/* .image-Union {
   width: 27px;
   height: 27px;
   clip-path: polygon(0 0, 0 100%, 100% 0);
@@ -256,12 +256,12 @@ a.page{
   animation: fadeSlideInRight 0.8s ease-out forwards;
   opacity: 0;
   z-index: -1;
-}
+} */
 
 @media (max-width: 1025px) {
-  .image-Union {
+  /* .image-Union {
     right: 1.6%;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -282,9 +282,9 @@ a.page{
     z-index: 989;
     border-radius: 5px;
   }
-  .image-Union {
+  /* .image-Union {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 568px) {
