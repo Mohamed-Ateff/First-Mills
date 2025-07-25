@@ -13,9 +13,22 @@
     <title>المطاحن الأولى</title>
   </head>
   <body>
+    <div class="background-container">
+      <div class="Gridiant"></div>
+      <video class="bgvideo" autoplay muted loop playsinline>
+        <source src="Images/bgvideo.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <div class="header">
       <img src="Images/logo-home.png" alt="First Mills Logo" class="logo" />
       <a href="S1p1.html" class="anchor">ابدأ</a>
+    </div>
+
+    <div class="content">
+      <button class="play-button" id="playButton">
+        <img src="Images/player.png" alt="" />
+      </button>
     </div>
 
     <div class="popup" id="videoPopup">
@@ -28,18 +41,6 @@
           </video>
         </div>
       </div>
-    </div>
-
-    <div class="background-container">
-      <video autoplay muted loop playsinline>
-        <source src="Images/video.mp4" type="video/mp4" />
-      </video>
-    </div>
-
-    <div class="content">
-      <button class="play-button" id="playButton">
-        <img src="Images/player.png" alt="" />
-      </button>
     </div>
 
     <script>
