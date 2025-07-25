@@ -170,14 +170,14 @@ body[lang="en"] {
       align-items: center;
     }
     .white-title {
-      margin-left: 15%;
-      width: 70%;
+      margin-left: 5%;
+      width: 90%;
       border-top-left-radius: 60px;
       padding-right: 0px;
       padding-left: 0px;
     }
     .green-title {
-      width: 70%;
+      width: 90%;
     }
     .green-title::after {
       right: -12.5%;
@@ -237,6 +237,11 @@ body[lang="en"] {
     justify-content: flex-start;
     align-items: center;
   }
+  .hero-images::before {  
+    opacity: 0.75;
+    width: 95%;
+    height: 250px !important;
+  }
 
   .hero-images {
     height: 350px;
@@ -251,7 +256,7 @@ body[lang="en"] {
   }
 
   .green-title {
-    width: 60%;
+    width: 90%;
     height: 200px !important;
     display: flex;
     justify-content: center;
@@ -280,9 +285,9 @@ body[lang="en"] {
     display: none;
   } */
   .white-title {
-    margin-right: 20%;
+    margin-right: 5%;
     margin-top: 20px;
-    width: 60%;
+    width: 90%;
     height: 38px;
     /* transform:translatex(20px) ;  */
     border-top-left-radius: 60px;
