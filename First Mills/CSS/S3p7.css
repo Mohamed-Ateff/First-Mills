@@ -230,7 +230,6 @@
   }
   .arrow-text {
     font-size: 18px !important;
-    
   }
   .one-card p {
     font-size: 12px;
@@ -252,13 +251,13 @@
   }
 }
 
-.number-english{
+.number-english {
   display: none;
 }
 body[lang="en"] {
-  .number-english{
-  display: inline;
-}
+  .number-english {
+    display: inline;
+  }
   .logo-div {
     left: 18px;
   }
@@ -266,37 +265,32 @@ body[lang="en"] {
     padding-left: 61px;
     padding-right: 5px;
   }
-  .one-card .special-english{
+  .one-card .special-english {
     padding-left: 50px;
     padding-right: 40px;
   }
-   .arrow-text {
+  .arrow-text {
     padding-right: 0px;
-   margin-right: 0px;
-   padding-left: 10px;
-   margin-left: 40px;
+    margin-right: 0px;
+    padding-left: 10px;
+    margin-left: 0px;
   }
-
-
 
   @media screen and (max-width: 780px) {
-     .arrow-text {
-   
-   margin-left: 0px;
-  }
+    .arrow-text {
+      margin-left: 0px;
+    }
   }
   @media screen and (max-width: 480px) {
-
- .logo-div {
-    left: 10px;
-  }
-.one-card h3{
-  padding: 0px 5px 0px 5px ;
-}
-.one-card .special-english{
-    padding-left: 0px;
-    padding-left: 80px;
-  }
-
+    .logo-div {
+      left: 10px;
+    }
+    .one-card h3 {
+      padding: 0px 5px 0px 5px;
+    }
+    .one-card .special-english {
+      padding-left: 0px;
+      padding-left: 80px;
+    }
   }
 }
