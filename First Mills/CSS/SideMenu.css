@@ -8,7 +8,7 @@
   align-items: center;
   gap: 10px;
   padding: 0;
-  z-index: 99;
+  z-index: 999999888888 !important;
 }
 
 body[lang="en"] {
