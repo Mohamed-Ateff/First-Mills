@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="CSS/Style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -27,15 +30,16 @@
 
     <div class="content">
       <button class="play-button" id="playButton">
-        <img src="Images/player.png" alt="" />
+        <i class="fa-solid fa-play"></i>
       </button>
+      <p>تشغيل الفيديو التعريفي</p>
     </div>
 
     <div class="popup" id="videoPopup">
       <div class="popup-content">
         <button class="close-btn" id="closeBtn">✕</button>
         <div class="video-player" dir="ltr">
-          <video id="video" poster="Images/poster.jpg" autoplay controls>
+          <video id="video" poster="Images/poster.jpg" controls>
             <source src="Images/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -43,6 +47,10 @@
       </div>
     </div>
 
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+      const player = new Plyr("#video");
+    </script>
     <script>
       const playButton = document.getElementById("playButton");
       const videoPopup = document.getElementById("videoPopup");

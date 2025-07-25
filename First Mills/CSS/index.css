@@ -127,18 +127,6 @@ a {
   z-index: 1;
 }
 
-.content {
-  position: relative;
-  color: white;
-  text-align: center;
-  /* height: 100%; */
-  height: 500px;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2999 !important;
-}
 .header {
   position: absolute;
   top: 40px;
@@ -175,20 +163,53 @@ a {
   transform-origin: center center;
 }
 
-.play-button {
+.content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-size: 50%;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: transparent;
-  z-index: 9999999999999999999999999999999 !important;
+  top: 85%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+  text-align: center;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2999 !important;
+  flex-direction: column;
 }
-.play-button img {
-  height: 100px;
+
+.play-button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.704);
+  width: 60px;
+  height: 60px;
+  z-index: 9999999999999999999999999999999 !important;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.play-button:hover {
+  width: 150px;
+  background-color: #31544b;
+}
+.play-button:hover i {
+  color: white;
+}
+
+.play-button i {
+  color: #31544b;
+  margin: 0px 0px 0px 3px;
+  padding: 0pc;
+  font-size: 24px;
+}
+
+.content p {
+  margin-top: 10px;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -251,4 +272,15 @@ a {
   overflow: hidden;
   position: relative;
   max-width: 960px;
+}
+
+:root {
+  --plyr-color-main: #feb545;
+}
+
+.plyr__video-embed,
+video {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
