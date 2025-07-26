@@ -406,7 +406,11 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div class="section active" data-submenu="Tab1" data-en="Overview">
+            <div
+              class="section "
+              data-submenu="Tab1"
+              data-en="Overview"
+            >
               نظرة عامة
             </div>
             <div
@@ -427,7 +431,7 @@
               المراجعة التشغيلية
             </div>
             <div
-              class="section"
+              class="section active-color"
               data-submenu="Tab5"
               data-en="Corporate Governance and Sustainability"
             >
@@ -659,7 +663,7 @@
             <a href="S5p13.html" class="page" data-en="Loans">القروض</a>
             <a
               href="S5p14.html"
-              class="page"
+              class="page active"
               data-en="Shareholders and Investor Relations Department"
               >المساهمون وعلاقات المستثمرين</a
             >
@@ -1645,293 +1649,313 @@
     <!-- CounterUp (CDN version) -->
     <script src="https://cdn.jsdelivr.net/gh/bfintal/Counter-Up@1.0.0/jquery.counterup.min.js"></script>
 
-  <script>
-  let donutChart;
+    <script>
+      let donutChart;
 
-  function createDonutChart() {
-    if (donutChart) return; 
+      function createDonutChart() {
+        if (donutChart) return;
 
-    const ctx = document.getElementById("donutChart").getContext("2d");
-    donutChart = new Chart(ctx, {
-      type: "doughnut",
-      data: {
-        datasets: [
-          {
-            data: [30, 21, 12, 7, 30],
-            backgroundColor: [
-              "#31544B",
-              "#FCB44A",
-              "#55716A",
-              "#A9B5B2",
-              "#CECECE",
+        const ctx = document.getElementById("donutChart").getContext("2d");
+        donutChart = new Chart(ctx, {
+          type: "doughnut",
+          data: {
+            datasets: [
+              {
+                data: [30, 21, 12, 7, 30],
+                backgroundColor: [
+                  "#31544B",
+                  "#FCB44A",
+                  "#55716A",
+                  "#A9B5B2",
+                  "#CECECE",
+                ],
+                borderWidth: 2,
+                borderColor: "#fff",
+              },
             ],
-            borderWidth: 2,
-            borderColor: "#fff",
           },
-        ],
-      },
-      options: {
-        cutout: "65%",
-        plugins: {
-          legend: { display: false },
-        },
-      },
-    });
-  }
-
-  function observeChart(canvasId, chartFn) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            chartFn();
-            obs.unobserve(entry.target);
-          }
+          options: {
+            cutout: "65%",
+            plugins: {
+              legend: { display: false },
+            },
+          },
         });
-      },
-      { threshold: 0.3 }
-    );
+      }
 
-    const canvas = document.getElementById(canvasId);
-    if (canvas) observer.observe(canvas);
-  }
+      function observeChart(canvasId, chartFn) {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                chartFn();
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
 
-  observeChart("donutChart", createDonutChart);
-</script>
+        const canvas = document.getElementById(canvasId);
+        if (canvas) observer.observe(canvas);
+      }
 
+      observeChart("donutChart", createDonutChart);
+    </script>
 
-<script>
-  let stockChart, volumeChart, valueChart, marketCapChart;
-  let currentLanguage = localStorage.getItem("lang") || "ar";
+    <script>
+      let stockChart, volumeChart, valueChart, marketCapChart;
+      let currentLanguage = localStorage.getItem("lang") || "ar";
 
-  function getMonthsFromHTML(lang = "ar") {
-    return Array.from(document.querySelectorAll("#monthsLabels li")).map((el) =>
-      lang === "en" ? el.dataset.en : el.textContent.trim()
-    );
-  }
+      function getMonthsFromHTML(lang = "ar") {
+        return Array.from(document.querySelectorAll("#monthsLabels li")).map(
+          (el) => (lang === "en" ? el.dataset.en : el.textContent.trim())
+        );
+      }
 
-  function createStockChart(lang = "ar") {
-    const isRTL = lang === "ar";
-    const labels = getMonthsFromHTML(lang);
-    const values = [73.4, 81.6, 77.5, 82.6, 70.5, 74, 70.9, 71.7, 70.8, 64.7, 60.1, 60.5];
-    if (stockChart) stockChart.destroy();
-    stockChart = new Chart(document.getElementById("stockChart").getContext("2d"), {
-      type: "line",
-      data: {
-        labels: isRTL ? [...labels].reverse() : labels,
-        datasets: [
+      function createStockChart(lang = "ar") {
+        const isRTL = lang === "ar";
+        const labels = getMonthsFromHTML(lang);
+        const values = [
+          73.4, 81.6, 77.5, 82.6, 70.5, 74, 70.9, 71.7, 70.8, 64.7, 60.1, 60.5,
+        ];
+        if (stockChart) stockChart.destroy();
+        stockChart = new Chart(
+          document.getElementById("stockChart").getContext("2d"),
           {
-            data: isRTL ? [...values].reverse() : values,
-            borderColor: "#71948D",
-            backgroundColor: "transparent",
-            tension: 0.4,
-            pointBackgroundColor: "#71948D",
-            pointBorderColor: "#71948D",
-            pointRadius: 4,
-            pointHoverRadius: 6,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          datalabels: {
-            color: "#E19422",
-            anchor: "end",
-            align: "top",
-            font: { family: "MyFont", size: 14 },
-            formatter: (value) => value,
-          },
-        },
-        scales: {
-          y: {
-            min: 0,
-            max: 100,
-            ticks: { stepSize: 25 },
-            grid: { display: false },
-            position: isRTL ? "right" : "left",
-          },
-          x: { grid: { display: false } },
-        },
-      },
-      plugins: [ChartDataLabels],
-    });
-  }
-
-  function createVolumeChart(lang = "ar") {
-    const isRTL = lang === "ar";
-    const labels = getMonthsFromHTML(lang);
-    const values = [12.05, 11.99, 14.37, 8.93, 7.15, 5.38, 5.05, 7.7, 7.01, 6.52, 3.09, 2.26];
-    if (volumeChart) volumeChart.destroy();
-    volumeChart = new Chart(document.getElementById("ctx3").getContext("2d"), {
-      type: "bar",
-      data: {
-        labels: isRTL ? [...labels].reverse() : labels,
-        datasets: [
-          {
-            data: isRTL ? [...values].reverse() : values,
-            backgroundColor: "#FFB548",
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { display: false },
-          datalabels: {
-            anchor: "end",
-            align: "end",
-            textAlign: lang === "ar" ? "center" : "start",
-            color: "#1a1a1a",
-            font: { family: "MyFont", size: 14 },
-            formatter: (value) => value,
-          },
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 16,
-            ticks: { stepSize: 4 },
-            grid: { display: false, drawBorder: false },
-            position: isRTL ? "right" : "left",
-          },
-          x: { grid: { display: false, drawBorder: false } },
-        },
-      },
-      plugins: [ChartDataLabels],
-    });
-  }
-
-  function createValueChart(lang = "ar") {
-    const isRTL = lang === "ar";
-    const labels = getMonthsFromHTML(lang);
-    const values = [905.87, 957.36, 1226.07, 691.72, 579.18, 382.61, 371.33, 524.72, 502.95, 435.54, 190.34, 137.71];
-    if (valueChart) valueChart.destroy();
-    valueChart = new Chart(document.getElementById("ctx4").getContext("2d"), {
-      type: "bar",
-      data: {
-        labels: isRTL ? [...labels].reverse() : labels,
-        datasets: [
-          {
-            data: isRTL ? [...values].reverse() : values,
-            backgroundColor: "#FFB548",
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { display: false },
-          datalabels: {
-            anchor: "end",
-            align: "end",
-            textAlign: lang === "ar" ? "center" : "start",
-            color: "#1a1a1a",
-            font: { family: "MyFont", size: 14 },
-            formatter: (value) => value,
-          },
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 1400,
-            ticks: { stepSize: 350 },
-            grid: { display: false, drawBorder: false },
-            position: isRTL ? "right" : "left",
-          },
-          x: { grid: { display: false, drawBorder: false } },
-        },
-      },
-      plugins: [ChartDataLabels],
-    });
-  }
-
-  function createMarketCapChart(lang = "ar") {
-    const isRTL = lang === "ar";
-    const labels = getMonthsFromHTML(lang);
-    const values = [4.07, 4.53, 4.3, 4.58, 3.91, 4.11, 3.93, 3.98, 3.93, 3.59, 3.34, 3.36];
-    if (marketCapChart) marketCapChart.destroy();
-    marketCapChart = new Chart(document.getElementById("ctx5").getContext("2d"), {
-      type: "bar",
-      data: {
-        labels: isRTL ? [...labels].reverse() : labels,
-        datasets: [
-          {
-            data: isRTL ? [...values].reverse() : values,
-            backgroundColor: "#FFB548",
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { display: false },
-          datalabels: {
-            anchor: "end",
-            align: "end",
-            textAlign: lang === "ar" ? "center" : "start",
-            color: "#1a1a1a",
-            font: { family: "MyFont", size: 14 },
-            formatter: (value) => value,
-          },
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            min: 0,
-            max: 8,
-            ticks: { stepSize: 2 },
-            grid: { display: false, drawBorder: false },
-            position: isRTL ? "right" : "left",
-          },
-          x: { grid: { display: false, drawBorder: false } },
-        },
-      },
-      plugins: [ChartDataLabels],
-    });
-  }
-
-  window.updateChartLabelsForLanguage = function (lang) {
-    if (lang !== "ar" && lang !== "en") return;
-    if (lang === currentLanguage) return;
-    currentLanguage = lang;
-    localStorage.setItem("lang", lang);
-    createStockChart(lang);
-    createVolumeChart(lang);
-    createValueChart(lang);
-    createMarketCapChart(lang);
-  };
-
-  function observeChart(canvasId, chartFn, lang = "ar") {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            chartFn(lang);
-            obs.unobserve(entry.target);
+            type: "line",
+            data: {
+              labels: isRTL ? [...labels].reverse() : labels,
+              datasets: [
+                {
+                  data: isRTL ? [...values].reverse() : values,
+                  borderColor: "#71948D",
+                  backgroundColor: "transparent",
+                  tension: 0.4,
+                  pointBackgroundColor: "#71948D",
+                  pointBorderColor: "#71948D",
+                  pointRadius: 4,
+                  pointHoverRadius: 6,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { display: false },
+                datalabels: {
+                  color: "#E19422",
+                  anchor: "end",
+                  align: "top",
+                  font: { family: "MyFont", size: 14 },
+                  formatter: (value) => value,
+                },
+              },
+              scales: {
+                y: {
+                  min: 0,
+                  max: 100,
+                  ticks: { stepSize: 25 },
+                  grid: { display: false },
+                  position: isRTL ? "right" : "left",
+                },
+                x: { grid: { display: false } },
+              },
+            },
+            plugins: [ChartDataLabels],
           }
-        });
-      },
-      { threshold: 0.3 }
-    );
+        );
+      }
 
-    const canvas = document.getElementById(canvasId);
-    if (canvas) observer.observe(canvas);
-  }
+      function createVolumeChart(lang = "ar") {
+        const isRTL = lang === "ar";
+        const labels = getMonthsFromHTML(lang);
+        const values = [
+          12.05, 11.99, 14.37, 8.93, 7.15, 5.38, 5.05, 7.7, 7.01, 6.52, 3.09,
+          2.26,
+        ];
+        if (volumeChart) volumeChart.destroy();
+        volumeChart = new Chart(
+          document.getElementById("ctx3").getContext("2d"),
+          {
+            type: "bar",
+            data: {
+              labels: isRTL ? [...labels].reverse() : labels,
+              datasets: [
+                {
+                  data: isRTL ? [...values].reverse() : values,
+                  backgroundColor: "#FFB548",
+                  borderRadius: 4,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { display: false },
+                datalabels: {
+                  anchor: "end",
+                  align: "end",
+                  textAlign: lang === "ar" ? "center" : "start",
+                  color: "#1a1a1a",
+                  font: { family: "MyFont", size: 14 },
+                  formatter: (value) => value,
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  min: 0,
+                  max: 16,
+                  ticks: { stepSize: 4 },
+                  grid: { display: false, drawBorder: false },
+                  position: isRTL ? "right" : "left",
+                },
+                x: { grid: { display: false, drawBorder: false } },
+              },
+            },
+            plugins: [ChartDataLabels],
+          }
+        );
+      }
 
-  observeChart("stockChart", createStockChart, currentLanguage);
-  observeChart("ctx3", createVolumeChart, currentLanguage);
-  observeChart("ctx4", createValueChart, currentLanguage);
-  observeChart("ctx5", createMarketCapChart, currentLanguage);
-</script>
+      function createValueChart(lang = "ar") {
+        const isRTL = lang === "ar";
+        const labels = getMonthsFromHTML(lang);
+        const values = [
+          905.87, 957.36, 1226.07, 691.72, 579.18, 382.61, 371.33, 524.72,
+          502.95, 435.54, 190.34, 137.71,
+        ];
+        if (valueChart) valueChart.destroy();
+        valueChart = new Chart(
+          document.getElementById("ctx4").getContext("2d"),
+          {
+            type: "bar",
+            data: {
+              labels: isRTL ? [...labels].reverse() : labels,
+              datasets: [
+                {
+                  data: isRTL ? [...values].reverse() : values,
+                  backgroundColor: "#FFB548",
+                  borderRadius: 4,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { display: false },
+                datalabels: {
+                  anchor: "end",
+                  align: "end",
+                  textAlign: lang === "ar" ? "center" : "start",
+                  color: "#1a1a1a",
+                  font: { family: "MyFont", size: 14 },
+                  formatter: (value) => value,
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  min: 0,
+                  max: 1400,
+                  ticks: { stepSize: 350 },
+                  grid: { display: false, drawBorder: false },
+                  position: isRTL ? "right" : "left",
+                },
+                x: { grid: { display: false, drawBorder: false } },
+              },
+            },
+            plugins: [ChartDataLabels],
+          }
+        );
+      }
 
+      function createMarketCapChart(lang = "ar") {
+        const isRTL = lang === "ar";
+        const labels = getMonthsFromHTML(lang);
+        const values = [
+          4.07, 4.53, 4.3, 4.58, 3.91, 4.11, 3.93, 3.98, 3.93, 3.59, 3.34, 3.36,
+        ];
+        if (marketCapChart) marketCapChart.destroy();
+        marketCapChart = new Chart(
+          document.getElementById("ctx5").getContext("2d"),
+          {
+            type: "bar",
+            data: {
+              labels: isRTL ? [...labels].reverse() : labels,
+              datasets: [
+                {
+                  data: isRTL ? [...values].reverse() : values,
+                  backgroundColor: "#FFB548",
+                  borderRadius: 4,
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { display: false },
+                datalabels: {
+                  anchor: "end",
+                  align: "end",
+                  textAlign: lang === "ar" ? "center" : "start",
+                  color: "#1a1a1a",
+                  font: { family: "MyFont", size: 14 },
+                  formatter: (value) => value,
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  min: 0,
+                  max: 8,
+                  ticks: { stepSize: 2 },
+                  grid: { display: false, drawBorder: false },
+                  position: isRTL ? "right" : "left",
+                },
+                x: { grid: { display: false, drawBorder: false } },
+              },
+            },
+            plugins: [ChartDataLabels],
+          }
+        );
+      }
+
+      window.updateChartLabelsForLanguage = function (lang) {
+        if (lang !== "ar" && lang !== "en") return;
+        if (lang === currentLanguage) return;
+        currentLanguage = lang;
+        localStorage.setItem("lang", lang);
+        createStockChart(lang);
+        createVolumeChart(lang);
+        createValueChart(lang);
+        createMarketCapChart(lang);
+      };
+
+      function observeChart(canvasId, chartFn, lang = "ar") {
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                chartFn(lang);
+                obs.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const canvas = document.getElementById(canvasId);
+        if (canvas) observer.observe(canvas);
+      }
+
+      observeChart("stockChart", createStockChart, currentLanguage);
+      observeChart("ctx3", createVolumeChart, currentLanguage);
+      observeChart("ctx4", createValueChart, currentLanguage);
+      observeChart("ctx5", createMarketCapChart, currentLanguage);
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>

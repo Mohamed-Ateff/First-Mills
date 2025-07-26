@@ -404,7 +404,11 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div class="section active" data-submenu="Tab1" data-en="Overview">
+            <div
+              class="section "
+              data-submenu="Tab1"
+              data-en="Overview"
+            >
               نظرة عامة
             </div>
             <div
@@ -414,7 +418,7 @@
             >
               كلمة الإدارة
             </div>
-            <div class="section" data-submenu="Tab3" data-en="Strategic Report">
+            <div class="section active-color" data-submenu="Tab3" data-en="Strategic Report">
               التقرير الاستراتيجي
             </div>
             <div
@@ -518,7 +522,7 @@
             >
             <a
               href="S3p3.html"
-              class="page"
+              class="page active"
               data-en="Market and Sector Overview"
               >نظرة عامة على السوق والقطاع</a
             >
@@ -1651,10 +1655,17 @@
         if (canvas) observer.observe(canvas);
       }
 
-      observeChart("monthlyInflationChart", createMonthlyInflationChart, currentLanguage);
-      observeChart("fiveYearInflationChart", createFiveYearInflationChart, currentLanguage);
+      observeChart(
+        "monthlyInflationChart",
+        createMonthlyInflationChart,
+        currentLanguage
+      );
+      observeChart(
+        "fiveYearInflationChart",
+        createFiveYearInflationChart,
+        currentLanguage
+      );
       observeChart("populationChart", createPopulationChart, currentLanguage);
-
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -1,7 +1,7 @@
 .menu-container {
   display: flex;
   flex-direction: row;
-  position: absolute; 
+  position: absolute;
   right: 0;
   top: 8%;
   width: fit-content;
@@ -98,10 +98,38 @@ body[lang="en"] {
   position: relative;
 }
 
-.main-menu .section.active {
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.submenu.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-container > .main-menu > .active-color {
+  color: #ffb72b !important;
+  font-weight: bold;
+}
+.menu-container > .main-menu > .active-color:hover {
+  color: #ffb72b !important;
+  font-weight: bold;
+}
+.main-menu .section:hover {
+  color: #193028;
+  font-weight: 200;
+}
+
+/* .main-menu #active2 {
   color: #ffb72b;
   font-weight: bold;
 }
+.main-menu #active2:hover {
+  color: #ffb72b;
+  font-weight: bold;
+} */
 
 .main-menu a.active {
   margin-bottom: 15px;
@@ -156,6 +184,11 @@ body[lang="en"] {
   display: flex;
 }
 
+.submenu .active {
+  color: #193028 !important;
+  font-weight: 600;
+}
+
 .submenu .page {
   margin-bottom: 10px;
   color: #787878;
@@ -175,6 +208,19 @@ body[lang="en"] {
   padding: 15px;
   text-align: right;
   cursor: pointer;
+}
+
+.menu-divider {
+  display: none; /* hide by default */
+  width: 7px;
+  background-color: #193028;
+  min-height: 350px;
+  margin: auto 0px;
+  border-radius: 50px;
+}
+
+.menu-divider.active {
+  display: block;
 }
 
 .mobile-menu {
