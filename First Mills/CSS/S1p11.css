@@ -20,7 +20,11 @@
   margin: 0px 29px;
   line-height: 1.6;
 }
-
+@media (max-width: 1200px) {
+  .award3{
+        padding: 58px 0px;
+  }
+}
 @media (max-width: 600px) {
   .award p {
     font-size: 15px;
