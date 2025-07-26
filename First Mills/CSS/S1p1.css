@@ -112,9 +112,9 @@ body[lang="en"] {
     flex-direction: row-reverse;
   } */
 
-  .contain-numbers-and-chart .fix-chart {
+  /* .contain-numbers-and-chart .fix-chart {
     flex-direction: row-reverse;
-  }
+  } */
   .line-and-numbers .number {
     flex-direction: row-reverse;
   }
