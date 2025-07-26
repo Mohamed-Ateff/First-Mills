@@ -118,7 +118,7 @@ body[lang="en"] {
   font-weight: bold;
 }
 .main-menu .section:hover {
-  color: #193028;
+  /* color: #ffb72b; */
   font-weight: 200;
 }
 
