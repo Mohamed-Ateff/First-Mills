@@ -15,7 +15,7 @@
 }
 .title-final h4 {
   width: 40%;
-  background-color: #4e6a63;
+  background-color: #193028;
   padding: 20px 30px 20px 30px;
   transform: translate(0px, 30px);
   margin: 0;
@@ -35,7 +35,7 @@
   padding: 30px 30px 30px 30px;
   position: relative;
   text-align: center;
-  border-top: 12px solid rgba(107, 149, 189, 0.7);
+  border-top: 12px solid #4E6A63;
 }
 .final-card.wide {
   grid-column: span 2;
@@ -43,7 +43,7 @@
 
 .final-cards :nth-child(4),
 .final-cards :nth-child(6) {
-  border-top: 12px solid rgba(207, 152, 71, 0.6);
+  border-top: 12px solid #193028;
 }
 
 .final-card p {
