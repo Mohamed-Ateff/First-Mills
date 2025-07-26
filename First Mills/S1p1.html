@@ -829,74 +829,15 @@
             </p>
           </div>
         </div>
-        <!-- <ul id="labelsFromHTML" style="display: none">
-          <li data-en="Flour">الدقـيق</li>
-          <li data-en="Feed">الأعلاف</li>
-          <li data-en="Bran">النخالة</li>
-        </ul> -->
-        <canvas id="myChart" height="500"></canvas>
+
+        <div class="chartAr">
+          <canvas id="chartAr" width="1000" height="500"></canvas>
+        </div>
+
+        <div class="chartEn">
+          <canvas id="chartEn" width="1000" height="500"></canvas>
+        </div>
       </div>
-
-      <!-- <div class="chart-wrapper">
-        <div class="chart-header">
-          <h2 data-en="Revenue by Product Type">الإيرادات حسب نوع المنتج</h2>
-          <p data-en="(All Amounts in SAR Mln)">(جميع المبالغ بالمليون ريال)</p>
-        </div>
-
-        <div class="chart-area">
-          <div class="y-axis">
-            <div class="y-label" data-en="Flour">الدقـيق</div>
-            <div class="y-label" data-en="Feed">الأعلاف</div>
-            <div class="y-label" data-en="Bran">النخالة</div>
-          </div>
-
-          <div class="bars-area">
-            <div class="bar-group">
-              <div class="bar y2024" style="--bar-width: 85%" data-en="599.12">
-                599.12
-              </div>
-              <div class="bar y2023" style="--bar-width: 78%" data-en="552.9">
-                552.9
-              </div>
-            </div>
-            <div class="bar-group">
-              <div class="bar y2024" style="--bar-width: 52%" data-en="311.9">
-                311.9
-              </div>
-              <div class="bar y2023" style="--bar-width: 45%" data-en="271.05">
-                271.05
-              </div>
-            </div>
-            <div class="bar-group">
-              <div class="bar y2024" style="--bar-width: 22%" data-en="137.83">
-                137.83
-              </div>
-              <div class="bar y2023" style="--bar-width: 23%" data-en="140.31">
-                140.31
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="x-axis">
-          <div>0</div>
-          <div>100</div>
-          <div>200</div>
-          <div>300</div>
-          <div>400</div>
-          <div>500</div>
-          <div>600</div>
-        </div>
-
-        <div class="legend">
-          <div>
-            <span class="box y2024"></span><span data-en="2024">2024</span>
-          </div>
-          <div>
-            <span class="box y2023"></span><span data-en="2023">2023</span>
-          </div>
-        </div>
-      </div> -->
 
       <div class="one-charts" style="margin-top: 22px">
         <div class="container">
@@ -1145,11 +1086,7 @@
           <a href="index.html" class="Previous">
             <div class="button-and-image">
               <div>
-                <img
-                  src="Images/arrow-footer.png"
-                 
-                  alt=""
-                />
+                <img src="Images/arrow-footer.png" alt="" />
                 <span data-en="Previous">السابق</span>
               </div>
               <div class="name-of-the-page">
@@ -1198,10 +1135,12 @@
     <script>
       Chart.register(ChartDataLabels);
 
-      let chart;
       const isMobile = window.innerWidth <= 480;
 
-      const config = {
+      // ====== رسم بياني باللغة العربية ======
+      const arabicCtx = document.getElementById("chartAr").getContext("2d");
+
+      new Chart(arabicCtx, {
         type: "bar",
         data: {
           labels: ["الدقـيق", "الأعلاف", "النخالة"],
@@ -1225,55 +1164,16 @@
         options: {
           indexAxis: "y",
           responsive: true,
+          maintainAspectRatio: false,
           animation: {
             duration: 2500,
             easing: "easeOutQuart",
           },
-          animations: {
-            x: {
-              type: "number",
-              easing: "easeOutQuart",
-            },
-          },
-          plugins: {
-            legend: {
-              position: "bottom",
-              rtl: true,
-              reverse: true,
-              labels: {
-                boxWidth: 20,
-                font: {
-                  family: "MyFont",
-                  size: 14,
-                },
-              },
-            },
-            tooltip: {
-              enabled: false,
-            },
-            datalabels: {
-              display: true,
-              anchor: "start",
-              align: "end",
-              textAlign: "center",
-              offset: 0,
-              color: "#ffffff",
-              font: {
-                size: 13,
-                weight: "bold",
-                family: "MyFont",
-              },
-              formatter: (value) => value.toFixed(2),
-            },
-          },
-          layout: {
-            padding: { left: 0, right: 0, top: 0, bottom: 0 },
-          },
           scales: {
             x: {
               beginAtZero: true,
-              position: "bottom",
               reverse: true,
+              position: "bottom",
               grid: {
                 drawOnChartArea: false,
                 drawTicks: false,
@@ -1315,74 +1215,164 @@
               },
             },
           },
+          plugins: {
+            legend: {
+              position: "bottom",
+              rtl: true,
+              reverse: true,
+              labels: {
+                boxWidth: 20,
+                font: {
+                  family: "MyFont",
+                  size: 14,
+                },
+              },
+            },
+            tooltip: {
+              enabled: false,
+            },
+            datalabels: {
+              display: true,
+              anchor: "start",
+              align: "end",
+              textAlign: "center",
+              offset: 0,
+              color: "#ffffff",
+              font: {
+                size: 13,
+                weight: "bold",
+                family: "MyFont",
+              },
+              formatter: (value) => value.toFixed(2),
+            },
+          },
+          layout: {
+            padding: { left: 0, right: 0, top: 0, bottom: 0 },
+          },
           barPercentage: 0.9,
           categoryPercentage: 0.2,
         },
         plugins: [ChartDataLabels],
-      };
+      });
 
-      const observer = new IntersectionObserver(
-        (entries, observerInstance) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting && !chart) {
-              const ctx = document.getElementById("myChart").getContext("2d");
-              chart = new Chart(ctx, config);
+      // ====== رسم بياني باللغة الإنجليزية ======
+      const englishCtx = document.getElementById("chartEn").getContext("2d");
 
-              if (document.body.classList.contains("english")) {
-                applyEnglishSettings();
-              } else {
-                applyArabicSettings();
-              }
-
-              chart.update();
-              observerInstance.disconnect();
-            }
-          });
+      new Chart(englishCtx, {
+        type: "bar",
+        data: {
+          labels: ["Flour", "Feed", "Bran"],
+          datasets: [
+            {
+              label: "2024",
+              data: [599.12, 311.9, 137.83],
+              backgroundColor: "#f8b545",
+              barThickness: isMobile ? 20 : 40,
+              borderSkipped: false,
+            },
+            {
+              label: "2023",
+             data: [552.9, 271.05, 140.31],
+              backgroundColor: "#5f7068",
+              barThickness: isMobile ? 20 : 40,
+              borderSkipped: false,
+            },
+          ],
         },
-        { threshold: 0.8 }
-      );
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          maintainAspectRatio: false,
 
-      observer.observe(document.getElementById("myChart"));
-
-      window.updateChartLabelsForLanguage = function (lang) {
-        if (!chart) return;
-
-        if (lang === "en") {
-          applyEnglishSettings();
-        } else {
-          applyArabicSettings();
-        }
-
-        chart.update();
-      };
-
-      function applyArabicSettings() {
-        chart.data.labels = ["الدقـيق", "الأعلاف", "النخالة"];
-        chart.options.scales.x.position = "bottom";
-        chart.options.scales.x.reverse = true;
-        chart.options.scales.y.position = "right";
-        chart.options.plugins.legend.rtl = true;
-        chart.options.plugins.legend.reverse = true;
-        chart.options.plugins.datalabels.align = "end";
-        chart.options.animation = {
-          duration: 2500,
-          easing: "easeOutQuart",
-        };
-      }
-
-      function applyEnglishSettings() {
-        chart.data.labels = ["Flour", "Feed", "Bran"];
-        chart.options.scales.x.position = "bottom";
-        chart.options.scales.x.reverse = false;
-        chart.options.scales.y.position = "left";
-        chart.options.plugins.legend.rtl = false;
-        chart.options.plugins.legend.reverse = false;
-        chart.options.plugins.datalabels.align = "start";
-        chart.options.animation = {
-          duration: 2500,
-          easing: "easeOutQuart",
-        };
-      }
+          animation: {
+            duration: 2500,
+            easing: "easeOutQuart",
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              reverse: false,
+              position: "bottom",
+              grid: {
+                drawOnChartArea: false,
+                drawTicks: false,
+                drawBorder: true,
+                color: "#000",
+                lineWidth: 0,
+              },
+              border: {
+                display: true,
+                width: 1,
+                color: "#000",
+              },
+              ticks: {
+                font: {
+                  family: "MyFont",
+                },
+              },
+            },
+            y: {
+              position: "left",
+              grid: {
+                drawOnChartArea: false,
+                drawTicks: false,
+                drawBorder: false,
+              },
+              border: {
+                display: true,
+                width: 1,
+                color: "#000",
+              },
+              ticks: {
+                color: "#000",
+                font: {
+                  size: 16,
+                  weight: "300",
+                  family: "MyFont",
+                },
+                padding: 5,
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              position: "bottom",
+              rtl: false,
+              reverse: false,
+              labels: {
+                boxWidth: 20,
+                font: {
+                  family: "MyFont",
+                  size: 14,
+                },
+              },
+            },
+            tooltip: {
+              enabled: false,
+            },
+            datalabels: {
+              display: true,
+              anchor: "end",
+              align: "start",
+              textAlign: "center",
+              offset: 0,
+              color: "#ffffff",
+              font: {
+                size: 13,
+                weight: "bold",
+                family: "MyFont",
+              },
+              formatter: (value) => value.toFixed(2),
+            },
+          },
+          layout: {
+            padding: { left: 0, right: 0, top: 0, bottom: 0 },
+          },
+          barPercentage: 0.9,
+          categoryPercentage: 0.2,
+        },
+        plugins: [ChartDataLabels],
+      });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

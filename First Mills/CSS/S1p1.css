@@ -1,110 +1,31 @@
 
-.chart-header {
-  text-align: center;
-  margin-bottom: 20px;
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 500px !important;
 }
 
-.chart-area {
-  display: flex;
-  align-items: flex-start;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.y-axis {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-  height: 240px;
-  padding-top: 6px;
-    border-left: 2px solid #000; 
-
-}
-
-.y-label {
-  height: 70px;
-  font-size: 16px;
-  text-align: right;
-  line-height: 70px; 
-}
-
-.bars-area {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-inline: 15px;
+.chartAr,
+.chartEn {
   width: 100%;
+  height: 500px;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.bar-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  height: 70px;
-  justify-content: center;
+body[lang="ar"] .chartAr,
+body[lang="en"] .chartEn {
+  visibility: visible;
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
 }
-
-.bar {
-  height: 30px;
-  background-color: var(--color, #ccc);
-  color: white;
-  font-size: 13px;
-  padding: 4px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border-radius: 4px;
-  width: var(--bar-width);
-  box-sizing: border-box;
-}
-
-.bar.y2024 {
-  --color: #f8b545;
-}
-
-.bar.y2023 {
-  --color: #5f7068;
-}
-
-.x-axis {
-  max-width: 900px;
-  display: flex;
-  justify-content: space-between;
-  border-top: 2px solid #000;
-  padding-top: 5px;
-  margin-top: 0px;
-  margin-right: 53px;
-  padding-inline: 100px;
-  font-size: 13px;
-  color: #333;
-}
-
-.legend {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 15px;
-}
-
-.legend .box {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  margin-left: 5px;
-  border-radius: 3px;
-}
-
-.legend .y2024 {
-  background-color: #f8b545;
-}
-
-.legend .y2023 {
-  background-color: #5f7068;
-}
-
 
 
 body[lang="en"] {
@@ -126,4 +47,6 @@ body[lang="en"] {
     margin-right: 10px;
     margin-left: 0px;
   }
+
+
 }
