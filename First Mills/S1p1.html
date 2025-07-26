@@ -1124,13 +1124,6 @@
     <footer>
       <div class="container">
         <div class="side-of-footer">
-          <a href="S1p2.html" class="next">
-            <img src="Images/arrow-footer.png" alt="" />
-            <span data-en="Next">التـــالـي</span>
-          </a>
-          <h2 data-en="Company Overview">لمحة عن شركة المطاحن الأولى</h2>
-        </div>
-        <div class="side-of-footer">
           <a
             href="S7p1.html"
             style="background: #30444e; color: white"
@@ -1147,6 +1140,44 @@
             <img src="Images/download.png" alt="" />
             <span data-en="Download Center">مركز التحميل</span></a
           >
+        </div>
+        <div class="side-of-footer">
+          <a href="index.html" class="Previous">
+            <div class="button-and-image">
+              <div>
+                <img
+                  src="Images/arrow-footer.png"
+                 
+                  alt=""
+                />
+                <span data-en="Previous">السابق</span>
+              </div>
+              <div class="name-of-the-page">
+                <img
+                  style="visibility: hidden"
+                  src="Images/arrow-footer.png"
+                  alt=""
+                />
+                <h2 data-en="Home">الصفحة الرئيسية</h2>
+              </div>
+            </div>
+          </a>
+          <a href="S1p2.html" class="next">
+            <div class="button-and-image">
+              <div>
+                <span data-en="Next">التالي</span>
+                <img src="Images/arrow-footer.png" alt="" />
+              </div>
+              <div class="name-of-the-page">
+                <h2 data-en="Company Overview">لمحة عن شركة المطاحن الأولى</h2>
+                <img
+                  style="visibility: hidden"
+                  src="Images/arrow-footer.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </footer>
@@ -1223,7 +1254,7 @@
             datalabels: {
               display: true,
               anchor: "start",
-              align: "end", 
+              align: "end",
               textAlign: "center",
               offset: 0,
               color: "#ffffff",
@@ -1241,8 +1272,8 @@
           scales: {
             x: {
               beginAtZero: true,
-              position: "bottom", 
-              reverse: true, 
+              position: "bottom",
+              reverse: true,
               grid: {
                 drawOnChartArea: false,
                 drawTicks: false,
@@ -1262,7 +1293,7 @@
               },
             },
             y: {
-              position: "right", 
+              position: "right",
               grid: {
                 drawOnChartArea: false,
                 drawTicks: false,
@@ -1328,7 +1359,7 @@
       function applyArabicSettings() {
         chart.data.labels = ["الدقـيق", "الأعلاف", "النخالة"];
         chart.options.scales.x.position = "bottom";
-        chart.options.scales.x.reverse = true; 
+        chart.options.scales.x.reverse = true;
         chart.options.scales.y.position = "right";
         chart.options.plugins.legend.rtl = true;
         chart.options.plugins.legend.reverse = true;
@@ -1342,7 +1373,7 @@
       function applyEnglishSettings() {
         chart.data.labels = ["Flour", "Feed", "Bran"];
         chart.options.scales.x.position = "bottom";
-        chart.options.scales.x.reverse = false; 
+        chart.options.scales.x.reverse = false;
         chart.options.scales.y.position = "left";
         chart.options.plugins.legend.rtl = false;
         chart.options.plugins.legend.reverse = false;
