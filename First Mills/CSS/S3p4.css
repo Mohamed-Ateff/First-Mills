@@ -36,17 +36,16 @@
 }
 .list-big {
   padding-top: 30px;
-   display: flex;
+  display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 25px;
 }
-.list-col-1{
+.list-col-1 {
   width: 50%;
-  
 }
-.list-col-2{
+.list-col-2 {
   width: 43%;
   display: flex;
   flex-direction: column;
@@ -67,21 +66,24 @@
   align-items: center;
   justify-content: flex-start;
   color: #4e6a63;
-  font-size: 17px; 
+  font-size: 17px;
   font-weight: 100;
   padding-right: 17px;
   text-align: justify;
 }
 .circle-blue {
-  width: 29px;
-  height: 29px;
-  min-width: 29px;
-  min-height: 29px;
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   background-color: #193028;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+.circle-blue img {
+  width: 70%;
 }
 
 .circle-orange {
@@ -183,10 +185,9 @@
 
   .list-text {
     padding-bottom: 20px;
-    
   }
   .circle-blue {
-margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .intersect {
     width: 15px;
@@ -209,7 +210,7 @@ margin-bottom: 0px;
   .circle-orange img {
     width: 15px;
     height: 15px;
-     margin-right: 0px;
+    margin-right: 0px;
     margin-left: 0px;
   }
 
@@ -226,18 +227,16 @@ margin-bottom: 0px;
   .grid-item.wide {
     /* padding-left: 0px; */
   }
-  .list-col-1{
-  width: 100%;
-  
-}
-.list-col-2{
-  width: 100%;
-  
-}
-.list-big {
-  padding-top: 30px;
-  gap: 0px;
-}
+  .list-col-1 {
+    width: 100%;
+  }
+  .list-col-2 {
+    width: 100%;
+  }
+  .list-big {
+    padding-top: 30px;
+    gap: 0px;
+  }
 }
 @media screen and (max-width: 480px) {
   .circle-orange {
@@ -249,8 +248,8 @@ margin-bottom: 0px;
   .circle-blue {
     width: 20px;
     height: 20px;
-     min-width: 20px;
-   min-height: 20px;
+    min-width: 20px;
+    min-height: 20px;
   }
   .circle-blue img {
     width: 10px;
@@ -270,31 +269,30 @@ margin-bottom: 0px;
 }
 
 body[lang="en"] {
-  .circle-blue img{
+  .circle-blue img {
     transform: rotateY(180deg);
   }
 
   .title-with-arrow {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   .circle-orange {
     transform: rotateY(178deg);
   }
-   @media screen and (max-width: 768px) {
- 
+  @media screen and (max-width: 768px) {
     .arrow-text {
-    padding-right: 0px;
-    padding-left: 20px;
-    width: 90%;
-  }
+      padding-right: 0px;
+      padding-left: 20px;
+      width: 90%;
+    }
   }
   @media screen and (max-width: 480px) {
- .arrow-text {
-    padding-right: 0px;
-  }
-      .title-with-arrow {
-    padding-left: 15px;
-  }
+    .arrow-text {
+      padding-right: 0px;
+    }
+    .title-with-arrow {
+      padding-left: 15px;
+    }
   }
 }
