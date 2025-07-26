@@ -1,61 +1,56 @@
-.structure {
-display: flex;
-justify-content: center;
-align-items: center;
+.structure, .structure-mobile {
+  justify-content: center;
+  align-items: center;
 }
-.structure img{
-width: 100%;
-height: auto;
-}
-.structure-mobile{
-  display: flex;
-justify-content: center;
-align-items: center;
-  display: none;
-}
-.structure-mobile img{
-width: 100%;
-height: auto;
-}
-.arabic-none{
-  display: none;
-}
-@media (max-width: 480px) {
-.structure {
-display: none;
-}
-.structure-mobile{
-  display: block;
-}
-.arabic-none{
-  display: none;
-}
+.structure img, .structure-mobile img {
+  width: 100%;
+  height: auto;
 }
 
-body[lang="en"] {
-.english-none{
+.structure-mobile {
   display: none;
 }
-.arabic-none{
-  display: block;
-}
-.structure-mobile{
+
+.arabic-none {
   display: none;
 }
+
 @media (max-width: 480px) {
   .structure {
-display: none;
-}
-  .english-none{
-  display: none !important;
-}
-.structure-mobile{
-  display:block;
-}
-}
-
+    display: none;
+  }
+  .structure-mobile {
+    display: block;
+  }
+  .arabic-none {
+    display: none;
+  }
 }
 
+
+body[lang="en"]{ 
+  .english-none {
+  display: none;
+}
+.arabic-none {
+  display: block;
+}
+.structure-mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+ .structure {
+    display: none;
+  }
+ .structure-mobile {
+    display: block;
+  }
+ .english-none {
+    display: none !important;
+  }
+}
+}
 /* 
 i tried this solution easier code but the image is pixlated and not clear
 .structure{
