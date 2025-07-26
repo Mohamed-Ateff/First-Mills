@@ -28,7 +28,7 @@
 .circle-blue {
   width: 64px;
   height: 64px;
-  background-color: #31544b;
+  background-color: rgba(49, 84, 75, 0.1);
   border-radius: 50%;
   margin-right: 10px;
   align-items: center;
@@ -36,7 +36,7 @@
   display: flex;
 }
 .number-orange {
-  color: #fcb44a;
+  color: #31544B;
   font-weight: 700;
   font-size: 24px;
 }
@@ -71,7 +71,7 @@
 }
 
 .one-card {
-  width: 24%;
+  width: 49%;
   margin-bottom: 60px;
   background-color: #ffffff;
   /* padding: 30px; */
@@ -82,8 +82,7 @@
 }
 
 .text-padding {
-  padding: 20px;
-  padding-top: 100px;
+  padding: 120px 100px 60px 0px;
   text-align: start;
 }
 .text-padding span {
@@ -97,7 +96,7 @@
   z-index: 1;
   background-color: #ffb548;
   height: 84px;
-  width: 100%;
+  width: 80%;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -107,6 +106,7 @@
   color: #31544b;
   vertical-align: center;
   text-align: right;
+  border-radius: 5px;
 }
 
 .logo-div span {
@@ -119,10 +119,10 @@
   clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
   background: #31544b;
   color: white;
-  right: 14px;
-  top: -60px;
+  right: 40px;
+  top: -13px;
   transform: translateY(20px);
-  scale: 1.9;
+  scale: 2.3;
   font-weight: 700;
   color: white;
   position: absolute;
@@ -152,12 +152,13 @@
     font-size: 18px;
   }
   .one-card {
-    width: 45%;
+    width: 49%;
   }
   .one-card h3 {
-    padding-right: 40px;
+    padding-right: 120px;
     padding-left: 0px;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -204,7 +205,7 @@
     padding-left: 0px;
   }
   .one-card {
-    width: 45%;
+    width: 100%;
   }
   .one-card h3 {
     padding-right: 80px;
@@ -238,13 +239,15 @@
     padding-right: 10px;
     height: 64px;
     font-size: 18px;
+    width: 100%;
   }
   .logo-div {
-    right: 9px;
-    scale: 1.5;
+    right: 23px;
+    scale: 1.7;
   }
   .text-padding {
-    padding-top: 60px;
+    padding-top: 90px;
+    padding-right: 40px;
   }
   .padding-top {
     margin-top: 0px;
@@ -254,20 +257,21 @@
 .number-english {
   display: none;
 }
+
 body[lang="en"] {
   .number-english {
     display: inline;
   }
   .logo-div {
-    left: 18px;
+    left: 40px;
   }
   .one-card h3 {
     padding-left: 61px;
     padding-right: 5px;
   }
   .one-card .special-english {
-    padding-left: 50px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 0px;
   }
   .arrow-text {
     padding-right: 0px;
@@ -275,7 +279,21 @@ body[lang="en"] {
     padding-left: 10px;
     margin-left: 0px;
   }
-
+.text-padding {
+  padding: 120px 0px 60px 100px;
+  text-align: start;
+}
+  @media screen and (max-width: 1025px) {
+     .one-card h3 {
+    padding-left: 81px;
+    padding-right: 0px;
+    text-align: left;
+  }
+    .one-card .special-english {
+      padding-left: 0px;
+      padding-left: 110px;
+    }
+  }
   @media screen and (max-width: 780px) {
     .arrow-text {
       margin-left: 0px;
@@ -283,10 +301,15 @@ body[lang="en"] {
   }
   @media screen and (max-width: 480px) {
     .logo-div {
-      left: 10px;
+      left: 23px;
+       
+    scale: 1.7;
     }
     .one-card h3 {
       padding: 0px 5px 0px 5px;
+    }
+    .text-padding{
+      padding: 90px 0px 60px 60px;;
     }
     .one-card .special-english {
       padding-left: 0px;
