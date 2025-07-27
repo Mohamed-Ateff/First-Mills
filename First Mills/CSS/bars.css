@@ -57,6 +57,9 @@ body[lang="en"] {
       margin-top: -600px;
       margin-left: -100px;
     }
+    .special-padding-j{
+      padding-top: 600px;
+    }
   }
 }
 
