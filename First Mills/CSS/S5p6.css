@@ -165,7 +165,13 @@ tr:nth-child(even) td {
   }
 }
 
+.percent-none{
+  display: none;
+}
 body[lang="en"] {
+  .percent-none{
+  display: inline;
+}
   th:first-child {
     padding-left: 20px;
     padding-right: 0px;
@@ -173,5 +179,9 @@ body[lang="en"] {
   .td-table3 td:first-child {
     padding-left: 20px;
     padding-right: 0px;
+  }
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
