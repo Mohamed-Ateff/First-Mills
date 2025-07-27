@@ -59,9 +59,9 @@ body[lang="en"] {
       left: unset;
       right: 1%;
     }
-    .mobile-menu .section::after {
+    /* .mobile-menu .section::after {
       left: 315px;
-    }
+    } */
   }
 }
 
