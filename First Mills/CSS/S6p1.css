@@ -273,6 +273,11 @@ canvas {
   display: none;
 }
 body[lang="en"] {
+  .legend-item p:last-child {
+ 
+  text-align: left;
+ 
+}
   .percent-none{
   display: inline;
 }
@@ -368,6 +373,16 @@ body[lang="en"] {
       font-weight: 500;
       margin: 10px auto auto 20px;
     }
+    .legend-item p:last-child {
+
+
+  width: 120px; /* Increased width for name text */
+}
+  .legend-container{
+  padding-right: 0px ;
+  padding-left: 55px ;
+  
+}
   }
   @media (max-width: 768px) {}
   @media (max-width: 480px) {
@@ -405,8 +420,5 @@ body[lang="en"] {
       right: 63%;
       top: 76%;
     }
-    .legend-container{
-  padding-right: 0px;
-}
   }
 }
