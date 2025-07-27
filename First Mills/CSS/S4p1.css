@@ -33,7 +33,7 @@ margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(-21%);
+  transform: translateX(-21%) !important;
 }
 .card-grid {
   display: flex;
