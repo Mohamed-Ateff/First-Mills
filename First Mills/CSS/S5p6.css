@@ -180,8 +180,4 @@ body[lang="en"] {
     padding-left: 20px;
     padding-right: 0px;
   }
-  .table-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
 }
