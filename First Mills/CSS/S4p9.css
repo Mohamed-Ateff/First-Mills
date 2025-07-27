@@ -15,6 +15,7 @@
 }
 
 .div-with-text {
+  overflow: hidden !important;
   width: 52%;
   padding: 0px 0px 0px 40px;
   color: #4e6a63;
