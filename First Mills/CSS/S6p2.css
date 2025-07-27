@@ -106,6 +106,7 @@ tbody tr:nth-child(odd) {
 .btn button img {
   width: 12%;
 }
+
 @media (max-width: 768px) {
   .text-desc {
     font-size: 18px;
@@ -159,8 +160,13 @@ tbody tr:nth-child(odd) {
     padding-top: 0px;
   }
 }
-
+.hidden-arabic{
+  display: none;
+}
 body[lang="en"] {
+  .hidden-arabic{
+  display: block;
+}
   #s-title-bar-chart {
     margin-left: 0px;
     margin-right: 26px;
@@ -170,5 +176,8 @@ body[lang="en"] {
   .table-container5 .add-border {
     border-left: none;
     border-right: 1px solid #bfbfbf;
+  }
+  .hidden-english{
+    display: none;
   }
 }
