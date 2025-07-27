@@ -81,6 +81,7 @@
 /* 4 cards with circle ends*/
 
 .four-cards-section {
+  overflow: hidden;
   background-color: #fff;
   padding: 35px;
 }
