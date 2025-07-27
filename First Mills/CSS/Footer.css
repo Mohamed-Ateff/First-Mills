@@ -164,6 +164,7 @@ body[lang="en"] {
     padding-right: 40px;
     margin-right: 20px;
     margin-left: 0px;
+   text-align: right;
   }
   footer .container .side-of-footer .btn-footer img {
     margin-left: 0px;
@@ -208,8 +209,16 @@ body[lang="en"] {
   }
   footer .container .side-of-footer .next {
     width: 100%;
-    margin-left: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 15px;
   }
+  footer .container .side-of-footer .Previous {
+   width: 100%;
+   margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
   footer .container .side-of-footer h2 {
     font-size: 16px;
   }
