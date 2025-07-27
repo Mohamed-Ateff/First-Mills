@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Side Menu</title>
+    <title data-en="Market and Sector Overview">
+      نظرة عامة على السوق والقطاع
+    </title>
     <link rel="stylesheet" href="CSS/Navbar.css" />
     <link rel="stylesheet" href="CSS/SideMenu.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
@@ -15,6 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="Javascript/Navbar.js"></script>
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body dir="rtl" lang="ar">
     <div class="container">
@@ -295,7 +302,7 @@
               >مكافآت مجلس الإدارة</a
             >
             <a href="S5p10.html" class="page" data-en="Related Parties"
-              >الأطراف ذوي العلاقة</a
+              >الأطراف ذوو العلاقة</a
             >
             <a href="S5p11.html" class="page" data-en="Statutory Payments"
               >المدفوعات النظامية</a
@@ -404,11 +411,7 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div
-              class="section "
-              data-submenu="Tab1"
-              data-en="Overview"
-            >
+            <div class="section" data-submenu="Tab1" data-en="Overview">
               نظرة عامة
             </div>
             <div
@@ -418,7 +421,11 @@
             >
               كلمة الإدارة
             </div>
-            <div class="section active-color" data-submenu="Tab3" data-en="Strategic Report">
+            <div
+              class="section active-color"
+              data-submenu="Tab3"
+              data-en="Strategic Report"
+            >
               التقرير الاستراتيجي
             </div>
             <div
@@ -650,7 +657,7 @@
               >مكافآت مجلس الإدارة</a
             >
             <a href="S5p10.html" class="page" data-en="Related Parties"
-              >الأطراف ذوي العلاقة</a
+              >الأطراف ذوو العلاقة</a
             >
             <a href="S5p11.html" class="page" data-en="Statutory Payments"
               >المدفوعات النظامية</a
@@ -1407,6 +1414,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Waypoints -->

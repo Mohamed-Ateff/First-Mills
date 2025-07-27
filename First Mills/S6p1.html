@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Side Menu</title>
+    <title data-en="Overview of the Annual Financial Performance">
+      ملخص الأداء المالي السنوي
+    </title>
     <link rel="stylesheet" href="CSS/Navbar.css" />
     <link rel="stylesheet" href="CSS/SideMenu.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
@@ -16,6 +18,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
     <script src="Javascript/Navbar.js"></script>
     <link rel="stylesheet" href="CSS/oldBars.CSS" />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body dir="rtl" lang="ar">
     <div class="container">
@@ -296,7 +303,7 @@
               >مكافآت مجلس الإدارة</a
             >
             <a href="S5p10.html" class="page" data-en="Related Parties"
-              >الأطراف ذوي العلاقة</a
+              >الأطراف ذوو العلاقة</a
             >
             <a href="S5p11.html" class="page" data-en="Statutory Payments"
               >المدفوعات النظامية</a
@@ -405,11 +412,7 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div
-              class="section "
-              data-submenu="Tab1"
-              data-en="Overview"
-            >
+            <div class="section" data-submenu="Tab1" data-en="Overview">
               نظرة عامة
             </div>
             <div
@@ -651,7 +654,7 @@
               >مكافآت مجلس الإدارة</a
             >
             <a href="S5p10.html" class="page" data-en="Related Parties"
-              >الأطراف ذوي العلاقة</a
+              >الأطراف ذوو العلاقة</a
             >
             <a href="S5p11.html" class="page" data-en="Statutory Payments"
               >المدفوعات النظامية</a
@@ -989,8 +992,7 @@ Revenues
       </section>
     </div>
 
-
-       <footer>
+    <footer>
       <div class="container">
         <div class="side-of-footer">
           <a
@@ -1023,10 +1025,10 @@ Revenues
                   src="Images/arrow-footer.png"
                   alt=""
                 />
- <h2 data-en="Sustainability and Social Responsibility">
-الاستدامة والمسؤولية الاجتماعية              
-  </h2>
-                            </div>
+                <h2 data-en="Sustainability and Social Responsibility">
+                  الاستدامة والمسؤولية الاجتماعية
+                </h2>
+              </div>
             </div>
           </a>
 
@@ -1037,10 +1039,12 @@ Revenues
                 <img src="Images/arrow-footer.png" alt="" />
               </div>
               <div class="name-of-the-page">
-<h2 data-en="Development of the Financial Statements in 5 Years">
-            تطور القوائم المالية خلال 5 سنوات
-          </h2>
-                 <img
+                <h2
+                  data-en="Development of the Financial Statements in 5 Years"
+                >
+                  تطور القوائم المالية خلال 5 سنوات
+                </h2>
+                <img
                   style="visibility: hidden"
                   src="Images/arrow-footer.png"
                   alt=""
@@ -1051,6 +1055,14 @@ Revenues
         </div>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

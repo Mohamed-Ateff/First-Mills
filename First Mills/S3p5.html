@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Side Menu</title>
+    <title data-en="Future Objectives and Outlooks">
+      الأهداف المستقبلية والتطلعات
+    </title>
     <link rel="stylesheet" href="CSS/Navbar.css" />
     <link rel="stylesheet" href="CSS/SideMenu.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
@@ -12,6 +14,11 @@
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/S3p5.css" />
     <script src="Javascript/Navbar.js"></script>
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body dir="rtl" lang="ar">
     <div class="container">
@@ -162,7 +169,7 @@
             >
             <a
               href="S3p5.html"
-              class="page active" 
+              class="page active"
               data-en="Future Objectives and Outlooks"
               >الأهداف المستقبلية والتطلعات</a
             >
@@ -292,7 +299,7 @@
               >مكافآت مجلس الإدارة</a
             >
             <a href="S5p10.html" class="page" data-en="Related Parties"
-              >الأطراف ذوي العلاقة</a
+              >الأطراف ذوو العلاقة</a
             >
             <a href="S5p11.html" class="page" data-en="Statutory Payments"
               >المدفوعات النظامية</a
@@ -401,11 +408,7 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div
-              class="section "
-              data-submenu="Tab1"
-              data-en="Overview"
-            >
+            <div class="section" data-submenu="Tab1" data-en="Overview">
               نظرة عامة
             </div>
             <div
@@ -415,7 +418,11 @@
             >
               كلمة الإدارة
             </div>
-            <div class="section active-color" data-submenu="Tab3" data-en="Strategic Report">
+            <div
+              class="section active-color"
+              data-submenu="Tab3"
+              data-en="Strategic Report"
+            >
               التقرير الاستراتيجي
             </div>
             <div
@@ -647,7 +654,7 @@
               >مكافآت مجلس الإدارة</a
             >
             <a href="S5p10.html" class="page" data-en="Related Parties"
-              >الأطراف ذوي العلاقة</a
+              >الأطراف ذوو العلاقة</a
             >
             <a href="S5p11.html" class="page" data-en="Statutory Payments"
               >المدفوعات النظامية</a
@@ -850,6 +857,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Waypoints -->
