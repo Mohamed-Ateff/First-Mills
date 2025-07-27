@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="CSS/Hero.css" />
     <link rel="stylesheet" href="CSS/S5p1.css" />
     <script src="Javascript/Navbar.js"></script>
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body dir="rtl" lang="ar">
@@ -406,11 +411,7 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div
-              class="section "
-              data-submenu="Tab1"
-              data-en="Overview"
-            >
+            <div class="section" data-submenu="Tab1" data-en="Overview">
               نظرة عامة
             </div>
             <div
@@ -612,7 +613,10 @@
           </div>
 
           <div class="submenu" id="Tab5">
-            <a href="S5p1.html" class="page active" data-en=" First Milling Governance"
+            <a
+              href="S5p1.html"
+              class="page active"
+              data-en=" First Milling Governance"
               >حوكمة المطاحن الاولي</a
             >
             <a href="S5p2.html" class="page" data-en="Provisions and Compliance"
@@ -968,6 +972,14 @@ laws and regulations in force in Saudi Arabia, including:
         </div>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Waypoints -->

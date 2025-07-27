@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-en="Shareholders and Investor Relations Department">
-                المساهمون وعلاقات المستثمرين</title>
+      المساهمون وعلاقات المستثمرين
+    </title>
     <link rel="stylesheet" href="CSS/Navbar.css" />
     <link rel="stylesheet" href="CSS/SideMenu.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
@@ -16,6 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="Javascript/Navbar.js"></script>
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body dir="rtl" lang="ar">
     <div class="container">
@@ -407,11 +413,7 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div
-              class="section "
-              data-submenu="Tab1"
-              data-en="Overview"
-            >
+            <div class="section" data-submenu="Tab1" data-en="Overview">
               نظرة عامة
             </div>
             <div
@@ -1638,6 +1640,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Waypoints -->

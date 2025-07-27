@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-en="Review and Internal Control">
-                المراجعة والرقابة الداخلية</title>
+      المراجعة والرقابة الداخلية
+    </title>
     <link rel="stylesheet" href="CSS/Navbar.css" />
     <link rel="stylesheet" href="CSS/SideMenu.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
@@ -12,6 +13,11 @@
     <link rel="stylesheet" href="CSS/Footer.css" />
     <link rel="stylesheet" href="CSS/Hero.css" />
     <script src="Javascript/Navbar.js"></script>
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body dir="rtl" lang="ar">
     <div class="container">
@@ -403,11 +409,7 @@
 
         <div class="menu-container">
           <div class="main-menu">
-            <div
-              class="section "
-              data-submenu="Tab1"
-              data-en="Overview"
-            >
+            <div class="section" data-submenu="Tab1" data-en="Overview">
               نظرة عامة
             </div>
             <div
@@ -865,6 +867,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="Javascript/counter.js"></script>
