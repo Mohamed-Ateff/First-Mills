@@ -57,7 +57,7 @@ body[lang="en"] {
       margin-top: -600px;
       margin-left: -100px;
     }
-    .special-padding-j{
+    .special-padding-j {
       padding-top: 600px;
     }
   }
@@ -502,13 +502,17 @@ canvas {
 
 .title-for-chart-for-one-two-beside-with-value-outside {
   color: #4e6a63;
-  font-size: 20px;
+  font-size: 14px;
   text-align: right;
   display: flex;
   justify-content: flex-start;
 }
 
 body[lang="en"] {
+  .title-for-chart-for-one-two-beside-with-value-outside {
+    text-align: left !important;
+    font-size: 14px;
+  }
   /* .contain-numbers-and-chart {
     flex-direction: row-reverse;
   } */
