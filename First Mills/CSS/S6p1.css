@@ -26,15 +26,20 @@
     opacity: 1;
     transform: translateY(0);
   }*/
+
 .donut-container {
-  /*flex: 1 1 300px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 400px;
 }
 .donut-container canvas {
   width: 300px !important;
-  height: 300px !important;
+  max-height: 300px !important;
 }
+
 .legend-container {
   /*flex: 1 1 200px;*/
 }
@@ -70,12 +75,12 @@
 
 .productBarValues h6:nth-child(1) {
   top: 5%;
-  right: -3%;
+  right: -5%;
 }
 
 .productBarValues h6:nth-child(2) {
   top: 36%;
-  right: 40%;
+  right: 38%;
 }
 
 .productBarValues h6:nth-child(3) {
@@ -149,12 +154,13 @@
 .total p:first-child {
   color: #31544b;
   font-size: 30px;
-  margin: 10px 90px auto auto;
+  /* margin: 10px 90px auto auto; */
 }
 .total p:last-child {
   color: #444444;
   font-weight: 500;
-  margin: 10px 105px auto auto;
+  text-align: center;
+  /* margin: 10px 105px auto auto; */
 }
 canvas {
   max-width: 100%;
@@ -170,9 +176,10 @@ canvas {
   .donut-container,
   .legend-container,
   .bar-container {
-    width: 100% !important;
+    max-width: 100% !important;
     flex: 1 1 100%;
     text-align: center;
+    margin: auto;
   }
 
   .donut-container canvas,
@@ -190,7 +197,6 @@ canvas {
   .legend-item {
     gap: 12px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -206,10 +212,10 @@ canvas {
     font-size: 14px;
     margin: auto;
   }
-  
-.legend-container{
-  padding-right: 30px;
-}
+
+  .legend-container {
+    padding-right: 30px;
+  }
   .legend-item p:first-child {
     min-width: auto;
     text-align: start;
@@ -269,18 +275,16 @@ canvas {
     top: 76%;
   }
 }
-.percent-none{
+.percent-none {
   display: none;
 }
 body[lang="en"] {
   .legend-item p:last-child {
- 
-  text-align: left;
- 
-}
-  .percent-none{
-  display: inline;
-}
+    text-align: left;
+  }
+  .percent-none {
+    display: inline;
+  }
   .percentage-for-bars {
     left: 0%;
   }
@@ -374,17 +378,15 @@ body[lang="en"] {
       margin: 10px auto auto 20px;
     }
     .legend-item p:last-child {
-
-
-  width: 120px; /* Increased width for name text */
-}
-  .legend-container{
-  padding-right: 0px ;
-  padding-left: 55px ;
-  
-}
+      width: 120px; /* Increased width for name text */
+    }
+    .legend-container {
+      padding-right: 0px;
+      padding-left: 55px;
+    }
   }
-  @media (max-width: 768px) {}
+  @media (max-width: 768px) {
+  }
   @media (max-width: 480px) {
     .productBarValues h6:nth-child(1) {
       right: -10%;
