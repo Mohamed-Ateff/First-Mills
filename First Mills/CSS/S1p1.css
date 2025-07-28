@@ -11,7 +11,7 @@ canvas {
 .chartEn {
   width: 100%;
   height: 500px;
-  visibility: hidden;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ canvas {
 
 body[lang="ar"] .chartAr,
 body[lang="en"] .chartEn {
-  visibility: visible;
+  display: block;
   position: relative;
   opacity: 1;
   pointer-events: auto;
