@@ -382,14 +382,13 @@
 .final-cards {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
 .final-card {
   width: 32%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   background-color: white;
   padding: 30px 30px 90px 30px;
   position: relative;
@@ -406,7 +405,7 @@
 }
 
 .final-card h1 {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 700;
   color: #a2acaa;
   margin-top: 0px;
@@ -416,12 +415,11 @@
 }
 
 .final-card p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   color: #333;
   margin-top: 30px;
   vertical-align: center;
-  line-height: 25px;
   text-align: right;
 }
 .highlight-orange {
