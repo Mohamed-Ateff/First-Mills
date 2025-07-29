@@ -166,7 +166,64 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 1430px) {
+  .productBarValues h6:nth-child(1) {
+    right: -10%;
+  }
 
+  .productBarValues h6:nth-child(2) {
+    right: 35%;
+  }
+
+  .productBarValues h6:nth-child(3) {
+    right: 62%;
+  }
+  /* second bar chart value for english */
+  .branchBarValues h6:nth-child(1) {
+    right: -10%;
+  }
+
+  .branchBarValues h6:nth-child(2) {
+    right: 20%;
+  }
+
+  .branchBarValues h6:nth-child(3) {
+    right: 65%;
+  }
+
+  .branchBarValues h6:last-child {
+    right: 63%;
+  }
+}
+@media (max-width: 1200px) {
+  .productBarValues h6:nth-child(1) {
+    right: -16%;
+  }
+
+  .productBarValues h6:nth-child(2) {
+    right: 29%;
+  }
+
+  .productBarValues h6:nth-child(3) {
+    right: 57%;
+  }
+  /* branchBarValues */
+  .branchBarValues h6:nth-child(1) {
+    right: -15%;
+  }
+
+  .branchBarValues h6:nth-child(2) {
+    right: 15%;
+  }
+
+  .branchBarValues h6:nth-child(3) {
+    right: 62%;
+  }
+
+  .branchBarValues h6:last-child {
+    right: 58%;
+  }
+}
 @media (max-width: 1024px) {
   .chart-section {
     flex-direction: column;
@@ -196,6 +253,33 @@ canvas {
 
   .legend-item {
     gap: 12px;
+  }
+  .productBarValues h6:nth-child(1) {
+    right: -10%;
+  }
+
+  .productBarValues h6:nth-child(2) {
+    right: 35%;
+  }
+
+  .productBarValues h6:nth-child(3) {
+    right: 63%;
+  }
+  /* branchBarValues */
+  .branchBarValues h6:nth-child(1) {
+    right: -10%;
+  }
+
+  .branchBarValues h6:nth-child(2) {
+    right: 20%;
+  }
+
+  .branchBarValues h6:nth-child(3) {
+    right: 64%;
+  }
+
+  .branchBarValues h6:last-child {
+    right: 62%;
   }
 }
 
@@ -292,13 +376,13 @@ body[lang="en"] {
   .total p:first-child {
     color: #31544b;
     font-size: 30px;
-    margin: 10px auto auto 90px;
+    /* margin: 10px auto auto 90px; */
   }
 
   .total p:last-child {
     color: #444444;
     font-weight: 500;
-    margin: 10px auto auto 120px;
+    /* margin: 10px auto auto 120px; */
   }
 
   /* first bar chart value for english */
@@ -329,42 +413,64 @@ body[lang="en"] {
   .branchBarValues h6:last-child {
     right: 61%;
   }
-
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     /* first bar chart value for english */
     .productBarValues h6:nth-child(1) {
-      right: -3%;
-      top: 9%;
+      right: -17%;
     }
 
     .productBarValues h6:nth-child(2) {
-      right: 42%;
-      top: 40%;
+      right: 30%;
     }
 
     .productBarValues h6:nth-child(3) {
-      right: 69%;
-      top: 70%;
+      right: 57%;
     }
     /* second bar chart value for english */
     .branchBarValues h6:nth-child(1) {
-      right: -1%;
-      top: 6.6%;
+      right: -13%;
     }
 
     .branchBarValues h6:nth-child(2) {
-      right: 28%;
-      top: 33%;
+      right: 18%;
     }
 
     .branchBarValues h6:nth-child(3) {
-      right: 70%;
-      top: 57%;
+      right: 62%;
     }
 
     .branchBarValues h6:last-child {
-      right: 70%;
-      top: 82%;
+      right: 59%;
+    }
+  }
+  @media (max-width: 1024px) {
+    /* first bar chart value for english */
+    .productBarValues h6:nth-child(1) {
+      right: -10%;
+    }
+
+    .productBarValues h6:nth-child(2) {
+      right: 35%;
+    }
+
+    .productBarValues h6:nth-child(3) {
+      right: 63%;
+    }
+    /* second bar chart value for english */
+    .branchBarValues h6:nth-child(1) {
+      right: -9%;
+    }
+
+    .branchBarValues h6:nth-child(2) {
+      right: 22%;
+    }
+
+    .branchBarValues h6:nth-child(3) {
+      right: 65%;
+    }
+
+    .branchBarValues h6:last-child {
+      right: 63%;
     }
     .total p:first-child {
       color: #31544b;
