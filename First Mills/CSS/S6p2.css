@@ -107,8 +107,8 @@ tbody tr:nth-child(odd) {
   width: 12%;
 }
 
-@media (max-width: 1024px) {
-.title-flex {
+@media (max-width: 1425px) {
+  .title-flex {
     flex-direction: column;
     gap: 10px;
     text-align: center;
@@ -121,8 +121,6 @@ tbody tr:nth-child(odd) {
     text-align: center;
     padding: 0 10px;
   }
-
-  
 
   .title-span {
     font-size: 14px;
@@ -152,7 +150,6 @@ tbody tr:nth-child(odd) {
   .btn button p {
     font-size: 16px;
   }
-
 }
 @media (max-width: 480px) {
   .title-flex {
@@ -163,13 +160,13 @@ tbody tr:nth-child(odd) {
     padding-top: 0px;
   }
 }
-.hidden-arabic{
+.hidden-arabic {
   display: none;
 }
 body[lang="en"] {
-  .hidden-arabic{
-  display: block;
-}
+  .hidden-arabic {
+    display: block;
+  }
   #s-title-bar-chart {
     margin-left: 0px;
     margin-right: 26px;
@@ -180,7 +177,7 @@ body[lang="en"] {
     border-left: none;
     border-right: 1px solid #bfbfbf;
   }
-  .hidden-english{
+  .hidden-english {
     display: none;
   }
 }

@@ -224,7 +224,21 @@ canvas {
     right: 58%;
   }
 }
+@media (max-width: 1110px) {
+  .title-flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
+}
 @media (max-width: 1024px) {
+  .title-flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+  }
   .chart-section {
     flex-direction: column;
     align-items: stretch;
@@ -443,6 +457,7 @@ body[lang="en"] {
       right: 59%;
     }
   }
+
   @media (max-width: 1024px) {
     /* first bar chart value for english */
     .productBarValues h6:nth-child(1) {
@@ -491,8 +506,7 @@ body[lang="en"] {
       padding-left: 55px;
     }
   }
-  @media (max-width: 768px) {
-  }
+
   @media (max-width: 480px) {
     .productBarValues h6:nth-child(1) {
       right: -10%;
