@@ -11,8 +11,8 @@ canvas {
 .chartEn {
   width: 100%;
   height: 500px;
-  /* display: none; */
-  visibility: hidden;
+  display: none !important;
+  /* visibility: hidden !important; */
   position: absolute;
   top: 0;
   left: 0;
@@ -22,8 +22,8 @@ canvas {
 
 body[lang="ar"] .chartAr,
 body[lang="en"] .chartEn {
-  /* display: block; */
-  visibility: visible;
+  display: block !important;
+  /* visibility: visible !important; */
   position: relative;
   opacity: 1;
   pointer-events: auto;
@@ -32,7 +32,7 @@ body[lang="en"] .chartEn {
 
 body[lang="en"] {
   .chartAr {
-    display: none;
+    display: none !important;
   }
   /* .contain-numbers-and-chart {
     flex-direction: row-reverse;
