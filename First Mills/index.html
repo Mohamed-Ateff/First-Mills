@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
 
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -45,15 +46,14 @@
         <button class="close-btn" id="closeBtn">✕</button>
         <div class="video-player" dir="ltr">
           <video id="video" poster="Images/poster.jpg" controls>
-            <source src="Images/video.mp4" type="video/mp4" />
+            <source src="Images/video.mp4" />
+
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
     </div>
-
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    <script>
+     <script>
       const player = new Plyr("#video");
     </script>
     <script>
@@ -72,5 +72,6 @@
         videoPopup.style.display = "none";
       });
     </script>
+
   </body>
 </html>
