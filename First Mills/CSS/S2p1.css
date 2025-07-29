@@ -1,6 +1,6 @@
 .executive-wrapper {
   position: relative;
-  margin-top: 270px !important;
+  margin-top: 220px !important;
 }
 
 /* the orange name bar absolutely at bottom */
@@ -26,67 +26,68 @@
   align-items: center;
   justify-content: flex-end;
   padding-left: 100px;
-  z-index: 1;
+  z-index: 11 !important;
   position: relative;
 }
 
 /* rest same as before */
 
 .executive-image {
-  height: 200px;
+  height: 180%;
   position: absolute;
   top: -125%;
   right: 5.6%;
   transform: translateY(10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5000px;
+  background-color: #f6f5f4;
 }
 
 .executive-image img {
-  z-index: 1 !important;
+  border: solid 20px #f6f5f4;
+  overflow: hidden;
+  border-radius: 500px;
   width: 100%;
+  height: 100%;
+  z-index: 77 !important;
 }
 /* Extra Extra Large Devices: 1400px and up */
 @media (min-width: 1400px) {
-  /* the orange name bar absolutely at bottom */
-  .executive-name-bar {
-    min-height: 270px;
-    height: 270px;
-  }
-  .executive-image img {
-    height: 530px;
+  .executive-image {
+    height: 180%;
   }
 }
 /* Extra Large Devices: 1200px – 1399.98px */
 @media (min-width: 1300px) and (max-width: 1400px) {
-  /* the orange name bar absolutely at bottom */
-  .executive-name-bar {
-    min-height: 240px;
-    height: 240px;
-  }
-  .executive-image img {
-    height: 500px;
+  .executive-image {
+    top: -115%;
+    height: 170%;
   }
 }
 /* Extra Large Devices: 1200px – 1399.98px */
 @media (min-width: 1200px) and (max-width: 1300px) {
-  /* the orange name bar absolutely at bottom */
-  .executive-name-bar {
-    min-height: 240px;
-    height: 240px;
-  }
-  .executive-image img {
-    height: 470px;
+  .executive-image {
+    top: -105%;
+    height: 160%;
   }
 }
 
 /* Large Devices: 992px – 1199.98px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* the orange name bar absolutely at bottom */
-  .executive-name-bar {
-    min-height: 260px;
-    height: 260px;
+  .executive-image {
+    top: -105%;
+    height: 160%;
   }
-  .executive-image img {
-    height: 450px;
+  .name-box {
+    margin-left: -40px;
+  }
+
+  body[lang="en"] {
+    .name-box {
+      margin-left: 2-0px;
+    }
   }
 }
 /* Medium Devices: 768px – 991.98px */
@@ -276,10 +277,28 @@ body[lang="en"] {
   }
   .executive-name-bar {
     padding-right: 120px;
-    padding-left: 520px;
+    padding-left: 500px;
   }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    .executive-name-bar {
+      padding-right: 120px;
+      padding-left: 480px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .executive-image {
+      height: 150%;
+      margin-left: 50px !important;
+    }
+    .executive-name-bar {
+      padding-right: 50px;
+      padding-left: 450px;
+    }
+  }
+  /*  */
+
   .executive-image {
-    height: 100px;
     position: absolute;
     /* top: -125%; */
     right: 55.6%;
@@ -307,90 +326,7 @@ body[lang="en"] {
     padding: 0px 0px 0 90px;
     z-index: 2;
   }
-  /* @media (max-width: 1500px) {
-.executive-image1 {
-  left: 20px !important;
 
-  bottom: -570px ;
-}
-.executive-image2 {
-  left: 80px !important;
-  bottom: -492px ;
-}
-.executive-image3 {
-  left: 80px !important;
-  bottom: -540px;
-}
-
-} */
-  /* @media (max-width: 1600px) {
-  .executive-image1 {
-    bottom: -570px;
-    left: 80px !important;
-  }
-  .executive-image2 {
-    left: 83px !important;
-    bottom: -500px;
-  }
-  .executive-image3 {
-    bottom: -535px;
-    left: 83px !important;
-  }
-}
-@media (max-width: 1441px) {
-  .executive-image1 {
-   bottom: -570px;
-    left: 66px !important;
-  }
-  .executive-image2 {
-    bottom: -530px;
-    left: 70px !important;
-  }
-  .executive-image3 {
-    bottom: -530px;
-    left: 65px !important;
-  }
-}
-@media (max-width: 1024px) {
-
-  .executive-image1 {
-    bottom: -530px;
-    left: 9% !important ;
-  }
-  .executive-image2 {
-    bottom: -460px;
-    right: 9%;
-  }
-
-  .executive-image3 {
-    bottom: -458px;
-    right: 9%;
-  }
-  .executive-name-bar {
-    height: 300px;
-    padding-left: 60px;
-    background: radial-gradient(
-        circle at 27% top,
-        #f6f5f4 0px,
-        #f6f5f4 180px,
-        transparent 180px
-      ),
-      linear-gradient(to left, #31544b, #eda842);
-   padding-right: 40px;
-  padding-left: 340px;
-  }
-  .name-box h3 {
-    font-size: 30px;
-  }
-  .name-box p {
-    font-size: 18px;
-  }
-
-  .executive-text {
-    max-width: 80%;
-    padding: 0px 0px 0px 200px;
-  }
-} */
   @media (max-width: 768px) {
     /* move radial to center at 50% top */
     .executive-name-bar {
