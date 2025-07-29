@@ -130,7 +130,7 @@ a {
 .header {
   position: absolute;
   top: 40px;
-  right: 125px;
+  right: 10%;
   display: flex;
   align-items: center;
   z-index: 99;
@@ -281,12 +281,18 @@ a {
 .plyr__video-embed,
 video {
   max-width: 100%;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .header {
+    right: 20%;
+  }
 }
 
 @media (max-width: 435px) {
   .header {
-    right: 5px;
+    right: 10%;
   }
 }
