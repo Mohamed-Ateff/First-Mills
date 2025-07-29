@@ -202,4 +202,8 @@ body[lang="en"] {
    .english-item {
     display: block;
   }
+  .button-div button {
+    width: 300px;
+}
+
 }
