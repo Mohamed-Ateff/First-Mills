@@ -6,7 +6,6 @@
   font-family: "MyFont-english2";
   src: url("../Assests/GothamBook.ttf") format("truetype");
 }
-
 html,
 body {
   margin: 0;
@@ -180,8 +179,3 @@ a {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .header {
-    right: 20%;
-  }
-}

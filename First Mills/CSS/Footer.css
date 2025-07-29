@@ -111,8 +111,8 @@ body[lang="en"] {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    padding: 10px 20px;
-    padding-left: 40px;
+    padding: 10px 15px 10px 20px;
+   
   }
 
   footer .container .side-of-footer .Previous img {
@@ -135,6 +135,8 @@ footer .container .side-of-footer h2 {
   margin-top: 2px;
   margin-bottom: 0px;
   font-weight: 500;
+  /* added this to fix english footer problemk */
+  
 }
 
 footer .container .side-of-footer .btn-footer {
@@ -162,7 +164,7 @@ body[lang="en"] {
     padding: 13px 20px;
     padding-left: 20px;
     padding-right: 40px;
-    padding:10px 20px 10px 40px;
+    padding:10px 20px 10px 15px;
     margin-right: 20px;
     margin-left: 0px;
   }
