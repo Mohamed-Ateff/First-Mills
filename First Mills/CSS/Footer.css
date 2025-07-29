@@ -103,7 +103,7 @@ body[lang="en"] {
     font-size: 15px;
     margin-right: 0px !important;
     margin-left: 10px !important;
-    text-align: left;
+    text-align: right;
     background-color: #f6f5f4;
   }
 
@@ -162,9 +162,9 @@ body[lang="en"] {
     padding: 13px 20px;
     padding-left: 20px;
     padding-right: 40px;
+    padding:10px 20px 10px 40px;
     margin-right: 20px;
     margin-left: 0px;
-   text-align: right;
   }
   footer .container .side-of-footer .btn-footer img {
     margin-left: 0px;
