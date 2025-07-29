@@ -5,16 +5,14 @@
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="stylesheet" href="CSS/Style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <title>المطاحن الأولى</title>
-    <!-- AOS CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
@@ -46,28 +44,32 @@
         <div class="video-player" dir="ltr">
           <video id="video" poster="Images/poster.jpg" controls>
             <source src="Images/video.mp4" type="video/mp4" />
+            <source src="Images/video.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script>
+      // Initialize Plyr (optional, comment out to test native player)
       const player = new Plyr("#video");
-    </script>
-    <script>
+
       const playButton = document.getElementById("playButton");
       const videoPopup = document.getElementById("videoPopup");
       const closeBtn = document.getElementById("closeBtn");
       const video = document.getElementById("video");
 
       playButton.addEventListener("click", () => {
+        console.log("Play button clicked");
         videoPopup.style.display = "flex";
-        video.play();
+        video.play().catch(error => {
+          console.error("Video playback failed:", error);
+        });
       });
 
       closeBtn.addEventListener("click", () => {
+        console.log("Close button clicked");
         video.pause();
         videoPopup.style.display = "none";
       });
