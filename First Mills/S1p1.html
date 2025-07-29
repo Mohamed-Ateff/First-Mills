@@ -1154,243 +1154,156 @@
 
     <script>
       Chart.register(ChartDataLabels);
-
       const isMobile = window.innerWidth <= 480;
 
-      const arabicCtx = document.getElementById("chartAr").getContext("2d");
+      let chartArInstance, chartEnInstance;
 
-      new Chart(arabicCtx, {
-        type: "bar",
-        data: {
-          labels: ["الدقـيق", "الأعلاف", "النخالة"],
-          datasets: [
-            {
-              label: "2024",
-              data: [599.12, 311.9, 137.83],
-              backgroundColor: "#f8b545",
-              barThickness: isMobile ? 20 : 40,
-              borderSkipped: false,
-            },
-            {
-              label: "2023",
-              data: [552.9, 271.05, 140.31],
-              backgroundColor: "#5f7068",
-              barThickness: isMobile ? 20 : 40,
-              borderSkipped: false,
-            },
-          ],
-        },
-        options: {
-          indexAxis: "y",
-          responsive: true,
-          maintainAspectRatio: false,
-          animation: {
-            duration: 2500,
-            easing: "easeOutQuart",
-          },
-          scales: {
-            x: {
-              beginAtZero: true,
-              reverse: true,
-              position: "bottom",
-              grid: {
-                drawOnChartArea: false,
-                drawTicks: false,
-                drawBorder: true,
-                color: "#000",
-                lineWidth: 0,
+      function createChart(ctx, isArabic = true) {
+        return new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: isArabic
+              ? ["الدقـيق", "الأعلاف", "النخالة"]
+              : ["Flour", "Feed", "Bran"],
+            datasets: [
+              {
+                label: "2024",
+                data: [599.12, 311.9, 137.83],
+                backgroundColor: "#f8b545",
+                barThickness: isMobile ? 20 : 40,
+                borderSkipped: false,
               },
-              border: {
+              {
+                label: "2023",
+                data: [552.9, 271.05, 140.31],
+                backgroundColor: "#5f7068",
+                barThickness: isMobile ? 20 : 40,
+                borderSkipped: false,
+              },
+            ],
+          },
+          options: {
+            indexAxis: "y",
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+              duration: 2500,
+              easing: "easeOutQuart",
+            },
+            scales: {
+              x: {
+                beginAtZero: true,
+                reverse: isArabic,
+                position: "bottom",
+                grid: {
+                  drawOnChartArea: false,
+                  drawTicks: false,
+                  drawBorder: true,
+                  color: "#000",
+                  lineWidth: 0,
+                },
+                border: {
+                  display: true,
+                  width: 1,
+                  color: "#000",
+                },
+                ticks: {
+                  font: {
+                    family: "MyFont",
+                  },
+                },
+              },
+              y: {
+                position: isArabic ? "right" : "left",
+                grid: {
+                  drawOnChartArea: false,
+                  drawTicks: false,
+                  drawBorder: false,
+                },
+                border: {
+                  display: true,
+                  width: 1,
+                  color: "#000",
+                },
+                ticks: {
+                  color: "#000",
+                  font: {
+                    size: 16,
+                    weight: "300",
+                    family: "MyFont",
+                  },
+                  padding: 5,
+                },
+              },
+            },
+            plugins: {
+              legend: {
+                position: "bottom",
+                rtl: isArabic,
+                reverse: isArabic,
+                labels: {
+                  boxWidth: 20,
+                  font: {
+                    family: "MyFont",
+                    size: 14,
+                  },
+                },
+              },
+              tooltip: {
+                enabled: false,
+              },
+              datalabels: {
                 display: true,
-                width: 1,
-                color: "#000",
-              },
-              ticks: {
+                anchor: isArabic ? "start" : "end",
+                align: isArabic ? "end" : "start",
+                textAlign: "center",
+                offset: 0,
+                color: "#ffffff",
                 font: {
+                  size: 13,
+                  weight: "bold",
                   family: "MyFont",
                 },
+                formatter: (value) => value.toFixed(2),
               },
             },
-            y: {
-              position: "right",
-              grid: {
-                drawOnChartArea: false,
-                drawTicks: false,
-                drawBorder: false,
-              },
-              border: {
-                display: true,
-                width: 1,
-                color: "#000",
-              },
-              ticks: {
-                color: "#000",
-                font: {
-                  size: 16,
-                  weight: "300",
-                  family: "MyFont",
-                },
-                padding: 5,
-              },
+            layout: {
+              padding: { left: 0, right: 0, top: 0, bottom: 0 },
             },
+            barPercentage: 0.9,
+            categoryPercentage: 0.2,
           },
-          plugins: {
-            legend: {
-              position: "bottom",
-              rtl: true,
-              reverse: true,
-              labels: {
-                boxWidth: 20,
-                font: {
-                  family: "MyFont",
-                  size: 14,
-                },
-              },
-            },
-            tooltip: {
-              enabled: false,
-            },
-            datalabels: {
-              display: true,
-              anchor: "start",
-              align: "end",
-              textAlign: "center",
-              offset: 0,
-              color: "#ffffff",
-              font: {
-                size: 13,
-                weight: "bold",
-                family: "MyFont",
-              },
-              formatter: (value) => value.toFixed(2),
-            },
-          },
-          layout: {
-            padding: { left: 0, right: 0, top: 0, bottom: 0 },
-          },
-          barPercentage: 0.9,
-          categoryPercentage: 0.2,
-        },
-        plugins: [ChartDataLabels],
-      });
+          plugins: [ChartDataLabels],
+        });
+      }
 
-      const englishCtx = document.getElementById("chartEn").getContext("2d");
+      function observeChart(canvasId, isArabic) {
+        const canvas = document.getElementById(canvasId);
+        const observer = new IntersectionObserver(
+          (entries, observerInstance) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const ctx = canvas.getContext("2d");
 
-      new Chart(englishCtx, {
-        type: "bar",
-        data: {
-          labels: ["Flour", "Feed", "Bran"],
-          datasets: [
-            {
-              label: "2024",
-              data: [599.12, 311.9, 137.83],
-              backgroundColor: "#f8b545",
-              barThickness: isMobile ? 20 : 40,
-              borderSkipped: false,
-            },
-            {
-              label: "2023",
-              data: [552.9, 271.05, 140.31],
-              backgroundColor: "#5f7068",
-              barThickness: isMobile ? 20 : 40,
-              borderSkipped: false,
-            },
-          ],
-        },
-        options: {
-          indexAxis: "y",
-          responsive: true,
-          maintainAspectRatio: false,
+                if (isArabic && !chartArInstance) {
+                  chartArInstance = createChart(ctx, true);
+                } else if (!isArabic && !chartEnInstance) {
+                  chartEnInstance = createChart(ctx, false);
+                }
 
-          animation: {
-            duration: 2500,
-            easing: "easeOutQuart",
+                observerInstance.unobserve(canvas);
+              }
+            });
           },
-          scales: {
-            x: {
-              beginAtZero: true,
-              reverse: false,
-              position: "bottom",
-              grid: {
-                drawOnChartArea: false,
-                drawTicks: false,
-                drawBorder: true,
-                color: "#000",
-                lineWidth: 0,
-              },
-              border: {
-                display: true,
-                width: 1,
-                color: "#000",
-              },
-              ticks: {
-                font: {
-                  family: "MyFont",
-                },
-              },
-            },
-            y: {
-              position: "left",
-              grid: {
-                drawOnChartArea: false,
-                drawTicks: false,
-                drawBorder: false,
-              },
-              border: {
-                display: true,
-                width: 1,
-                color: "#000",
-              },
-              ticks: {
-                color: "#000",
-                font: {
-                  size: 16,
-                  weight: "300",
-                  family: "MyFont",
-                },
-                padding: 5,
-              },
-            },
-          },
-          plugins: {
-            legend: {
-              position: "bottom",
-              rtl: false,
-              reverse: false,
-              labels: {
-                boxWidth: 20,
-                font: {
-                  family: "MyFont",
-                  size: 14,
-                },
-              },
-            },
-            tooltip: {
-              enabled: false,
-            },
-            datalabels: {
-              display: true,
-              anchor: "end",
-              align: "start",
-              textAlign: "center",
-              offset: 0,
-              color: "#ffffff",
-              font: {
-                size: 13,
-                weight: "bold",
-                family: "MyFont",
-              },
-              formatter: (value) => value.toFixed(2),
-            },
-          },
-          layout: {
-            padding: { left: 0, right: 0, top: 0, bottom: 0 },
-          },
-          barPercentage: 0.9,
-          categoryPercentage: 0.2,
-        },
-        plugins: [ChartDataLabels],
-      });
+          {
+            threshold: 0.3,
+          }
+        );
+        observer.observe(canvas);
+      }
+
+      observeChart("chartAr", true);
+      observeChart("chartEn", false);
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
