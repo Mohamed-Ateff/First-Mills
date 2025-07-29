@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <script src="https://www.youtube.com/iframe_api"></script>
+
     <!-- Tailwind and FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -78,58 +79,25 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const playButton = document.getElementById("playButton");
-        const videoPopup = document.getElementById("videoPopup");
-        const closeBtn = document.getElementById("closeBtn");
-
-        if (playButton) {
-          playButton.addEventListener("click", () => {
-            videoPopup.style.display = "flex";
-          });
-        }
-
-        if (closeBtn) {
-          closeBtn.addEventListener("click", () => {
-            videoPopup.style.display = "none";
-          });
-        }
-      });
-    </script>
-
-    <script>
-      let player;
-      const videoPopup = document.getElementById("videoPopup");
       const playButton = document.getElementById("playButton");
       const closeBtn = document.getElementById("closeBtn");
+      const videoPopup = document.getElementById("videoPopup");
+      const video = document.getElementById("video");
 
-      // YouTube API hook
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player("video", {
-          events: {
-            onReady: () => {
-              // Open popup
-              playButton.addEventListener("click", () => {
-                videoPopup.style.display = "flex";
-                player.playVideo();
-              });
+      let originalSrc = video.src;
 
-              // Close popup
-              closeBtn.addEventListener("click", () => {
-                player.stopVideo();
-                videoPopup.style.display = "none";
-              });
-            },
-          },
-          playerVars: {
-            autoplay: 0,
-            rel: 0,
-            modestbranding: 1,
-            controls: 1,
-            enablejsapi: 1,
-          },
-        });
-      }
+      playButton.addEventListener("click", () => {
+        video.src = originalSrc + "&autoplay=1"; // force autoplay
+        videoPopup.style.display = "flex";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        video.src = ""; // Unload video to stop it
+        videoPopup.style.display = "none";
+        setTimeout(() => {
+          video.src = originalSrc; // Reload original for next time
+        }, 100); // Small delay so it doesn't immediately reload in background
+      });
     </script>
   </body>
 </html>

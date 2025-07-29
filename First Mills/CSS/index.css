@@ -223,7 +223,8 @@ iframe {
     height: 100%;
   }
   .close-btn {
-    top: 11%;
+    right: 0% !important;
+    top: 11% !important;
   }
   iframe {
     width: 100%;
