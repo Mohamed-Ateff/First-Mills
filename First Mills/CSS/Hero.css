@@ -36,8 +36,24 @@
   z-index: 1;
   border-radius: 10px;
   position: relative;
+  background-size: 80%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: pulse-bg 60s ease-in-out infinite;
 }
 
+@keyframes pulse-bg {
+  0% {
+    background-size: 80%;
+  }
+  50% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 80%;
+  }
+}
 .hero-images {
   position: relative;
 }
@@ -237,7 +253,7 @@ body[lang="en"] {
     justify-content: flex-start;
     align-items: center;
   }
-  .hero-images::before {  
+  .hero-images::before {
     opacity: 0.75;
     width: 95%;
     height: 250px !important;
