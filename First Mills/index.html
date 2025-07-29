@@ -68,7 +68,7 @@
         <button class="close-btn" id="closeBtn">✕</button>
         <iframe
           id="video"
-          src="https://www.youtube.com/embed/CZnMvMFxN3I?autoplay=1&rel=0&modestbranding=1&controls=1"
+          src="https://www.youtube.com/embed/CZnMvMFxN3I?enablejsapi=1"
           title="Professional Video"
           frameborder="0"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -77,22 +77,23 @@
       </div>
     </div>
 
-    <!-- Video Logic -->
     <script>
-      const playButton = document.getElementById("playButton");
-      const videoPopup = document.getElementById("videoPopup");
-      const closeBtn = document.getElementById("closeBtn");
-      const video = document.getElementById("video");
+      document.addEventListener("DOMContentLoaded", () => {
+        const playButton = document.getElementById("playButton");
+        const videoPopup = document.getElementById("videoPopup");
+        const closeBtn = document.getElementById("closeBtn");
 
-      playButton.addEventListener("click", () => {
-        videoPopup.style.display = "flex";
-        video.play();
-      });
+        if (playButton) {
+          playButton.addEventListener("click", () => {
+            videoPopup.style.display = "flex";
+          });
+        }
 
-      closeBtn.addEventListener("click", () => {
-        video.pause();
-        video.currentTime = 0;
-        videoPopup.style.display = "none";
+        if (closeBtn) {
+          closeBtn.addEventListener("click", () => {
+            videoPopup.style.display = "none";
+          });
+        }
       });
     </script>
 
@@ -102,14 +103,26 @@
       const playButton = document.getElementById("playButton");
       const closeBtn = document.getElementById("closeBtn");
 
-      // Called by YouTube API
+      // YouTube API hook
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player("player", {
-          height: "500",
-          width: "100%",
-          videoId: "CZnMvMFxN3I", // Your video ID here
+        player = new YT.Player("video", {
+          events: {
+            onReady: () => {
+              // Open popup
+              playButton.addEventListener("click", () => {
+                videoPopup.style.display = "flex";
+                player.playVideo();
+              });
+
+              // Close popup
+              closeBtn.addEventListener("click", () => {
+                player.stopVideo();
+                videoPopup.style.display = "none";
+              });
+            },
+          },
           playerVars: {
-            autoplay: 0, // Don't autoplay on load — we trigger manually
+            autoplay: 0,
             rel: 0,
             modestbranding: 1,
             controls: 1,
@@ -117,22 +130,6 @@
           },
         });
       }
-
-      // Open popup and play
-      playButton.addEventListener("click", () => {
-        videoPopup.style.display = "flex";
-        if (player && typeof player.playVideo === "function") {
-          player.playVideo();
-        }
-      });
-
-      // Close popup and stop video
-      closeBtn.addEventListener("click", () => {
-        if (player && typeof player.stopVideo === "function") {
-          player.stopVideo();
-        }
-        videoPopup.style.display = "none";
-      });
     </script>
   </body>
 </html>
