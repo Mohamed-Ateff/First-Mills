@@ -19,6 +19,10 @@ canvas {
   opacity: 0;
   pointer-events: none;
 }
+.chartAr canvas,
+.chartEn canvas {
+    display: none !important;
+}
 
 body[lang="ar"] .chartAr,
 body[lang="en"] .chartEn {
@@ -28,6 +32,12 @@ body[lang="en"] .chartEn {
   opacity: 1;
   pointer-events: auto;
 }
+
+body[lang="ar"] .chartAr canvas,
+body[lang="en"] .chartEn canvas {
+  display: block !important;
+}
+
 
 
 body[lang="en"] {
