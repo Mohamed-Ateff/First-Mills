@@ -17,11 +17,12 @@ canvas {
   opacity: 0;
   pointer-events: none;
 }
-.chartAr canvas,
+
+/* .chartAr canvas,
 .chartEn canvas {
-  /* display: none !important; */
+  display: none !important;
   visibility: hidden !important;
-}
+} */
 
 body[lang="ar"] .chartAr,
 body[lang="en"] .chartEn {
@@ -32,16 +33,18 @@ body[lang="en"] .chartEn {
   pointer-events: auto;
 }
 
-body[lang="ar"] .chartAr canvas,
+/* body[lang="ar"] .chartAr canvas,
 body[lang="en"] .chartEn canvas {
-  /* display: block !important; */
+  display: block !important;
   visibility: hidden !important;
-}
+} */
 
 body[lang="en"] {
-  .chartAr {
+  /* .chartAr {
     display: none !important;
-  }
+      visibility: hidden !important;
+
+  } */
   /* .contain-numbers-and-chart {
     flex-direction: row-reverse;
   } */
