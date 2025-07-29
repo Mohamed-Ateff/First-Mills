@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar">
   <head>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <meta charset="UTF-8" />
     <title>المطاحن الأولى</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Tailwind and FontAwesome -->
+    <!-- Plyr CSS -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.plyr.io/3.7.8/plyr.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    </noscript>
+
+    <!-- Plyr JS -->
+    <link
+      rel="preload"
+      as="script"
+      href="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"
+    />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js" defer></script>
+
+    <!-- Tailwind & FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
 
-    <!-- Plyr CSS -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
-
     <!-- Your CSS -->
     <link rel="stylesheet" href="CSS/index.css" />
+
+    <!-- Set custom Plyr color -->
+    <style>
+      :root {
+        --plyr-color-main: #ffb548;
+      }
+    </style>
   </head>
 
   <body>
@@ -43,44 +65,44 @@
       <p>تشغيل الفيديو التعريفي</p>
     </div>
 
+    <!-- Video Popup -->
     <div class="popup" id="videoPopup">
       <div class="popup-content">
         <button class="close-btn" id="closeBtn">✕</button>
-        <video id="player" playsinline controls>
-          <source src="Images/video.mp4" type="video/mp4" />
-        </video>
+        <div class="video-player">
+          <video id="player" playsinline controls preload="auto" poster="Images/video-poster.jpg">
+            <source src="Images/video.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
 
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <!-- Video Popup Logic -->
     <script>
-      const player = new Plyr("#player", {
-        controls: [
-          "play",
-          "progress",
-          "current-time",
-          "mute",
-          "volume",
-          "fullscreen",
-        ],
-      });
-    </script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const playButton = document.getElementById("playButton");
+        const videoPopup = document.getElementById("videoPopup");
+        const closeBtn = document.getElementById("closeBtn");
+        const player = new Plyr("#player", {
+          controls: [
+            "play",
+            "progress",
+            "current-time",
+            "mute",
+            "volume",
+            "fullscreen",
+          ],
+        });
 
-    <script>
-      const playButton = document.getElementById("playButton");
-      const videoPopup = document.getElementById("videoPopup");
-      const closeBtn = document.getElementById("closeBtn");
-      const video = document.getElementById("video");
+        playButton.addEventListener("click", () => {
+          videoPopup.style.display = "flex";
+          player.play();
+        });
 
-      playButton.addEventListener("click", () => {
-        videoPopup.style.display = "flex";
-        video.play();
-      });
-
-      closeBtn.addEventListener("click", () => {
-        video.pause();
-        video.currentTime = 0;
-        videoPopup.style.display = "none";
+        closeBtn.addEventListener("click", () => {
+          player.pause();
+          videoPopup.style.display = "none";
+        });
       });
     </script>
   </body>
