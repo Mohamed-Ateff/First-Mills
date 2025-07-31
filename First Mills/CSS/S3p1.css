@@ -109,6 +109,7 @@
   position: relative;
   text-align: center;
   border-top: 12px solid #ffb548;
+  border-top-right-radius: 5px;
 }
 
 .logo-div span {
@@ -118,10 +119,10 @@
 }
 .logo-div {
   width: 90px;
-  height: 45px;
+  height: 90PX;
   background: #31544b;
-  top: -50px;
-  transform: translateY(20px);
+  top: -90px;
+  transform: translateY(40px);
   right: 0px;
   display: flex;
   justify-content: center;
@@ -130,28 +131,7 @@
   font-weight: bold;
   color: white;
   position: absolute;
-}
-.logo-div::before {
-  content: "";
-  position: absolute;
-  top: -27.5px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-bottom: 28.8675px solid #31544b;
-}
-.logo-div::after {
-  content: "";
-  position: absolute;
-  bottom: -27.1px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-top: 28.8675px solid #31544b;
+  border-radius: 100%;
 }
 
 .one-card h1 {
