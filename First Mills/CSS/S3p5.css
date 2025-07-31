@@ -42,27 +42,26 @@
   color: white;
   position: absolute;
 }
-.logo-div::before {
-  content: "";
-  position: absolute;
-  top: -27.2px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-bottom: 28.8675px solid #31544b;
-}
 .logo-div::after {
-  content: "";
-  position: absolute;
-  bottom: -27.2px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 45px solid transparent;
-  border-right: 45px solid transparent;
-  border-top: 28.8675px solid #31544b;
+    content: "";
+    position: absolute;
+    bottom: -27.2px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 44px solid transparent;
+    border-right: 47px solid transparent;
+    border-top: 27.8675px solid #31544b;
+}   .logo-div::before {
+    content: "";
+    position: absolute;
+    top: -27.2px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 44px solid transparent;
+    border-right: 47px solid transparent;
+    border-bottom: 27.8675px solid #31544b;
 }
 
 .one-card h1 {

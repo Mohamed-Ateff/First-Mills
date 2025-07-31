@@ -67,3 +67,17 @@ document.addEventListener("DOMContentLoaded", function () {
     AOS.refresh();
   }
 });
+
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("page-loader");
+  const content = document.getElementById("main-content");
+
+  loader.classList.add("fade-out");
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    content.style.display = "block";
+    document.body.style.overflow = "auto"; // re-enable scroll
+  }, 500);
+});

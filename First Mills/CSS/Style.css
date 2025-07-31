@@ -51,7 +51,6 @@ a {
   width: 72%;
   margin: auto;
   position: relative;
-  
 }
 
 @media (max-width: 768px) {
@@ -104,5 +103,28 @@ a {
 @media (max-width: 568px) {
   .start {
     margin-top: 20px !important;
+  }
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0; /* fix right to left */
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 2147483647; /* max safe integer for z-index */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}
+.loader-container svg {
+  width: 12.5%;
+}
+
+@media (max-width: 768px) {
+  .loader-container svg {
+    width: 50%;
   }
 }

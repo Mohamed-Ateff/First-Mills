@@ -8,7 +8,7 @@
   align-items: center;
   gap: 10px;
   padding: 0;
-  z-index: 999999888888 !important;
+  z-index: 214748364 !important;
 }
 
 body[lang="en"] {
@@ -17,28 +17,28 @@ body[lang="en"] {
     left: 96%;
   }
   @media (max-width: 768px) {
-  .side-menu {
-    top: 26.5%;
-    left: unset !important;
-    right: -3%;
+    .side-menu {
+      top: 26.5%;
+      left: unset !important;
+      right: -3%;
+    }
   }
-}
-@media (max-width: 568px) {
-  .side-menu {
-    left: 30%;
+  @media (max-width: 568px) {
+    .side-menu {
+      left: 30%;
+    }
   }
-}
-@media (max-width: 480px) {
-  .side-menu {
-    left: unset !important;
-    right: 17%;
+  @media (max-width: 480px) {
+    .side-menu {
+      left: unset !important;
+      right: 17%;
+    }
+    @media (max-width: 425px) {
+      .side-menu {
+        right: 13%;
+      }
+    }
   }
-@media (max-width: 425px) {
-  .side-menu {
-   right: 13%;
-  }
-}
-}
 }
 .circle {
   z-index: 999;
@@ -103,6 +103,22 @@ body[lang="en"] {
   opacity: 0;
   transform: scale(0.5);
   animation: popIn 0.6s ease-out forwards;
+  aspect-ratio: 1 / 1;
+  background-color: #e2e2e2;
+  clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);
+  transition: 0.3s ease;
+  margin: 50px auto;
+}
+.hexagon i {
+  transition: 0.3s ease;
+  color: #939393;
+}
+
+.hexagon:hover {
+  background-color: #31544b;
+}
+.hexagon:hover i {
+  color: white;
 }
 
 /* Staggered animation delays */
@@ -140,15 +156,6 @@ body[lang="en"] {
   justify-content: center;
   align-items: center;
 }
-.hexagon1 {
-  background-image: url(../Images/Polygon.png);
-}
-.hexagon2,
-.hexagon3,
-.hexagon4,
-.hexagon5 {
-  background-image: url(../Images/Polygon-two.png);
-}
 
 .hexagon img {
   height: 40%;
@@ -164,10 +171,10 @@ body[lang="en"] {
   color: #f1f5f8;
   outline: auto;
   border: 0px;
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -222,4 +229,3 @@ body[lang="en"] {
   left: -3%;
 } */
 }
-
