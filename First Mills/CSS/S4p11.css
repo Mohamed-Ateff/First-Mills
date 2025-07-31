@@ -2,7 +2,7 @@
 
 .ten-cards {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 90px;
@@ -490,7 +490,7 @@
 }
 @media (max-width: 1026px) {
   .ten-cards {
-    justify-content: space-between;
+    justify-content: center;
   }
   .one-card {
     width: 32%;
