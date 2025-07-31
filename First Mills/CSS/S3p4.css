@@ -68,7 +68,6 @@
   color: #4e6a63;
   font-size: 17px;
   font-weight: 100;
-  padding-right: 17px;
   text-align: justify;
 }
 .circle-blue {
@@ -273,9 +272,6 @@ body[lang="en"] {
     transform: rotateY(180deg);
   }
 
-  .title-with-arrow {
-    padding-left: 20px;
-  }
 
   .circle-orange {
     transform: rotateY(178deg);
