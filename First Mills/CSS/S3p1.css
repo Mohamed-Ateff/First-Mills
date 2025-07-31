@@ -256,12 +256,6 @@ body[lang="en"] {
   .logo-div {
     left: 0px;
   }
-  .logo-div::before {
-    top: -27.8675px;
-  }
-  .logo-div::after {
-    bottom: -27.2px;
-  }
   @media (max-width: 480px) {
     .intersect {
       margin-top: 4px;

@@ -1166,7 +1166,8 @@
                     <div class="progress-bar" data-value="84">
                       <div class="progress" style="background-color: #73837f">
                         <p class="progress-value progress-value-ouside counter">
-                          84
+                          <span class="counter">84</span>
+                          <span class="percent-none">%</span>
                         </p>
                       </div>
                       <p class="progress-date" data-en="Other Countries">
@@ -1177,7 +1178,8 @@
                     <div class="progress-bar" data-value="9">
                       <div class="progress" style="background-color: #73837f">
                         <p class="progress-value progress-value-ouside counter">
-                          9
+                          <span class="counter">9</span>
+                          <span class="percent-none">%</span>
                         </p>
                       </div>
                       <p class="progress-date" data-en="Russia">روسيا</p>
@@ -1186,7 +1188,8 @@
                     <div class="progress-bar" data-value="7">
                       <div class="progress" style="background-color: #73837f">
                         <p class="progress-value progress-value-ouside counter">
-                          7
+                          <span class="counter">7</span>
+                          <span class="percent-none">%</span>
                         </p>
                       </div>
                       <p class="progress-date" data-en="Ukraine">أوكرانيا</p>
@@ -1229,7 +1232,8 @@
                     <div class="progress-bar" data-value="80">
                       <div class="progress" style="background-color: #ffb548">
                         <p class="progress-value progress-value-ouside counter">
-                          48
+                          <span class="counter">48</span>
+                          <span class="percent-none">%</span>
                         </p>
                       </div>
                       <p class="progress-date" data-en="Other Countries    ">
@@ -1240,7 +1244,8 @@
                     <div class="progress-bar" data-value="81.67">
                       <div class="progress" style="background-color: #ffb548">
                         <p class="progress-value progress-value-ouside counter">
-                          49
+                          <span class="counter">49</span>
+                          <span class="percent-none">%</span>
                         </p>
                       </div>
                       <p class="progress-date" data-en="Russia">روسيا</p>
@@ -1249,7 +1254,8 @@
                     <div class="progress-bar" data-value="5">
                       <div class="progress" style="background-color: #ffb548">
                         <p class="progress-value progress-value-ouside counter">
-                          3
+                          <span class="counter">3</span>
+                          <span class="percent-none">%</span>
                         </p>
                       </div>
                       <p class="progress-date" data-en="Ukraine">أوكرانيا</p>
@@ -1880,17 +1886,18 @@
                   ticks: {
                     callback: function (val) {
                       const labelsToShow = [
-          "2020",
-          "2021",
-          "2022",
-          "2023",
-          "2024",
-          "2025",
-          "2026",
-          "2027",
-          "2028",
-          "2029",
-          "2030",];
+                        "2020",
+                        "2021",
+                        "2022",
+                        "2023",
+                        "2024",
+                        "2025",
+                        "2026",
+                        "2027",
+                        "2028",
+                        "2029",
+                        "2030",
+                      ];
                       const label = this.getLabelForValue(val);
                       return labelsToShow.includes(label) ? label : "";
                     },
