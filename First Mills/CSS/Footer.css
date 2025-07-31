@@ -181,7 +181,11 @@ body[lang="en"] {
       margin-left: 0px;
     }
     footer .container .side-of-footer .next {
-      margin-left: 0px;
+      margin-left: 0px !important;
+      margin-right: 0px;
+    }
+    footer .container .side-of-footer .Previous {
+      margin-left: 0px !important;
       margin-right: 0px;
     }
   }
