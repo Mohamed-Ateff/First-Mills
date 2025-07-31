@@ -1079,10 +1079,16 @@
 
       <ul id="displayMonths" style="display: none">
         <li data-en="Jan">يناير</li>
+        <li data-en="Feb">فبراير</li>
         <li data-en="Mar">مارس</li>
+        <li data-en="Apr">أبريل</li>
         <li data-en="May">مايو</li>
+        <li data-en="Jun">يونيو</li>
         <li data-en="Jul">يوليو</li>
+        <li data-en="Aug">أغسطس</li>
         <li data-en="Sep">سبتمبر</li>
+        <li data-en="Oct">أكتوبر</li>
+        <li data-en="Nov">نوفمبر</li>
         <li data-en="Dec">ديسمبر</li>
       </ul>
 
@@ -1873,7 +1879,18 @@
                   grid: { display: false },
                   ticks: {
                     callback: function (val) {
-                      const labelsToShow = ["2020", "2024", "2030"];
+                      const labelsToShow = [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025",
+          "2026",
+          "2027",
+          "2028",
+          "2029",
+          "2030",];
                       const label = this.getLabelForValue(val);
                       return labelsToShow.includes(label) ? label : "";
                     },
