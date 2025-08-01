@@ -62,7 +62,7 @@ tbody tr:nth-child(odd) {
 }
 
 .chart-container {
-  background: white;
+  background: black;
   padding: 20px;
   flex: 1 1 45%;
   min-width: 300px;
@@ -179,13 +179,19 @@ canvas {
   }
 }
 
-.percent-none{
+.percent-none {
   display: none;
 }
 body[lang="en"] {
-  .percent-none{
-  display: inline;
-}
+  #delete-for-english {
+    display: none !important;
+  }
+  #delete-for-arabic {
+    display: inline !important;
+  }
+  .percent-none {
+    display: inline;
+  }
   .contain-numbers-and-chart {
     flex-direction: row-reverse;
   }
@@ -197,4 +203,15 @@ body[lang="en"] {
   .chart {
     flex-direction: row-reverse;
   }
+}
+#delete-for-arabic {
+  display: none !important;
+}
+#delete-for-english {
+  display: inline !important;
+}
+
+#chart-container-no-padding{
+  padding: 0px !important;
+  background-color: blanchedalmond;
 }
