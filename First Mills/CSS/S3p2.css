@@ -108,10 +108,9 @@
   color: #000000;
   font-size: 16px;
   line-height: 37px;
-   
-padding-right: 50px;
-  padding-left: 0px;
 
+  padding-right: 50px;
+  padding-left: 0px;
 }
 .four-cards-body li::marker {
   color: #ffb548;
@@ -138,22 +137,23 @@ padding-right: 50px;
 
 .logo-div span {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 43.7px;
 }
 .logo-div {
-  height: 40px;
-  aspect-ratio: cos(4deg);
-  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+  width: 90px;
+  height: 90px;
   background: #31544b;
-  color: white;
-  right: 18px;
-  top: -70px;
-  transform: translateY(20px);
-  scale: 2;
+  top: -90px;
+  transform: translateY(40px);
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   color: white;
   position: absolute;
+  border-radius: 100%;
 }
 
 .one-card h1 {
@@ -215,9 +215,10 @@ padding-right: 50px;
     gap: 3px;
   }
 
-    body[lang="en"] {
-    .four-cards div:nth-child(3), .four-cards div:nth-child(5) {
-        padding: 10px 40px 10px 50px;
+  body[lang="en"] {
+    .four-cards div:nth-child(3),
+    .four-cards div:nth-child(5) {
+      padding: 10px 40px 10px 50px;
     }
   }
 }
@@ -259,60 +260,53 @@ padding-right: 50px;
   }
 }
 
-.number-english{
+.number-english {
   display: none;
 }
 body[lang="en"] {
-  .number-english{
-  display: inline;
-}
+  .number-english {
+    display: inline;
+  }
   .four-cards div:nth-child(3),
   .four-cards div:nth-child(5) {
     padding: 30px 130px 20px 150px;
   }
 
   .logo-div {
-    left: 20px;
+    left: 0px;
   }
   .four-cards-title {
-  padding-right: 0px;
-  padding-left: 20px;
-}
+    padding-right: 0px;
+    padding-left: 20px;
+  }
   .four-cards-body ul {
-padding-right: 0px;
-  padding-left: 50px;
-
-}
-@media (max-width: 1024px) {
-.four-cards div:nth-child(3),
-  .four-cards div:nth-child(5) {
-    padding: 100px 10px 100px 150px;
+    padding-right: 0px;
+    padding-left: 50px;
   }
-  .four-cards div:nth-child(2),
-  .four-cards div:nth-child(4) {
-    padding: 10px 150px 10px 10px;
+  @media (max-width: 1024px) {
+    .four-cards div:nth-child(3),
+    .four-cards div:nth-child(5) {
+      padding: 100px 10px 100px 150px;
+    }
+    .four-cards div:nth-child(2),
+    .four-cards div:nth-child(4) {
+      padding: 10px 150px 10px 10px;
+    }
   }
-
-
-
-}
-@media (max-width: 768px) {
-.four-cards div:nth-child(3),
-  .four-cards div:nth-child(5) {
-    padding: 50px 30px 50px 90px;
+  @media (max-width: 768px) {
+    .four-cards div:nth-child(3),
+    .four-cards div:nth-child(5) {
+      padding: 50px 30px 50px 90px;
+    }
+    .four-cards div:nth-child(2),
+    .four-cards div:nth-child(4) {
+      padding: 10px 70px 10px 50px;
+    }
   }
-  .four-cards div:nth-child(2),
-  .four-cards div:nth-child(4) {
-    padding: 10px 70px 10px 50px;
+  @media (max-width: 480px) {
+    .four-cards div:nth-child(3),
+    .four-cards div:nth-child(5) {
+      padding: 30px 40px 20px 20px;
+    }
   }
-
-}
- @media (max-width: 480px) {
-.four-cards div:nth-child(3),
-  .four-cards div:nth-child(5) {
-    padding: 30px 40px 20px 20px;
-  }
-
-  
- }
 }

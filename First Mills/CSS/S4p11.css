@@ -21,22 +21,27 @@
   align-items: center;
 }
 
+
+.logo-div span {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43.7px;
+}
+
 .logo-div {
-  height: 40px;
-  aspect-ratio: cos(4deg);
-  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
+  width: 90px;
+  height: 90px;
   background: #31544b;
-  color: white;
-  right: 18px;
-  top: -70px;
-  transform: translateY(20px);
-  scale: 2;
+  top: -90px;
+  transform: translateY(40px);
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   color: white;
   position: absolute;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 43.7px;
+  border-radius: 100%;
 }
 
 .one-card h1 {
@@ -623,8 +628,7 @@ body[lang="en"] {
     display: inline;
   }
   .logo-div {
-    right: 0px;
-    left: 18px;
+    left: 0px;
   }
   .number-english {
     display: inline;
