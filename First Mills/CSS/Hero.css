@@ -19,7 +19,8 @@
 
   background-attachment: fixed;
   background-position: center center;
-  background-size: 80%;
+  background-size: contain; /* 🔁 shows the full image without cropping */
+  background-size:  80% 100%;
   background-repeat: no-repeat;
   animation: pulse-bg 60s ease-in-out infinite;
 }
