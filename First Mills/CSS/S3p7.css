@@ -110,16 +110,16 @@
 }
 
 .logo-div span {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 43.7px;
 }
 .logo-div {
   height: 40px;
   aspect-ratio: cos(4deg);
-  clip-path: polygon(-50% 50%, 50% 100%, 150% 50%, 50% 0);
   background: #31544b;
   color: white;
   right: 40px;
+  border-radius: 100%;
   top: -13px;
   transform: translateY(20px);
   scale: 2.3;

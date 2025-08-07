@@ -30,12 +30,12 @@
 }
 
 .final-card {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   background-color: white;
   padding: 30px 30px 30px 30px;
   position: relative;
   text-align: center;
-  border-top: 12px solid #4E6A63;
+  border-top: 12px solid #ffb548;
 }
 .final-card.wide {
   grid-column: span 2;
@@ -43,7 +43,7 @@
 
 .final-cards :nth-child(4),
 .final-cards :nth-child(6) {
-  border-top: 12px solid #193028;
+  border-top: 12px solid #ffb548;
 }
 
 .final-card p {
