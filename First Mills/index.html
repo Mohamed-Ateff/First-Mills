@@ -10,13 +10,17 @@
     <title>المطاحن الأولى</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://www.youtube.com/iframe_api"></script>
-
     <!-- Tailwind and FontAwesome -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
     />
 
     <!-- Your CSS -->
@@ -35,13 +39,18 @@
 
     <!-- Header -->
     <div class="header">
-      <img src="Images/logo-home.png" alt="First Mills Logo" class="logo" />
-      <a href="S1p1.html" class="anchor">ابدأ</a>
+      <img data-aos="zoom-in" data-aos-duration="1000" src="Images/logo-home.png" alt="First Mills Logo" class="logo" />
+      <a  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" href="S1p1.html" data-en="Start" class="anchor">ابدأ</a>
+      <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000" class="circle">
+        <button id="languageToggle" class="toggle-btn english-button">
+          EN
+        </button>
+      </div>
     </div>
 
     <!-- Play Button -->
-    <div class="content">
-      <button class="play-button" id="playButton">
+    <div class="content" >
+      <button  class="play-button" id="playButton">
         <i class="fa-solid fa-play"></i>
       </button>
       <p>تشغيل الفيديو التعريفي</p>
@@ -82,6 +91,17 @@
       </div>
     </div>
 
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
       const playButton = document.getElementById("playButton");
       const closeBtn = document.getElementById("closeBtn");
@@ -103,5 +123,6 @@
         }, 100); // Small delay so it doesn't immediately reload in background
       });
     </script>
+    <script src="./Javascript/en.js"></script>
   </body>
 </html>
